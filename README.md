@@ -14,7 +14,7 @@
 
 ## 安装
 
-需要 Python 3.11 或更新版本，以及联网访问 GitHub 和 Python 包索引。安装器会在目标项目的 `.agents/skills/` 安装五项技能，并在 `.agents/research-writing-skills/` 创建隔离运行环境，安装 `requests` 和 `PyYAML`。如果有 `uv`，安装器优先使用它；没有时使用 Python 自带的 `venv` 和 `pip`。Google Scholar 专用的 `scholarly` 包为可选项，默认不安装。
+需要 Python 3.11 或更新版本，以及联网访问 GitHub 和 Python 包索引。安装器会在目标项目的 `.agents/skills/` 安装五项技能，并在 `.agents/research-writing-skills/` 创建隔离运行环境，安装 `requests` 和 `PyYAML`。如果有 `uv`，安装器优先使用它；没有时使用 Python 自带的 `venv` 和 `pip`。安装不写入全局包缓存；`uv` 使用操作期间的临时缓存，`pip` 禁用持久下载缓存。Google Scholar 专用的 `scholarly` 包为可选项，默认不安装。
 
 安装器会在项目 `AGENTS.md` 中加入一段带标记的环境指引，告诉 Codex 使用本项目解释器，保留文件中其余文字。科学规则、上游提示词和辅助文件均保持原文。项目运行环境的位置和用途也记录在 `.agents/research-writing-skills/ENVIRONMENT.md`。
 

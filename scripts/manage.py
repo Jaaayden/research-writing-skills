@@ -312,16 +312,16 @@ def environment(config, runtime, runner=subprocess.run):
         if newly_created:
             envdir.parent.mkdir(parents=True, exist_ok=True)
             if shutil.which('uv'):
-                run_checked(['uv', 'venv', '--python', sys.executable, envdir], runner)
+                run_checked(['uv', 'venv', '--no-cache', '--python', sys.executable, envdir], runner)
             else:
                 run_checked([sys.executable, '-m', 'venv', envdir], runner)
         if not python.is_file():
             raise ManageError('虚拟环境的 Python 不存在')
         if shutil.which('uv'):
-            run_checked(['uv', 'pip', 'install', '--python', python, '--require-hashes', '-r', requirements], runner)
-            run_checked(['uv', 'pip', 'check', '--python', python], runner)
+            run_checked(['uv', 'pip', 'install', '--no-cache', '--python', python, '--require-hashes', '-r', requirements], runner)
+            run_checked(['uv', 'pip', 'check', '--no-cache', '--python', python], runner)
         else:
-            run_checked([python, '-m', 'pip', 'install', '--require-hashes', '-r', requirements], runner)
+            run_checked([python, '-m', 'pip', 'install', '--no-cache-dir', '--require-hashes', '-r', requirements], runner)
             run_checked([python, '-m', 'pip', 'check'], runner)
         imports = config['sources']['runtime']['required_imports']
         code = 'import sys,importlib; assert sys.version_info >= (3,11); ' + '; '.join(f'importlib.import_module({name!r})' for name in imports)
