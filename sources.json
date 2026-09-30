@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "minimum_python": "3.11",
+  "upstreams": {
+    "scientific-agent-skills": {
+      "github": "K-Dense-AI/scientific-agent-skills",
+      "ref": "main"
+    }
+  },
+  "skills": {
+    "scientific-writing": {"upstream": "scientific-agent-skills", "path": "skills/scientific-writing"},
+    "paper-lookup": {"upstream": "scientific-agent-skills", "path": "skills/paper-lookup"},
+    "citation-management": {"upstream": "scientific-agent-skills", "path": "skills/citation-management"},
+    "peer-review": {"upstream": "scientific-agent-skills", "path": "skills/peer-review"},
+    "structural-biology-audit": {"local": "skills/structural-biology-audit"}
+  },
+  "runtime": {
+    "requirements": "runtime/requirements.txt",
+    "required_imports": ["requests", "yaml"],
+    "optional_imports": {"scholarly": "Google Scholar 搜索；其他检索和本地处理不需要它"}
+  }
+}

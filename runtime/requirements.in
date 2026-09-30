@@ -1,0 +1,4 @@
+# requests: citation-management HTTP clients and its local citation validator.
+# PyYAML: installation-time validation of upstream SKILL.md front matter.
+requests>=2.32,<3
+PyYAML>=6,<7

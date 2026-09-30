@@ -1,0 +1,5413 @@
+{
+  "schema_version": "1.1",
+  "record_count": 39,
+  "primary_record_count": 37,
+  "update_record_count": 2,
+  "metadata_provider": "Crossref REST API, with publisher record used to correct incomplete Crossref authorship where noted",
+  "citation_provider": "OpenAlex",
+  "citation_checked_on": "2026-09-30",
+  "citation_note": "cited_by_count is the OpenAlex count observed on the stated date; it is a discoverability signal, not a quality or evidential-strength score. openalex_is_retracted=false means only that OpenAlex did not flag the record as retracted in this response.",
+  "metadata_note": "Crossref DOI metadata was checked and matched to 39 local Zotero PDFs; year uses the journal issue/print year. Selected source sections and figures supporting the audit were reviewed, with exact locations, PDF version, pages and limits recorded per source. PDF availability and source reading do not validate every conclusion in a paper or reproduce its calculations.",
+  "sources": [
+    {
+      "id": "rh2003",
+      "doi": "10.1016/j.jmb.2003.07.013",
+      "title": "Optimal Determination of Particle Orientation, Absolute Hand, and Contrast Loss in Single-particle Electron Cryomicroscopy",
+      "authors": [
+        {
+          "given": "Peter B.",
+          "family": "Rosenthal"
+        },
+        {
+          "given": "Richard",
+          "family": "Henderson"
+        }
+      ],
+      "journal": "Journal of Molecular Biology",
+      "year": 2003,
+      "volume": "333",
+      "issue": "4",
+      "pages": "721-745",
+      "url": "https://doi.org/10.1016/j.jmb.2003.07.013",
+      "topics": [
+        "cryo-em",
+        "data-processing-and-bias"
+      ],
+      "role": [
+        "foundation",
+        "dispute"
+      ],
+      "cited_by_count": 2706,
+      "openalex_url": "https://openalex.org/W2152562710",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1016%2Fj.jmb.2003.07.013"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1016/j.jmb.2003.07.013",
+          "location": "Appendix A, ‘An Objective Criterion for Resolution Assessment…’, equations A2–A6; printed pp. 743–745; PDF pp. 23–25",
+          "what_verified": "在作者的信号/噪声模型及其假设下，半图 FSC=0.143 对应全数据重构与理想无噪参考图约 0.5 的相关。该推导涉及的是 half-map 与理想参考的统计换算，不是 map–model FSC=0.5。",
+          "pdf_pages": [
+            23,
+            24,
+            25
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1016/j.jmb.2003.07.013",
+          "location": "Appendix A, Table A1; printed p. 744; PDF p. 24",
+          "what_verified": "表中列出半数据集信噪比与最终全数据重构对理想参考相关值之间的对应，支持把 0.143 的解释限定在该模型内。",
+          "pdf_pages": [
+            24
+          ]
+        }
+      ],
+      "scope": "核对分辨率统计推导及其对 0.143 的解释，用于区别 half-map FSC 与理想参考相关；未把此文用于取向/绝对手性/对比度损失规则。",
+      "limitations": [
+        "只细读与分辨率阈值主张直接相关的 Appendix A；文章其他主题不在本次审查范围。",
+        "推导依赖文中统计模型和信号、噪声关系假设，不能单独确立对所有 cryo-EM 数据普遍适用的阈值。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "附件为已发表的 Journal of Molecular Biology 出版版 PDF（2003；333:721–745），非 AAM/preprint。",
+        "reviewed_pdf_pages": [
+          1,
+          23,
+          24,
+          25
+        ],
+        "coverage": "核对首页题名/DOI及 Appendix A 的完整相关推导、式 A2–A6 和 Table A1；未把已提取全文等同于逐页审读。",
+        "unresolved": [
+          "正文其余部分未逐页审读。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 25,
+        "pdf_sha256": "c89495af8ee374656c84b2d31331acce133711c20825da5864955eca48664038",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "scheres-chen2012",
+      "doi": "10.1038/nmeth.2115",
+      "title": "Prevention of overfitting in cryo-EM structure determination",
+      "authors": [
+        {
+          "given": "Sjors H W",
+          "family": "Scheres"
+        },
+        {
+          "given": "Shaoxia",
+          "family": "Chen"
+        }
+      ],
+      "journal": "Nature Methods",
+      "year": 2012,
+      "volume": "9",
+      "issue": "9",
+      "pages": "853-854",
+      "url": "https://doi.org/10.1038/nmeth.2115",
+      "topics": [
+        "cryo-em",
+        "data-processing-and-bias"
+      ],
+      "role": [
+        "foundation",
+        "validation"
+      ],
+      "cited_by_count": 1365,
+      "openalex_url": "https://openalex.org/W2075824676",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1038%2Fnmeth.2115"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1038/nmeth.2115",
+          "location": "Figure 1 与正文；printed pp. 853–854; PDF pp. 1–2",
+          "what_verified": "作者直接提出对两个 half-data sets 分别独立精修模型，以避免伪相关；Figure 1 区分 half-map FSC 0.143 与全数据图对晶体坐标模型计算图的 FSC 0.5。本审计将此操作化为从首次三维精修起保持独立，并记录是否共享低通初始化/起始参考，以评估高分辨率信息是否串流；文章没有规定粒子挑选等前处理也拆分，或给出共享初始化的具体截止参数。",
+          "pdf_pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "scope": "用于 gold-standard half-set 独立性及 half-map FSC 与 map-to-model FSC 的对象/阈值区别。",
+      "limitations": [
+        "文章是简短方法评论及示例图，不能据此推导所有数据集上的普遍过拟合幅度或阈值保证。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "附件为 Nature Methods 已发表的排版出版版 PDF（2012；9:853–854），非 AAM/preprint；虽在线库可能另列 Author Manuscript，本次核验针对附件版本。",
+        "reviewed_pdf_pages": [
+          1,
+          2
+        ],
+        "coverage": "阅读两页全文并核对 Figure 1、图注、正文和题名/DOI。",
+        "unresolved": [],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 2,
+        "pdf_sha256": "2b1ec5bb92e4c167fc2df73237973eec381bb4eca0f59f092527024ac39df410",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "chen2013",
+      "doi": "10.1016/j.ultramic.2013.06.004",
+      "title": "High-resolution noise substitution to measure overfitting and validate resolution in 3D structure determination by single particle electron cryomicroscopy",
+      "authors": [
+        {
+          "given": "Shaoxia",
+          "family": "Chen"
+        },
+        {
+          "given": "Greg",
+          "family": "McMullan"
+        },
+        {
+          "given": "Abdul R.",
+          "family": "Faruqi"
+        },
+        {
+          "given": "Garib N.",
+          "family": "Murshudov"
+        },
+        {
+          "given": "Judith M.",
+          "family": "Short"
+        },
+        {
+          "given": "Sjors H.W.",
+          "family": "Scheres"
+        },
+        {
+          "given": "Richard",
+          "family": "Henderson"
+        }
+      ],
+      "journal": "Ultramicroscopy",
+      "year": 2013,
+      "volume": "135",
+      "issue": null,
+      "pages": "24-35",
+      "url": "https://doi.org/10.1016/j.ultramic.2013.06.004",
+      "topics": [
+        "cryo-em",
+        "data-processing-and-bias"
+      ],
+      "role": [
+        "validation"
+      ],
+      "cited_by_count": 1125,
+      "openalex_url": "https://openalex.org/W2054770020",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1016%2Fj.ultramic.2013.06.004"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1016/j.ultramic.2013.06.004",
+          "location": "§1.2、Methods/§2–3 与 equations 1–4；printed pp. 27–29; PDF pp. 4–6",
+          "what_verified": "高分辨率噪声替换用于估计过拟合；式 (4) 给出扣除替换噪声相关后的 FSC 校正。噪声替换截止频率需适当选择，过低会损伤取向信息，过高则缺少判别力。",
+          "pdf_pages": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1016/j.ultramic.2013.06.004",
+          "location": "Figure 4、对应结果及讨论；printed p. 31; PDF p. 8",
+          "what_verified": "图和文字显示 mask 可引入高频伪相关，噪声替换校正可在文中测试的条件下作校正；边缘更陡、尤其二值 mask 会产生更大伪影并使反卷积校正失准，因此该校正不是对任意 mask 都有效的保证。",
+          "pdf_pages": [
+            8
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1016/j.ultramic.2013.06.004",
+          "location": "Figure 5、Discussion、Conclusions；printed pp. 32–33; PDF pp. 9–10",
+          "what_verified": "作者对示例中的 half-map FSC 0.143 与 map–model FSC 0.5 作了区分，并讨论过拟合阈值及处理方法的限制；文中并未把所有阈值争议消解为跨数据集硬规则。",
+          "pdf_pages": [
+            9,
+            10
+          ]
+        }
+      ],
+      "scope": "核对噪声替换方法、校正式、mask 伪相关及作者明确讨论的适用边界，以支持按争议触发的检查。",
+      "limitations": [
+        "论文展示的是所测试流程/样例；式 (4) 不能被概括成任意 mask 下的普遍纠偏保证。",
+        "PDF pp. 11–12 为参考文献等非核心部分，本次未逐页审读。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "附件为 Ultramicroscopy 已发表的出版社排版 PDF（2013；135:24–35；© Authors/Elsevier，CC BY），非 AAM/preprint。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "coverage": "细读摘要/引言、§1.2、方法、相关结果图及图注（尤其 Figures 2–5）、Discussion 和 Conclusions；视觉核对 PDF p. 6 的方程/图及 PDF p. 8 的 Figure 4 与相邻文字。",
+        "unresolved": [
+          "未逐页审读 PDF pp. 11–12 的参考文献部分。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 12,
+        "pdf_sha256": "5d81e6bb39b94f81b98f4b3f3b195540652d80a7aa6e800d5cc6c13f0a7ba499",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "kucukelbir2014",
+      "doi": "10.1038/nmeth.2727",
+      "title": "Quantifying the local resolution of cryo-EM density maps",
+      "authors": [
+        {
+          "given": "Alp",
+          "family": "Kucukelbir"
+        },
+        {
+          "given": "Fred J",
+          "family": "Sigworth"
+        },
+        {
+          "given": "Hemant D",
+          "family": "Tagare"
+        }
+      ],
+      "journal": "Nature Methods",
+      "year": 2014,
+      "volume": "11",
+      "issue": "1",
+      "pages": "63-65",
+      "url": "https://doi.org/10.1038/nmeth.2727",
+      "topics": [
+        "cryo-em",
+        "ligand-density"
+      ],
+      "role": [
+        "foundation",
+        "validation"
+      ],
+      "cited_by_count": 2055,
+      "openalex_url": "https://openalex.org/W2086812659",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1038%2Fnmeth.2727"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1038/nmeth.2727",
+          "location": "正文、Figure 1 与结果；printed pp. 63–65; PDF pp. 1–3",
+          "what_verified": "ResMap 的局部分辨率意指局部正弦信号在所设检验条件下可检出的最小波长/特征尺度；不是原子模型准确度或残基级验证。",
+          "pdf_pages": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1038/nmeth.2727",
+          "location": "Online Methods（含统计检验、噪声估计和多重检验校正）；PDF pp. 4–5（在线补充版式，无连续期刊印刷页码）",
+          "what_verified": "局部分辨率依赖局部正弦模型、噪声估计、给定 P 值（示例常取 0.05）及多重检验/FDR 处理，需随算法假设和参数解释。",
+          "pdf_pages": [
+            4,
+            5
+          ]
+        }
+      ],
+      "scope": "用于界定 ResMap 局部分辨率的含义、统计设定和输出不能支持的原子级结论。",
+      "limitations": [
+        "方法论文解释的是 ResMap；其他局部分辨率算法不必共享完全相同的检验定义或参数。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "附件为 Nature Methods 已发表出版版 PDF（2014；11:63–65，后接 Online Methods），非 AAM/preprint。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "coverage": "阅读附件五页，覆盖正文、Figure 1、结果、Online Methods、噪声估计及多重检验讨论；核对题名、期刊卷期、DOI。",
+        "unresolved": [],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 5,
+        "pdf_sha256": "f95617db966c882429a03e47a1acda4b15e80c6694639b4712c5cdb72b409682",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "tan2017",
+      "doi": "10.1038/nmeth.4347",
+      "title": "Addressing preferred specimen orientation in single-particle cryo-EM through tilting",
+      "authors": [
+        {
+          "given": "Yong Zi",
+          "family": "Tan"
+        },
+        {
+          "given": "Philip R",
+          "family": "Baldwin"
+        },
+        {
+          "given": "Joseph H",
+          "family": "Davis"
+        },
+        {
+          "given": "James R",
+          "family": "Williamson"
+        },
+        {
+          "given": "Clinton S",
+          "family": "Potter"
+        },
+        {
+          "given": "Bridget",
+          "family": "Carragher"
+        },
+        {
+          "given": "Dmitry",
+          "family": "Lyumkis"
+        }
+      ],
+      "journal": "Nature Methods",
+      "year": 2017,
+      "volume": "14",
+      "issue": "8",
+      "pages": "793-796",
+      "url": "https://doi.org/10.1038/nmeth.4347",
+      "topics": [
+        "cryo-em",
+        "data-processing-and-bias"
+      ],
+      "role": [
+        "validation"
+      ],
+      "cited_by_count": 1073,
+      "openalex_url": "https://openalex.org/W2728385286",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1038%2Fnmeth.4347"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1038/nmeth.4347",
+          "location": "Figure 1 与结果；printed p. 794; PDF p. 2",
+          "what_verified": "图示 Euler-angle 采样、倾转前后重构与方向分辨率信息，为优选取向和各向异性审计提供案例依据；角度分布描述采样本身。",
+          "pdf_pages": [
+            2
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1038/nmeth.4347",
+          "location": "Figure 2、讨论及 3D FSC 图例；printed p. 795; PDF p. 3",
+          "what_verified": "示例将 half-map 3D FSC 以 0.143、map-to-model 3D FSC 以 0.5 显示，并报告 sphericity/方向分布；作者讨论了所研究 HA 数据中的优选取向与重构伪影。",
+          "pdf_pages": [
+            3
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1038/nmeth.4347",
+          "location": "Online Methods, ‘Three-dimensional Fourier shell correlation algorithm’; PDF p. 5（在线方法页，无连续期刊印刷页码）",
+          "what_verified": "作者用角度子集方向 FSC 形成 3D FSC 并报告其阈值与采样方式；文中将 3D FSC 与局部分辨率区分。",
+          "pdf_pages": [
+            5
+          ]
+        }
+      ],
+      "scope": "用于优选取向、方向性指标和局部分辨率的区别；规则应描述互补证据，不把 Euler-angle 采样图等同于方向 FSC。",
+      "limitations": [
+        "结果关系来自论文所研究的样例，不能当作优选取向必然导致某一方向误差的普遍定量定律。",
+        "PDF pp. 6–7 为参考文献/附加方法内容，本次未逐页审读。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "附件为 Nature Methods 已发表出版版 PDF（2017；14:793–796），后接无连续期刊印刷页码的在线 Methods/参考内容，非 AAM/preprint。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "coverage": "阅读正文、Figure 1/2、相关讨论及 Online Methods 的 3D FSC 算法；视觉核对 PDF pp. 2–3 的图。",
+        "unresolved": [
+          "未逐页审读 PDF pp. 6–7。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 7,
+        "pdf_sha256": "1704fa2781b2885fcd1b7661d2ad2533c83cbfb8760c2e028038d05e0e897348",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "vanheel2005",
+      "doi": "10.1016/j.jsb.2005.05.009",
+      "title": "Fourier shell correlation threshold criteria",
+      "authors": [
+        {
+          "given": "Marin",
+          "family": "van Heel"
+        },
+        {
+          "given": "Michael",
+          "family": "Schatz"
+        }
+      ],
+      "journal": "Journal of Structural Biology",
+      "year": 2005,
+      "volume": "151",
+      "issue": "3",
+      "pages": "250-262",
+      "url": "https://doi.org/10.1016/j.jsb.2005.05.009",
+      "topics": [
+        "cryo-em",
+        "data-processing-and-bias"
+      ],
+      "role": [
+        "foundation",
+        "dispute"
+      ],
+      "cited_by_count": 950,
+      "openalex_url": "https://openalex.org/W2058716938",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1016%2Fj.jsb.2005.05.009"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1016/j.jsb.2005.05.009",
+          "location": "§2.2–2.4；printed pp. 253–255; PDF pp. 4–6；equations 14–19（尤 14–17）",
+          "what_verified": "half-bit 阈值随 Fourier 壳层 voxel 数变化；计算还受点群对称、asymmetric units 和对象相对重构体积大小影响。因此固定阈值的含义依赖数据与统计条件。",
+          "pdf_pages": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1016/j.jsb.2005.05.009",
+          "location": "§4.2、Figure 4C；printed p. 258; PDF p. 9",
+          "what_verified": "半-bit 曲线表示作者所定义的每 voxel 信息量判据；论文建议它作为一般用途的分辨率指标，并非单纯显著高于噪声的判据。",
+          "pdf_pages": [
+            9
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1016/j.jsb.2005.05.009",
+          "location": "§4.3–4.7、§§5–6；printed pp. 258–262; PDF pp. 9–13",
+          "what_verified": "作者区分 r-factor 与 half-bit 的统计解释，批评把固定 0.5/0.143 当通用准则；指出 0.143 近似关系只在其讨论的渐近条件下成立。§4.7 还讨论共享尖锐 mask 边缘导致的人工相关及 soft mask/共享参考注意事项。",
+          "pdf_pages": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        }
+      ],
+      "scope": "用于说明 FSC 阈值统计意义的争论、half-bit/r-factor 区别以及壳层、对称性、对象填充和 mask 对解释的影响。",
+      "limitations": [
+        "该文是 2005 年提出的一种统计分析/建议；应与后续社区建议并列呈现，不应将 half-bit 也变成无条件硬界线。",
+        "Figure 4C 及 equations 14–17 已对渲染页视觉核验；本文中有关阈值的其他图表不都作为规则依据。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "附件为 Journal of Structural Biology 已发表 Elsevier 出版版 PDF（2005；151:250–262），非 AAM/preprint。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "coverage": "阅读全文 13 页，重点核对 §§2.2–2.4、§§4.2–4.7、结论 §§5–6、equations 14–19 与 Figure 4C；视觉核对 PDF pp. 4–5 的阈值公式/对称性论证及 PDF p. 9 的 Figure 4C。",
+        "unresolved": [],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 13,
+        "pdf_sha256": "a61f52c9c85379ae3de15a62e48ad5324ffbf454d26a4fb7eb98aa89eddba598",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "kleywegt2024",
+      "doi": "10.1107/s2052252524001246",
+      "title": "Community recommendations on cryoEM data archiving and validation",
+      "authors": [
+        {
+          "given": "Gerard J.",
+          "family": "Kleywegt"
+        },
+        {
+          "given": "Paul D.",
+          "family": "Adams"
+        },
+        {
+          "given": "Sarah J.",
+          "family": "Butcher"
+        },
+        {
+          "given": "Catherine L.",
+          "family": "Lawson"
+        },
+        {
+          "given": "Alexis",
+          "family": "Rohou"
+        },
+        {
+          "given": "Peter B.",
+          "family": "Rosenthal"
+        },
+        {
+          "given": "Sriram",
+          "family": "Subramaniam"
+        },
+        {
+          "given": "Maya",
+          "family": "Topf"
+        },
+        {
+          "given": "Sanja",
+          "family": "Abbott"
+        },
+        {
+          "given": "Philip R.",
+          "family": "Baldwin"
+        },
+        {
+          "given": "John M.",
+          "family": "Berrisford"
+        },
+        {
+          "given": "Gérard",
+          "family": "Bricogne"
+        },
+        {
+          "given": "Preeti",
+          "family": "Choudhary"
+        },
+        {
+          "given": "Tristan I.",
+          "family": "Croll"
+        },
+        {
+          "given": "Radostin",
+          "family": "Danev"
+        },
+        {
+          "given": "Sai J.",
+          "family": "Ganesan"
+        },
+        {
+          "given": "Timothy",
+          "family": "Grant"
+        },
+        {
+          "given": "Aleksandras",
+          "family": "Gutmanas"
+        },
+        {
+          "given": "Richard",
+          "family": "Henderson"
+        },
+        {
+          "given": "J. Bernard",
+          "family": "Heymann"
+        },
+        {
+          "given": "Juha T.",
+          "family": "Huiskonen"
+        },
+        {
+          "given": "Andrei",
+          "family": "Istrate"
+        },
+        {
+          "given": "Takayuki",
+          "family": "Kato"
+        },
+        {
+          "given": "Gabriel C.",
+          "family": "Lander"
+        },
+        {
+          "given": "Shee-Mei",
+          "family": "Lok"
+        },
+        {
+          "given": "Steven J.",
+          "family": "Ludtke"
+        },
+        {
+          "given": "Garib N.",
+          "family": "Murshudov"
+        },
+        {
+          "given": "Ryan",
+          "family": "Pye"
+        },
+        {
+          "given": "Grigore D.",
+          "family": "Pintilie"
+        },
+        {
+          "given": "Jane S.",
+          "family": "Richardson"
+        },
+        {
+          "given": "Carsten",
+          "family": "Sachse"
+        },
+        {
+          "given": "Osman",
+          "family": "Salih"
+        },
+        {
+          "given": "Sjors H. W.",
+          "family": "Scheres"
+        },
+        {
+          "given": "Gunnar F.",
+          "family": "Schroeder"
+        },
+        {
+          "given": "Carlos Oscar S.",
+          "family": "Sorzano"
+        },
+        {
+          "given": "Scott M.",
+          "family": "Stagg"
+        },
+        {
+          "given": "Zhe",
+          "family": "Wang"
+        },
+        {
+          "given": "Rangana",
+          "family": "Warshamanage"
+        },
+        {
+          "given": "John D.",
+          "family": "Westbrook"
+        },
+        {
+          "given": "Martyn D.",
+          "family": "Winn"
+        },
+        {
+          "given": "Jasmine Y.",
+          "family": "Young"
+        },
+        {
+          "given": "Stephen K.",
+          "family": "Burley"
+        },
+        {
+          "given": "Jeffrey C.",
+          "family": "Hoch"
+        },
+        {
+          "given": "Genji",
+          "family": "Kurisu"
+        },
+        {
+          "given": "Kyle",
+          "family": "Morris"
+        },
+        {
+          "given": "Ardan",
+          "family": "Patwardhan"
+        },
+        {
+          "given": "Sameer",
+          "family": "Velankar"
+        }
+      ],
+      "journal": "IUCrJ",
+      "year": 2024,
+      "volume": "11",
+      "issue": "2",
+      "pages": "140-151",
+      "url": "https://doi.org/10.1107/s2052252524001246",
+      "topics": [
+        "cryo-em",
+        "model-validation"
+      ],
+      "role": [
+        "current-consensus"
+      ],
+      "cited_by_count": 36,
+      "openalex_url": "https://openalex.org/W4389217803",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1107%2FS2052252524001246"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1107/S2052252524001246",
+          "location": "§1.3 与 §2.1 Recommendations 2–3、7–8；printed pp. 141–145; PDF pp. 2–6",
+          "what_verified": "社区报告建议归档和报告足以复核的 maps、half-maps、处理上下文及粒子/元数据，并说明其建议范围；这些建议并不等于每篇论文统一强制交付清单。",
+          "pdf_pages": [
+            2,
+            3,
+            5,
+            6
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1107/S2052252524001246",
+          "location": "§3.1；printed p. 145; PDF p. 6",
+          "what_verified": "建议报告 0.143、0.5、half-bit 等多种 FSC 准则，支持并列报告及保留统计解释差异，而不是将单一阈值当成普适标准。",
+          "pdf_pages": [
+            6
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1107/S2052252524001246",
+          "location": "§§3.3.1–3.3.2；printed p. 146; PDF p. 7",
+          "what_verified": "报告讨论 half-map 分辨率及局部分辨率算法局限；指出目前局部分辨率方法不足以保证普遍稳健、可跨情形定量比较，建议将数值作为定性较好—较差显示。",
+          "pdf_pages": [
+            7
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1107/S2052252524001246",
+          "location": "§§3.3.3–3.3.6、§3.4 / Recommendation 15；printed pp. 147–148; PDF pp. 8–9",
+          "what_verified": "方向性/各向异性分析方法仍需系统比较和共识；建议验证点群约定、比较 primary 与 raw map 的 RAPS 以识别过度滤波/锐化，并报告 map–model FSC 作为拟合指示。自定义 mask 下建议同时查看噪声替换校正曲线；校正曲线受 mask 与模型计算参数影响。",
+          "pdf_pages": [
+            8,
+            9
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1107/S2052252524001246",
+          "location": "§5；printed p. 149; PDF p. 10",
+          "what_verified": "报告提醒不要把社区建议过度规定化，并说明预测模型训练数据/已知结构 packing 可能影响其先验。",
+          "pdf_pages": [
+            10
+          ]
+        }
+      ],
+      "scope": "用于建立社区当前建议及其未达成共识的边界，覆盖 FSC、局部分辨率、方向性、锐化/滤波、对称性和 map–model 验证。",
+      "limitations": [
+        "这是社区建议报告，不是对每种算法的统一性能验证；其明确标作需要进一步研究的项目不应改写为已标准化要求。",
+        "PDF pp. 11–12 是参考文献，本次未逐页审读。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "附件为 IUCrJ 已发表排版 PDF（2024；11:140–151，CC BY 4.0），非 AAM/preprint。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "coverage": "阅读首页至 §5 的完整正文及 recommendations，逐项核对上述相关节和 Recommendation 15；未把参考文献页算作实质内容审读。",
+        "unresolved": [
+          "未逐页审读 PDF pp. 11–12 的参考文献部分。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 12,
+        "pdf_sha256": "01d8d78388d0f69d9f119bee638f8e9d1e4fe95fd7ac576476172b18e1ca62be",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "brunger1992",
+      "doi": "10.1038/355472a0",
+      "title": "Free R value: a novel statistical quantity for assessing the accuracy of crystal structures",
+      "authors": [
+        {
+          "given": "Axel T.",
+          "family": "Brünger"
+        }
+      ],
+      "journal": "Nature",
+      "year": 1992,
+      "volume": "355",
+      "issue": "6359",
+      "pages": "472-475",
+      "url": "https://doi.org/10.1038/355472a0",
+      "topics": [
+        "xray",
+        "data-processing-and-bias",
+        "model-validation"
+      ],
+      "role": [
+        "foundation"
+      ],
+      "cited_by_count": 3909,
+      "openalex_url": "https://openalex.org/W1996607909",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1038%2F355472a0"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1038/355472a0",
+          "location": "Nature 355, pp. 472–475; article text and figures (PDF pp. 1–4)",
+          "what_verified": "核对全文的工作集/test 集划分：同一组反射被分成互不重叠的 work 与 test 子集，约 10% 随机 test reflections 不用于精修；作者展示 Rfree 对过拟合及模型错误较 Rwork 更敏感。",
+          "pdf_pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "scope": "Rfree 的交叉验证设计、test reflections 的独立用途及其对过拟合的敏感性。",
+      "limitations": [
+        "原文是方法论文及其示例，不验证任何特定结构的 free-set 历史或结构正确性。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Nature 355 (1992), 472–475 的期刊版；核对全文页眉、题名与正文。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "coverage": "审读四页全文及相关图表，核对工作集/test 集定义、数据排除规则、Rwork/Rfree 对比和作者对交叉验证的解释。",
+        "unresolved": [],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 4,
+        "pdf_sha256": "e3bb5a44d77fb73a314d7366a059927f0da6848232e751294ff80e60fa4de000",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "evans2013",
+      "doi": "10.1107/s0907444913000061",
+      "title": "How good are my data and what is the resolution?",
+      "authors": [
+        {
+          "given": "Philip R.",
+          "family": "Evans"
+        },
+        {
+          "given": "Garib N.",
+          "family": "Murshudov"
+        }
+      ],
+      "journal": "Acta Crystallographica Section D Biological Crystallography",
+      "year": 2013,
+      "volume": "69",
+      "issue": "7",
+      "pages": "1204-1214",
+      "url": "https://doi.org/10.1107/s0907444913000061",
+      "topics": [
+        "xray",
+        "model-validation"
+      ],
+      "role": [
+        "foundation"
+      ],
+      "cited_by_count": 5141,
+      "openalex_url": "https://openalex.org/W2110808180",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1107%2FS0907444913000061"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1107/S0907444913000061",
+          "location": "Acta Cryst. D 69, pp. 1204–1205、1207–1212；§§3.2.2–3.2.3、4.1–4.3、5（PDF pp. 1–2、4–9）",
+          "what_verified": "核对题名、作者、卷页、DOI及 IUCr 期刊排版身份；审读 CC1/2 与高分辨率截断、Rmerge/Rmeas 的局限、各向异性、不同 cutoff 的模型比较，以及讨论中的局部/全局质量边界和 paired-refinement 引用。",
+          "pdf_pages": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "scope": "数据质量统计、CC1/2、各向异性与分辨率截断的证据和解释限制。",
+      "limitations": [
+        "逐页审读集中于上述章节；未审读 PDF pp. 3、10–11 的全部内容。",
+        "论文提供通用数据分析讨论，并未替任一具体晶体结构选定 cutoff 或重算指标。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Acta Crystallographica Section D 69 (2013), 1204–1214 的 IUCr 期刊版。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "coverage": "核对题名页及摘要/导言，并重点阅读 §3.2.2–3.2.3、§§4.1–4.3 与 §5 的相关方法、结果、讨论限制。",
+        "unresolved": [
+          "未审读全文所有页和补充材料。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 11,
+        "pdf_sha256": "8a3d59a986e7d56776e3974b8c18cfbd6ff65d7a09d4d089f11c1547a1596443",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "karplus2012",
+      "doi": "10.1126/science.1218231",
+      "title": "Linking Crystallographic Model and Data Quality",
+      "authors": [
+        {
+          "given": "P. Andrew",
+          "family": "Karplus"
+        },
+        {
+          "given": "Kay",
+          "family": "Diederichs"
+        }
+      ],
+      "journal": "Science",
+      "year": 2012,
+      "volume": "336",
+      "issue": "6084",
+      "pages": "1030-1033",
+      "url": "https://doi.org/10.1126/science.1218231",
+      "topics": [
+        "xray",
+        "model-validation"
+      ],
+      "role": [
+        "foundation",
+        "dispute"
+      ],
+      "cited_by_count": 1872,
+      "openalex_url": "https://openalex.org/W2108959691",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1126%2Fscience.1218231"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1126/science.1218231",
+          "location": "Science 336, pp. 1030–1033；重点 Fig. 1、pp. 1030–1031（PDF pp. 1–2）",
+          "what_verified": "核对题名、作者、期刊与页码；Fig. 1 展示逐步扩展数据分辨率时，在较差 cutoff 的共同分辨率范围比较模型的 Rwork/Rfree。论文也讨论 CC1/2 与单靠 Rmerge 选择 cutoff 的问题。",
+          "pdf_pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "scope": "paired-refinement 示例及反射数据质量和模型质量的关联。",
+      "limitations": [
+        "同一起始模型、相同 free flags 和精修流程是为公平比较提出的审计控制；本文图示支持共同分辨率范围的 R 值比较，但没有把这整套操作细节表述成普遍方法要求。",
+        "未用其他数据集独立复现图中分析。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Science 336 (2012), 1030–1033 的期刊论文版。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "coverage": "审读四页全文，核对讨论、图 1 的共同分辨率比较、Rwork/Rfree 趋势及 CC1/2 论证。",
+        "unresolved": [],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 4,
+        "pdf_sha256": "59efdd0d30084deefbaad8f7ddc035fae60d52614342ed01548c658408ab1aca",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "cruickshank1999",
+      "doi": "10.1107/s0907444998012645",
+      "title": "Remarks about protein structure precision",
+      "authors": [
+        {
+          "given": "D. W. J.",
+          "family": "Cruickshank"
+        }
+      ],
+      "journal": "Acta Crystallographica Section D Biological Crystallography",
+      "year": 1999,
+      "volume": "55",
+      "issue": "3",
+      "pages": "583-601",
+      "url": "https://doi.org/10.1107/s0907444998012645",
+      "topics": [
+        "xray",
+        "model-validation"
+      ],
+      "role": [
+        "foundation"
+      ],
+      "cited_by_count": 490,
+      "openalex_url": "https://openalex.org/W2020429677",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1107%2FS0907444998012645"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1107/S0907444998012645",
+          "location": "Acta Cryst. D 55, §4.2 p. 589、§6.4 Eq. 30 与 §7.1 p. 592、§§10.2–10.5 pp. 597–598、Appendix A1 Eq. 49 p. 598、Appendix A3 p. 599（PDF pp. 7、10–11、15–17）",
+          "what_verified": "核对论文身份与出版页码；Eq. 30 位于 §6.4 而非 §4.2。DPI 被称为快速粗略指南，基于衍射数据误差且假设 B=Bavg；作者讨论其对精度的近似性、低分辨率下的偏差和几何 restraints 的影响。已用页面图像检查 PDF p. 592 的 Eq. 30 原式。",
+          "pdf_pages": [
+            7,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ],
+      "scope": "DPI/坐标不确定度近似的公式位置、适用范围与限制，以及勘误核对所需的原文公式。",
+      "limitations": [
+        "只审读与精度、DPI、restrained refinement 和相关公式直接有关的页，未逐页审读全部 19 页。",
+        "未依论文公式从原始反射数据重新计算任何结构的 DPI。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [
+        {
+          "relation": "erratum",
+          "id": "cruickshank1999-erratum",
+          "note": "The 1999 erratum is catalogued separately and should be read with this article."
+        }
+      ],
+      "fulltext_review": {
+        "version": "Acta Crystallographica Section D 55 (1999), 583–601 的 IUCr 期刊版。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          7,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "coverage": "审读题名/导言、§4.2、§6.4 Eq. 30、§7.1、§§10.2–10.5 与 Appendix A1/A3；检查公式所在原页图像以免从抽取乱码重建公式。",
+        "unresolved": [
+          "未审读其他章节及参考文献页。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 19,
+        "pdf_sha256": "2cf651ca04992c1be333bb69ce3d65cee1be4141afd4ae4a7372ecdf2ea88188",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "cruickshank1999-erratum",
+      "doi": "10.1107/s0907444999004308",
+      "title": "Remarks about protein structure precision. Erratum",
+      "authors": [
+        {
+          "given": "D. W. J.",
+          "family": "Cruickshank"
+        }
+      ],
+      "journal": "Acta Crystallographica Section D Biological Crystallography",
+      "year": 1999,
+      "volume": "55",
+      "issue": "5",
+      "pages": "1108-1108",
+      "url": "https://doi.org/10.1107/s0907444999004308",
+      "topics": [
+        "xray",
+        "model-validation"
+      ],
+      "role": [
+        "correction"
+      ],
+      "cited_by_count": 14,
+      "openalex_url": "https://openalex.org/W2144643488",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1107%2FS0907444999004308"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1107/S0907444999004308",
+          "location": "Acta Cryst. D 55, p. 1108；更正说明与 Eq. 30、Eq. 49（PDF p. 1）",
+          "what_verified": "核对勘误题名、来源和目标论文；渲染阅读单页勘误，确认 Eq. 30 中 C 的指数由 −1/2 改为 −1/3，Eq. 49 的残差平方和项加入权重 w；另确认 p. 589 §4.2 的符号和 Fig. 7 图注也在勘误范围内。",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "scope": "Cruickshank 1999 公式与符号勘误的逐项核实。",
+      "limitations": [
+        "勘误仅纠正原文项目；没有进行独立数值重算。"
+      ],
+      "verification_status": "update_text_verified",
+      "updates": [
+        {
+          "relation": "erratum_of",
+          "id": "cruickshank1999",
+          "note": "Read this update with its original article; apply only the changes stated in the verified notice."
+        }
+      ],
+      "fulltext_review": {
+        "version": "Acta Crystallographica Section D 55 (1999), p. 1108 的 IUCr 单页勘误。",
+        "reviewed_pdf_pages": [
+          1
+        ],
+        "coverage": "审读并渲染唯一页面，逐项核对文字说明、公式和图注更正。",
+        "unresolved": [],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 1,
+        "pdf_sha256": "c6d45701ca2dda508625943de89ed6201768f14d15bfb07f4ce3eba65c85d054",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "polder2017",
+      "doi": "10.1107/s2059798316018210",
+      "title": "Polder maps: improving OMIT maps by excluding bulk solvent",
+      "authors": [
+        {
+          "given": "Dorothee",
+          "family": "Liebschner"
+        },
+        {
+          "given": "Pavel V.",
+          "family": "Afonine"
+        },
+        {
+          "given": "Nigel W.",
+          "family": "Moriarty"
+        },
+        {
+          "given": "Billy K.",
+          "family": "Poon"
+        },
+        {
+          "given": "Oleg V.",
+          "family": "Sobolev"
+        },
+        {
+          "given": "Thomas C.",
+          "family": "Terwilliger"
+        },
+        {
+          "given": "Paul D.",
+          "family": "Adams"
+        }
+      ],
+      "journal": "Acta Crystallographica Section D Structural Biology",
+      "year": 2017,
+      "volume": "73",
+      "issue": "2",
+      "pages": "148-157",
+      "url": "https://doi.org/10.1107/s2059798316018210",
+      "topics": [
+        "xray",
+        "ligand-density",
+        "data-processing-and-bias"
+      ],
+      "role": [
+        "validation"
+      ],
+      "cited_by_count": 706,
+      "openalex_url": "https://openalex.org/W2585093856",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1107%2FS2059798316018210"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1107/S2059798316018210",
+          "location": "出版元题名页、摘要与 DOI 元数据",
+          "what_verified": "核对题名、DOI、Acta Crystallographica D 73 (2017)；附件为期刊排版论文，不是预印本或作者接受稿标注版本。",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1107/S2059798316018210",
+          "location": "方法与限制 §3.1.2、§5；Fig. 2、Table 2、相关验证图",
+          "what_verified": "polder 排除 bulk solvent 的 OMIT 原理；虚构/零占有率配体在 bulk-solvent 区仍会出现顺着模型轮廓的正密度；比较图说明密度可能反映 bulk solvent 而非配体。论文讨论了拥挤口袋、低分辨率和无序造成的误判边界。",
+          "pdf_pages": [
+            2,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "scope": "核对 X-ray polder/OMIT 原理、示例、比较结果和误判限制；修订了配体密度审计中的 polder 假阳性提示。",
+      "limitations": [
+        "结论是 X-ray 晶体学方法和该文展示的案例；不能当作配体身份的独立证明。",
+        "未用原始反射数据重新计算图，也未在其他结构上独立运行软件。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "2017 年期刊排版版（Acta Cryst D 73:148–157）；PDF 首页有期刊卷页和 DOI，未标为 AAM/preprint。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "coverage": "审读摘要、方法、配体案例、验证比较、讨论与结论；重点阅读 §3.1.2、§5、Fig. 2 与 Table 2，并渲染查看 PDF p2、p7–p8 等关键图表页。",
+        "unresolved": [
+          "未实质审读 PDF p10 的参考文献页；未重新处理原始衍射数据。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 10,
+        "pdf_sha256": "fb5783104f11b9b2a84da91148174929f2bd66d5e64927ecedfb01d489f7e293",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "pintilie2020",
+      "doi": "10.1038/s41592-020-0731-1",
+      "title": "Measurement of atom resolvability in cryo-EM maps with Q-scores",
+      "authors": [
+        {
+          "given": "Grigore",
+          "family": "Pintilie"
+        },
+        {
+          "given": "Kaiming",
+          "family": "Zhang"
+        },
+        {
+          "given": "Zhaoming",
+          "family": "Su"
+        },
+        {
+          "given": "Shanshan",
+          "family": "Li"
+        },
+        {
+          "given": "Michael F.",
+          "family": "Schmid"
+        },
+        {
+          "given": "Wah",
+          "family": "Chiu"
+        }
+      ],
+      "journal": "Nature Methods",
+      "year": 2020,
+      "volume": "17",
+      "issue": "3",
+      "pages": "328-334",
+      "url": "https://doi.org/10.1038/s41592-020-0731-1",
+      "topics": [
+        "cryo-em",
+        "ligand-density",
+        "model-validation"
+      ],
+      "role": [
+        "validation"
+      ],
+      "cited_by_count": 462,
+      "openalex_url": "https://openalex.org/W3005016287",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1038%2Fs41592-020-0731-1"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1038/s41592-020-0731-1",
+          "location": "出版元题名页、卷期页码与 DOI 元数据",
+          "what_verified": "核对题名、DOI、Nature Methods 17:328–334 (2020)；附件为期刊正式出版排版版。",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1038/s41592-020-0731-1",
+          "location": "Q-score 定义/方法与 Results 正文 “Q-scores of atoms in proteins”；Fig. 3、Fig. 6；Discussion 和限制",
+          "what_verified": "Q-score 是已拟合原子周围 map 径向 profile 与参考 Gaussian（σ=0.6 Å）的相关；它量化可解析性而非配体化学。Fig. 3 展示 Q-score 可在所示 contour 下仍偏高，即使原子没有被可视化表面包围。正文 PDF p3 报告 sharpening 可提高可见细节与 Q-score，但过度 sharpening 后 Q-score 下降；正文把后者指向 Supplementary Fig. 5，本次仅核了正文表述，未独立取得或检查该补图。文章也讨论 X-ray 与 cryo-EM ADP/B-factor 解释差异和局限。",
+          "pdf_pages": [
+            2,
+            3,
+            4,
+            6,
+            8
+          ]
+        }
+      ],
+      "scope": "核对 Q-score 定义、方法、图示、用途及适用边界；用于限定原子可解析性分数的含义。",
+      "limitations": [
+        "该分数依赖已拟合模型的位置，不判断配体化学身份或立体化学。",
+        "文章结果和讨论来自其测试地图与数据；不据此设跨数据集通用阈值。",
+        "过度 sharpening 降低 Q-score 的说法在正文 PDF p3 有明确陈述；正文指向 Supplementary Fig. 5，但附件未含该补图，本次未独立核验补图。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "2020 年期刊正式出版版（Nature Methods 17:328–334）；附件 PDF p9–p10 是 Nature Research Reporting Summary 第 1–2 页，并非论文正文或 Supplementary Fig. 5。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "coverage": "审读正文摘要、Q-score 定义与方法、主要结果、Fig. 2/3/6、讨论及限制；渲染检查正文 PDF p2、p3、p4、p6 的关键图示和 sharpening 正文描述，并渲染核对 p9–p10 为 Nature Research Reporting Summary 第 1–2 页。",
+        "unresolved": [
+          "PDF p9–p10 为期刊附带的 Nature Research Reporting Summary，不是正文或补充图。",
+          "附件未含 Supplementary Information；Supplementary Fig. 5 未独立取得或视读。正文 PDF p3 确实陈述过度 sharpening 会使 Q-score 下降，但图示本身未核验。",
+          "未从原始地图独立重算 Q-score。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 10,
+        "pdf_sha256": "472dcad60de72670190039120111838e507ffcd6aab506501176110216c93543",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "ligand-challenge2024",
+      "doi": "10.1038/s41592-024-02321-7",
+      "title": "Outcomes of the EMDataResource cryo-EM Ligand Modeling Challenge",
+      "authors": [
+        {
+          "given": "Catherine L.",
+          "family": "Lawson"
+        },
+        {
+          "given": "Andriy",
+          "family": "Kryshtafovych"
+        },
+        {
+          "given": "Grigore D.",
+          "family": "Pintilie"
+        },
+        {
+          "given": "Stephen K.",
+          "family": "Burley"
+        },
+        {
+          "given": "Jiří",
+          "family": "Černý"
+        },
+        {
+          "given": "Vincent B.",
+          "family": "Chen"
+        },
+        {
+          "given": "Paul",
+          "family": "Emsley"
+        },
+        {
+          "given": "Alberto",
+          "family": "Gobbi"
+        },
+        {
+          "given": "Andrzej",
+          "family": "Joachimiak"
+        },
+        {
+          "given": "Sigrid",
+          "family": "Noreng"
+        },
+        {
+          "given": "Michael G.",
+          "family": "Prisant"
+        },
+        {
+          "given": "Randy J.",
+          "family": "Read"
+        },
+        {
+          "given": "Jane S.",
+          "family": "Richardson"
+        },
+        {
+          "given": "Alexis L.",
+          "family": "Rohou"
+        },
+        {
+          "given": "Bohdan",
+          "family": "Schneider"
+        },
+        {
+          "given": "Benjamin D.",
+          "family": "Sellers"
+        },
+        {
+          "given": "Chenghua",
+          "family": "Shao"
+        },
+        {
+          "given": "Elizabeth",
+          "family": "Sourial"
+        },
+        {
+          "given": "Chris I.",
+          "family": "Williams"
+        },
+        {
+          "given": "Christopher J.",
+          "family": "Williams"
+        },
+        {
+          "given": "Ying",
+          "family": "Yang"
+        },
+        {
+          "given": "Venkat",
+          "family": "Abbaraju"
+        },
+        {
+          "given": "Pavel V.",
+          "family": "Afonine"
+        },
+        {
+          "given": "Matthew L.",
+          "family": "Baker"
+        },
+        {
+          "given": "Paul S.",
+          "family": "Bond"
+        },
+        {
+          "given": "Tom L.",
+          "family": "Blundell"
+        },
+        {
+          "given": "Tom",
+          "family": "Burnley"
+        },
+        {
+          "given": "Arthur",
+          "family": "Campbell"
+        },
+        {
+          "given": "Renzhi",
+          "family": "Cao"
+        },
+        {
+          "given": "Jianlin",
+          "family": "Cheng"
+        },
+        {
+          "given": "Grzegorz",
+          "family": "Chojnowski"
+        },
+        {
+          "given": "K. D.",
+          "family": "Cowtan"
+        },
+        {
+          "given": "Frank",
+          "family": "DiMaio"
+        },
+        {
+          "given": "Reza",
+          "family": "Esmaeeli"
+        },
+        {
+          "given": "Nabin",
+          "family": "Giri"
+        },
+        {
+          "given": "Helmut",
+          "family": "Grubmüller"
+        },
+        {
+          "given": "Soon Wen",
+          "family": "Hoh"
+        },
+        {
+          "given": "Jie",
+          "family": "Hou"
+        },
+        {
+          "given": "Corey F.",
+          "family": "Hryc"
+        },
+        {
+          "given": "Carola",
+          "family": "Hunte"
+        },
+        {
+          "given": "Maxim",
+          "family": "Igaev"
+        },
+        {
+          "given": "Agnel P.",
+          "family": "Joseph"
+        },
+        {
+          "given": "Wei-Chun",
+          "family": "Kao"
+        },
+        {
+          "given": "Daisuke",
+          "family": "Kihara"
+        },
+        {
+          "given": "Dilip",
+          "family": "Kumar"
+        },
+        {
+          "given": "Lijun",
+          "family": "Lang"
+        },
+        {
+          "given": "Sean",
+          "family": "Lin"
+        },
+        {
+          "given": "Sai R.",
+          "family": "Maddhuri Venkata Subramaniya"
+        },
+        {
+          "given": "Sumit",
+          "family": "Mittal"
+        },
+        {
+          "given": "Arup",
+          "family": "Mondal"
+        },
+        {
+          "given": "Nigel W.",
+          "family": "Moriarty"
+        },
+        {
+          "given": "Andrew",
+          "family": "Muenks"
+        },
+        {
+          "given": "Garib N.",
+          "family": "Murshudov"
+        },
+        {
+          "given": "Robert A.",
+          "family": "Nicholls"
+        },
+        {
+          "given": "Mateusz",
+          "family": "Olek"
+        },
+        {
+          "given": "Colin M.",
+          "family": "Palmer"
+        },
+        {
+          "given": "Alberto",
+          "family": "Perez"
+        },
+        {
+          "given": "Emmi",
+          "family": "Pohjolainen"
+        },
+        {
+          "given": "Karunakar R.",
+          "family": "Pothula"
+        },
+        {
+          "given": "Christopher N.",
+          "family": "Rowley"
+        },
+        {
+          "given": "Daipayan",
+          "family": "Sarkar"
+        },
+        {
+          "given": "Luisa U.",
+          "family": "Schäfer"
+        },
+        {
+          "given": "Christopher J.",
+          "family": "Schlicksup"
+        },
+        {
+          "given": "Gunnar F.",
+          "family": "Schröder"
+        },
+        {
+          "given": "Mrinal",
+          "family": "Shekhar"
+        },
+        {
+          "given": "Dong",
+          "family": "Si"
+        },
+        {
+          "given": "Abhishek",
+          "family": "Singharoy"
+        },
+        {
+          "given": "Oleg V.",
+          "family": "Sobolev"
+        },
+        {
+          "given": "Genki",
+          "family": "Terashi"
+        },
+        {
+          "given": "Andrea C.",
+          "family": "Vaiana"
+        },
+        {
+          "given": "Sundeep C.",
+          "family": "Vedithi"
+        },
+        {
+          "given": "Jacob",
+          "family": "Verburgt"
+        },
+        {
+          "given": "Xiao",
+          "family": "Wang"
+        },
+        {
+          "given": "Rangana",
+          "family": "Warshamanage"
+        },
+        {
+          "given": "Martyn D.",
+          "family": "Winn"
+        },
+        {
+          "given": "Simone",
+          "family": "Weyand"
+        },
+        {
+          "given": "Keitaro",
+          "family": "Yamashita"
+        },
+        {
+          "given": "Minglei",
+          "family": "Zhao"
+        },
+        {
+          "given": "Michael F.",
+          "family": "Schmid"
+        },
+        {
+          "given": "Helen M.",
+          "family": "Berman"
+        },
+        {
+          "given": "Wah",
+          "family": "Chiu"
+        }
+      ],
+      "journal": "Nature Methods",
+      "year": 2024,
+      "volume": "21",
+      "issue": "7",
+      "pages": "1340-1348",
+      "url": "https://doi.org/10.1038/s41592-024-02321-7",
+      "topics": [
+        "cryo-em",
+        "ligand-density",
+        "model-validation"
+      ],
+      "role": [
+        "validation",
+        "current-consensus"
+      ],
+      "cited_by_count": 19,
+      "openalex_url": "https://openalex.org/W4400007706",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1038%2Fs41592-024-02321-7"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1038/s41592-024-02321-7",
+          "location": "出版元文章记录与附件 AAM 首页",
+          "what_verified": "核对准确题名与 DOI；出版元记录确认 Version of Record 于 2024-06-25 在线发表，Nature Methods 21:1340–1348（2024 年 7 月期）。附件首页标为 peer-reviewed author accepted manuscript；本次实际审读的是 AAM。",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1038/s41592-024-02321-7",
+          "location": "正文方法/讨论/Recommendations；Fig. 2–5；Tables 1–3；Extended Data Figs. 2–5",
+          "what_verified": "核对三项近原子分辨率 cryo-EM 挑战靶标、指标相互独立及复合评估建议；Fig. 2 三个靶标使用不同 contour（2.3σ、2.6σ、3.7σ）；PTQ 两种翻转构象密度未能区分；F86 与邻近碱基对密度约为相邻碱基对的一半，Extended Data Fig. 4B 据此解释约 50% occupancy；PEE 脂质尾部密度无序，作者提出 ensemble 可能比单一姿势更有意义。",
+          "pdf_pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            27,
+            28,
+            29,
+            30
+          ]
+        }
+      ],
+      "scope": "核对挑战设计、配体局部密度与拟合、几何/接触指标、替代姿势、占有率示例和作者建议；纠正配体密度参考中的图号。",
+      "limitations": [
+        "挑战仅包含三个高分辨率靶标；其排序、示例和建议不能当作普遍阈值或对所有 cryo-EM 分辨率范围的验证。",
+        "半强度密度到约 50% occupancy 是该 F86 个案的作者解释，不是通用校准公式。",
+        "本次读的是 AAM；虽然核对了出版元 VOR 元数据，未逐行比较 AAM 与 VOR。未对提交坐标、原始 map 或 Supplementary Data 重新计算。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "作者接受稿（AAM，PDF 首页明确标示）；出版元 VOR 元数据为 2024-06-25 在线发表、Nature Methods 21:1340–1348。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          27,
+          28,
+          29,
+          30
+        ],
+        "coverage": "审读摘要、引言、挑战方法、结果、讨论、Recommendations 与限制；查看 Tables 1–3、Fig. 2–5、Extended Data Figs. 2–5；渲染查看 PDF p18–p21、p25、p27–p30 的关键图表。",
+        "unresolved": [
+          "未逐行比对 AAM 与 VOR。",
+          "未重新分析补充数据、参与者坐标、实验地图或其处理过程。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 38,
+        "pdf_sha256": "bd035f10347e7c6b4fdbf1973eb87f4967e9f8e42b62ac239ebe845abb7ecb0d",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "iupac2011",
+      "doi": "10.1351/pac-rec-10-01-02",
+      "title": "Definition of the hydrogen bond (IUPAC Recommendations 2011)",
+      "authors": [
+        {
+          "given": "Elangannan",
+          "family": "Arunan"
+        },
+        {
+          "given": "Gautam R.",
+          "family": "Desiraju"
+        },
+        {
+          "given": "Roger A.",
+          "family": "Klein"
+        },
+        {
+          "given": "Joanna",
+          "family": "Sadlej"
+        },
+        {
+          "given": "Steve",
+          "family": "Scheiner"
+        },
+        {
+          "given": "Ibon",
+          "family": "Alkorta"
+        },
+        {
+          "given": "David C.",
+          "family": "Clary"
+        },
+        {
+          "given": "Robert H.",
+          "family": "Crabtree"
+        },
+        {
+          "given": "Joseph J.",
+          "family": "Dannenberg"
+        },
+        {
+          "given": "Pavel",
+          "family": "Hobza"
+        },
+        {
+          "given": "Henrik G.",
+          "family": "Kjaergaard"
+        },
+        {
+          "given": "Anthony C.",
+          "family": "Legon"
+        },
+        {
+          "given": "Benedetta",
+          "family": "Mennucci"
+        },
+        {
+          "given": "David J.",
+          "family": "Nesbitt"
+        }
+      ],
+      "journal": "Pure and Applied Chemistry",
+      "year": 2011,
+      "volume": "83",
+      "issue": "8",
+      "pages": "1637-1641",
+      "url": "https://doi.org/10.1351/pac-rec-10-01-02",
+      "topics": [
+        "terminology",
+        "model-validation"
+      ],
+      "role": [
+        "foundation",
+        "current-consensus"
+      ],
+      "cited_by_count": 1984,
+      "openalex_url": "https://openalex.org/W2053227378",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1351%2FPAC-REC-10-01-02"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1351/PAC-REC-10-01-02",
+          "location": "IUPAC 出版页、题名页与 DOI 元数据",
+          "what_verified": "核对题名、IUPAC Recommendations 2011、DOI、Pure Appl. Chem. 83:1637–1641 (2011)；附件为期刊排版版。",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1351/PAC-REC-10-01-02",
+          "location": "定义与氢键存在判据 E1–E6、脚注和方向性讨论",
+          "what_verified": "氢键定义要求有证据支持键形成；供体为 X—H，受体为原子或基团；短距离和近线性是典型特征而非单一普适硬阈值，证据可来自实验、理论或两者。",
+          "pdf_pages": [
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "scope": "核对氢键定义、供体/受体定义、方向性和证据标准，用于审慎表述结构模型中的氢键。",
+      "limitations": [
+        "该建议是氢键的一般化学定义，不要求每条生物大分子模型中的氢键都直接解析氢原子；具体结构判断仍需依赖局部化学和模型几何。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "IUPAC Recommendations 2011 的期刊正式版，Pure Appl. Chem. 83:1637–1641。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "coverage": "审读题名页、定义、氢键判据、供体/受体定义、方向性说明与相关脚注；渲染检查 PDF p2 的定义页。",
+        "unresolved": [
+          "PDF p5 参考文献页未作实质性阅读。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 5,
+        "pdf_sha256": "f1a297a5f02de1aa46158983d003f54a436f9e09f200dff2a729037ca994e7ad",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "cmm2017",
+      "doi": "10.1107/s2059798317001061",
+      "title": "CheckMyMetal : a macromolecular metal-binding validation tool",
+      "authors": [
+        {
+          "given": "Heping",
+          "family": "Zheng"
+        },
+        {
+          "given": "David R.",
+          "family": "Cooper"
+        },
+        {
+          "given": "Przemyslaw J.",
+          "family": "Porebski"
+        },
+        {
+          "given": "Ivan G.",
+          "family": "Shabalin"
+        },
+        {
+          "given": "Katarzyna B.",
+          "family": "Handing"
+        },
+        {
+          "given": "Wladek",
+          "family": "Minor"
+        }
+      ],
+      "journal": "Acta Crystallographica Section D Structural Biology",
+      "year": 2017,
+      "volume": "73",
+      "issue": "3",
+      "pages": "223-233",
+      "url": "https://doi.org/10.1107/s2059798317001061",
+      "topics": [
+        "terminology",
+        "model-validation",
+        "ligand-density"
+      ],
+      "role": [
+        "validation"
+      ],
+      "cited_by_count": 352,
+      "openalex_url": "https://openalex.org/W2589875042",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1107%2FS2059798317001061"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1107/S2059798317001061",
+          "location": "出版元题名页、摘要与 DOI 元数据",
+          "what_verified": "核对题名、DOI、Acta Crystallographica D 73:223–233 (2017)；附件为期刊排版论文。",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1107/S2059798317001061",
+          "location": "方法、Mg 位点案例和讨论；Fig. 2、Tables 1–2",
+          "what_verified": "CMM 结合位点化学、价态、配位数、几何和键价进行金属位点检查；Mg—O 约 2.08 Å 与近八面体几何是典型预期但距离不能单独定元素。论文中的 Mg→Na 案例展示仅靠相近距离会错指；文中报告的 CCP4 library 2.18 Å Mg—O restraint 是当时默认值，不能视为当前库值。",
+          "pdf_pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ],
+      "scope": "核对 CheckMyMetal 的指标、Mg 配位化学、替代元素案例、X-ray 专用指标与文中 restraint 历史值。",
+      "limitations": [
+        "文中报告的 2.18 Å 默认 restraint 是 2017 年背景，不能外推为当前 refinement dictionary 的数值。",
+        "CMM 2017 的指标和案例不替代具体结构的实验密度、样品组成、精修设置与替代离子检查。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Acta Cryst D 73 (2017) 期刊正式排版版，pp. 223–233。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "coverage": "审读摘要、方法、指标定义、金属配位化学、案例、limitations/discussion 与结论；渲染查看 PDF p4–p5 的配位示例和表格。",
+        "unresolved": [
+          "PDF p11 参考文献页未作实质性阅读。",
+          "未在当前 refinement 软件/字典中核查 restraint 值，也未对任何具体金属位点重新运行 CMM。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 11,
+        "pdf_sha256": "8b863b8fe7649a736e658c6504ea35e2ed4beb94dfc3db5db450702c7bbc515e",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "leonarski2017",
+      "doi": "10.1093/nar/gkw1175",
+      "title": "Mg2+ions: do they bind to nucleobase nitrogens?",
+      "authors": [
+        {
+          "given": "Filip",
+          "family": "Leonarski"
+        },
+        {
+          "given": "Luigi",
+          "family": "D'Ascenzo"
+        },
+        {
+          "given": "Pascal",
+          "family": "Auffinger"
+        }
+      ],
+      "journal": "Nucleic Acids Research",
+      "year": 2017,
+      "volume": "45",
+      "issue": "2",
+      "pages": "987-1004",
+      "url": "https://doi.org/10.1093/nar/gkw1175",
+      "topics": [
+        "terminology",
+        "model-validation",
+        "ligand-density"
+      ],
+      "role": [
+        "scope-boundary",
+        "dispute"
+      ],
+      "cited_by_count": 107,
+      "openalex_url": "https://openalex.org/W2574750764",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1093%2Fnar%2Fgkw1175"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1093/nar/gkw1175",
+          "location": "出版元题名页、卷期页码与 DOI 元数据",
+          "what_verified": "核对题名、DOI、Nucleic Acids Research 45(2):987–1004 (2017)；附件为正式出版排版版。",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1093/nar/gkw1175",
+          "location": "Abstract、PDB survey 的方法/结果、Discussion 与结论；检查表和关键图表",
+          "what_verified": "调查范围是截至 2016 年 5 月、分辨率 ≤3 Å 的核酸 PDB 结构中 Mg²⁺与核碱基亚胺 N1/N3/N7 的直接内层接触；不是所有核酸 Mg 位点，也未评估水介导的外层 Mg—N7 接触。作者讨论了替代离子、样品缓冲液、精修 restraint 和分类不确定性。",
+          "pdf_pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "scope": "核对该核酸 Mg²⁺直接配位调查的问题范围、数据快照、判据、结果、误指风险与结论边界；渲染查看关键结构例图及作者 checklist。",
+      "limitations": [
+        "结果限于论文采用的核酸结构快照、分辨率筛选和 N1/N3/N7 直接内层接触问题，不应推广至蛋白位点或全部 Mg 配位模式。",
+        "论文调查结果是文献/PDB 再评估，不代表本次对每个沉积结构的 map 与原始实验数据独立复核。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Nucleic Acids Research 45(2) (2017) 期刊正式版，pp. 987–1004。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "coverage": "审读摘要、调查范围与方法、结果、限制和讨论/结论；查看 PDF p4–p5 的关键图表与 p14–p15 检查表。",
+        "unresolved": [
+          "PDF p16–p18 参考文献未作实质性阅读；补充材料和论文提及的个别结构未重新分析。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 18,
+        "pdf_sha256": "c496288bd0e1462ecf65e29e12baf0a5de5930de3f364dfa7c1e6873a109f227",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "molprobity2018",
+      "doi": "10.1002/pro.3330",
+      "title": "MolProbity: More and better reference data for improved all‐atom structure validation",
+      "authors": [
+        {
+          "given": "Christopher J.",
+          "family": "Williams"
+        },
+        {
+          "given": "Jeffrey J.",
+          "family": "Headd"
+        },
+        {
+          "given": "Nigel W.",
+          "family": "Moriarty"
+        },
+        {
+          "given": "Michael G.",
+          "family": "Prisant"
+        },
+        {
+          "given": "Lizbeth L.",
+          "family": "Videau"
+        },
+        {
+          "given": "Lindsay N.",
+          "family": "Deis"
+        },
+        {
+          "given": "Vishal",
+          "family": "Verma"
+        },
+        {
+          "given": "Daniel A.",
+          "family": "Keedy"
+        },
+        {
+          "given": "Bradley J.",
+          "family": "Hintze"
+        },
+        {
+          "given": "Vincent B.",
+          "family": "Chen"
+        },
+        {
+          "given": "Swati",
+          "family": "Jain"
+        },
+        {
+          "given": "Steven M.",
+          "family": "Lewis"
+        },
+        {
+          "given": "W. Bryan",
+          "family": "Arendall"
+        },
+        {
+          "given": "Jack",
+          "family": "Snoeyink"
+        },
+        {
+          "given": "Paul D.",
+          "family": "Adams"
+        },
+        {
+          "given": "Simon C.",
+          "family": "Lovell"
+        },
+        {
+          "given": "Jane S.",
+          "family": "Richardson"
+        },
+        {
+          "given": "David C.",
+          "family": "Richardson"
+        }
+      ],
+      "journal": "Protein Science",
+      "year": 2018,
+      "volume": "27",
+      "issue": "1",
+      "pages": "293-315",
+      "url": "https://doi.org/10.1002/pro.3330",
+      "topics": [
+        "model-validation",
+        "xray"
+      ],
+      "role": [
+        "foundation",
+        "validation"
+      ],
+      "cited_by_count": 5172,
+      "openalex_url": "https://openalex.org/W2765322245",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1002%2Fpro.3330"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1002/pro.3330",
+          "location": "Protein Science 27, pp. 302、305–306、308、310–312；“Cis or twisted non-trans peptides”、Fig. 9、局部质量讨论与方法（PDF pp. 10、13–14、16、18–20）",
+          "what_verified": "核对 DOI、题名、卷页和期刊论文版本；正文报告脯氨酸 cis 肽键比例约 5%、非脯氨酸 cis 约 0.03%，并指出偏离平面超过 30° 的扭曲肽键几乎总应视为建模错误。作者同时说明罕见构象须结合局部证据，且 MolProbity 是基于坐标的验证工具，本身不做 model-to-data 验证。",
+          "pdf_pages": [
+            1,
+            10,
+            13,
+            14,
+            16,
+            18,
+            19,
+            20
+          ]
+        }
+      ],
+      "scope": "MolProbity 几何与肽键验证依据、局部异常解释及其不提供实验数据拟合验证的边界。",
+      "limitations": [
+        "补充材料中氢原子定位等更详细的方法未审读。",
+        "正文讨论的几何参照与坐标检查不能单独确认密度拟合或构象的生物学真实性。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Protein Science 27(1) (2018), 293–315 的期刊排版版；首页显示 DOI 和在线发表信息。",
+        "reviewed_pdf_pages": [
+          1,
+          10,
+          13,
+          14,
+          16,
+          18,
+          19,
+          20
+        ],
+        "coverage": "阅读方法概述、肽键顺反异构/扭曲肽键、局部质量讨论、MolProbity 的验证范围及参考数据方法相关部分。",
+        "unresolved": [
+          "未逐页审读 23 页全文；补充材料未审读。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 23,
+        "pdf_sha256": "231945dc51811cd1dba048a6143e6c515eca11691f18dc4bfc14d3bab75835b0",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "read2011",
+      "doi": "10.1016/j.str.2011.08.006",
+      "title": "A New Generation of Crystallographic Validation Tools for the Protein Data Bank",
+      "authors": [
+        {
+          "given": "Randy J.",
+          "family": "Read"
+        },
+        {
+          "given": "Paul D.",
+          "family": "Adams"
+        },
+        {
+          "given": "W. Bryan",
+          "family": "Arendall"
+        },
+        {
+          "given": "Axel T.",
+          "family": "Brunger"
+        },
+        {
+          "given": "Paul",
+          "family": "Emsley"
+        },
+        {
+          "given": "Robbie P.",
+          "family": "Joosten"
+        },
+        {
+          "given": "Gerard J.",
+          "family": "Kleywegt"
+        },
+        {
+          "given": "Eugene B.",
+          "family": "Krissinel"
+        },
+        {
+          "given": "Thomas",
+          "family": "Lütteke"
+        },
+        {
+          "given": "Zbyszek",
+          "family": "Otwinowski"
+        },
+        {
+          "given": "Anastassis",
+          "family": "Perrakis"
+        },
+        {
+          "given": "Jane S.",
+          "family": "Richardson"
+        },
+        {
+          "given": "William H.",
+          "family": "Sheffler"
+        },
+        {
+          "given": "Janet L.",
+          "family": "Smith"
+        },
+        {
+          "given": "Ian J.",
+          "family": "Tickle"
+        },
+        {
+          "given": "Gert",
+          "family": "Vriend"
+        },
+        {
+          "given": "Peter H.",
+          "family": "Zwart"
+        }
+      ],
+      "journal": "Structure",
+      "year": 2011,
+      "volume": "19",
+      "issue": "10",
+      "pages": "1395-1412",
+      "url": "https://doi.org/10.1016/j.str.2011.08.006",
+      "topics": [
+        "xray",
+        "model-validation"
+      ],
+      "role": [
+        "foundation",
+        "current-consensus"
+      ],
+      "cited_by_count": 480,
+      "openalex_url": "https://openalex.org/W2124464974",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1016%2Fj.str.2011.08.006"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1016/j.str.2011.08.006",
+          "location": "Structure 19, pp. 1396–1401、1404–1405、1407–1410；几何约束与 Fig. 1–3、Rfree/RSR/RSCC、Fig. 6C 与 Table 4（PDF pp. 2–7、10–11、13–16）",
+          "what_verified": "核对文章题名、作者、DOI 与出版信息；审读低分辨率约束与局部构象例子、Rfree flags 与对称性/孪晶兼容性、全局 Rfree 与局部 RSR/RSCC 的区别，以及逐残基质量报告和 Table 4。",
+          "pdf_pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            10,
+            11,
+            13,
+            14,
+            15,
+            16
+          ]
+        }
+      ],
+      "scope": "模型验证指标、几何约束、交叉验证 flags 与局部报告的用途和边界。",
+      "limitations": [
+        "只审读与引用主张相关的章节和图表，未逐页审读完整 18 页文章。",
+        "本文讨论的是验证工具和实践建议；未核验特定 PDB 模型的 flags 或验证报告。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Structure 19 (2011), 1395–1412 的 Elsevier 期刊版。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          10,
+          11,
+          13,
+          14,
+          15,
+          16
+        ],
+        "coverage": "核对题名页，阅读 pp. 1396–1401 关于模型几何和构象、pp. 1404–1405 关于 Rfree/局部拟合指标、pp. 1407–1410 关于局部报告；重点检查相关图示和 Table 4。",
+        "unresolved": [
+          "未审读全文其他章节、PDF pp. 8–9、12、17–18 及补充材料。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 18,
+        "pdf_sha256": "4409b772789e564d6b337d315fcddb4cc476446332e629e377bad2b8ac22074b",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "afonine2018",
+      "doi": "10.1107/s2059798318009324",
+      "title": "New tools for the analysis and validation of cryo-EM maps and atomic models",
+      "authors": [
+        {
+          "given": "Pavel V.",
+          "family": "Afonine"
+        },
+        {
+          "given": "Bruno P.",
+          "family": "Klaholz"
+        },
+        {
+          "given": "Nigel W.",
+          "family": "Moriarty"
+        },
+        {
+          "given": "Billy K.",
+          "family": "Poon"
+        },
+        {
+          "given": "Oleg V.",
+          "family": "Sobolev"
+        },
+        {
+          "given": "Thomas C.",
+          "family": "Terwilliger"
+        },
+        {
+          "given": "Paul D.",
+          "family": "Adams"
+        },
+        {
+          "given": "Alexandre",
+          "family": "Urzhumtsev"
+        }
+      ],
+      "journal": "Acta Crystallographica Section D Structural Biology",
+      "year": 2018,
+      "volume": "74",
+      "issue": "9",
+      "pages": "814-840",
+      "url": "https://doi.org/10.1107/s2059798318009324",
+      "topics": [
+        "cryo-em",
+        "model-validation",
+        "ligand-density"
+      ],
+      "role": [
+        "validation"
+      ],
+      "cited_by_count": 879,
+      "openalex_url": "https://openalex.org/W2791670278",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1107%2FS2059798318009324"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1107/S2059798318009324",
+          "location": "Acta Cryst. D 74, pp. 814–822、830–834；§§2.1、2.1.1、3.1、3.3–3.5、3.7–3.9、Table 4、Appendix A1（PDF pp. 1–9、17–21）",
+          "what_verified": "核对题名、作者、卷页、DOI 和 IUCr 期刊版；审读作者对数据、模型、拟合三类验证的划分，模型-map 指标对 mask/所选区域的依赖，几何异常与局部 map 证据的关系，以及占位率、ADP、sharpening、multiple models 与 CCmask 的限制。",
+          "pdf_pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            17,
+            18,
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "scope": "cryo-EM 模型验证分类、几何与局部拟合指标的敏感性，以及这些指标可支持的结论边界。",
+      "limitations": [
+        "仅审读所列章节、图表和附录，未逐页审读完整 27 页文章。",
+        "未对 cryo-EM 数据独立重算任何 CC、几何或 refinement 指标。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Acta Crystallographica Section D 74 (2018), 814–840 的 IUCr 期刊版。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "coverage": "阅读导言和验证分类、模型-map 相关方法与几何结果、局部质量/占位率与 sharpening 讨论、Table 4 及 Appendix A1。",
+        "unresolved": [
+          "未审读未列出的章节、图表页与参考文献页。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 27,
+        "pdf_sha256": "7c8bfec06b313e21e92a1dc962693dc9b8513cd7681b56b4acf3d868cc21685a",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "em-challenge2021",
+      "doi": "10.1038/s41592-020-01051-w",
+      "title": "Cryo-EM model validation recommendations based on outcomes of the 2019 EMDataResource challenge",
+      "authors": [
+        {
+          "given": "Catherine L.",
+          "family": "Lawson"
+        },
+        {
+          "given": "Andriy",
+          "family": "Kryshtafovych"
+        },
+        {
+          "given": "Paul D.",
+          "family": "Adams"
+        },
+        {
+          "given": "Pavel V.",
+          "family": "Afonine"
+        },
+        {
+          "given": "Matthew L.",
+          "family": "Baker"
+        },
+        {
+          "given": "Benjamin A.",
+          "family": "Barad"
+        },
+        {
+          "given": "Paul",
+          "family": "Bond"
+        },
+        {
+          "given": "Tom",
+          "family": "Burnley"
+        },
+        {
+          "given": "Renzhi",
+          "family": "Cao"
+        },
+        {
+          "given": "Jianlin",
+          "family": "Cheng"
+        },
+        {
+          "given": "Grzegorz",
+          "family": "Chojnowski"
+        },
+        {
+          "given": "Kevin",
+          "family": "Cowtan"
+        },
+        {
+          "given": "Ken A.",
+          "family": "Dill"
+        },
+        {
+          "given": "Frank",
+          "family": "DiMaio"
+        },
+        {
+          "given": "Daniel P.",
+          "family": "Farrell"
+        },
+        {
+          "given": "James S.",
+          "family": "Fraser"
+        },
+        {
+          "given": "Mark A.",
+          "family": "Herzik"
+        },
+        {
+          "given": "Soon Wen",
+          "family": "Hoh"
+        },
+        {
+          "given": "Jie",
+          "family": "Hou"
+        },
+        {
+          "given": "Li-Wei",
+          "family": "Hung"
+        },
+        {
+          "given": "Maxim",
+          "family": "Igaev"
+        },
+        {
+          "given": "Agnel P.",
+          "family": "Joseph"
+        },
+        {
+          "given": "Daisuke",
+          "family": "Kihara"
+        },
+        {
+          "given": "Dilip",
+          "family": "Kumar"
+        },
+        {
+          "given": "Sumit",
+          "family": "Mittal"
+        },
+        {
+          "given": "Bohdan",
+          "family": "Monastyrskyy"
+        },
+        {
+          "given": "Mateusz",
+          "family": "Olek"
+        },
+        {
+          "given": "Colin M.",
+          "family": "Palmer"
+        },
+        {
+          "given": "Ardan",
+          "family": "Patwardhan"
+        },
+        {
+          "given": "Alberto",
+          "family": "Perez"
+        },
+        {
+          "given": "Jonas",
+          "family": "Pfab"
+        },
+        {
+          "given": "Grigore D.",
+          "family": "Pintilie"
+        },
+        {
+          "given": "Jane S.",
+          "family": "Richardson"
+        },
+        {
+          "given": "Peter B.",
+          "family": "Rosenthal"
+        },
+        {
+          "given": "Daipayan",
+          "family": "Sarkar"
+        },
+        {
+          "given": "Luisa U.",
+          "family": "Schäfer"
+        },
+        {
+          "given": "Michael F.",
+          "family": "Schmid"
+        },
+        {
+          "given": "Gunnar F.",
+          "family": "Schröder"
+        },
+        {
+          "given": "Mrinal",
+          "family": "Shekhar"
+        },
+        {
+          "given": "Dong",
+          "family": "Si"
+        },
+        {
+          "given": "Abishek",
+          "family": "Singharoy"
+        },
+        {
+          "given": "Genki",
+          "family": "Terashi"
+        },
+        {
+          "given": "Thomas C.",
+          "family": "Terwilliger"
+        },
+        {
+          "given": "Andrea",
+          "family": "Vaiana"
+        },
+        {
+          "given": "Liguo",
+          "family": "Wang"
+        },
+        {
+          "given": "Zhe",
+          "family": "Wang"
+        },
+        {
+          "given": "Stephanie A.",
+          "family": "Wankowicz"
+        },
+        {
+          "given": "Christopher J.",
+          "family": "Williams"
+        },
+        {
+          "given": "Martyn",
+          "family": "Winn"
+        },
+        {
+          "given": "Tianqi",
+          "family": "Wu"
+        },
+        {
+          "given": "Xiaodi",
+          "family": "Yu"
+        },
+        {
+          "given": "Kaiming",
+          "family": "Zhang"
+        },
+        {
+          "given": "Helen M.",
+          "family": "Berman"
+        },
+        {
+          "given": "Wah",
+          "family": "Chiu"
+        }
+      ],
+      "journal": "Nature Methods",
+      "year": 2021,
+      "volume": "18",
+      "issue": "2",
+      "pages": "156-164",
+      "url": "https://doi.org/10.1038/s41592-020-01051-w",
+      "topics": [
+        "cryo-em",
+        "model-validation"
+      ],
+      "role": [
+        "validation",
+        "current-consensus"
+      ],
+      "cited_by_count": 122,
+      "openalex_url": "https://openalex.org/W3127623024",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1038%2Fs41592-020-01051-w"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1038/s41592-020-01051-w",
+          "location": "Figure 3d 与图注；printed p. 159; PDF p. 4",
+          "what_verified": "map-to-model FSC=0.5 表示实验图与模型坐标生成图之间的总体拟合/相关指标，和 half-map FSC 属于不同对象。",
+          "pdf_pages": [
+            4
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1038/s41592-020-01051-w",
+          "location": "Results, ‘Evaluating metrics: local scoring’; printed pp. 159–160; PDF pp. 4–5",
+          "what_verified": "挑战结果显示局部拟合指标在单残基和滑动窗口等设定下表现不同，支持针对局部主张解释局部分数，不能由全局评分替代；研究包括特定错配/局部错误案例，不是所有构象的全域验证。",
+          "pdf_pages": [
+            4,
+            5
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1038/s41592-020-01051-w",
+          "location": "Recommendations 1–4；printed pp. 162–163; PDF pp. 7–8",
+          "what_verified": "Recommendations 1–3 讨论 Fit-to-Map 进度评分、单残基评分及对 map background noise 的敏感性；不能把 Methods 的 challenge rule #4 错标成这些 Recommendations。",
+          "pdf_pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1038/s41592-020-01051-w",
+          "location": "Discussion/limitations；printed pp. 160、163; PDF pp. 5、8",
+          "what_verified": "作者明确指出没有评估基于 half-map 的过拟合方法，因此本研究不能作为 half-map 拟合验证已经有效的经验证据。",
+          "pdf_pages": [
+            5,
+            8
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1038/s41592-020-01051-w",
+          "location": "Methods, ‘Challenge process and organization’, challenge rule #4；在线 Methods PDF p. 10（此页无连续期刊印刷页码）",
+          "what_verified": "挑战指南强烈鼓励参赛者拟合未锐化/未加 mask 的 map 或其中一张 half-map。该文字位于 Methods 的 challenge rules，不是 Recommendations 1–3，也不是研究对 half-map 过拟合检验的效果评估。",
+          "pdf_pages": [
+            10
+          ]
+        }
+      ],
+      "scope": "用于模型与图拟合指标、局部分数表现、Recommendations 的精确定位，以及 challenge rule #4 的建议性质和 overfitting 未评估这一限制。",
+      "limitations": [
+        "挑战覆盖四个近原子分辨率 cryo-EM map（约 1.8–3.1 Å）和规定的模型/指标任务；不支持无边界外推。",
+        "PDF p. 9 为参考文献；PDF pp. 11 起为补充/附加内容，本次未全部审读。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "附件为 Nature Methods 已发表排版 PDF（2021；18:156–164），附有在线 Methods/补充页，非 AAM/preprint。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10
+        ],
+        "coverage": "阅读题名、正文相关结果/Discussion、Figure 3d、Recommendations 1–4、明确局限段及 Methods 中 challenge rules；核实 rule #4 与 Recommendations 的版面位置差别。",
+        "unresolved": [
+          "未逐页审读参考文献及 PDF pp. 11–21 的所有补充材料；本次审计结论聚焦正文和 Methods rule #4。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 21,
+        "pdf_sha256": "96f88fe1c7174ad747cc6d823a885906b1208b757b95ef5498e8203efa960dd4",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "checkmysequence2022",
+      "doi": "10.1107/s2059798322005009",
+      "title": "Sequence-assignment validation in cryo-EM models with checkMySequence",
+      "authors": [
+        {
+          "given": "Grzegorz",
+          "family": "Chojnowski"
+        }
+      ],
+      "journal": "Acta Crystallographica Section D Structural Biology",
+      "year": 2022,
+      "volume": "78",
+      "issue": "7",
+      "pages": "806-816",
+      "url": "https://doi.org/10.1107/s2059798322005009",
+      "topics": [
+        "cryo-em",
+        "model-validation"
+      ],
+      "role": [
+        "validation"
+      ],
+      "cited_by_count": 21,
+      "openalex_url": "https://openalex.org/W4281697297",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1107%2FS2059798322005009"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1107/S2059798322005009",
+          "location": "§2, Fig. 1; Model validation with a systematic sequence assignment",
+          "what_verified": "输入为对应 cryo-EM map、坐标模型和各链序列；方法用 map-derived residue-type probabilities 将重叠片段指派到参考序列。作者区分未识别参考序列、指派证据不足、与输入一致和高置信错配所提示的 plausible register error。",
+          "pdf_pages": [
+            2,
+            3
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1107/S2059798322005009",
+          "location": "§§3.1–3.4、4.1–4.2；Figs. 2–5",
+          "what_verified": "基准集筛选为796个 cryo-EM 结构（≤4 Å、<500 kDa、EMDB 可得 half-maps）；作者以片段级统计设定阈值，明言99.5%单侧区间阈值属任意选择。局部分辨率降低会影响片段指派，算法可延长测试片段来补偿。",
+          "pdf_pages": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1107/S2059798322005009",
+          "location": "§§4.5–5；Figs. 7–9",
+          "what_verified": "文中实例使用 map、链序列和模型检查 register；结论指出可检测长度随分辨率而变，通常应超过约10个氨基酸，并可能漏掉短的、被相邻插缺抵消的移位。",
+          "pdf_pages": [
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ],
+      "scope": "Chojnowski, Acta Crystallographica Section D 78 (2022), 806–816；核验了方法、基准、示例和结论中 checkMySequence 对 cryo-EM 模型 register/序列指派的适用范围。",
+      "limitations": [
+        "p-value 是片段序列指派判别的经验统计量，不是“模型错误概率”；低分辨率、输入序列缺失/错误、参考 PDB 本身有 register 错误或过短移位会影响结果。工具提示是可能问题，需回到目标 map、序列和替代模型核验。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Zotero 附件为期刊论文版式 PDF；Acta Cryst. D 78, 806–816 (2022)，DOI、题名、作者和刊期与正文首页吻合。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "coverage": "阅读摘要/引言、方法、benchmark 设定、结果/图注、讨论与结论，重点核验 §2、§§3.1–3.4、§§4.1–4.7 和 Figs. 1–9；PDF p.11 为参考文献。",
+        "unresolved": [
+          "未单独审阅附件外材料或运行软件；未将本论文作为对任何当前目标结构的审定。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 11,
+        "pdf_sha256": "0373671fc85e9a8fb81b9187201f02a566c7cb015469689887b792acb66a141f",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "register-errors2024",
+      "doi": "10.1107/s2052252524009114",
+      "title": "Using deep-learning predictions reveals a large number of register errors in PDB depositions",
+      "authors": [
+        {
+          "given": "Filomeno",
+          "family": "Sánchez Rodríguez"
+        },
+        {
+          "given": "Adam J.",
+          "family": "Simpkin"
+        },
+        {
+          "given": "Grzegorz",
+          "family": "Chojnowski"
+        },
+        {
+          "given": "Ronan M.",
+          "family": "Keegan"
+        },
+        {
+          "given": "Daniel J.",
+          "family": "Rigden"
+        }
+      ],
+      "journal": "IUCrJ",
+      "year": 2024,
+      "volume": "11",
+      "issue": "6",
+      "pages": "938-950",
+      "url": "https://doi.org/10.1107/s2052252524009114",
+      "topics": [
+        "model-validation",
+        "predicted-models"
+      ],
+      "role": [
+        "validation",
+        "scope-boundary"
+      ],
+      "cited_by_count": 8,
+      "openalex_url": "https://openalex.org/W4403284158",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1107%2FS2052252524009114"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1107/S2052252524009114",
+          "location": "§§2.1–2.6；PDB 选择、AF2 接触图预测、contact-map alignment 和替代模型精修",
+          "what_verified": "筛查针对截至2022-04-05、3.0–5.0 Å 的 cryo-EM 和 X-ray PDB 结构；AF2 由同序列簇生成距离/接触预测，conkit-validate 将其与沉积模型接触图对齐，至少连续5个残基的替代 register 才标为 possible error，并过滤低 pLDDT、低接触数及与预测模型差异大的候选。",
+          "pdf_pages": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1107/S2052252524009114",
+          "location": "§§3.1–3.4；Figs. 1–5",
+          "what_verified": "作者结果段报告16,662个条目、2,954个含预测旗标条目及4,606个去冗余 unique predicted errors；高分辨率 counterpart 与替代 register 的 map–model 相关性改善用于交叉支持，但替代区坐标源自 AF2 预测并经同一实验数据 refinement。",
+          "pdf_pages": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1107/S2052252524009114",
+          "location": "§§3.5–3.6；Figs. 6–11；Discussion",
+          "what_verified": "与 map-dependent checkMySequence 的交集有限且受其至少约10残基检出长度限制；Fig. 11 展示 conkit-validate 在人 calcineurin PDB 5c1v 的 fold-switch 假阳性。讨论列出低同源/单例、小型高α螺旋、二硫键和 fold-switch 等局限。",
+          "pdf_pages": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "scope": "Sánchez Rodríguez et al., IUCrJ 11 (2024), 938–950；地图独立的 AF2 contact-map register 筛查；结果范围仅覆盖该文截至2022-04-05选取的3–5 Å cryo-EM/MX PDB 集，不代表全体 PDB 或当前所有分辨率。",
+      "limitations": [
+        "作者将结果称为 predicted/putative errors。筛查依赖 AF2 距离/接触预测且不少同源结构可能参与其训练；替代模型由 AF2 坐标替换片段后经同一实验数据精修，因此统计上的 map-fit 改善是支持证据而非独立模型真值。需要当前目标的序列、局部数据和构象状态复核。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Zotero 附件为 IUCrJ 期刊论文 PDF；IUCrJ 11, 938–950 (2024)，DOI、题名、作者和卷页与正文首页吻合。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "coverage": "阅读摘要/引言、完整可见 Methods §§2.1–2.6、Results §§3.1–3.6、主要图表和讨论/局限；PDF p.13 为参考文献。",
+        "unresolved": [
+          "论文注明 Supplementary Information（包括完整预测列表 Table S1），该独立补充材料未包含在 Zotero PDF 中，未审阅。未对任何单独 PDB 条目重跑筛查。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 13,
+        "pdf_sha256": "95f3f81149d4f7d004db97262d3173db49a96832198501e5625d05af537cb731",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "carugo2001",
+      "doi": "10.1110/ps.690101",
+      "title": "A normalized root‐mean‐spuare distance for comparing protein three‐dimensional structures",
+      "authors": [
+        {
+          "given": "Oliviero",
+          "family": "Carugo"
+        },
+        {
+          "given": "Sándor",
+          "family": "Pongor"
+        }
+      ],
+      "journal": "Protein Science",
+      "year": 2001,
+      "volume": "10",
+      "issue": "7",
+      "pages": "1470-1473",
+      "url": "https://doi.org/10.1110/ps.690101",
+      "topics": [
+        "structure-comparison"
+      ],
+      "role": [
+        "foundation"
+      ],
+      "cited_by_count": 421,
+      "openalex_url": "https://openalex.org/W2063581254",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1110%2Fps.690101"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11420449/",
+          "location": "PDF p. 1 (Protein Science 10(7), 1470–1473); title, authors, DOI, abstract",
+          "what_verified": "PDF title/DOI and bibliographic identity match the citation; the abstract says RMSD depends on the number of equivalent atom pairs.",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11420449/",
+          "location": "PDF p. 2; methods and Fig. 1",
+          "what_verified": "The normalization parameters were fitted from an artificial set based on 180 nonhomologous PDB structures (maximum sequence identity 25%) and 400,000 randomized Cα variants per structure.",
+          "pdf_pages": [
+            2
+          ]
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11420449/",
+          "location": "PDF p. 4 (printed p. 1473), equations 2–5 and discussion",
+          "what_verified": "The size normalization uses equivalent aligned residue count N; authors recommend alignments over 40 residues and say values below 14 make the expression negative. It adjusts size dependence only; it does not establish functional equivalence or correct a bad residue mapping.",
+          "pdf_pages": [
+            4
+          ]
+        }
+      ],
+      "scope": "Normalized RMSD definition, its calibration data, recommended domain and limits.",
+      "limitations": [
+        "The calibration is based on the paper's artificial randomized comparison set; it is not a universal biological similarity threshold.",
+        "No independent reimplementation of equations 2–5 was performed."
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "metadata_notes": [
+        "The Wiley publisher page and Crossref metadata spell the published title “root-mean-spuare”; the source spelling is retained verbatim as supplied by the publisher."
+      ],
+      "fulltext_review": {
+        "version": "Published journal article, Protein Science 10(7), 1470–1473 (2001), DOI 10.1110/ps.690101.",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "coverage": "All four article pages were checked; review focused on the definition, methods, equations 2–5, figures and stated applicability limits. PDF p. 4 was rendered to confirm equation layout.",
+        "unresolved": [],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 4,
+        "pdf_sha256": "8f339ab571848256f9513e01241117bc52b121ef66f4022d7f9de090321be425",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "tmalign2005",
+      "doi": "10.1093/nar/gki524",
+      "title": "TM-align: a protein structure alignment algorithm based on the TM-score",
+      "authors": [
+        {
+          "given": "Yang",
+          "family": "Zhang"
+        },
+        {
+          "given": "Jeffrey",
+          "family": "Skolnick"
+        }
+      ],
+      "journal": "Nucleic Acids Research",
+      "year": 2005,
+      "volume": "33",
+      "issue": "7",
+      "pages": "2302-2309",
+      "url": "https://doi.org/10.1093/nar/gki524",
+      "topics": [
+        "structure-comparison"
+      ],
+      "role": [
+        "foundation"
+      ],
+      "cited_by_count": 4092,
+      "openalex_url": "https://openalex.org/W2102245393",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1093%2Fnar%2Fgki524"
+        },
+        {
+          "provider": "Publisher record (Oxford Academic)",
+          "url": "https://doi.org/10.1093/nar/gki524"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://academic.oup.com/nar/article/33/7/2302/2401364",
+          "location": "PDF p. 1 (Nucleic Acids Research 33(7), 2302–2309), title/DOI/abstract",
+          "what_verified": "The attached article is Zhang and Skolnick's TM-align paper; article identity and DOI match.",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://academic.oup.com/nar/article/33/7/2302/2401364",
+          "location": "PDF pp. 2–3 (printed pp. 2303–2304), Methods and Table 1",
+          "what_verified": "TM-align iteratively optimizes a structure-based residue alignment using TM-score; the paper reports aligned-residue count, target coverage and TM-score, and its score normalization depends on target length.",
+          "pdf_pages": [
+            2,
+            3
+          ]
+        },
+        {
+          "url": "https://academic.oup.com/nar/article/33/7/2302/2401364",
+          "location": "PDF p. 4 (printed p. 2305), threshold discussion; pp. 7–8 (printed pp. 2308–2309), decoy comparisons",
+          "what_verified": "The authors call 0.5 an empirical, structure-modeling-oriented criterion. The paper reports structural analogs for folded and misfolded models, so a close match alone does not validate a model.",
+          "pdf_pages": [
+            4,
+            7,
+            8
+          ]
+        }
+      ],
+      "scope": "TM-align method, score/coverage reporting and how to interpret the paper's 0.5 criterion.",
+      "limitations": [
+        "This is evidence about the 2005 algorithm and the benchmarks in that paper; no current TM-align software behavior was tested.",
+        "The paper's cutoff is not a universal threshold for all comparison tasks."
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "metadata_notes": [
+        "Crossref deposits an incomplete author list (Y. Zhang); full authors were verified on the Oxford Academic publisher record and are recorded here."
+      ],
+      "fulltext_review": {
+        "version": "Published journal article, Nucleic Acids Research 33(7), 2302–2309 (2005), DOI 10.1093/nar/gki524.",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "coverage": "All eight article pages were searched; the method, score definition, coverage table, cutoff rationale and model/decoy results were reviewed.",
+        "unresolved": [],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 8,
+        "pdf_sha256": "26442c7b07e90c5cad7a6689c962a4d13c36ec953dff3f8ae43c4f463c42d883",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "relion2012",
+      "doi": "10.1016/j.jsb.2012.09.006",
+      "title": "RELION: Implementation of a Bayesian approach to cryo-EM structure determination",
+      "authors": [
+        {
+          "given": "Sjors H.W.",
+          "family": "Scheres"
+        }
+      ],
+      "journal": "Journal of Structural Biology",
+      "year": 2012,
+      "volume": "180",
+      "issue": "3",
+      "pages": "519-530",
+      "url": "https://doi.org/10.1016/j.jsb.2012.09.006",
+      "topics": [
+        "cryo-em",
+        "data-processing-and-bias"
+      ],
+      "role": [
+        "foundation"
+      ],
+      "cited_by_count": 6184,
+      "openalex_url": "https://openalex.org/W2104234755",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1016%2Fj.jsb.2012.09.006"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1016/j.jsb.2012.09.006",
+          "location": "§2.1, theoretical background; printed p. 520; PDF p. 2",
+          "what_verified": "模型数 K 在理论中视为已知输入参数，由用户设置同时精修的模型数；论文不称 K 本身能证明离散生物状态。",
+          "pdf_pages": [
+            2
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1016/j.jsb.2012.09.006",
+          "location": "§2.1 起始模型说明；printed pp. 520–521; PDF pp. 2–3；§5 Conclusions; printed p. 529; PDF p. 11",
+          "what_verified": "算法通过局部优化求解并受起始模型影响，起始模型来源是解释处理过程的重要上下文。论文没有规定替代 K、不同初始化、随机种子或粒子子集必须逐项重跑。",
+          "pdf_pages": [
+            2,
+            3,
+            11
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1016/j.jsb.2012.09.006",
+          "location": "Gold-standard refinement/results; printed pp. 526–527; PDF pp. 8–9",
+          "what_verified": "论文描述两个 particle half-sets 分开精修并据 half-map FSC 估计分辨率的流程，为独立 half-set 检查提供方法背景。",
+          "pdf_pages": [
+            8,
+            9
+          ]
+        }
+      ],
+      "scope": "用于说明 K、起始模型、局部优化及 gold-standard half-set 的方法事实；对替代 K/初始化/子集的敏感性审查明确作为按主张触发的审计推论。",
+      "limitations": [
+        "文中没有把替代 K、随机种子或粒子子集重跑规定为通用验证要求；是否检查取决于结论是否依赖类别及是否有数据可用。",
+        "未逐页审读与本审计规则无关的公式、实现细节和所有结果页。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "附件为 Journal of Structural Biology 已发表 Elsevier 出版版 PDF（2012；180:519–530；CC BY），非 AAM/preprint。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11
+        ],
+        "coverage": "核对题名/DOI、§2.1 对 K 和起始模型的说明、gold-standard half-set 结果与 §5 局部优化/起始模型限制；未声称逐页审读全文。",
+        "unresolved": [
+          "PDF pp. 6–7、12 未作全文审读；本次结论不依赖这些页。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 12,
+        "pdf_sha256": "794e352ab0735561c8cb48724d761fb3cdc649944686bf95b0283ed0213fdb9c",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "pisa2007",
+      "doi": "10.1016/j.jmb.2007.05.022",
+      "title": "Inference of Macromolecular Assemblies from Crystalline State",
+      "authors": [
+        {
+          "given": "Evgeny",
+          "family": "Krissinel"
+        },
+        {
+          "given": "Kim",
+          "family": "Henrick"
+        }
+      ],
+      "journal": "Journal of Molecular Biology",
+      "year": 2007,
+      "volume": "372",
+      "issue": "3",
+      "pages": "774-797",
+      "url": "https://doi.org/10.1016/j.jmb.2007.05.022",
+      "topics": [
+        "biological-context",
+        "xray"
+      ],
+      "role": [
+        "foundation"
+      ],
+      "cited_by_count": 10604,
+      "openalex_url": "https://openalex.org/W2035503835",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1016%2Fj.jmb.2007.05.022"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17681537/",
+          "location": "PDF p. 1 (Journal of Molecular Biology 372, 774–797), title, DOI and abstract",
+          "what_verified": "PDF identity matches Krissinel and Henrick's 2007 paper; abstract reports 80–90% biological-unit recovery in the paper's evaluation.",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17681537/",
+          "location": "PDF pp. 2–9 (printed pp. 775–782), crystal-packing assumptions, thermodynamic model and graph-theoretical assembly search",
+          "what_verified": "The described PISA method enumerates assemblies available from crystal contacts and uses interface chemistry/thermodynamics plus search rules to rank candidate stable assemblies; it infers candidates from crystal data rather than measuring solution stoichiometry.",
+          "pdf_pages": [
+            2,
+            3,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17681537/",
+          "location": "PDF pp. 10–11 (printed pp. 783–784), Tables 2–3 and benchmark discussion",
+          "what_verified": "The paper evaluates curated protein–protein and protein–DNA sets; reported rates are benchmark-level results, including a lowest 84% class rate for tetramers in one set and an overall 93% for its protein–DNA set.",
+          "pdf_pages": [
+            10,
+            11
+          ]
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17681537/",
+          "location": "PDF pp. 19–20 (printed pp. 792–793), comparisons and conclusion",
+          "what_verified": "The authors compare assignments and state that temperature, salinity, pH and subunit concentration were intentionally not included in this study's PISA model.",
+          "pdf_pages": [
+            19,
+            20
+          ]
+        }
+      ],
+      "scope": "The 2007 paper's PISA assembly inference method, evaluation basis and explicit condition limits.",
+      "limitations": [
+        "The 80–90% figure is the authors' benchmark recovery rate, not a per-structure probability.",
+        "This review verifies the 2007 paper and does not test a present-day PISA server or its later versions."
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Published journal article, Journal of Molecular Biology 372, 774–797 (2007), DOI 10.1016/j.jmb.2007.05.022.",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          18,
+          19,
+          20
+        ],
+        "coverage": "Title/abstract, model, assembly search, benchmark tables, error/case discussion and conclusion were reviewed; bibliography pages 21–24 were not used to support claims.",
+        "unresolved": [],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 24,
+        "pdf_sha256": "f0598a8e519b05633f0ec38b7fa372f5b8bb8ea64b5771a9efa4434f9983c816",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "krissinel2011",
+      "doi": "10.1107/s0907444911007232",
+      "title": "Macromolecular complexes in crystals and solutions",
+      "authors": [
+        {
+          "given": "Evgeny",
+          "family": "Krissinel"
+        }
+      ],
+      "journal": "Acta Crystallographica Section D Biological Crystallography",
+      "year": 2011,
+      "volume": "67",
+      "issue": "4",
+      "pages": "376-385",
+      "url": "https://doi.org/10.1107/s0907444911007232",
+      "topics": [
+        "biological-context",
+        "xray"
+      ],
+      "role": [
+        "scope-boundary",
+        "dispute"
+      ],
+      "cited_by_count": 77,
+      "openalex_url": "https://openalex.org/W2107996913",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1107%2FS0907444911007232"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://journals.iucr.org/d/issues/2011/04/00/ba5153/index.html",
+          "location": "PDF p. 1, abstract and title page; Acta Crystallographica D 67, 376–385",
+          "what_verified": "The attached IUCr article is Krissinel's 2011 review and its title/DOI match. The official IUCr abstract states Kd ≥ 100 μM, not 100 mM, and gives the population-level estimate for PDB dimers.",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://journals.iucr.org/d/issues/2011/04/00/ba5153/index.html",
+          "location": "PDF p. 2, Fig. 1 and discussion",
+          "what_verified": "PDB entry 3bxc appears as a well-packed crystal homotetramer although the cited solution evidence reports monomer; this is a concrete crystal/solution counterexample.",
+          "pdf_pages": [
+            2
+          ]
+        },
+        {
+          "url": "https://journals.iucr.org/d/issues/2011/04/00/ba5153/index.html",
+          "location": "PDF pp. 3–6, discussion and Figs. 3–4",
+          "what_verified": "PISA energy/model uncertainty and crystal-packing effects can mislead; the paper says dissociation free energy is not a simple 'higher is better' score and analyzes an alternative electron-density interpretation for 1QEX.",
+          "pdf_pages": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "url": "https://journals.iucr.org/d/issues/2011/04/00/ba5153/index.html",
+          "location": "PDF p. 8, 1G9U/1JL5 YopM and calcium discussion; p. 9 conclusion",
+          "what_verified": "Different metal-ion concentration explains different crystal predictions; SEC and cross-linking evidence cited by the article indicates YopM oligomerizes in solution upon calcium addition. The conclusion recommends confirming oligomeric state experimentally.",
+          "pdf_pages": [
+            8,
+            9
+          ]
+        }
+      ],
+      "scope": "Relationship of crystal-inferred and solution assemblies, limitations of PISA and condition-dependent examples.",
+      "limitations": [
+        "The initial text extraction rendered the micro symbol in the abstract as 'mM'; the official IUCr full text resolves it as Kd ≥ 100 μM. The skill text now uses μM.",
+        "The percentages are model estimates over a PDB population, not a probability for an individual structure."
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "IUCr published journal version, Acta Crystallographica Section D 67, 376–385 (2011), DOI 10.1107/S0907444911007232.",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "coverage": "Abstract, relevant methods/limitations, figures and case studies, and conclusion reviewed; PDF p. 10 is references. The concentration unit was cross-checked against the official IUCr HTML abstract because the PDF text extraction obscured μ.",
+        "unresolved": [],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 10,
+        "pdf_sha256": "11972d220ef7b3d87c388c767440facf5b2a8f44896f8dfe75d539772df3e529",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "fraser2011",
+      "doi": "10.1073/pnas.1111325108",
+      "title": "Accessing protein conformational ensembles using room-temperature X-ray crystallography",
+      "authors": [
+        {
+          "given": "James S.",
+          "family": "Fraser"
+        },
+        {
+          "given": "Henry",
+          "family": "van den Bedem"
+        },
+        {
+          "given": "Avi J.",
+          "family": "Samelson"
+        },
+        {
+          "given": "P. Therese",
+          "family": "Lang"
+        },
+        {
+          "given": "James M.",
+          "family": "Holton"
+        },
+        {
+          "given": "Nathaniel",
+          "family": "Echols"
+        },
+        {
+          "given": "Tom",
+          "family": "Alber"
+        }
+      ],
+      "journal": "Proceedings of the National Academy of Sciences",
+      "year": 2011,
+      "volume": "108",
+      "issue": "39",
+      "pages": "16247-16252",
+      "url": "https://doi.org/10.1073/pnas.1111325108",
+      "topics": [
+        "biological-context",
+        "xray",
+        "mechanistic-inference"
+      ],
+      "role": [
+        "validation",
+        "scope-boundary"
+      ],
+      "cited_by_count": 666,
+      "openalex_url": "https://openalex.org/W2087432921",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1073%2Fpnas.1111325108"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3182744/",
+          "location": "PDF p. 1, title/abstract; Proc. Natl. Acad. Sci. USA 108, 16247–16252 (2011)",
+          "what_verified": "The local article title, authors and DOI match the final PNAS paper.",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3182744/",
+          "location": "PDF p. 2, Results and Table S1 reference",
+          "what_verified": "The study compares 30 paired high-resolution room-temperature/cryogenic crystal datasets; 17 pairs were collected by the same investigators. qFit and Ringer were used to assess density-supported conformational alternatives.",
+          "pdf_pages": [
+            2
+          ]
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3182744/",
+          "location": "PDF pp. 3–5, Figs. 1–5 and Discussion",
+          "what_verified": "Results show temperature-associated changes in crystal density/conformational distributions, including examples in trypsin, cyclophilin A and H-Ras; authors discuss how cooling changes packing and observed ensembles.",
+          "pdf_pages": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3182744/",
+          "location": "PDF p. 6, Methods",
+          "what_verified": "The paper's room-temperature/cryogenic density sampling and multiconformer analysis procedures were checked.",
+          "pdf_pages": [
+            6
+          ]
+        }
+      ],
+      "scope": "Paired crystal-temperature comparisons and the boundary between observed crystal ensembles and solution/dynamic claims.",
+      "limitations": [
+        "The supplementary dataset table and supplementary methods are linked separately and were not among the local main-article PDF pages.",
+        "The study supports differences in crystal-observed distributions; it does not by itself establish solution-state population fractions, transition rates or causal biological function."
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Published PNAS article, 108(39), 16247–16252 (2011), DOI 10.1073/pnas.1111325108.",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "coverage": "All six main-article PDF pages reviewed, including Results, figures, Discussion and Methods; supplementary information was not locally attached.",
+        "unresolved": [
+          "Supplementary Table S1/methods were not reviewed from a local attachment."
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 6,
+        "pdf_sha256": "68b6e8ba5d2bf322418d5e46a2b7ebc24f65b6edd09090f5939e42170a503a20",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "af2-2021",
+      "doi": "10.1038/s41586-021-03819-2",
+      "title": "Highly accurate protein structure prediction with AlphaFold",
+      "authors": [
+        {
+          "given": "John",
+          "family": "Jumper"
+        },
+        {
+          "given": "Richard",
+          "family": "Evans"
+        },
+        {
+          "given": "Alexander",
+          "family": "Pritzel"
+        },
+        {
+          "given": "Tim",
+          "family": "Green"
+        },
+        {
+          "given": "Michael",
+          "family": "Figurnov"
+        },
+        {
+          "given": "Olaf",
+          "family": "Ronneberger"
+        },
+        {
+          "given": "Kathryn",
+          "family": "Tunyasuvunakool"
+        },
+        {
+          "given": "Russ",
+          "family": "Bates"
+        },
+        {
+          "given": "Augustin",
+          "family": "Žídek"
+        },
+        {
+          "given": "Anna",
+          "family": "Potapenko"
+        },
+        {
+          "given": "Alex",
+          "family": "Bridgland"
+        },
+        {
+          "given": "Clemens",
+          "family": "Meyer"
+        },
+        {
+          "given": "Simon A. A.",
+          "family": "Kohl"
+        },
+        {
+          "given": "Andrew J.",
+          "family": "Ballard"
+        },
+        {
+          "given": "Andrew",
+          "family": "Cowie"
+        },
+        {
+          "given": "Bernardino",
+          "family": "Romera-Paredes"
+        },
+        {
+          "given": "Stanislav",
+          "family": "Nikolov"
+        },
+        {
+          "given": "Rishub",
+          "family": "Jain"
+        },
+        {
+          "given": "Jonas",
+          "family": "Adler"
+        },
+        {
+          "given": "Trevor",
+          "family": "Back"
+        },
+        {
+          "given": "Stig",
+          "family": "Petersen"
+        },
+        {
+          "given": "David",
+          "family": "Reiman"
+        },
+        {
+          "given": "Ellen",
+          "family": "Clancy"
+        },
+        {
+          "given": "Michal",
+          "family": "Zielinski"
+        },
+        {
+          "given": "Martin",
+          "family": "Steinegger"
+        },
+        {
+          "given": "Michalina",
+          "family": "Pacholska"
+        },
+        {
+          "given": "Tamas",
+          "family": "Berghammer"
+        },
+        {
+          "given": "Sebastian",
+          "family": "Bodenstein"
+        },
+        {
+          "given": "David",
+          "family": "Silver"
+        },
+        {
+          "given": "Oriol",
+          "family": "Vinyals"
+        },
+        {
+          "given": "Andrew W.",
+          "family": "Senior"
+        },
+        {
+          "given": "Koray",
+          "family": "Kavukcuoglu"
+        },
+        {
+          "given": "Pushmeet",
+          "family": "Kohli"
+        },
+        {
+          "given": "Demis",
+          "family": "Hassabis"
+        }
+      ],
+      "journal": "Nature",
+      "year": 2021,
+      "volume": "596",
+      "issue": "7873",
+      "pages": "583-589",
+      "url": "https://doi.org/10.1038/s41586-021-03819-2",
+      "topics": [
+        "predicted-models",
+        "model-validation"
+      ],
+      "role": [
+        "foundation"
+      ],
+      "cited_by_count": 47705,
+      "openalex_url": "https://openalex.org/W3177828909",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1038%2Fs41586-021-03819-2"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1038/s41586-021-03819-2",
+          "location": "Abstract/Introduction；CASP14 blind assessment",
+          "what_verified": "论文评估的是投稿时的 AlphaFold 系统/模型及 CASP14 任务；该版本使用多序列比对和结构模板，不能把结果转成后来版本或单目标正确率。",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1038/s41586-021-03819-2",
+          "location": "Fig. 2c,d；Results/Methods “Metrics”",
+          "what_verified": "pLDDT 与 PDB 测试链的 lDDT-Cα、pTM 与 TM-score 在样本上相关；图示为基准相关性，并非残基正确概率或实验测量。",
+          "pdf_pages": [
+            3,
+            9
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1038/s41586-021-03819-2",
+          "location": "“MSA depth and cross-chain contacts”；Discussion；Methods “Inference regimen”及“Test set of recent PDB sequences”",
+          "what_verified": "论文报告低 MSA 深度及主要依赖异源链接触的目标会降低适用性；PDB 测试与训练 cutoff、去冗余和筛选有明确范围。",
+          "pdf_pages": [
+            6,
+            9,
+            10
+          ]
+        }
+      ],
+      "scope": "Jumper et al., Nature 596 (2021), 583–589；核验摘要、CASP14/PDB 评测、Fig. 2 置信度关系、讨论及方法中 inference/metrics/test set。",
+      "limitations": [
+        "本地 PDF 没有单独 Supplementary Information；文章主文中的性能和置信度关系是特定版本、基准、训练截止与筛选下的聚合结果。没有为后续模型版本或当前具体目标背书。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Zotero 附件为 Nature 期刊论文版式 PDF，Nature 596, 583–589 (2021)；正文 DOI、题名、作者、刊期吻合。",
+        "reviewed_pdf_pages": [
+          1,
+          3,
+          5,
+          6,
+          8,
+          9,
+          10
+        ],
+        "coverage": "阅读摘要、CASP14/PDB 评测、Fig. 2 及其说明、MSA/cross-chain limitations、Discussion 和 Metrics/Inference/Test-set 方法；未逐字审阅图中未相关架构推导。",
+        "unresolved": [
+          "Supplementary Methods 和补充图未在所附主文 PDF 中，未审阅。未运行 AF2 或评估目标序列。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 12,
+        "pdf_sha256": "6eae057a9faf4f671c3101e0745ed704460c6d3dec77243dfd3a9f2d2ab68970",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "af3-2024",
+      "doi": "10.1038/s41586-024-07487-w",
+      "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+      "authors": [
+        {
+          "given": "Josh",
+          "family": "Abramson"
+        },
+        {
+          "given": "Jonas",
+          "family": "Adler"
+        },
+        {
+          "given": "Jack",
+          "family": "Dunger"
+        },
+        {
+          "given": "Richard",
+          "family": "Evans"
+        },
+        {
+          "given": "Tim",
+          "family": "Green"
+        },
+        {
+          "given": "Alexander",
+          "family": "Pritzel"
+        },
+        {
+          "given": "Olaf",
+          "family": "Ronneberger"
+        },
+        {
+          "given": "Lindsay",
+          "family": "Willmore"
+        },
+        {
+          "given": "Andrew J.",
+          "family": "Ballard"
+        },
+        {
+          "given": "Joshua",
+          "family": "Bambrick"
+        },
+        {
+          "given": "Sebastian W.",
+          "family": "Bodenstein"
+        },
+        {
+          "given": "David A.",
+          "family": "Evans"
+        },
+        {
+          "given": "Chia-Chun",
+          "family": "Hung"
+        },
+        {
+          "given": "Michael",
+          "family": "O’Neill"
+        },
+        {
+          "given": "David",
+          "family": "Reiman"
+        },
+        {
+          "given": "Kathryn",
+          "family": "Tunyasuvunakool"
+        },
+        {
+          "given": "Zachary",
+          "family": "Wu"
+        },
+        {
+          "given": "Akvilė",
+          "family": "Žemgulytė"
+        },
+        {
+          "given": "Eirini",
+          "family": "Arvaniti"
+        },
+        {
+          "given": "Charles",
+          "family": "Beattie"
+        },
+        {
+          "given": "Ottavia",
+          "family": "Bertolli"
+        },
+        {
+          "given": "Alex",
+          "family": "Bridgland"
+        },
+        {
+          "given": "Alexey",
+          "family": "Cherepanov"
+        },
+        {
+          "given": "Miles",
+          "family": "Congreve"
+        },
+        {
+          "given": "Alexander I.",
+          "family": "Cowen-Rivers"
+        },
+        {
+          "given": "Andrew",
+          "family": "Cowie"
+        },
+        {
+          "given": "Michael",
+          "family": "Figurnov"
+        },
+        {
+          "given": "Fabian B.",
+          "family": "Fuchs"
+        },
+        {
+          "given": "Hannah",
+          "family": "Gladman"
+        },
+        {
+          "given": "Rishub",
+          "family": "Jain"
+        },
+        {
+          "given": "Yousuf A.",
+          "family": "Khan"
+        },
+        {
+          "given": "Caroline M. R.",
+          "family": "Low"
+        },
+        {
+          "given": "Kuba",
+          "family": "Perlin"
+        },
+        {
+          "given": "Anna",
+          "family": "Potapenko"
+        },
+        {
+          "given": "Pascal",
+          "family": "Savy"
+        },
+        {
+          "given": "Sukhdeep",
+          "family": "Singh"
+        },
+        {
+          "given": "Adrian",
+          "family": "Stecula"
+        },
+        {
+          "given": "Ashok",
+          "family": "Thillaisundaram"
+        },
+        {
+          "given": "Catherine",
+          "family": "Tong"
+        },
+        {
+          "given": "Sergei",
+          "family": "Yakneen"
+        },
+        {
+          "given": "Ellen D.",
+          "family": "Zhong"
+        },
+        {
+          "given": "Michal",
+          "family": "Zielinski"
+        },
+        {
+          "given": "Augustin",
+          "family": "Žídek"
+        },
+        {
+          "given": "Victor",
+          "family": "Bapst"
+        },
+        {
+          "given": "Pushmeet",
+          "family": "Kohli"
+        },
+        {
+          "given": "Max",
+          "family": "Jaderberg"
+        },
+        {
+          "given": "Demis",
+          "family": "Hassabis"
+        },
+        {
+          "given": "John M.",
+          "family": "Jumper"
+        }
+      ],
+      "journal": "Nature",
+      "year": 2024,
+      "volume": "630",
+      "issue": "8016",
+      "pages": "493-500",
+      "url": "https://doi.org/10.1038/s41586-024-07487-w",
+      "topics": [
+        "predicted-models",
+        "ligand-density",
+        "model-validation"
+      ],
+      "role": [
+        "foundation"
+      ],
+      "cited_by_count": 16085,
+      "openalex_url": "https://openalex.org/W4396721167",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1038%2Fs41586-024-07487-w"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1038/s41586-024-07487-w",
+          "location": "Abstract、Fig. 1、“Network architecture and training”",
+          "what_verified": "AF3 使用不同于 AF2 的 diffusion 架构，可对论文研究的多分子类型复合物进行联合预测；Fig. 1 的各图指标分别对应特定任务/评测集。",
+          "pdf_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1038/s41586-024-07487-w",
+          "location": "“Predicted confidences track accuracy”；Fig. 4；“Model limitations”；Fig. 5",
+          "what_verified": "pLDDT/PAE 和 chain-pair ipTM 与论文测试集的误差/界面指标关联；作者报告构象覆盖、无序区结构幻觉、手性和 clash 限制，多 seed 不构成溶液构象 ensemble。",
+          "pdf_pages": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1038/s41586-024-07487-w",
+          "location": "Methods: “Inference regime”, “Metrics”, “Recent PDB evaluation set”, “PoseBusters”；Extended Data Figs. 7–8 / Table 1",
+          "what_verified": "大多数结果使用2021-09-30结构训练 cutoff；PoseBusters 使用2019-09-30 cutoff 模型。常规推理为5 seeds×每 seed 5 diffusion samples后按任务相关置信度排序；近期 PDB、PoseBusters 与其它任务的集、指标和过滤不同。",
+          "pdf_pages": [
+            9,
+            10,
+            18,
+            19,
+            21
+          ]
+        }
+      ],
+      "scope": "Abramson et al., Nature 630 (2024), 493–500；核验主文架构、各任务结果、置信分数与局限、可见 Extended Data 和 Methods 中 benchmark/取样说明。",
+      "limitations": [
+        "数字仅适用于相应测试集、训练 cutoff、过滤和排名流程；相关性不是亲和力、占有率或当前目标的正确概率。主体 PDF 没包含单独 Supplementary Information 中完整训练/评分细节。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [
+        {
+          "relation": "addendum",
+          "id": "af3-2024-addendum",
+          "note": "The linked 2024 addendum records a later update to the article."
+        }
+      ],
+      "fulltext_review": {
+        "version": "Zotero 附件为 Nature version-of-record 主文 PDF，Nature 630, 493–500 (2024)，并含该文的 Extended Data 图/表；DOI/作者/卷页与首页吻合。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          9,
+          10,
+          18,
+          19,
+          21
+        ],
+        "coverage": "阅读摘要、Fig. 1、主体 Results/Discussion、confidence 与 limitations 段、Methods 中训练/推理/指标/PDB set/PoseBusters，以及相关 Extended Data 图表说明。",
+        "unresolved": [
+          "独立 Supplementary Information/Methods 未包含在附件中，未审阅；没有对任何当前复合物运行 AF3 或计算其分数。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 24,
+        "pdf_sha256": "aba3109f2892454c9512570001598a069aaf422adb5aa0f3879414cb29a258fb",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "af3-2024-addendum",
+      "doi": "10.1038/s41586-024-08416-7",
+      "title": "Addendum: Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+      "authors": [
+        {
+          "given": "Josh",
+          "family": "Abramson"
+        },
+        {
+          "given": "Jonas",
+          "family": "Adler"
+        },
+        {
+          "given": "Jack",
+          "family": "Dunger"
+        },
+        {
+          "given": "Richard",
+          "family": "Evans"
+        },
+        {
+          "given": "Tim",
+          "family": "Green"
+        },
+        {
+          "given": "Alexander",
+          "family": "Pritzel"
+        },
+        {
+          "given": "Olaf",
+          "family": "Ronneberger"
+        },
+        {
+          "given": "Lindsay",
+          "family": "Willmore"
+        },
+        {
+          "given": "Andrew J.",
+          "family": "Ballard"
+        },
+        {
+          "given": "Joshua",
+          "family": "Bambrick"
+        },
+        {
+          "given": "Sebastian W.",
+          "family": "Bodenstein"
+        },
+        {
+          "given": "David A.",
+          "family": "Evans"
+        },
+        {
+          "given": "Chia-Chun",
+          "family": "Hung"
+        },
+        {
+          "given": "Michael",
+          "family": "O’Neill"
+        },
+        {
+          "given": "David",
+          "family": "Reiman"
+        },
+        {
+          "given": "Kathryn",
+          "family": "Tunyasuvunakool"
+        },
+        {
+          "given": "Zachary",
+          "family": "Wu"
+        },
+        {
+          "given": "Akvilė",
+          "family": "Žemgulytė"
+        },
+        {
+          "given": "Eirini",
+          "family": "Arvaniti"
+        },
+        {
+          "given": "Charles",
+          "family": "Beattie"
+        },
+        {
+          "given": "Ottavia",
+          "family": "Bertolli"
+        },
+        {
+          "given": "Alex",
+          "family": "Bridgland"
+        },
+        {
+          "given": "Alexey",
+          "family": "Cherepanov"
+        },
+        {
+          "given": "Miles",
+          "family": "Congreve"
+        },
+        {
+          "given": "Alexander I.",
+          "family": "Cowen-Rivers"
+        },
+        {
+          "given": "Andrew",
+          "family": "Cowie"
+        },
+        {
+          "given": "Michael",
+          "family": "Figurnov"
+        },
+        {
+          "given": "Fabian B.",
+          "family": "Fuchs"
+        },
+        {
+          "given": "Hannah",
+          "family": "Gladman"
+        },
+        {
+          "given": "Rishub",
+          "family": "Jain"
+        },
+        {
+          "given": "Yousuf A.",
+          "family": "Khan"
+        },
+        {
+          "given": "Caroline M. R.",
+          "family": "Low"
+        },
+        {
+          "given": "Kuba",
+          "family": "Perlin"
+        },
+        {
+          "given": "Anna",
+          "family": "Potapenko"
+        },
+        {
+          "given": "Pascal",
+          "family": "Savy"
+        },
+        {
+          "given": "Sukhdeep",
+          "family": "Singh"
+        },
+        {
+          "given": "Adrian",
+          "family": "Stecula"
+        },
+        {
+          "given": "Ashok",
+          "family": "Thillaisundaram"
+        },
+        {
+          "given": "Catherine",
+          "family": "Tong"
+        },
+        {
+          "given": "Sergei",
+          "family": "Yakneen"
+        },
+        {
+          "given": "Ellen D.",
+          "family": "Zhong"
+        },
+        {
+          "given": "Michal",
+          "family": "Zielinski"
+        },
+        {
+          "given": "Augustin",
+          "family": "Žídek"
+        },
+        {
+          "given": "Victor",
+          "family": "Bapst"
+        },
+        {
+          "given": "Pushmeet",
+          "family": "Kohli"
+        },
+        {
+          "given": "Max",
+          "family": "Jaderberg"
+        },
+        {
+          "given": "Demis",
+          "family": "Hassabis"
+        },
+        {
+          "given": "John M.",
+          "family": "Jumper"
+        }
+      ],
+      "journal": "Nature",
+      "year": 2024,
+      "volume": "636",
+      "issue": "8042",
+      "pages": "E4-E4",
+      "url": "https://doi.org/10.1038/s41586-024-08416-7",
+      "topics": [
+        "predicted-models"
+      ],
+      "role": [
+        "addendum"
+      ],
+      "cited_by_count": 349,
+      "openalex_url": "https://openalex.org/W4404755712",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1038%2Fs41586-024-08416-7"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1038/s41586-024-08416-7",
+          "location": "完整 addendum 正文",
+          "what_verified": "指出原文发布时提供非商业服务器，Google DeepMind 随后发布底层 AF3 inference code，并给出代码库链接；页面没有准确率结果或科学结论更正。",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "scope": "Abramson et al., Nature 636, E4 (2024)；核验其作为 AF3 原论文 addendum 的身份、发布日期、正文及所述代码发布事项。",
+      "limitations": [
+        "只有一页代码发布说明；本身不验证模型精度、推理可复现性或许可义务。"
+      ],
+      "verification_status": "update_text_verified",
+      "updates": [
+        {
+          "relation": "addendum_to",
+          "id": "af3-2024",
+          "note": "Read this update with its original article; apply only the changes stated in the verified notice."
+        }
+      ],
+      "fulltext_review": {
+        "version": "Zotero 附件为 Nature Corrections & Amendments 期刊 PDF，Nature 636, E4 (2024)，在线日期2024-11-27；标明是 DOI 10.1038/s41586-024-07487-w 的 Addendum。",
+        "reviewed_pdf_pages": [
+          1
+        ],
+        "coverage": "阅读该一页全文及原文 DOI/发布说明。",
+        "unresolved": [
+          "未在本次范围审阅代码库或许可条款；无补充材料。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 1,
+        "pdf_sha256": "c824e1006f0bee811e9e69ebc5c65b780616ef7688bce6a1206012ddc7127634",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "akdel2022",
+      "doi": "10.1038/s41594-022-00849-w",
+      "title": "A structural biology community assessment of AlphaFold2 applications",
+      "authors": [
+        {
+          "given": "Mehmet",
+          "family": "Akdel"
+        },
+        {
+          "given": "Douglas E. V.",
+          "family": "Pires"
+        },
+        {
+          "given": "Eduard Porta",
+          "family": "Pardo"
+        },
+        {
+          "given": "Jürgen",
+          "family": "Jänes"
+        },
+        {
+          "given": "Arthur O.",
+          "family": "Zalevsky"
+        },
+        {
+          "given": "Bálint",
+          "family": "Mészáros"
+        },
+        {
+          "given": "Patrick",
+          "family": "Bryant"
+        },
+        {
+          "given": "Lydia L.",
+          "family": "Good"
+        },
+        {
+          "given": "Roman A.",
+          "family": "Laskowski"
+        },
+        {
+          "given": "Gabriele",
+          "family": "Pozzati"
+        },
+        {
+          "given": "Aditi",
+          "family": "Shenoy"
+        },
+        {
+          "given": "Wensi",
+          "family": "Zhu"
+        },
+        {
+          "given": "Petras",
+          "family": "Kundrotas"
+        },
+        {
+          "given": "Victoria Ruiz",
+          "family": "Serra"
+        },
+        {
+          "given": "Carlos H. M.",
+          "family": "Rodrigues"
+        },
+        {
+          "given": "Alistair S.",
+          "family": "Dunham"
+        },
+        {
+          "given": "David",
+          "family": "Burke"
+        },
+        {
+          "given": "Neera",
+          "family": "Borkakoti"
+        },
+        {
+          "given": "Sameer",
+          "family": "Velankar"
+        },
+        {
+          "given": "Adam",
+          "family": "Frost"
+        },
+        {
+          "given": "Jérôme",
+          "family": "Basquin"
+        },
+        {
+          "given": "Kresten",
+          "family": "Lindorff-Larsen"
+        },
+        {
+          "given": "Alex",
+          "family": "Bateman"
+        },
+        {
+          "given": "Andrey V.",
+          "family": "Kajava"
+        },
+        {
+          "given": "Alfonso",
+          "family": "Valencia"
+        },
+        {
+          "given": "Sergey",
+          "family": "Ovchinnikov"
+        },
+        {
+          "given": "Janani",
+          "family": "Durairaj"
+        },
+        {
+          "given": "David B.",
+          "family": "Ascher"
+        },
+        {
+          "given": "Janet M.",
+          "family": "Thornton"
+        },
+        {
+          "given": "Norman E.",
+          "family": "Davey"
+        },
+        {
+          "given": "Amelie",
+          "family": "Stein"
+        },
+        {
+          "given": "Arne",
+          "family": "Elofsson"
+        },
+        {
+          "given": "Tristan I.",
+          "family": "Croll"
+        },
+        {
+          "given": "Pedro",
+          "family": "Beltrao"
+        }
+      ],
+      "journal": "Nature Structural & Molecular Biology",
+      "year": 2022,
+      "volume": "29",
+      "issue": "11",
+      "pages": "1056-1067",
+      "url": "https://doi.org/10.1038/s41594-022-00849-w",
+      "topics": [
+        "predicted-models",
+        "model-validation"
+      ],
+      "role": [
+        "validation",
+        "scope-boundary"
+      ],
+      "cited_by_count": 756,
+      "openalex_url": "https://openalex.org/W4308463927",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1038%2Fs41594-022-00849-w"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1038/s41594-022-00849-w",
+          "location": "Abstract/Results: structural coverage；Fig. 1",
+          "what_verified": "文章进行的是 AF2 跨结构生物应用评估；11个模型物种的覆盖与 pLDDT 阈值结果并非某一目标质量保证。",
+          "pdf_pages": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1038/s41594-022-00849-w",
+          "location": "Results: ligand pocket prediction, experimental model building；Figs. 4、6",
+          "what_verified": "口袋结果按局部平均 pLDDT 分层，作者指出高置信子集可能更常有相关 deposited templates；实验 map/model 建案例也需手动检查高置信区域中的错误。",
+          "pdf_pages": [
+            6,
+            7,
+            9,
+            10
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1038/s41594-022-00849-w",
+          "location": "Methods: oligomerization state prediction、complex prediction、experimental data integration",
+          "what_verified": "方法部分说明不同应用的样本和处理；寡聚体评测允许潜在训练集重叠，因为作者认为 AF2 单链训练设置仍可用于该任务评估。",
+          "pdf_pages": [
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "scope": "Akdel et al., Nature Structural & Molecular Biology 29 (2022), 1056–1067；核验摘要、coverage/pocket/complex/model-building 结果、关键图和对应方法。",
+      "limitations": [
+        "多应用评测使用不同样本、输入、阈值和指标；个别方法测试有潜在训练集重叠，且口袋分析作者指出可能有 template bias。结论支持按置信度审慎使用 AF2，不代表当前目标的独立验证。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Zotero 附件为期刊主文及 Methods 的 Nature PDF；Nat. Struct. Mol. Biol. 29, 1056–1067 (2022)，首页 DOI/题名/作者吻合。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8,
+          9,
+          10,
+          13,
+          14,
+          15
+        ],
+        "coverage": "阅读摘要、主要结果和图注、口袋/寡聚体/模型入图案例、Discussion/Conclusion 及 Methods 中对应评测样本和处理。",
+        "unresolved": [
+          "所附 PDF 不含独立 Supplementary Information；未审阅完整补充表/补图和代码。未评估任何当前目标。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 19,
+        "pdf_sha256": "715e91148b06b5402888b4d3d69418af44c5323edc5c80eb028f40d167056e53",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "terwilliger2024",
+      "doi": "10.1038/s41592-023-02087-4",
+      "title": "AlphaFold predictions are valuable hypotheses and accelerate but do not replace experimental structure determination",
+      "authors": [
+        {
+          "given": "Thomas C.",
+          "family": "Terwilliger"
+        },
+        {
+          "given": "Dorothee",
+          "family": "Liebschner"
+        },
+        {
+          "given": "Tristan I.",
+          "family": "Croll"
+        },
+        {
+          "given": "Christopher J.",
+          "family": "Williams"
+        },
+        {
+          "given": "Airlie J.",
+          "family": "McCoy"
+        },
+        {
+          "given": "Billy K.",
+          "family": "Poon"
+        },
+        {
+          "given": "Pavel V.",
+          "family": "Afonine"
+        },
+        {
+          "given": "Robert D.",
+          "family": "Oeffner"
+        },
+        {
+          "given": "Jane S.",
+          "family": "Richardson"
+        },
+        {
+          "given": "Randy J.",
+          "family": "Read"
+        },
+        {
+          "given": "Paul D.",
+          "family": "Adams"
+        }
+      ],
+      "journal": "Nature Methods",
+      "year": 2024,
+      "volume": "21",
+      "issue": "1",
+      "pages": "110-116",
+      "url": "https://doi.org/10.1038/s41592-023-02087-4",
+      "topics": [
+        "predicted-models",
+        "model-validation"
+      ],
+      "role": [
+        "validation",
+        "scope-boundary"
+      ],
+      "cited_by_count": 388,
+      "openalex_url": "https://openalex.org/W4389174567",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1038%2Fs41592-023-02087-4"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://doi.org/10.1038/s41592-023-02087-4",
+          "location": "“Comparing AlphaFold predictions with density maps”；Fig. 1",
+          "what_verified": "以实验 crystallographic maps 对照高 pLDDT 预测，图中包括很好匹配、与 map 不符但沉积模型匹配、map 不清楚及域/主链偏差等不同情形。",
+          "pdf_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1038/s41592-023-02087-4",
+          "location": "Fig. 4、Table 1；“Using confidence (pLDDT) to estimate errors in AlphaFold predictions”",
+          "what_verified": "所选102个高质量结构/map中，pLDDT>90的 Cα 原子约10%与参照结构偏差>2 Å；该文同时展示置信度相关性但未把高置信度等同于无误。",
+          "pdf_pages": [
+            5
+          ]
+        },
+        {
+          "url": "https://doi.org/10.1038/s41592-023-02087-4",
+          "location": "Methods: experimental maps、analysis、“Control experiments and limitations”",
+          "what_verified": "Methods 说明样本从215个结构中筛选，主要分析102个 free R≤0.30 的高质量条目，局部预测未用 PDB templates；作者报告样本比例、模板及构象/结构限制。",
+          "pdf_pages": [
+            8,
+            9
+          ]
+        }
+      ],
+      "scope": "Terwilliger et al., Nature Methods 21 (2024), 110–116；核验 direct map comparisons、置信度误差统计、方法和控制/局限。",
+      "limitations": [
+        "这是有选择的晶体学样本，102个主分析结构来自特定 SAD redetermination 集且大多数残基 pLDDT 很高；研究比例不能外推全部 AF 模型。实验结构/密度依赖特定晶体条件，map 不清或替代构象可能使差异未必表示预测绝对错误。"
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Zotero 附件为 Nature Methods 期刊文章 PDF；Nat. Methods 21 (2024), 110–116；首页记录2023-11-30在线发表、2024期刊卷页，DOI/作者吻合。",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          5,
+          8,
+          9
+        ],
+        "coverage": "阅读摘要、与密度对照的 Results/Fig. 1、pLDDT误差结果 Fig. 4/Table 1、Methods 和 control/limitations 段。",
+        "unresolved": [
+          "Supplementary Information 未在附件中，未审阅；未检查论文所列数据文件/脚本或当前目标数据。"
+        ],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 12,
+        "pdf_sha256": "86f2b209ffbdc245865eb6cd9b447bd4bd7c8693be2ad5909932d3702fc1e69e",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "monod1965",
+      "doi": "10.1016/s0022-2836(65)80285-6",
+      "title": "On the nature of allosteric transitions: A plausible model",
+      "authors": [
+        {
+          "given": "Jacque",
+          "family": "Monod"
+        },
+        {
+          "given": "Jeffries",
+          "family": "Wyman"
+        },
+        {
+          "given": "Jean-Pierre",
+          "family": "Changeux"
+        }
+      ],
+      "journal": "Journal of Molecular Biology",
+      "year": 1965,
+      "volume": "12",
+      "issue": "1",
+      "pages": "88-118",
+      "url": "https://doi.org/10.1016/s0022-2836(65)80285-6",
+      "topics": [
+        "mechanistic-inference"
+      ],
+      "role": [
+        "foundation",
+        "scope-boundary"
+      ],
+      "cited_by_count": 8942,
+      "openalex_url": "https://openalex.org/W1998093640",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1016%2FS0022-2836%2865%2980285-6"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0022283665802856",
+          "location": "PDF p. 1 and printed pp. 88–118; title, author list and journal citation",
+          "what_verified": "The attached scan is the 1965 Journal of Molecular Biology article by Monod, Wyman and Changeux; DOI and title match the citation.",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0022283665802856",
+          "location": "PDF pp. 2–8 (printed pp. 89–95), model derivation and equations",
+          "what_verified": "The original article proposes the MWC model based on equivalent protomers, symmetry, T/R states and ligand-linked state equilibrium; it presents a plausible model, not a structure-only inference rule.",
+          "pdf_pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0022283665802856",
+          "location": "PDF pp. 9–11 (printed pp. 96–98), Table 1 and footnote; pages rendered for visual review",
+          "what_verified": "Table 1 lists historical allosteric-system examples. Its footnote says the summary is not complete, several systems were incompletely described, and the signs reflect the authors' interpretations.",
+          "pdf_pages": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0022283665802856",
+          "location": "PDF pp. 18–30 (printed pp. 105–117), model assumptions and General Discussion",
+          "what_verified": "The paper discusses symmetry/oligomer assumptions, multiple possible transition patterns and the need for kinetic/thermodynamic experiments to discriminate them; it explicitly says the best pattern for real systems could not then be decided.",
+          "pdf_pages": [
+            18,
+            19,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
+          ]
+        }
+      ],
+      "scope": "The original MWC model's assumptions, historical evidence and explicitly acknowledged limits.",
+      "limitations": [
+        "The first bulk text export omitted PDF pages 9–11; these pages were rendered and visually checked, including Table 1 and its footnote. A separate extraction from the PDF confirms their text.",
+        "The article is a 1965 theoretical paper; its historical table is not complete modern evidence for any present-day target."
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Digitized original journal article, Journal of Molecular Biology 12(1), 88–118 (1965), DOI 10.1016/S0022-2836(65)80285-6.",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "coverage": "All 31 PDF pages checked for title, model, equations, examples, discussion and references; the three pages absent from the first text export were rendered and visually reviewed. Key theory/limitations reside on PDF pp. 2–8, 18–30.",
+        "unresolved": [],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 31,
+        "pdf_sha256": "645d36b1fb61ee94976fc8ce30765fadc203ec0b51aa3f04f9fcf187eae83c06",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "hammes2009",
+      "doi": "10.1073/pnas.0907195106",
+      "title": "Conformational selection or induced fit: A flux description of reaction mechanism",
+      "authors": [
+        {
+          "given": "Gordon G.",
+          "family": "Hammes"
+        },
+        {
+          "given": "Yu-Chu",
+          "family": "Chang"
+        },
+        {
+          "given": "Terrence G.",
+          "family": "Oas"
+        }
+      ],
+      "journal": "Proceedings of the National Academy of Sciences",
+      "year": 2009,
+      "volume": "106",
+      "issue": "33",
+      "pages": "13737-13741",
+      "url": "https://doi.org/10.1073/pnas.0907195106",
+      "topics": [
+        "mechanistic-inference"
+      ],
+      "role": [
+        "scope-boundary"
+      ],
+      "cited_by_count": 595,
+      "openalex_url": "https://openalex.org/W2041000185",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1073%2Fpnas.0907195106"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2728963/",
+          "location": "PDF p. 1, article title, DOI, abstract and Introduction",
+          "what_verified": "The attached paper is Hammes, Chang and Oas (2009), 'Conformational selection or induced fit: A flux description of reaction mechanism', DOI 10.1073/pnas.0907195106.",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2728963/",
+          "location": "PDF pp. 1–4, reaction schemes and Results (Figs. 1–3)",
+          "what_verified": "The article compares induced-fit and conformational-selection routes by fractional flux, gives DHFR and flavodoxin–FMN examples, and shows that pathway contributions can coexist and vary with ligand/macromolecule concentration.",
+          "pdf_pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2728963/",
+          "location": "PDF p. 5, Methods/equations",
+          "what_verified": "The flux calculation uses the specified reaction-network rate constants and mass-balance relations; it is a kinetic analysis, not a conclusion from static endpoint structures.",
+          "pdf_pages": [
+            5
+          ]
+        }
+      ],
+      "scope": "Pathway flux framework, concentration dependence, and what evidence the article's examples actually use.",
+      "limitations": [
+        "The specific pathway fractions depend on the selected reaction network and rate constants, some estimated from earlier studies.",
+        "This paper's cited examples are DHFR and flavodoxin–FMN; it is not the Sigala photoactive-yellow-protein paper."
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Published PNAS article, 106(33), 13737–13741 (2009), DOI 10.1073/pnas.0907195106.",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "coverage": "All five pages checked, including reaction diagrams, concentration-dependent flux example, equations and Methods.",
+        "unresolved": [],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 5,
+        "pdf_sha256": "78f20e8f77d575eafa4dee2bb1c97b8a810cff86bba1d9498b6c4d8bb1a54ac8",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "henzler2007",
+      "doi": "10.1038/nature06522",
+      "title": "Dynamic personalities of proteins",
+      "authors": [
+        {
+          "given": "Katherine",
+          "family": "Henzler-Wildman"
+        },
+        {
+          "given": "Dorothee",
+          "family": "Kern"
+        }
+      ],
+      "journal": "Nature",
+      "year": 2007,
+      "volume": "450",
+      "issue": "7172",
+      "pages": "964-972",
+      "url": "https://doi.org/10.1038/nature06522",
+      "topics": [
+        "mechanistic-inference",
+        "biological-context"
+      ],
+      "role": [
+        "foundation",
+        "scope-boundary"
+      ],
+      "cited_by_count": 2614,
+      "openalex_url": "https://openalex.org/W2048822589",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1038%2Fnature06522"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://www.nature.com/articles/nature06522",
+          "location": "PDF p. 1, title/abstract; Nature 450, 964–972 (2007)",
+          "what_verified": "The attached review's title, authors, date and DOI match the Nature record.",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://www.nature.com/articles/nature06522",
+          "location": "PDF pp. 2–8, timescale and experimental-method review; especially p. 7",
+          "what_verified": "The review distinguishes state snapshots from measurements of state population and interconversion kinetics; it describes NMR, FRET, time-resolved crystallography and other approaches at differing timescales.",
+          "pdf_pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "scope": "Review-level background for protein dynamics and the limits of static structural snapshots.",
+      "limitations": [
+        "This is a review, not new primary experimental evidence; claims about an individual protein should be traced to the cited experiment."
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Published Nature review, 450(7172), 964–972 (2007), DOI 10.1038/nature06522.",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "coverage": "The title/abstract and all eight body pages were reviewed; PDF p. 9 is references and was not used for claims.",
+        "unresolved": [],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 9,
+        "pdf_sha256": "21ceb534f1739d32ef035246fbecebabf23952b160946affea9ae3cf438b827f",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    },
+    {
+      "id": "motlagh2014",
+      "doi": "10.1038/nature13001",
+      "title": "The ensemble nature of allostery",
+      "authors": [
+        {
+          "given": "Hesam N.",
+          "family": "Motlagh"
+        },
+        {
+          "given": "James O.",
+          "family": "Wrabl"
+        },
+        {
+          "given": "Jing",
+          "family": "Li"
+        },
+        {
+          "given": "Vincent J.",
+          "family": "Hilser"
+        }
+      ],
+      "journal": "Nature",
+      "year": 2014,
+      "volume": "508",
+      "issue": "7496",
+      "pages": "331-339",
+      "url": "https://doi.org/10.1038/nature13001",
+      "topics": [
+        "mechanistic-inference",
+        "biological-context"
+      ],
+      "role": [
+        "foundation",
+        "scope-boundary"
+      ],
+      "cited_by_count": 1310,
+      "openalex_url": "https://openalex.org/W1964439982",
+      "citation_checked_on": "2026-09-30",
+      "openalex_is_retracted": false,
+      "metadata_source": [
+        {
+          "provider": "Crossref REST API",
+          "url": "https://api.crossref.org/works/10.1038%2Fnature13001"
+        }
+      ],
+      "verified_locations": [
+        {
+          "url": "https://www.nature.com/articles/nature13001",
+          "location": "PDF p. 1, title/abstract and opening discussion; Nature 508, 331–339 (2014)",
+          "what_verified": "The attached review's title, authors and DOI match the Nature record; the opening discusses MWC/KNF as influential phenomenological models and the shift toward ensemble descriptions.",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://www.nature.com/articles/nature13001",
+          "location": "PDF pp. 2–7, Figs. 1–3, Boxes 1–2 and Discussion",
+          "what_verified": "The review presents allostery as a range of ensemble/population and stability-coupling behaviors, including structured, dynamic and disordered examples; it does not validate one mechanism for an arbitrary protein.",
+          "pdf_pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "scope": "Review-level ensemble framework for allostery and its distinction from a single static pathway.",
+      "limitations": [
+        "This is a review and conceptual synthesis, not a new direct experiment on a target system.",
+        "The reviewed PDF has the article body on pp. 1–7 and reference pages afterward; target-specific support must come from primary evidence."
+      ],
+      "verification_status": "fulltext_sections_verified",
+      "updates": [],
+      "fulltext_review": {
+        "version": "Published Nature review, 508(7496), 331–339 (2014), DOI 10.1038/nature13001.",
+        "reviewed_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "coverage": "The title/abstract, model framing, figure/box explanations and Discussion were reviewed; bibliography pages were not used for claims.",
+        "unresolved": [],
+        "checked_on": "2026-09-30",
+        "pdf_page_count": 9,
+        "pdf_sha256": "9df2c7958dd028c791e552f68e4f0d5f4d6a5ee89a5638dd5bf926ad16f47ef5",
+        "verification_level": "Source reading, not independent recomputation or reprocessing"
+      }
+    }
+  ],
+  "content_checked_on": "2026-09-30",
+  "verification_status_definitions": {
+    "fulltext_sections_verified": "Identified local PDF; selected sections/figures supporting these rules checked within the recorded review coverage. This is not a claim that every result or external supplement has been verified.",
+    "update_text_verified": "Relevant update text checked; only the changes stated by that notice are adopted."
+  },
+  "official_resources": [
+    {
+      "id": "phenix-validate-ligands-current",
+      "url": "https://www.phenix-online.org/documentation/reference/validate_ligands.html",
+      "title": "Validating ligands with phenix.validate_ligands",
+      "checked_on": "2026-09-30",
+      "verified_locations": [
+        "Usage",
+        "How it works",
+        "Metrics",
+        "Possible Problems",
+        "List of all available keywords"
+      ],
+      "scope": "Accessible current documentation describes X-ray ligand validation, RSCC construction, fragment/environment scores and ADP/occupancy reporting.",
+      "limitations": "This is a date-stamped tool-documentation check, not a pinned software version or a 40th research-paper record. A cryo-EM resolution keyword does not establish the cryo-EM RSCC algorithm or override the X-ray scope stated in the page."
+    }
+  ]
+}

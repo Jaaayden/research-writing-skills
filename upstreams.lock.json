@@ -1,0 +1,612 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "scientific-agent-skills": {
+      "github": "K-Dense-AI/scientific-agent-skills",
+      "ref": "main",
+      "commit": "65d6e786832e2c52832713117bbbf5096b56f77f",
+      "files": {
+        "skills/citation-management/SKILL.md": {
+          "sha256": "24b73d1d84e34900c7c1556af4d7e6462cc846bcf6c5071112a77545ce258f73",
+          "git_blob_sha1": "0badad49983aa42ca24387380165bf52c1a46308",
+          "size": 15677,
+          "mode": "100644"
+        },
+        "skills/citation-management/assets/bibtex_template.bib": {
+          "sha256": "bf03cc646e6bc6aaba85d632b8e25b26c2830419892f3c17a7d844805d3a721e",
+          "git_blob_sha1": "fb6464f72e91a631ac1f54513843040c2013a6f0",
+          "size": 9201,
+          "mode": "100644"
+        },
+        "skills/citation-management/assets/citation_checklist.md": {
+          "sha256": "305ff79e25b2654f1a5dc2163c03e7ab14e6c9578b1ea0f2d30f97195578d2c6",
+          "git_blob_sha1": "f5a735cbf446f6b18c2ce10b9708690ec585591e",
+          "size": 10348,
+          "mode": "100644"
+        },
+        "skills/citation-management/references/best_practices.md": {
+          "sha256": "925a5aa58b249006b3743f7d6df256ee8861f9dd97e0c27b5f5b4cfcf91f9b5f",
+          "git_blob_sha1": "5816b1297f199d440a24ec40a12b023dd61ada57",
+          "size": 2675,
+          "mode": "100644"
+        },
+        "skills/citation-management/references/bibtex_formatting.md": {
+          "sha256": "89fde5b4e04112ee62dcfe086780f000906681ec7b102c094c875c3656eaed6f",
+          "git_blob_sha1": "1fd22feb3b873eb3a3e0a2782e224bde0429d8c0",
+          "size": 19286,
+          "mode": "100644"
+        },
+        "skills/citation-management/references/citation_validation.md": {
+          "sha256": "2428f93cc9b6bff8d8784f9a09063774df82225757a06a8213ebf2ef37aa522e",
+          "git_blob_sha1": "9df067fdfb484c1a3340c98ea5986f73b0ca8424",
+          "size": 18054,
+          "mode": "100644"
+        },
+        "skills/citation-management/references/core_workflow.md": {
+          "sha256": "4d3cc7bfa74d9c3f9f5b34073b03eaa9ba11ad5104dac437ecca56774f886f2f",
+          "git_blob_sha1": "739a61ddde9787a5eeddeca1c52488eb3f698ae1",
+          "size": 20866,
+          "mode": "100644"
+        },
+        "skills/citation-management/references/example_workflows.md": {
+          "sha256": "d1106cbd7c866cabb82dccd7b9763881d279ada64283016aa59d049c5bfda2f5",
+          "git_blob_sha1": "e1d6904448049d7e0752bc0d52f015690e1ec4b3",
+          "size": 3342,
+          "mode": "100644"
+        },
+        "skills/citation-management/references/google_scholar_search.md": {
+          "sha256": "18e8af47001fd427692243d04b9c975c5454e9ce9929bfe42843775f3d845680",
+          "git_blob_sha1": "0d00419141a96344fa4009d7ce291f3f2f8d7f71",
+          "size": 17449,
+          "mode": "100644"
+        },
+        "skills/citation-management/references/metadata_extraction.md": {
+          "sha256": "aa8be4ac76c6e274ce5ef2f034c6578e0f263baf71f030a0f2eeb92fcd810b45",
+          "git_blob_sha1": "bbf2d96681983b5698bf8e336ba6a8222c787d34",
+          "size": 19182,
+          "mode": "100644"
+        },
+        "skills/citation-management/references/pubmed_search.md": {
+          "sha256": "f25e7adf200fee05f83e3434e1a08b6ec25d1ee2563a19325b94e443ff7cde59",
+          "git_blob_sha1": "5ea97bd2ec98933519d0825ca282fd365beeb3f9",
+          "size": 17735,
+          "mode": "100644"
+        },
+        "skills/citation-management/references/script_reference.md": {
+          "sha256": "e6f1a87d6cd25bd7043fc0e4c88693a327ad2a7019515408392c58cff408330d",
+          "git_blob_sha1": "44db16ed5f166a4d31a91cd7683f2c14dbf8bb01",
+          "size": 6561,
+          "mode": "100644"
+        },
+        "skills/citation-management/references/search_strategies.md": {
+          "sha256": "a91bbd11c7246a5c03e64544bbc476d4089b397a55260f4979055ff177c9874f",
+          "git_blob_sha1": "52765ed1e48bd50da0e1af18d8270fdcff6f7c26",
+          "size": 3752,
+          "mode": "100644"
+        },
+        "skills/citation-management/scripts/_common.py": {
+          "sha256": "87540160163671b972c2fccb4d0a42db3cca2603c664d26d5da3ca5dbc7dfdd2",
+          "git_blob_sha1": "645d6beed8601c63a46f6148f1ad4f035a1cdf5f",
+          "size": 10912,
+          "mode": "100644"
+        },
+        "skills/citation-management/scripts/doi_to_bibtex.py": {
+          "sha256": "45dbdbc365e63c65dc7e32945186122dd1cd7cb003ca5fbe103876952b4d9171",
+          "git_blob_sha1": "c0294e3dc15fa345782545250c65b23fc2310f7e",
+          "size": 6299,
+          "mode": "100644"
+        },
+        "skills/citation-management/scripts/extract_metadata.py": {
+          "sha256": "d4922e47d21e38e8b414bfa9772eeac8c3df856b7179f33cd45f89ff777d4422",
+          "git_blob_sha1": "af19dec38446692165e601b53d143078dcee9645",
+          "size": 26503,
+          "mode": "100755"
+        },
+        "skills/citation-management/scripts/format_bibtex.py": {
+          "sha256": "cc74fdc4d5819df8db3999e59f96469cebfb353ecf406a49a5a0fc60896707cb",
+          "git_blob_sha1": "dd05a9f728e52cdcae035cff975454de1d23d5ff",
+          "size": 11075,
+          "mode": "100755"
+        },
+        "skills/citation-management/scripts/search_google_scholar.py": {
+          "sha256": "839228bc7a9b4c3b23e4b0d5c4c13ff024db423deeec4908b13261367b19b90e",
+          "git_blob_sha1": "8f797ee9166905da88e950b2a2341c4d5f78bee1",
+          "size": 8609,
+          "mode": "100755"
+        },
+        "skills/citation-management/scripts/search_openalex.py": {
+          "sha256": "b98f276748a121b5fdd8a6a9066f4094b85f585b64ed292710ad589df2495a3f",
+          "git_blob_sha1": "1c607895588354a80b592eb1c47ce305f6985856",
+          "size": 10599,
+          "mode": "100644"
+        },
+        "skills/citation-management/scripts/search_pubmed.py": {
+          "sha256": "a01a8034775939264ffb0b5454956b15c7915babea6f1af2fd822b95e1082884",
+          "git_blob_sha1": "f0bc118e1e76db08061a50ae79c2d9e5367afa8b",
+          "size": 13779,
+          "mode": "100755"
+        },
+        "skills/citation-management/scripts/validate_citations.py": {
+          "sha256": "b20abad7a10f722a7c404adc9884bec339fc960c82373698e73e49ba2015fba5",
+          "git_blob_sha1": "b5bd9ef349e33130d08c334c0136e2b9b23784a8",
+          "size": 26708,
+          "mode": "100755"
+        },
+        "skills/paper-lookup/SKILL.md": {
+          "sha256": "487f39acbc2d7988e967a4f479bf43100c221c1e258c2d24fdc7168e2098e33c",
+          "git_blob_sha1": "4dc7cc892d0008f47e22886409e7b98ec9fb80cd",
+          "size": 24782,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/references/arxiv.md": {
+          "sha256": "ebb9ed199687255963eb1f983e015b031851b2175b30196df4d14986435d066b",
+          "git_blob_sha1": "e62c9485398a4c5712a954a2be8c648cedd779fb",
+          "size": 11884,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/references/biorxiv.md": {
+          "sha256": "c2a034ffcf8b37656af8422aea5df19f5fe52d17997619693af0d091891efc12",
+          "git_blob_sha1": "70298597f4ef88ab00bf06817994d3d547bd91fc",
+          "size": 6260,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/references/biostudies.md": {
+          "sha256": "fd88c36288573afaed11608e65363f2738983f53caf7c518a7737ada832f8e68",
+          "git_blob_sha1": "dcc8764e2a7f33dea75d61832421e28e3d7141e7",
+          "size": 3193,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/references/core.md": {
+          "sha256": "f1dcb49a99431393efacd2a80b17092561be1e3054fe173aa387c1b6009c1402",
+          "git_blob_sha1": "dc6edec36c254d4e7ba025e257a68380dcf0e925",
+          "size": 3969,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/references/crossref.md": {
+          "sha256": "036a6419086426a97ada3360b1ee2a4c8fa3051d98320a8881fbabf3fe65ec68",
+          "git_blob_sha1": "a1bef0067ba2e38aaa41eb98f9c016d22b561f2a",
+          "size": 5080,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/references/doaj.md": {
+          "sha256": "e04199d8c9d8d8c36e2d809d43bc7ed7197df155ebe005ac7a4414ad30728cd3",
+          "git_blob_sha1": "0d2c9901dd304844a8517597934278240a509cd1",
+          "size": 4053,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/references/europepmc.md": {
+          "sha256": "225cbbbd391de8b28548e4dff2081eda6b743c333bc4c5083c920258d46a5c10",
+          "git_blob_sha1": "8ad8d7b9db7a8adc1dfed83e98232c31348c62c6",
+          "size": 8907,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/references/figshare.md": {
+          "sha256": "804c02ba4cb9b2211aefa61713c8ed273b050d6f6602f4bad128dc7705e73bab",
+          "git_blob_sha1": "8a1d486a1e7ac995ef155eef40d5d08f8884cab5",
+          "size": 2758,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/references/medrxiv.md": {
+          "sha256": "f8175230eaf2772cfcd3ccd5fcce8bef7fc225b0c749dc1441c0df47a3ecb0c9",
+          "git_blob_sha1": "0b98b173fc95c9b102ba911ef23b4347275d0273",
+          "size": 4879,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/references/openalex.md": {
+          "sha256": "df4a8b86174c37e07a3691f5fa627f8cb61cd60587ce1723a6608058547bda08",
+          "git_blob_sha1": "3f2ea3a0c20fe7f44d06fa5b7975a5c663693ebc",
+          "size": 5143,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/references/opencitations.md": {
+          "sha256": "5faae078947465b5a884779642193073c26dfd1f6dbf3bd070d56902304c994f",
+          "git_blob_sha1": "400bb9a9597b87fb462585585a8ebeabb342eafd",
+          "size": 4534,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/references/pmc.md": {
+          "sha256": "77f31c9362acf40c50ebd32bedcd58fe80aa9a72a56db430bdd6bcba26d40bff",
+          "git_blob_sha1": "c6d5b5a418025f4c31f88cdd3021f7578340fd9e",
+          "size": 7921,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/references/pubmed.md": {
+          "sha256": "7f8650a8c47a435a83e346c147d166f31f3574c4696050d64a03cea790d7fc6f",
+          "git_blob_sha1": "c86a19ab7b0c1feecaf3186416e8beedb4bb025c",
+          "size": 3939,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/references/pubtator.md": {
+          "sha256": "55a0b2fab178479616e2225cdd434e4cb52b1d5ebdedc3074384b9d960c5a206",
+          "git_blob_sha1": "2021fa653d87c83bcc5191dfe93fe3442fab7934",
+          "size": 4379,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/references/ror.md": {
+          "sha256": "ba579975cfa50e476e140821703aadea3644730256eef3be971f528e777692f2",
+          "git_blob_sha1": "988eebc928bbcd4d20ecb6995afab4a2ee01b01d",
+          "size": 3964,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/references/semantic-scholar.md": {
+          "sha256": "61a92ed728d3a0421ddf0e7430b025bfe3764816b1fff71bb77b8860d670936d",
+          "git_blob_sha1": "c960e813527f4b2ac44b574dcb37d6f85797bd4e",
+          "size": 6098,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/references/unpaywall.md": {
+          "sha256": "97d95863b2a73837070f48e1bf93ea3c2e920b1564eb7e5ac4ab4167ae77d4f1",
+          "git_blob_sha1": "988028fbfea3a6bcecd36f006af0ffee1c92e8fe",
+          "size": 3795,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/references/zenodo.md": {
+          "sha256": "9fda63c19d76ddfef781a4cbbd395a8a17e82f8003ca98b55cf2ef8069765e4e",
+          "git_blob_sha1": "13b52524d9e248109aa69b4c4afd1eabd7850959",
+          "size": 3483,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/scripts/_common.py": {
+          "sha256": "4c6962ddbcb8cb89adc6c6ac02199835310f04b2ab93ffab9855adef38efd369",
+          "git_blob_sha1": "1b7269b9ecc6c71d34af83ce146bcbd735a81a19",
+          "size": 8377,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/scripts/arxiv_atom.py": {
+          "sha256": "ef8014d59380864973b5784bc76a954152eed81cb5e139755f050284d111cc89",
+          "git_blob_sha1": "208c3aa028d79569f3fd638152390b86bfa238cf",
+          "size": 7993,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/scripts/jats_to_text.py": {
+          "sha256": "4c0cad352a4ab8642bb32929adf2d91386c45c1f2f8b19955b1ef504754449d0",
+          "git_blob_sha1": "a366b29ce85c172efeb21c29c33a659d0334e639",
+          "size": 11305,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/scripts/openalex_abstract.py": {
+          "sha256": "ad1092c887ea61be4cefa7f94d261c84b50be7e1bbf076b53c6569b5955edb27",
+          "git_blob_sha1": "87eb11fc1a84f5851678d9a7c1e25bb723717dce",
+          "size": 6033,
+          "mode": "100644"
+        },
+        "skills/paper-lookup/scripts/paginate.py": {
+          "sha256": "98bd6ead5a1ae5ce52dec5159f7e48701d05adeadabefae4bb275c1e9b526989",
+          "git_blob_sha1": "c60d5f984d23b9aed89c173133e2910c2ce74c01",
+          "size": 17626,
+          "mode": "100644"
+        },
+        "skills/peer-review/SKILL.md": {
+          "sha256": "3422beafc240aa7d2703e71fe16e3400269a5ea17045d8b390a30efe58c3de67",
+          "git_blob_sha1": "ea0ca64ff7f90784ddc61a5aed95fb6e9ce53a44",
+          "size": 12597,
+          "mode": "100644"
+        },
+        "skills/peer-review/assets/citation_references_template.csv": {
+          "sha256": "e00b259742a0716661d8adba1e81fc7ca722cea32c3cfe5a5e29509844ed742b",
+          "git_blob_sha1": "ccefdaa806184717cd79e2dd06888bda58984253",
+          "size": 196,
+          "mode": "100644"
+        },
+        "skills/peer-review/assets/claim_evidence_matrix_template.csv": {
+          "sha256": "06e1215c998a978bdbbe30008040536902abe138e0f790b243ecaee1f21b7da7",
+          "git_blob_sha1": "df23fb265562c2ffe5fce0d817fc603aaeee4c7b",
+          "size": 745,
+          "mode": "100644"
+        },
+        "skills/peer-review/assets/reporting_checklist_template.csv": {
+          "sha256": "02709793bc1702fadc760e7089398eb28351b22885a08cbea6c85f135e931ee1",
+          "git_blob_sha1": "76505756718804dc5fdef6d70c4fae39752e4069",
+          "size": 968,
+          "mode": "100644"
+        },
+        "skills/peer-review/assets/reporting_guidelines.json": {
+          "sha256": "a3684d48498168775ed3f3a8315b01a53f925e38d952d70baf0ec0f2ced105fa",
+          "git_blob_sha1": "1d45f29d333630ecf5489a25daeedcc7054d9fb3",
+          "size": 13446,
+          "mode": "100644"
+        },
+        "skills/peer-review/assets/review_intake_template.json": {
+          "sha256": "14d7e00cdc710b8235c80faa71f4c5712c1db1a0a2d734fd4fa9807bbc960438",
+          "git_blob_sha1": "a10888476849895bc335677ad987e14738b20cfe",
+          "size": 1290,
+          "mode": "100644"
+        },
+        "skills/peer-review/assets/review_scaffold_template.md": {
+          "sha256": "4e320c9a6238ac7ea2494a4c486e93d1eaf2c5239aab80fcd8eea70a6e359102",
+          "git_blob_sha1": "dfbae11925ae96be6d6106987435f9774a43eba2",
+          "size": 3025,
+          "mode": "100644"
+        },
+        "skills/peer-review/assets/source_ledger.csv": {
+          "sha256": "a73e02a696c470eab2765aa563492866b1baeeb2071fd9cc0777fcf7ea39a7cb",
+          "git_blob_sha1": "f27ba6f6f1009ea7a90aa639a67a494441a48ba2",
+          "size": 9147,
+          "mode": "100644"
+        },
+        "skills/peer-review/assets/statistical_reproducibility_template.json": {
+          "sha256": "071bfc0b1e1edb9d09c539b5c6e291e43e8d719cbe50cfdeac1044fe8f0b69a3",
+          "git_blob_sha1": "943a30fef1fefad979e9828573d6d76771001399",
+          "size": 7281,
+          "mode": "100644"
+        },
+        "skills/peer-review/assets/study_profile_template.json": {
+          "sha256": "bc0c19b9ad478c78c4b5111bcd913faca8046e0833815b1bd579a046f737df40",
+          "git_blob_sha1": "cce8e5f4e0a67795862ea17e4f30c80c8a44c82c",
+          "size": 197,
+          "mode": "100644"
+        },
+        "skills/peer-review/references/common_issues.md": {
+          "sha256": "6a0979d6d64e07f769db8ee9ab82ad3190aebaca4294838f338f5c4b51b596f6",
+          "git_blob_sha1": "f04f8b849f179b2f69e3f247526d0ba8cfc5bfb2",
+          "size": 13999,
+          "mode": "100644"
+        },
+        "skills/peer-review/references/ethical_review_practice.md": {
+          "sha256": "7a1b1cf1e02f85b9bf6f0e90d729d7fc4a2819922e1037b5e9543a7670236a24",
+          "git_blob_sha1": "c0211caab2d98e7a699354c46961a14734df8ce3",
+          "size": 11131,
+          "mode": "100644"
+        },
+        "skills/peer-review/references/reporting_standards.md": {
+          "sha256": "96ae056f803407671ff7f73d3a29719472698563b85db58e42f21f0c9eeb13f3",
+          "git_blob_sha1": "f155b2d20243c5aecd6e4de3aa73e20d679d12e6",
+          "size": 14032,
+          "mode": "100644"
+        },
+        "skills/peer-review/references/security_validation.md": {
+          "sha256": "43b0b64acd16544e25aae9b3ed37a78118decd5352975b2e5935704772910a27",
+          "git_blob_sha1": "928c04f56a021aba104226546cd5eb2f58142cd9",
+          "size": 3547,
+          "mode": "100644"
+        },
+        "skills/peer-review/references/statistical_reproducibility.md": {
+          "sha256": "1075d96ade7fbcc21c216a22084d74bf497b93a08b7d5f06925594abc62fb5e7",
+          "git_blob_sha1": "17f73cf259395b005d705beec2c6a8631dc8de7e",
+          "size": 11712,
+          "mode": "100644"
+        },
+        "skills/peer-review/references/tool_reference.md": {
+          "sha256": "ea9490c4e0675702b9e118fe73ff524b84bb55aea5b9883e673969200b110e81",
+          "git_blob_sha1": "d9b156b11a892703cbb53b1a7e02b463ee1f43f8",
+          "size": 7781,
+          "mode": "100644"
+        },
+        "skills/peer-review/scripts/_common.py": {
+          "sha256": "78e751bd8024d4df69a6a7ab82497424d58da06d751f4cb97ba4fc75eb9044db",
+          "git_blob_sha1": "3f8aa2152ea785ea34933c4c6555e0e4ec85fee0",
+          "size": 13896,
+          "mode": "100644"
+        },
+        "skills/peer-review/scripts/audit_citations.py": {
+          "sha256": "9521d624dce092b93f36e3c4c7dd9cab151b24d2e623d0b299adbef239100e47",
+          "git_blob_sha1": "1a7d3ec1ed8eccd075793f16d9f7c35504b2751e",
+          "size": 7097,
+          "mode": "100644"
+        },
+        "skills/peer-review/scripts/audit_statistics_reproducibility.py": {
+          "sha256": "8daf60d78a2758665b5c676d1d68e52c57c5c1988249fdbbaba62d31a49c495b",
+          "git_blob_sha1": "931d2145d64d1ffd1393c78492076ea23281240c",
+          "size": 10455,
+          "mode": "100644"
+        },
+        "skills/peer-review/scripts/generate_review_scaffold.py": {
+          "sha256": "3c2d6dc36e8e5fdd0313422d30da8c31a7ca808618818db376e348fe8d38fd2c",
+          "git_blob_sha1": "0951a39062a3cbc92bf43bb21d8ccaae74ab81c4",
+          "size": 2634,
+          "mode": "100644"
+        },
+        "skills/peer-review/scripts/lint_review.py": {
+          "sha256": "623878c26ede3d74f2ddf0e0a15acbade40d10009c66ab334550b814b2361e75",
+          "git_blob_sha1": "ff2fe89818097e88eec15316f7808ef1056b4607",
+          "size": 9085,
+          "mode": "100644"
+        },
+        "skills/peer-review/scripts/select_reporting_guidelines.py": {
+          "sha256": "9ccbbdeca6df01f2f4e1c86b98db0e9ab0a43685c6726e1abfdb9bbaa2b92ae3",
+          "git_blob_sha1": "af1e99d369e60de14cd35c7c4a652272888f6ccd",
+          "size": 13594,
+          "mode": "100644"
+        },
+        "skills/peer-review/scripts/validate_claim_evidence.py": {
+          "sha256": "93490b289f288ed686a8eb300bf40693e7caf148b5022b180077f0db22acbe2b",
+          "git_blob_sha1": "f506aaf5074f278eed5257db3ac5f3649258de16",
+          "size": 7083,
+          "mode": "100644"
+        },
+        "skills/peer-review/scripts/validate_review_intake.py": {
+          "sha256": "bbea9af9a86c937956818c1e6b84be0754a9851a5c5e27f6073f2cadd8367b2a",
+          "git_blob_sha1": "c0c229fa0b13079f68b858887904bd4a4061f9f5",
+          "size": 14466,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/SKILL.md": {
+          "sha256": "f6026e7d79cd3133e9343a7d6e6c5e06f4ad061888efb6a73fcb95e073eebf67",
+          "git_blob_sha1": "bb4741e7264302bc5cee6cc1a42e521117728b2a",
+          "size": 14005,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/assets/REPORT_FORMATTING_GUIDE.md": {
+          "sha256": "2bb69499426ed6727c1701bae752c2e902151cbf69963f8bcf25b9e54cc20724",
+          "git_blob_sha1": "c8e67f3539929acd5c95e9926e9b730090322ef9",
+          "size": 2713,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/assets/authorship_template.json": {
+          "sha256": "04a590ac47ed61dcc7cd88a26d51243cf178fe6ada99d4000ca225e1b5f6f20a",
+          "git_blob_sha1": "5dd0cd83269684612a82af798bc99f922b140c98",
+          "size": 1239,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/assets/claim_evidence_template.csv": {
+          "sha256": "cfb7a9f44cd1e5ef47ccdb3e32ac0a25b72d30e51343faace9bf07c00e3a0659",
+          "git_blob_sha1": "1745c057b4487456d07c3f20d00181050d972c39",
+          "size": 218,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/assets/consistency_manifest_template.json": {
+          "sha256": "2ea6f468ab6fab45c4db3616fbaddcc2ae706b3a26d6745b4cf74ddb53266872",
+          "git_blob_sha1": "97d8c9a8c1815269c14f01ef9d3426bc6e1c8209",
+          "size": 891,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/assets/manuscript_manifest_template.json": {
+          "sha256": "914052ff25b44072a07dce2ae8171524b717894ad7d2103054356115b9dd6c22",
+          "git_blob_sha1": "7e68378e36fa8120eca16bfac3d69f1d8007c1d7",
+          "size": 1012,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/assets/manuscript_scaffold.md": {
+          "sha256": "55305ba311ff4e2459a31a99b3f1b9da44d79499332399a9216b5f92cb412ab2",
+          "git_blob_sha1": "96cdd508ad5caed48bd97a504d3be98287b2250f",
+          "size": 1979,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/assets/reporting_coverage_template.json": {
+          "sha256": "886ca599622c1dfaedde7649ec47e973b4fbe6081cac6a6afaf24ace899d46a9",
+          "git_blob_sha1": "7ef65f95f4e09d45d76b6a068c5eff74ca3a98f6",
+          "size": 189,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/assets/reporting_guidelines.json": {
+          "sha256": "9b3aacde9e4875bfb69a78688b0bf7988b5d22c464e21e5552f6e98d77af68d2",
+          "git_blob_sha1": "1336f7cd9f63702db41e0e7ea7ebae2e4896d1bf",
+          "size": 16009,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/assets/source_manifest_template.json": {
+          "sha256": "fc6f65a8571b717691ac717f325825a608190f271e8b79650b711cc95f5b0a36",
+          "git_blob_sha1": "666c084b4dc530e1260442e24790e35b7e1c14ec",
+          "size": 599,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/references/authorship_ai_confidentiality.md": {
+          "sha256": "b02b3aee6ab0d3e925f5c0333288d29f8ee4aac103c10c9aefff2e604d436c63",
+          "git_blob_sha1": "f310349ac8f429d13ef60fe25acaa803cbe12943",
+          "size": 4496,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/references/citation_styles.md": {
+          "sha256": "64401454dc70dc9603224495b62d241b18cb055134aeda55002b89e9e15e0c85",
+          "git_blob_sha1": "ce4bdd7b3b895207d315ccae35138c9796b3b3ed",
+          "size": 3777,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/references/cli_reference.md": {
+          "sha256": "68390eea5952ee8b1c87142fc1be877fbbccde9efed4cb8c09aa77bba1eb616c",
+          "git_blob_sha1": "4eaa6f371ca4618974e93bb31cabd1196df65204",
+          "size": 3558,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/references/evidence_workflow.md": {
+          "sha256": "c7db56a223978307f9f43921eb393d87fef8c051a492c3d7e3c016c62b9e1409",
+          "git_blob_sha1": "abc6e36eb0bb447e157691ea7c5f749c34866c2b",
+          "size": 3929,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/references/figures_tables.md": {
+          "sha256": "212d10f3e7a01325d2518c4aab54a4fc04a67e4aa94e959cead199c425a0f4d6",
+          "git_blob_sha1": "7022338d438e439aa475b4ecacf6ba7314b26aed",
+          "size": 3915,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/references/imrad_structure.md": {
+          "sha256": "8a1201f8e58a045736a5bc65a47f239c894be6946716e969c0b77aa90a7e8e39",
+          "git_blob_sha1": "c53506c127ee6f5feb9f6a262398dc85243e73bb",
+          "size": 4512,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/references/journal_policies.md": {
+          "sha256": "88461292ebde06f0db0e756b8e3c776cc2017eb313a8593636be264af2578ff1",
+          "git_blob_sha1": "d68d4d8fb4c5a41d0e3fa0611e08f5159b5a923c",
+          "size": 2608,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/references/professional_report_formatting.md": {
+          "sha256": "c269fd256bda6a9389bfd5ffefa8eff8876b96d92f8391e8a01fa80910bb35d3",
+          "git_blob_sha1": "6238874aa69129b4f206d5b552325463a9b33653",
+          "size": 3230,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/references/reporting_guidelines.md": {
+          "sha256": "4a74d4613742bb26fe3d74596998b9e75ea8a2694a012222b6d9636e121a1f0d",
+          "git_blob_sha1": "fe55f07c153bd1e939f612247fc53ff836d34e35",
+          "size": 4785,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/references/research_integrity_open_science.md": {
+          "sha256": "f8f91010537acf4b78616d7410d23b85030f94d66e9d36db03d6e632ffb56100",
+          "git_blob_sha1": "63eb73027c03d25170649a2d10a67c1eef365585",
+          "size": 4149,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/references/source_ledger.md": {
+          "sha256": "cc2b3c801f4a350cab7e0b5261e4edda7e8d20274944e8b5590e62f0da42a0f6",
+          "git_blob_sha1": "5831ab511d27200552c5af2361daa056a3ee5970",
+          "size": 10175,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/references/writing_principles.md": {
+          "sha256": "58d4b32f63446c0b082f163314fdcf0d41a50568ad392d34ba992e24fadae764",
+          "git_blob_sha1": "5fcd5012957fe6670e1e31e103c51d8cfbefa048",
+          "size": 3904,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/scripts/_common.py": {
+          "sha256": "ef5f301a8bd71e8ca170299d44bf37f083ba4e1be88a8c193b75b30e74c3bc3d",
+          "git_blob_sha1": "f57d5f106ee5f504179b413744456208d264eaa8",
+          "size": 7670,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/scripts/audit_claims.py": {
+          "sha256": "6457413cfdc12317852f35cecaacb3e11e821d25d5925125f1a9af886eeb6d9a",
+          "git_blob_sha1": "ed14ff88e1115753342e8d743dc2dc4ce36d160e",
+          "size": 8834,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/scripts/check_consistency.py": {
+          "sha256": "5bd1f0dcbcccdac31e422b5a7b220d1ab1272a7eed906a62c0a5f2518e495d87",
+          "git_blob_sha1": "415be5ce6dae79965f00a3c7cada62a9f012e547",
+          "size": 14209,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/scripts/check_references.py": {
+          "sha256": "a262d6e935e69ec1c1f25a36b8a12b6905b3f3dee0a11d94557d3f69857c5f07",
+          "git_blob_sha1": "dbc3830643883f785ddc41a9b7a18bef1f4a7c5a",
+          "size": 7075,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/scripts/lint_manuscript.py": {
+          "sha256": "08ff45315c4dadd1c91104e3639b6bec7a6086c000830dc9d0b2b965895b3398",
+          "git_blob_sha1": "81472e6e476a31c582a193761a03fb66e9d0fdfe",
+          "size": 5881,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/scripts/scaffold_manuscript.py": {
+          "sha256": "69e9a82c7d0608646872c0f4ad08b538f0c67175b48601d9d52ea527334ce4ae",
+          "git_blob_sha1": "f60dd74b9b4f2c65faf1f4703e193cb7e8f1fe80",
+          "size": 4328,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/scripts/select_reporting_guidelines.py": {
+          "sha256": "d130036ab1df6486cb54431a168207af03a52c626459ba7471041b0ee5aab567",
+          "git_blob_sha1": "7d23b877cef342ba21074fcfaec7dd47c00a7607",
+          "size": 7580,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/scripts/validate_authorship.py": {
+          "sha256": "7e1f44ac8ad7c232cf1c34f4c51d54190ffb24230a6a0b9ceeddf6d58a2ff89d",
+          "git_blob_sha1": "ffa9f4961bc9a61c2796c4595d6c3f7a9f03cc42",
+          "size": 11498,
+          "mode": "100644"
+        },
+        "skills/scientific-writing/scripts/validate_manifest.py": {
+          "sha256": "06c827653a095455cbf7d8a80a7a818018ed55076d3421863cff3dcb5e031750",
+          "git_blob_sha1": "088ea5f1a41b3f78fd87bbe5aa355a3d9455e8bc",
+          "size": 14514,
+          "mode": "100644"
+        }
+      }
+    }
+  }
+}
