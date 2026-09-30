@@ -12,7 +12,7 @@
     "paper-lookup": {"upstream": "scientific-agent-skills", "path": "skills/paper-lookup"},
     "citation-management": {"upstream": "scientific-agent-skills", "path": "skills/citation-management"},
     "peer-review": {"upstream": "scientific-agent-skills", "path": "skills/peer-review"},
-    "structural-biology-audit": {"local": "skills/structural-biology-audit"}
+    "structural-biology-audit": {"local": "skills/structural-biology-audit", "exclude": ["full-text", "__pycache__", "*.pyc", ".DS_Store"]}
   },
   "runtime": {
     "requirements": "runtime/requirements.txt",

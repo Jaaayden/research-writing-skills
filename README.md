@@ -86,12 +86,14 @@ python3 scripts/manage.py check --project "/path/to/My Research Project"
 
 `citation-management` 当前的 OpenAlex 脚本读取邮箱但不能传入 `OPENALEX_API_KEY`；需要更高额度的调用可用 `paper-lookup` 提供的 API 方式。Google Scholar 分支需要额外安装 `scholarly`，未配置时其余检索、BibTeX 整理和本地核验仍可用。安装器不会读取 `.env` 或收集 API key。
 
+`structural-biology-audit` 的完整 PDF 定位功能可读取 Zotero Desktop 已有的附件。使用该功能时，需要启动 Zotero，并在设置中启用本地 API；只读访问无需 API key，也无需额外环境变量。安装器不安装或修改 Zotero。未配置 Zotero 时，审计指南、来源索引与 DOI 检索仍可用；也可自行准备技能 `full-text/` 目录中的完整本地 PDF。PDF 不随公开仓库或默认安装分发。
+
 ## 许可
 
 上游 Skill 文件保留其 MIT 许可和来源信息，许可文本见 [`licenses/K-Dense-AI-MIT.md`](licenses/K-Dense-AI-MIT.md)。本仓库自有管理代码和 `structural-biology-audit` 按根目录 [`LICENSE`](LICENSE) 中的 MIT 许可发布。请勿将私人凭据或个人环境配置迁入本仓库。
 
 ## 验证
 
-2026-09-30 在 macOS 上验证：15 项安装器行为测试通过；真实下载、带空格路径的项目安装、重复安装、隔离环境调用及卸载通过。安装后的 5 个 Skill 均由桌面应用随附 Codex 的 `skills/list(forceReload=true)` 识别为已启用的项目技能，加载错误为 0；26 个上游脚本入口检查通过。上游文件与锁定提交的 Git blob 和 SHA-256 摘要一致。
+2026-09-30 在 macOS 上验证：16 项安装器行为测试通过；真实下载、带空格路径的项目安装、重复安装、隔离环境调用及卸载通过。安装后的 5 个 Skill 均由桌面应用随附 Codex 的 `skills/list(forceReload=true)` 识别为已启用的项目技能，加载错误为 0；26 个上游脚本入口检查通过。上游文件与锁定提交的 Git blob 和 SHA-256 摘要一致。源目录中的可选 `full-text/`、Python 缓存和 `.DS_Store` 不会随安装复制；目标中用户后来加入的文件仍受覆盖和卸载保护。
 
 四个上游 Skill 的 339 项原始行为检查也已通过（网络响应使用 fixtures/mock）；这些结果不代表所有学术 API 均已联网验证。仓库 CI 在 Python 3.11 和 3.14 上运行安装器行为测试。Windows 的命令和路径处理已按平台分支编写，尚未在 Windows 实机安装。

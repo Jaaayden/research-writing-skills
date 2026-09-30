@@ -74,7 +74,10 @@ class InstallerFixture:
             name: {"upstream": upstream, "path": f"skills/{name}"}
             for name in REMOTE_SKILLS
         }
-        skill_config[LOCAL_SKILL] = {"local": f"skills/{LOCAL_SKILL}"}
+        skill_config[LOCAL_SKILL] = {
+            "local": f"skills/{LOCAL_SKILL}",
+            "exclude": ["full-text", "__pycache__", "*.pyc", ".DS_Store"],
+        }
         sources = {
             "schema_version": 1,
             "minimum_python": "3.11",
@@ -111,6 +114,12 @@ class InstallerFixture:
         (local_dir / "references" / "guide.md").write_text(
             f"Local helper {label}\n", encoding="utf-8"
         )
+        (local_dir / "full-text").mkdir(exist_ok=True)
+        (local_dir / "full-text" / "article.pdf").write_bytes(b"synthetic local full text")
+        (local_dir / "__pycache__").mkdir(exist_ok=True)
+        (local_dir / "__pycache__" / "audit.cpython-311.pyc").write_bytes(b"synthetic bytecode")
+        (local_dir / "scratch.pyc").write_bytes(b"synthetic bytecode")
+        (local_dir / ".DS_Store").write_bytes(b"synthetic finder metadata")
         (self.repo / "runtime").mkdir(exist_ok=True)
         # Empty requirements keep the fixture independent from pip and network.
         (self.repo / "runtime" / "requirements.txt").write_text("", encoding="utf-8")
@@ -265,6 +274,32 @@ class InstallerBehaviorTests(unittest.TestCase):
         with self.assertRaises(self.manage.ManageError):
             self.fixture.install()
         self.assertFalse((self.fixture.project / ".agents" / "skills").exists())
+
+    def test_local_exclusions_skip_full_text_and_cache_but_installed_additions_are_protected(self):
+        fixture = self.fixture
+        fixture.install()
+        installed = fixture.project / ".agents" / "skills" / LOCAL_SKILL
+        state_path = fixture.project / ".agents" / "research-writing-skills" / "state.json"
+        state = json.loads(state_path.read_text(encoding="utf-8"))
+        local_files = state["skills"][LOCAL_SKILL]
+
+        self.assertEqual(set(local_files), {"SKILL.md", "references/guide.md"})
+        self.assertTrue((installed / "SKILL.md").is_file())
+        self.assertTrue((installed / "references" / "guide.md").is_file())
+        for excluded in ("full-text", "__pycache__", "scratch.pyc", ".DS_Store"):
+            self.assertFalse((installed / excluded).exists(), excluded)
+
+        # Source-only exclusion patterns must not hide user files from
+        # installed-state integrity checks.
+        user_pdf = installed / "full-text" / "user-added.pdf"
+        user_pdf.parent.mkdir()
+        user_pdf.write_bytes(b"user content")
+        with self.assertRaises(self.manage.ManageError):
+            self.manage.check_project(fixture.config, fixture.project, runner=fixture.successful_runner)
+        with self.assertRaises(self.manage.ManageError):
+            self.manage.uninstall_project(fixture.config, fixture.project)
+        self.assertTrue(user_pdf.is_file())
+        self.assertTrue(state_path.is_file())
 
     def test_managed_upgrade_and_failed_upgrade_leave_a_coherent_old_install(self):
         fixture = self.fixture

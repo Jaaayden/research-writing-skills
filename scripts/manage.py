@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import ast
 from concurrent.futures import ThreadPoolExecutor
+import fnmatch
 import hashlib
 import json
 import os
@@ -49,16 +50,19 @@ def record(data, mode='100644'):
     return {'sha256': digest(data), 'git_blob_sha1': hashlib.sha1(f'blob {len(data)}\0'.encode() + data).hexdigest(), 'size': len(data), 'mode': mode}
 
 
-def tree_hashes(path):
+def tree_hashes(path, exclude=()):
     no_links(path)
     if not path.is_dir():
         raise ManageError(f'缺少技能目录：{path}')
     result = {}
     for p in sorted(path.rglob('*')):
+        rel = p.relative_to(path)
+        if any(fnmatch.fnmatch(part, pattern) for part in rel.parts for pattern in exclude):
+            continue
         if p.is_symlink():
             raise ManageError(f'技能不能包含软链接：{p}')
         if p.is_file():
-            result[p.relative_to(path).as_posix()] = digest(p.read_bytes())
+            result[rel.as_posix()] = digest(p.read_bytes())
         elif not p.is_dir():
             raise ManageError(f'不支持的文件类型：{p}')
     return result
@@ -211,7 +215,7 @@ def expected_skills(config):
     result = {}
     for name, spec in config['sources']['skills'].items():
         if 'local' in spec:
-            result[name] = tree_hashes(config['root'] / spec['local'])
+            result[name] = tree_hashes(config['root'] / spec['local'], spec.get('exclude', ()))
         else:
             entry = config['lock']['sources'][spec['upstream']]
             prefix = spec['path'] + '/'
@@ -419,7 +423,8 @@ def install_project(config, project, runner=subprocess.run, fetch=fetch_bytes):
                         dest.chmod(0o755 if entry['files'][path]['mode'] == '100755' else 0o644)
             for name, spec in config['sources']['skills'].items():
                 if 'local' in spec:
-                    shutil.copytree(config['root'] / spec['local'], staging / name)
+                    shutil.copytree(config['root'] / spec['local'], staging / name,
+                                    ignore=shutil.ignore_patterns(*spec.get('exclude', ())))
             for name, hashes in expected.items():
                 if tree_hashes(staging / name) != hashes:
                     raise ManageError(f'暂存技能校验失败：{name}')
