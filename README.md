@@ -86,7 +86,7 @@ python3 scripts/manage.py check --project "/path/to/My Research Project"
 
 `citation-management` 当前的 OpenAlex 脚本读取邮箱但不能传入 `OPENALEX_API_KEY`；需要更高额度的调用可用 `paper-lookup` 提供的 API 方式。Google Scholar 分支需要额外安装 `scholarly`，未配置时其余检索、BibTeX 整理和本地核验仍可用。安装器不会读取 `.env` 或收集 API key。
 
-`structural-biology-audit` 的完整 PDF 定位功能可读取 Zotero Desktop 已有的附件。使用该功能时，需要启动 Zotero，并在设置中启用本地 API；只读访问无需 API key，也无需额外环境变量。安装器不安装或修改 Zotero。未配置 Zotero 时，审计指南、来源索引与 DOI 检索仍可用；也可自行准备技能 `full-text/` 目录中的完整本地 PDF。PDF 不随公开仓库或默认安装分发。
+`structural-biology-audit` 的审计指南与来源索引无需额外软件。完整 PDF 不随公开仓库或默认安装分发，可通过 DOI 自行获取或使用已有 Zotero 附件。通过 Zotero 本地 API 读取已有附件时，需要启动 Zotero，并在设置中启用本地 API；只读访问无需 API key 或额外环境变量。安装器不安装或修改 Zotero。
 
 ## 许可
 
