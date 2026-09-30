@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "record_count": 39,
   "primary_record_count": 37,
   "update_record_count": 2,
@@ -51,7 +51,7 @@
         {
           "url": "https://doi.org/10.1016/j.jmb.2003.07.013",
           "location": "Appendix A, ‘An Objective Criterion for Resolution Assessment…’, equations A2–A6; printed pp. 743–745; PDF pp. 23–25",
-          "what_verified": "在作者的信号/噪声模型及其假设下，半图 FSC=0.143 对应全数据重构与理想无噪参考图约 0.5 的相关。该推导涉及的是 half-map 与理想参考的统计换算，不是 map–model FSC=0.5。",
+          "what_verified": "Under the authors’ signal/noise model and its assumptions, a half-map FSC of 0.143 corresponds to a correlation of approximately 0.5 between the full-data reconstruction and an ideal noise-free reference map. This derivation is a statistical conversion between the half-map and an ideal reference; it is not map–model FSC=0.5.",
           "pdf_pages": [
             23,
             24,
@@ -61,35 +61,42 @@
         {
           "url": "https://doi.org/10.1016/j.jmb.2003.07.013",
           "location": "Appendix A, Table A1; printed p. 744; PDF p. 24",
-          "what_verified": "表中列出半数据集信噪比与最终全数据重构对理想参考相关值之间的对应，支持把 0.143 的解释限定在该模型内。",
+          "what_verified": "The table pairs the half-dataset signal-to-noise ratio with the correlation of the final full-data reconstruction to an ideal reference, supporting interpretation of 0.143 within this model.",
           "pdf_pages": [
             24
           ]
         }
       ],
-      "scope": "核对分辨率统计推导及其对 0.143 的解释，用于区别 half-map FSC 与理想参考相关；未把此文用于取向/绝对手性/对比度损失规则。",
+      "scope": "Reviewed the resolution-statistics derivation and its interpretation of 0.143 to distinguish half-map FSC from correlation to an ideal reference; this paper was not used for orientation, absolute hand, or contrast-loss rules.",
       "limitations": [
-        "只细读与分辨率阈值主张直接相关的 Appendix A；文章其他主题不在本次审查范围。",
-        "推导依赖文中统计模型和信号、噪声关系假设，不能单独确立对所有 cryo-EM 数据普遍适用的阈值。"
+        "Only Appendix A, which directly concerns the resolution-threshold claim, was read closely; the paper’s other topics are outside this review.",
+        "The derivation depends on the paper’s statistical model and assumptions about signal/noise relationships; it does not by itself establish a threshold that applies universally to all cryo-EM data."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "附件为已发表的 Journal of Molecular Biology 出版版 PDF（2003；333:721–745），非 AAM/preprint。",
+        "version": "The attachment is the published Journal of Molecular Biology version PDF (2003; 333:721–745), not an AAM/preprint.",
         "reviewed_pdf_pages": [
           1,
           23,
           24,
           25
         ],
-        "coverage": "核对首页题名/DOI及 Appendix A 的完整相关推导、式 A2–A6 和 Table A1；未把已提取全文等同于逐页审读。",
+        "coverage": "Checked the title/DOI on the first page and the complete relevant derivation in Appendix A, equations A2–A6, and Table A1; the extracted full text was not treated as equivalent to page-by-page review.",
         "unresolved": [
-          "正文其余部分未逐页审读。"
+          "The remainder of the main text was not reviewed page by page."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 25,
         "pdf_sha256": "c89495af8ee374656c84b2d31331acce133711c20825da5864955eca48664038",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_permitted",
+        "checked_on": "2026-09-30",
+        "license_id": null,
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     },
     {
@@ -133,32 +140,39 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1038/nmeth.2115",
-          "location": "Figure 1 与正文；printed pp. 853–854; PDF pp. 1–2",
-          "what_verified": "作者直接提出对两个 half-data sets 分别独立精修模型，以避免伪相关；Figure 1 区分 half-map FSC 0.143 与全数据图对晶体坐标模型计算图的 FSC 0.5。本审计将此操作化为从首次三维精修起保持独立，并记录是否共享低通初始化/起始参考，以评估高分辨率信息是否串流；文章没有规定粒子挑选等前处理也拆分，或给出共享初始化的具体截止参数。",
+          "location": "Figure 1 and main text; printed pp. 853–854; PDF pp. 1–2",
+          "what_verified": "The authors directly propose independently refining models against the two half-data sets to avoid spurious correlation; Figure 1 distinguishes half-map FSC 0.143 from FSC 0.5 between the full-data map and a map calculated from crystallographic model coordinates. This audit traces initialization, reconstruction and refinement to assess high-resolution information leakage, recording shared start references and their low-pass filtering; a shared low-resolution initializer is not an automatic failure. The paper does not require particle-picking and other preprocessing to be split or specify a universal cutoff parameter for shared initialization.",
           "pdf_pages": [
             1,
             2
           ]
         }
       ],
-      "scope": "用于 gold-standard half-set 独立性及 half-map FSC 与 map-to-model FSC 的对象/阈值区别。",
+      "scope": "Used for gold-standard half-set independence and the distinction in object and threshold between half-map FSC and map-to-model FSC.",
       "limitations": [
-        "文章是简短方法评论及示例图，不能据此推导所有数据集上的普遍过拟合幅度或阈值保证。"
+        "This is a brief methods commentary with an example figure and cannot establish universal overfitting magnitudes or threshold guarantees across all data sets."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "附件为 Nature Methods 已发表的排版出版版 PDF（2012；9:853–854），非 AAM/preprint；虽在线库可能另列 Author Manuscript，本次核验针对附件版本。",
+        "version": "The attachment is the published, typeset Nature Methods PDF (2012; 9:853–854), not an AAM/preprint; although the online archive may list a separate Author Manuscript, this review concerns the attached version.",
         "reviewed_pdf_pages": [
           1,
           2
         ],
-        "coverage": "阅读两页全文并核对 Figure 1、图注、正文和题名/DOI。",
+        "coverage": "Read both pages in full and checked Figure 1, its caption, the main text, and the title/DOI.",
         "unresolved": [],
         "checked_on": "2026-09-30",
         "pdf_page_count": 2,
         "pdf_sha256": "2b1ec5bb92e4c167fc2df73237973eec381bb4eca0f59f092527024ac39df410",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_established",
+        "checked_on": "2026-09-30",
+        "license_id": null,
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     },
     {
@@ -221,8 +235,8 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1016/j.ultramic.2013.06.004",
-          "location": "§1.2、Methods/§2–3 与 equations 1–4；printed pp. 27–29; PDF pp. 4–6",
-          "what_verified": "高分辨率噪声替换用于估计过拟合；式 (4) 给出扣除替换噪声相关后的 FSC 校正。噪声替换截止频率需适当选择，过低会损伤取向信息，过高则缺少判别力。",
+          "location": "§1.2, Methods/§2–3, and equations 1–4; printed pp. 27–29; PDF pp. 4–6",
+          "what_verified": "High-resolution noise substitution is used to estimate overfitting; equation (4) gives an FSC correction after subtracting correlation with the substituted noise. The noise-substitution cutoff frequency must be selected appropriately: too low can damage orientation information, while too high provides little discriminatory power.",
           "pdf_pages": [
             4,
             5,
@@ -231,31 +245,31 @@
         },
         {
           "url": "https://doi.org/10.1016/j.ultramic.2013.06.004",
-          "location": "Figure 4、对应结果及讨论；printed p. 31; PDF p. 8",
-          "what_verified": "图和文字显示 mask 可引入高频伪相关，噪声替换校正可在文中测试的条件下作校正；边缘更陡、尤其二值 mask 会产生更大伪影并使反卷积校正失准，因此该校正不是对任意 mask 都有效的保证。",
+          "location": "Figure 4, corresponding results, and discussion; printed p. 31; PDF p. 8",
+          "what_verified": "The figure and text show that a mask can introduce high-frequency spurious correlation and that noise-substitution correction can address it under the conditions tested in the paper. Sharper edges, especially a binary mask, produce larger artifacts and can invalidate the deconvolution correction, so the correction is not guaranteed to work for arbitrary masks.",
           "pdf_pages": [
             8
           ]
         },
         {
           "url": "https://doi.org/10.1016/j.ultramic.2013.06.004",
-          "location": "Figure 5、Discussion、Conclusions；printed pp. 32–33; PDF pp. 9–10",
-          "what_verified": "作者对示例中的 half-map FSC 0.143 与 map–model FSC 0.5 作了区分，并讨论过拟合阈值及处理方法的限制；文中并未把所有阈值争议消解为跨数据集硬规则。",
+          "location": "Figure 5, Discussion, Conclusions; printed pp. 32–33; PDF pp. 9–10",
+          "what_verified": "The authors distinguish half-map FSC 0.143 from map–model FSC 0.5 in their example and discuss limits of overfitting thresholds and processing methods; the paper does not resolve all threshold disputes into a rigid rule that applies across data sets.",
           "pdf_pages": [
             9,
             10
           ]
         }
       ],
-      "scope": "核对噪声替换方法、校正式、mask 伪相关及作者明确讨论的适用边界，以支持按争议触发的检查。",
+      "scope": "Reviewed the noise-substitution method, correction equation, mask-induced spurious correlation, and applicability limits explicitly discussed by the authors, to support checks triggered by the claim under review.",
       "limitations": [
-        "论文展示的是所测试流程/样例；式 (4) 不能被概括成任意 mask 下的普遍纠偏保证。",
-        "PDF pp. 11–12 为参考文献等非核心部分，本次未逐页审读。"
+        "The paper presents tested workflows/examples; equation (4) should not be generalized into a universal correction guarantee for arbitrary masks.",
+        "PDF pp. 11–12 contain references and other non-core material and were not reviewed page by page."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "附件为 Ultramicroscopy 已发表的出版社排版 PDF（2013；135:24–35；© Authors/Elsevier，CC BY），非 AAM/preprint。",
+        "version": "The attachment is the published, publisher-typeset Ultramicroscopy PDF (2013; 135:24–35; © Authors/Elsevier, CC BY), not an AAM/preprint.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -268,14 +282,21 @@
           9,
           10
         ],
-        "coverage": "细读摘要/引言、§1.2、方法、相关结果图及图注（尤其 Figures 2–5）、Discussion 和 Conclusions；视觉核对 PDF p. 6 的方程/图及 PDF p. 8 的 Figure 4 与相邻文字。",
+        "coverage": "Read the abstract/introduction, §1.2, methods, relevant results figures and captions (especially Figures 2–5), Discussion, and Conclusions closely; visually checked the equation/figure on PDF p. 6 and Figure 4 with adjacent text on PDF p. 8.",
         "unresolved": [
-          "未逐页审读 PDF pp. 11–12 的参考文献部分。"
+          "PDF pp. 11–12, containing references, were not reviewed page by page."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 12,
         "pdf_sha256": "5d81e6bb39b94f81b98f4b3f3b195540652d80a7aa6e800d5cc6c13f0a7ba499",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "CC BY 3.0 (Creative Commons Attribution 3.0 Unported)",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/chen2013.pdf"
       }
     },
     {
@@ -323,8 +344,8 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1038/nmeth.2727",
-          "location": "正文、Figure 1 与结果；printed pp. 63–65; PDF pp. 1–3",
-          "what_verified": "ResMap 的局部分辨率意指局部正弦信号在所设检验条件下可检出的最小波长/特征尺度；不是原子模型准确度或残基级验证。",
+          "location": "Main text, Figure 1, and results; printed pp. 63–65; PDF pp. 1–3",
+          "what_verified": "ResMap’s local resolution means the smallest wavelength/feature scale of a local sinusoidal signal detectable under the specified test conditions; it is not atomic-model accuracy or residue-level validation.",
           "pdf_pages": [
             1,
             2,
@@ -333,22 +354,22 @@
         },
         {
           "url": "https://doi.org/10.1038/nmeth.2727",
-          "location": "Online Methods（含统计检验、噪声估计和多重检验校正）；PDF pp. 4–5（在线补充版式，无连续期刊印刷页码）",
-          "what_verified": "局部分辨率依赖局部正弦模型、噪声估计、给定 P 值（示例常取 0.05）及多重检验/FDR 处理，需随算法假设和参数解释。",
+          "location": "Online Methods (including statistical testing, noise estimation, and multiple-testing correction); PDF pp. 4–5 (online supplement layout, without continuous journal print pagination)",
+          "what_verified": "Local resolution depends on a local sinusoidal model, noise estimation, a specified P value (often 0.05 in the example), and multiple-testing/FDR treatment, and should be interpreted in light of the algorithm’s assumptions and parameters.",
           "pdf_pages": [
             4,
             5
           ]
         }
       ],
-      "scope": "用于界定 ResMap 局部分辨率的含义、统计设定和输出不能支持的原子级结论。",
+      "scope": "Used to define the meaning and statistical setup of ResMap local resolution, and the atomic-level conclusions its output cannot support.",
       "limitations": [
-        "方法论文解释的是 ResMap；其他局部分辨率算法不必共享完全相同的检验定义或参数。"
+        "The methods paper explains ResMap; other local-resolution algorithms need not share exactly the same test definition or parameters."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "附件为 Nature Methods 已发表出版版 PDF（2014；11:63–65，后接 Online Methods），非 AAM/preprint。",
+        "version": "The attachment is the published Nature Methods PDF (2014; 11:63–65), followed by Online Methods; it is not an AAM/preprint.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -356,12 +377,19 @@
           4,
           5
         ],
-        "coverage": "阅读附件五页，覆盖正文、Figure 1、结果、Online Methods、噪声估计及多重检验讨论；核对题名、期刊卷期、DOI。",
+        "coverage": "Read the five-page attachment, covering the main text, Figure 1, results, Online Methods, noise estimation, and multiple-testing discussion; checked the title, journal volume/issue, and DOI.",
         "unresolved": [],
         "checked_on": "2026-09-30",
         "pdf_page_count": 5,
         "pdf_sha256": "f95617db966c882429a03e47a1acda4b15e80c6694639b4712c5cdb72b409682",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_established",
+        "checked_on": "2026-09-30",
+        "license_id": null,
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     },
     {
@@ -424,38 +452,38 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1038/nmeth.4347",
-          "location": "Figure 1 与结果；printed p. 794; PDF p. 2",
-          "what_verified": "图示 Euler-angle 采样、倾转前后重构与方向分辨率信息，为优选取向和各向异性审计提供案例依据；角度分布描述采样本身。",
+          "location": "Figure 1 and results; printed p. 794; PDF p. 2",
+          "what_verified": "The figure shows Euler-angle sampling, reconstructions before and after tilting, and directional-resolution information, providing an example relevant to preferred-orientation and anisotropy audits; the angle distribution describes sampling itself.",
           "pdf_pages": [
             2
           ]
         },
         {
           "url": "https://doi.org/10.1038/nmeth.4347",
-          "location": "Figure 2、讨论及 3D FSC 图例；printed p. 795; PDF p. 3",
-          "what_verified": "示例将 half-map 3D FSC 以 0.143、map-to-model 3D FSC 以 0.5 显示，并报告 sphericity/方向分布；作者讨论了所研究 HA 数据中的优选取向与重构伪影。",
+          "location": "Figure 2, discussion, and 3D FSC caption; printed p. 795; PDF p. 3",
+          "what_verified": "The example shows half-map 3D FSC at 0.143 and map-to-model 3D FSC at 0.5, and reports sphericity/directional distribution; the authors discuss preferred orientation and reconstruction artifacts in the HA data studied.",
           "pdf_pages": [
             3
           ]
         },
         {
           "url": "https://doi.org/10.1038/nmeth.4347",
-          "location": "Online Methods, ‘Three-dimensional Fourier shell correlation algorithm’; PDF p. 5（在线方法页，无连续期刊印刷页码）",
-          "what_verified": "作者用角度子集方向 FSC 形成 3D FSC 并报告其阈值与采样方式；文中将 3D FSC 与局部分辨率区分。",
+          "location": "Online Methods, ‘Three-dimensional Fourier shell correlation algorithm’; PDF p. 5 (online Methods page without continuous journal print pagination)",
+          "what_verified": "The authors form 3D FSC using directional FSC from angular subsets and report its threshold and sampling method; the paper distinguishes 3D FSC from local resolution.",
           "pdf_pages": [
             5
           ]
         }
       ],
-      "scope": "用于优选取向、方向性指标和局部分辨率的区别；规则应描述互补证据，不把 Euler-angle 采样图等同于方向 FSC。",
+      "scope": "Used to distinguish preferred orientation, directional metrics, and local resolution; the rules should describe complementary evidence and should not equate an Euler-angle sampling plot with directional FSC.",
       "limitations": [
-        "结果关系来自论文所研究的样例，不能当作优选取向必然导致某一方向误差的普遍定量定律。",
-        "PDF pp. 6–7 为参考文献/附加方法内容，本次未逐页审读。"
+        "The reported relationship comes from the examples studied in the paper and is not a general quantitative law that preferred orientation necessarily causes error in a particular direction.",
+        "PDF pp. 6–7 contain references/additional Methods and were not reviewed page by page."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "附件为 Nature Methods 已发表出版版 PDF（2017；14:793–796），后接无连续期刊印刷页码的在线 Methods/参考内容，非 AAM/preprint。",
+        "version": "The attachment is the published Nature Methods PDF (2017; 14:793–796), followed by online Methods/reference material without continuous journal print pagination; it is not an AAM/preprint.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -463,14 +491,21 @@
           4,
           5
         ],
-        "coverage": "阅读正文、Figure 1/2、相关讨论及 Online Methods 的 3D FSC 算法；视觉核对 PDF pp. 2–3 的图。",
+        "coverage": "Read the main text, Figures 1/2, relevant discussion, and the Online Methods 3D FSC algorithm; visually checked the figures on PDF pp. 2–3.",
         "unresolved": [
-          "未逐页审读 PDF pp. 6–7。"
+          "PDF pp. 6–7 were not reviewed page by page."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 7,
         "pdf_sha256": "1704fa2781b2885fcd1b7661d2ad2533c83cbfb8760c2e028038d05e0e897348",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_established",
+        "checked_on": "2026-09-30",
+        "license_id": null,
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     },
     {
@@ -514,8 +549,8 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1016/j.jsb.2005.05.009",
-          "location": "§2.2–2.4；printed pp. 253–255; PDF pp. 4–6；equations 14–19（尤 14–17）",
-          "what_verified": "half-bit 阈值随 Fourier 壳层 voxel 数变化；计算还受点群对称、asymmetric units 和对象相对重构体积大小影响。因此固定阈值的含义依赖数据与统计条件。",
+          "location": "§2.2–2.4; printed pp. 253–255; PDF pp. 4–6; equations 14–19 (especially 14–17)",
+          "what_verified": "The half-bit threshold varies with the number of voxels in a Fourier shell; its calculation is also affected by point-group symmetry, asymmetric units, and object size relative to reconstruction volume. The meaning of a fixed threshold therefore depends on the data and statistical conditions.",
           "pdf_pages": [
             4,
             5,
@@ -524,16 +559,16 @@
         },
         {
           "url": "https://doi.org/10.1016/j.jsb.2005.05.009",
-          "location": "§4.2、Figure 4C；printed p. 258; PDF p. 9",
-          "what_verified": "半-bit 曲线表示作者所定义的每 voxel 信息量判据；论文建议它作为一般用途的分辨率指标，并非单纯显著高于噪声的判据。",
+          "location": "§4.2, Figure 4C; printed p. 258; PDF p. 9",
+          "what_verified": "The half-bit curve represents the authors’ defined information-per-voxel criterion; the paper recommends it as a general-purpose resolution metric, not merely as a criterion for being significantly above noise.",
           "pdf_pages": [
             9
           ]
         },
         {
           "url": "https://doi.org/10.1016/j.jsb.2005.05.009",
-          "location": "§4.3–4.7、§§5–6；printed pp. 258–262; PDF pp. 9–13",
-          "what_verified": "作者区分 r-factor 与 half-bit 的统计解释，批评把固定 0.5/0.143 当通用准则；指出 0.143 近似关系只在其讨论的渐近条件下成立。§4.7 还讨论共享尖锐 mask 边缘导致的人工相关及 soft mask/共享参考注意事项。",
+          "location": "§4.3–4.7, §§5–6; printed pp. 258–262; PDF pp. 9–13",
+          "what_verified": "The authors distinguish the statistical interpretations of the r-factor and half-bit, criticize treating fixed 0.5/0.143 values as universal criteria, and note that the approximate relationship to 0.143 holds only under the asymptotic conditions they discuss. §4.7 also discusses artificial correlation from a shared sharp mask edge and precautions concerning soft masks/shared references.",
           "pdf_pages": [
             9,
             10,
@@ -543,15 +578,15 @@
           ]
         }
       ],
-      "scope": "用于说明 FSC 阈值统计意义的争论、half-bit/r-factor 区别以及壳层、对称性、对象填充和 mask 对解释的影响。",
+      "scope": "Used to explain the debate over the statistical meaning of FSC thresholds, the distinction between half-bit and r-factor, and how shells, symmetry, object filling, and masks affect interpretation.",
       "limitations": [
-        "该文是 2005 年提出的一种统计分析/建议；应与后续社区建议并列呈现，不应将 half-bit 也变成无条件硬界线。",
-        "Figure 4C 及 equations 14–17 已对渲染页视觉核验；本文中有关阈值的其他图表不都作为规则依据。"
+        "This paper proposed one statistical analysis/recommendation in 2005; it should be presented alongside later community recommendations, and half-bit should not itself be turned into an unconditional hard boundary.",
+        "Figure 4C and equations 14–17 were visually checked against rendered pages; not all other threshold-related figures and tables in the paper are used as a basis for the rules."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "附件为 Journal of Structural Biology 已发表 Elsevier 出版版 PDF（2005；151:250–262），非 AAM/preprint。",
+        "version": "The attachment is the published Elsevier edition PDF in Journal of Structural Biology (2005; 151:250–262), not an AAM/preprint.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -567,12 +602,19 @@
           12,
           13
         ],
-        "coverage": "阅读全文 13 页，重点核对 §§2.2–2.4、§§4.2–4.7、结论 §§5–6、equations 14–19 与 Figure 4C；视觉核对 PDF pp. 4–5 的阈值公式/对称性论证及 PDF p. 9 的 Figure 4C。",
+        "coverage": "Read all 13 pages, focusing on §§2.2–2.4, §§4.2–4.7, Conclusions §§5–6, equations 14–19, and Figure 4C; visually checked the threshold equations/symmetry argument on PDF pp. 4–5 and Figure 4C on PDF p. 9.",
         "unresolved": [],
         "checked_on": "2026-09-30",
         "pdf_page_count": 13,
         "pdf_sha256": "a61f52c9c85379ae3de15a62e48ad5324ffbf454d26a4fb7eb98aa89eddba598",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_permitted",
+        "checked_on": "2026-09-30",
+        "license_id": null,
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     },
     {
@@ -795,8 +837,8 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1107/S2052252524001246",
-          "location": "§1.3 与 §2.1 Recommendations 2–3、7–8；printed pp. 141–145; PDF pp. 2–6",
-          "what_verified": "社区报告建议归档和报告足以复核的 maps、half-maps、处理上下文及粒子/元数据，并说明其建议范围；这些建议并不等于每篇论文统一强制交付清单。",
+          "location": "§1.3 and §2.1 Recommendations 2–3, 7–8; printed pp. 141–145; PDF pp. 2–6",
+          "what_verified": "The community report recommends archiving and reporting maps, half-maps, processing context, and particle/metadata sufficient for review, and states the scope of those recommendations; they are not a uniform mandatory submission checklist for every paper.",
           "pdf_pages": [
             2,
             3,
@@ -806,24 +848,24 @@
         },
         {
           "url": "https://doi.org/10.1107/S2052252524001246",
-          "location": "§3.1；printed p. 145; PDF p. 6",
-          "what_verified": "建议报告 0.143、0.5、half-bit 等多种 FSC 准则，支持并列报告及保留统计解释差异，而不是将单一阈值当成普适标准。",
+          "location": "§3.1; printed p. 145; PDF p. 6",
+          "what_verified": "It recommends reporting multiple FSC criteria, including 0.143, 0.5, and half-bit, supporting parallel reporting while preserving differences in statistical interpretation rather than treating one threshold as universal.",
           "pdf_pages": [
             6
           ]
         },
         {
           "url": "https://doi.org/10.1107/S2052252524001246",
-          "location": "§§3.3.1–3.3.2；printed p. 146; PDF p. 7",
-          "what_verified": "报告讨论 half-map 分辨率及局部分辨率算法局限；指出目前局部分辨率方法不足以保证普遍稳健、可跨情形定量比较，建议将数值作为定性较好—较差显示。",
+          "location": "§§3.3.1–3.3.2; printed p. 146; PDF p. 7",
+          "what_verified": "The report discusses half-map resolution and limits of local-resolution algorithms; it notes that current local-resolution methods do not ensure universal robustness or quantitative comparability across situations, and recommends using the values as a qualitative better-to-worse display.",
           "pdf_pages": [
             7
           ]
         },
         {
           "url": "https://doi.org/10.1107/S2052252524001246",
-          "location": "§§3.3.3–3.3.6、§3.4 / Recommendation 15；printed pp. 147–148; PDF pp. 8–9",
-          "what_verified": "方向性/各向异性分析方法仍需系统比较和共识；建议验证点群约定、比较 primary 与 raw map 的 RAPS 以识别过度滤波/锐化，并报告 map–model FSC 作为拟合指示。自定义 mask 下建议同时查看噪声替换校正曲线；校正曲线受 mask 与模型计算参数影响。",
+          "location": "§§3.3.3–3.3.6, §3.4 / Recommendation 15; printed pp. 147–148; PDF pp. 8–9",
+          "what_verified": "Methods for directionality/anisotropy analysis still need systematic comparison and consensus. The report recommends checking point-group conventions, comparing RAPS for the primary and raw maps to identify over-filtering/sharpening, and reporting map–model FSC as an indicator of fit. For a custom mask, it recommends also inspecting the noise-substitution correction curve; that curve is affected by the mask and model-calculation parameters.",
           "pdf_pages": [
             8,
             9
@@ -831,22 +873,22 @@
         },
         {
           "url": "https://doi.org/10.1107/S2052252524001246",
-          "location": "§5；printed p. 149; PDF p. 10",
-          "what_verified": "报告提醒不要把社区建议过度规定化，并说明预测模型训练数据/已知结构 packing 可能影响其先验。",
+          "location": "§5; printed p. 149; PDF p. 10",
+          "what_verified": "The report cautions against making community recommendations overly prescriptive and notes that training data/known-structure packing may affect the priors of predicted models.",
           "pdf_pages": [
             10
           ]
         }
       ],
-      "scope": "用于建立社区当前建议及其未达成共识的边界，覆盖 FSC、局部分辨率、方向性、锐化/滤波、对称性和 map–model 验证。",
+      "scope": "Used to establish current community recommendations and boundaries where consensus has not been reached, covering FSC, local resolution, directionality, sharpening/filtering, symmetry, and map–model validation.",
       "limitations": [
-        "这是社区建议报告，不是对每种算法的统一性能验证；其明确标作需要进一步研究的项目不应改写为已标准化要求。",
-        "PDF pp. 11–12 是参考文献，本次未逐页审读。"
+        "This is a community-recommendation report, not a uniform performance validation of every algorithm; items it explicitly identifies as requiring further study should not be rewritten as standardized requirements.",
+        "PDF pp. 11–12 are references and were not reviewed page by page."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "附件为 IUCrJ 已发表排版 PDF（2024；11:140–151，CC BY 4.0），非 AAM/preprint。",
+        "version": "The attachment is the published, typeset IUCrJ PDF (2024; 11:140–151, CC BY 4.0), not an AAM/preprint.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -859,14 +901,21 @@
           9,
           10
         ],
-        "coverage": "阅读首页至 §5 的完整正文及 recommendations，逐项核对上述相关节和 Recommendation 15；未把参考文献页算作实质内容审读。",
+        "coverage": "Read the full main text from the first page through §5 and the recommendations, checking the relevant sections and Recommendation 15 individually; reference pages were not counted as substantive review.",
         "unresolved": [
-          "未逐页审读 PDF pp. 11–12 的参考文献部分。"
+          "PDF pp. 11–12, containing references, were not reviewed page by page."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 12,
         "pdf_sha256": "01d8d78388d0f69d9f119bee638f8e9d1e4fe95fd7ac576476172b18e1ca62be",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "CC BY 4.0",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/kleywegt2024.pdf"
       }
     },
     {
@@ -907,7 +956,7 @@
         {
           "url": "https://doi.org/10.1038/355472a0",
           "location": "Nature 355, pp. 472–475; article text and figures (PDF pp. 1–4)",
-          "what_verified": "核对全文的工作集/test 集划分：同一组反射被分成互不重叠的 work 与 test 子集，约 10% 随机 test reflections 不用于精修；作者展示 Rfree 对过拟合及模型错误较 Rwork 更敏感。",
+          "what_verified": "Checked the paper’s work/test-set split: the same set of reflections was divided into non-overlapping work and test subsets, with about 10% random test reflections excluded from refinement; the authors show that Rfree is more sensitive than Rwork to overfitting and model errors.",
           "pdf_pages": [
             1,
             2,
@@ -916,26 +965,33 @@
           ]
         }
       ],
-      "scope": "Rfree 的交叉验证设计、test reflections 的独立用途及其对过拟合的敏感性。",
+      "scope": "The cross-validation design of Rfree, the independent use of test reflections, and its sensitivity to overfitting.",
       "limitations": [
-        "原文是方法论文及其示例，不验证任何特定结构的 free-set 历史或结构正确性。"
+        "The source is a methods paper and example; it does not verify the free-set history or structural correctness of any particular structure."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "Nature 355 (1992), 472–475 的期刊版；核对全文页眉、题名与正文。",
+        "version": "Journal version of Nature 355 (1992), 472–475; checked the full-text page headers, title, and main text.",
         "reviewed_pdf_pages": [
           1,
           2,
           3,
           4
         ],
-        "coverage": "审读四页全文及相关图表，核对工作集/test 集定义、数据排除规则、Rwork/Rfree 对比和作者对交叉验证的解释。",
+        "coverage": "Reviewed all four pages and relevant figures/tables, checking the work/test-set definitions, data-exclusion rules, Rwork/Rfree comparison, and the authors’ explanation of cross-validation.",
         "unresolved": [],
         "checked_on": "2026-09-30",
         "pdf_page_count": 4,
         "pdf_sha256": "e3bb5a44d77fb73a314d7366a059927f0da6848232e751294ff80e60fa4de000",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_established",
+        "checked_on": "2026-09-30",
+        "license_id": null,
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     },
     {
@@ -978,8 +1034,8 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1107/S0907444913000061",
-          "location": "Acta Cryst. D 69, pp. 1204–1205、1207–1212；§§3.2.2–3.2.3、4.1–4.3、5（PDF pp. 1–2、4–9）",
-          "what_verified": "核对题名、作者、卷页、DOI及 IUCr 期刊排版身份；审读 CC1/2 与高分辨率截断、Rmerge/Rmeas 的局限、各向异性、不同 cutoff 的模型比较，以及讨论中的局部/全局质量边界和 paired-refinement 引用。",
+          "location": "Acta Cryst. D 69, pp. 1204–1205, 1207–1212; §§3.2.2–3.2.3, 4.1–4.3, 5(PDF pp. 1–2, 4–9)",
+          "what_verified": "Checked the title, authors, volume/pages, DOI, and IUCr journal-layout identity; reviewed CC1/2 and high-resolution truncation, limitations of Rmerge/Rmeas, anisotropy, model comparisons at different cutoffs, and the local/global quality boundaries and paired-refinement citation in the discussion.",
           "pdf_pages": [
             1,
             2,
@@ -992,15 +1048,15 @@
           ]
         }
       ],
-      "scope": "数据质量统计、CC1/2、各向异性与分辨率截断的证据和解释限制。",
+      "scope": "Evidence and interpretive limits for data-quality statistics, CC1/2, anisotropy, and resolution cutoff.",
       "limitations": [
-        "逐页审读集中于上述章节；未审读 PDF pp. 3、10–11 的全部内容。",
-        "论文提供通用数据分析讨论，并未替任一具体晶体结构选定 cutoff 或重算指标。"
+        "Page-by-page review focused on the sections above; all of PDF pp. 3 and 10–11 were not reviewed.",
+        "The paper provides a general discussion of data analysis and did not select a cutoff or recalculate metrics for any specific crystal structure."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "Acta Crystallographica Section D 69 (2013), 1204–1214 的 IUCr 期刊版。",
+        "version": "IUCr journal version of Acta Crystallographica Section D 69 (2013), 1204–1214.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -1011,14 +1067,21 @@
           8,
           9
         ],
-        "coverage": "核对题名页及摘要/导言，并重点阅读 §3.2.2–3.2.3、§§4.1–4.3 与 §5 的相关方法、结果、讨论限制。",
+        "coverage": "Checked the title page and abstract/introduction, and focused on the relevant methods, results, and discussion limitations in §3.2.2–3.2.3, §§4.1–4.3, and §5.",
         "unresolved": [
-          "未审读全文所有页和补充材料。"
+          "Not all pages of the full text or supplementary materials were reviewed."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 11,
         "pdf_sha256": "8a3d59a986e7d56776e3974b8c18cfbd6ff65d7a09d4d089f11c1547a1596443",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "CC BY 2.0 UK",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/evans2013.pdf"
       }
     },
     {
@@ -1062,8 +1125,8 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1126/science.1218231",
-          "location": "Science 336, pp. 1030–1033；重点 Fig. 1、pp. 1030–1031（PDF pp. 1–2）",
-          "what_verified": "核对题名、作者、期刊与页码；Fig. 1 展示逐步扩展数据分辨率时，在较差 cutoff 的共同分辨率范围比较模型的 Rwork/Rfree。论文也讨论 CC1/2 与单靠 Rmerge 选择 cutoff 的问题。",
+          "location": "Science 336, pp. 1030–1033; especially Fig. 1, pp. 1030–1031 (PDF pp. 1–2)",
+          "what_verified": "Checked the title, authors, journal, and pages; Fig. 1 shows Rwork/Rfree comparisons over the shared resolution range at the poorer cutoff as data resolution is progressively extended. The paper also discusses CC1/2 and the problem with choosing a cutoff using Rmerge alone.",
           "pdf_pages": [
             1,
             2,
@@ -1072,27 +1135,34 @@
           ]
         }
       ],
-      "scope": "paired-refinement 示例及反射数据质量和模型质量的关联。",
+      "scope": "Paired-refinement example and the relationship between reflection-data quality and model quality.",
       "limitations": [
-        "同一起始模型、相同 free flags 和精修流程是为公平比较提出的审计控制；本文图示支持共同分辨率范围的 R 值比较，但没有把这整套操作细节表述成普遍方法要求。",
-        "未用其他数据集独立复现图中分析。"
+        "The same starting model, free flags, and refinement workflow are audit controls proposed for a fair comparison; the figure supports comparing R values over a shared resolution range, but the paper does not present this entire operational detail as a universal methodological requirement.",
+        "The figure’s analysis was not independently reproduced using another data set."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "Science 336 (2012), 1030–1033 的期刊论文版。",
+        "version": "Journal article version of Science 336 (2012), 1030–1033.",
         "reviewed_pdf_pages": [
           1,
           2,
           3,
           4
         ],
-        "coverage": "审读四页全文，核对讨论、图 1 的共同分辨率比较、Rwork/Rfree 趋势及 CC1/2 论证。",
+        "coverage": "Read all four pages, checking the discussion, the shared-resolution comparison in Fig. 1, Rwork/Rfree trends, and the CC1/2 argument.",
         "unresolved": [],
         "checked_on": "2026-09-30",
         "pdf_page_count": 4,
         "pdf_sha256": "59efdd0d30084deefbaad8f7ddc035fae60d52614342ed01548c658408ab1aca",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_established",
+        "checked_on": "2026-09-30",
+        "license_id": null,
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     },
     {
@@ -1131,8 +1201,8 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1107/S0907444998012645",
-          "location": "Acta Cryst. D 55, §4.2 p. 589、§6.4 Eq. 30 与 §7.1 p. 592、§§10.2–10.5 pp. 597–598、Appendix A1 Eq. 49 p. 598、Appendix A3 p. 599（PDF pp. 7、10–11、15–17）",
-          "what_verified": "核对论文身份与出版页码；Eq. 30 位于 §6.4 而非 §4.2。DPI 被称为快速粗略指南，基于衍射数据误差且假设 B=Bavg；作者讨论其对精度的近似性、低分辨率下的偏差和几何 restraints 的影响。已用页面图像检查 PDF p. 592 的 Eq. 30 原式。",
+          "location": "Acta Cryst. D 55, §4.2 p. 589, §6.4 Eq. 30 and §7.1 p. 592, §§10.2–10.5 pp. 597–598, Appendix A1 Eq. 49 p. 598, Appendix A3 p. 599 (PDF pp. 7, 10–11, 15–17)",
+          "what_verified": "Checked the paper identity and publication pagination; Eq. 30 is in §6.4, not §4.2. DPI is described as a quick, rough guide based on diffraction-data errors and assuming B=Bavg; the authors discuss its approximate relation to precision, bias at low resolution, and the effect of geometric restraints. The original Eq. 30 was checked against the page image of PDF p. 592.",
           "pdf_pages": [
             7,
             10,
@@ -1146,10 +1216,10 @@
           ]
         }
       ],
-      "scope": "DPI/坐标不确定度近似的公式位置、适用范围与限制，以及勘误核对所需的原文公式。",
+      "scope": "Formula location, applicability, and limits of the DPI/coordinate-uncertainty approximation, and the source formula needed to check the corrigendum.",
       "limitations": [
-        "只审读与精度、DPI、restrained refinement 和相关公式直接有关的页，未逐页审读全部 19 页。",
-        "未依论文公式从原始反射数据重新计算任何结构的 DPI。"
+        "Only pages directly concerning precision, DPI, restrained refinement, and related equations were reviewed; all 19 pages were not reviewed page by page.",
+        "No structure’s DPI was recalculated from raw reflection data using the paper’s formula."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [
@@ -1160,7 +1230,7 @@
         }
       ],
       "fulltext_review": {
-        "version": "Acta Crystallographica Section D 55 (1999), 583–601 的 IUCr 期刊版。",
+        "version": "IUCr journal version of Acta Crystallographica Section D 55 (1999), 583–601.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -1174,14 +1244,21 @@
           16,
           17
         ],
-        "coverage": "审读题名/导言、§4.2、§6.4 Eq. 30、§7.1、§§10.2–10.5 与 Appendix A1/A3；检查公式所在原页图像以免从抽取乱码重建公式。",
+        "coverage": "Reviewed the title/introduction, §4.2, §6.4 Eq. 30, §7.1, §§10.2–10.5, and Appendix A1/A3; checked the original page images containing equations to avoid reconstructing formulas from garbled extraction.",
         "unresolved": [
-          "未审读其他章节及参考文献页。"
+          "Other sections and the references pages were not reviewed."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 19,
         "pdf_sha256": "2cf651ca04992c1be333bb69ce3d65cee1be4141afd4ae4a7372ecdf2ea88188",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_permitted",
+        "checked_on": "2026-09-30",
+        "license_id": null,
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     },
     {
@@ -1220,16 +1297,16 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1107/S0907444999004308",
-          "location": "Acta Cryst. D 55, p. 1108；更正说明与 Eq. 30、Eq. 49（PDF p. 1）",
-          "what_verified": "核对勘误题名、来源和目标论文；渲染阅读单页勘误，确认 Eq. 30 中 C 的指数由 −1/2 改为 −1/3，Eq. 49 的残差平方和项加入权重 w；另确认 p. 589 §4.2 的符号和 Fig. 7 图注也在勘误范围内。",
+          "location": "Acta Cryst. D 55, p. 1108; corrigendum notice and Eqs. 30, 49 (PDF p. 1)",
+          "what_verified": "Checked the corrigendum title, source, and target paper; rendered and read the one-page corrigendum, confirming that the exponent of C in Eq. 30 changes from −1/2 to −1/3 and that a weight w is added to the sum-of-squared-residuals term in Eq. 49; also confirmed that the symbol in §4.2 on p. 589 and the Fig. 7 caption are within the corrigendum’s scope.",
           "pdf_pages": [
             1
           ]
         }
       ],
-      "scope": "Cruickshank 1999 公式与符号勘误的逐项核实。",
+      "scope": "Item-by-item verification of the formula and notation corrections to Cruickshank 1999.",
       "limitations": [
-        "勘误仅纠正原文项目；没有进行独立数值重算。"
+        "The corrigendum only corrects items in the original text; no independent numerical recalculation was performed."
       ],
       "verification_status": "update_text_verified",
       "updates": [
@@ -1240,16 +1317,23 @@
         }
       ],
       "fulltext_review": {
-        "version": "Acta Crystallographica Section D 55 (1999), p. 1108 的 IUCr 单页勘误。",
+        "version": "IUCr one-page corrigendum to Acta Crystallographica Section D 55 (1999), p. 1108.",
         "reviewed_pdf_pages": [
           1
         ],
-        "coverage": "审读并渲染唯一页面，逐项核对文字说明、公式和图注更正。",
+        "coverage": "Read and rendered the only page, checking each textual note, formula, and figure-caption correction.",
         "unresolved": [],
         "checked_on": "2026-09-30",
         "pdf_page_count": 1,
         "pdf_sha256": "c6d45701ca2dda508625943de89ed6201768f14d15bfb07f4ce3eba65c85d054",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_established",
+        "checked_on": "2026-09-30",
+        "license_id": null,
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     },
     {
@@ -1313,16 +1397,16 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1107/S2059798316018210",
-          "location": "出版元题名页、摘要与 DOI 元数据",
-          "what_verified": "核对题名、DOI、Acta Crystallographica D 73 (2017)；附件为期刊排版论文，不是预印本或作者接受稿标注版本。",
+          "location": "Publisher’s title page, abstract, and DOI metadata",
+          "what_verified": "Checked the title, DOI, and Acta Crystallographica D 73 (2017); the attachment is the typeset journal article, not a preprint or a version marked as an author-accepted manuscript.",
           "pdf_pages": [
             1
           ]
         },
         {
           "url": "https://doi.org/10.1107/S2059798316018210",
-          "location": "方法与限制 §3.1.2、§5；Fig. 2、Table 2、相关验证图",
-          "what_verified": "polder 排除 bulk solvent 的 OMIT 原理；虚构/零占有率配体在 bulk-solvent 区仍会出现顺着模型轮廓的正密度；比较图说明密度可能反映 bulk solvent 而非配体。论文讨论了拥挤口袋、低分辨率和无序造成的误判边界。",
+          "location": "Methods and limitations in §3.1.2 and §5; Fig. 2, Table 2, and relevant validation figures",
+          "what_verified": "The polder method excludes bulk solvent from an OMIT calculation; a fictitious/zero-occupancy ligand can still show positive density following the model outline in the bulk-solvent region; comparison figures show that density may reflect bulk solvent rather than a ligand. The paper discusses the risk of misinterpretation in crowded pockets, at low resolution, and with disorder.",
           "pdf_pages": [
             2,
             7,
@@ -1331,15 +1415,15 @@
           ]
         }
       ],
-      "scope": "核对 X-ray polder/OMIT 原理、示例、比较结果和误判限制；修订了配体密度审计中的 polder 假阳性提示。",
+      "scope": "Checked the X-ray polder/OMIT principle, examples, comparisons, and misinterpretation limits; revised the false-positive note about polder in the ligand-density audit.",
       "limitations": [
-        "结论是 X-ray 晶体学方法和该文展示的案例；不能当作配体身份的独立证明。",
-        "未用原始反射数据重新计算图，也未在其他结构上独立运行软件。"
+        "These conclusions concern an X-ray crystallography method and the examples shown in the paper; they are not independent proof of ligand identity.",
+        "The figures were not recalculated from raw reflection data, and the software was not independently run on other structures."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "2017 年期刊排版版（Acta Cryst D 73:148–157）；PDF 首页有期刊卷页和 DOI，未标为 AAM/preprint。",
+        "version": "Typeset 2017 journal version (Acta Cryst. D 73:148–157); the first PDF page gives the journal volume/pages and DOI and does not mark it as an AAM/preprint.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -1351,14 +1435,21 @@
           8,
           9
         ],
-        "coverage": "审读摘要、方法、配体案例、验证比较、讨论与结论；重点阅读 §3.1.2、§5、Fig. 2 与 Table 2，并渲染查看 PDF p2、p7–p8 等关键图表页。",
+        "coverage": "Read the abstract, methods, ligand examples, validation comparisons, discussion, and conclusions; focused on §3.1.2, §5, Fig. 2, and Table 2, and rendered key figure/table pages including PDF pp. 2 and 7–8.",
         "unresolved": [
-          "未实质审读 PDF p10 的参考文献页；未重新处理原始衍射数据。"
+          "PDF p. 10, containing references, was not substantively reviewed; raw diffraction data were not reprocessed."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 10,
         "pdf_sha256": "fb5783104f11b9b2a84da91148174929f2bd66d5e64927ecedfb01d489f7e293",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "CC BY 2.0 UK",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/polder2017.pdf"
       }
     },
     {
@@ -1418,16 +1509,16 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1038/s41592-020-0731-1",
-          "location": "出版元题名页、卷期页码与 DOI 元数据",
-          "what_verified": "核对题名、DOI、Nature Methods 17:328–334 (2020)；附件为期刊正式出版排版版。",
+          "location": "Publisher’s title page, volume/issue/pages, and DOI metadata",
+          "what_verified": "Checked the title, DOI, and Nature Methods 17:328–334 (2020); the attachment is the formally published, typeset journal version.",
           "pdf_pages": [
             1
           ]
         },
         {
           "url": "https://doi.org/10.1038/s41592-020-0731-1",
-          "location": "Q-score 定义/方法与 Results 正文 “Q-scores of atoms in proteins”；Fig. 3、Fig. 6；Discussion 和限制",
-          "what_verified": "Q-score 是已拟合原子周围 map 径向 profile 与参考 Gaussian（σ=0.6 Å）的相关；它量化可解析性而非配体化学。Fig. 3 展示 Q-score 可在所示 contour 下仍偏高，即使原子没有被可视化表面包围。正文 PDF p3 报告 sharpening 可提高可见细节与 Q-score，但过度 sharpening 后 Q-score 下降；正文把后者指向 Supplementary Fig. 5，本次仅核了正文表述，未独立取得或检查该补图。文章也讨论 X-ray 与 cryo-EM ADP/B-factor 解释差异和局限。",
+          "location": "Q-score definition/methods and the Results main-text section “Q-scores of atoms in proteins”; Figs. 3 and 6; Discussion and limitations",
+          "what_verified": "Q-score is the correlation between the radial profile of the map around a fitted atom and a reference Gaussian (σ=0.6 Å); it quantifies resolvability, not ligand chemistry. Fig. 3 shows that Q-score can remain high at the illustrated contour even when an atom is not enclosed by the displayed surface. The main text on PDF p. 3 reports that sharpening can improve visible detail and Q-score, but Q-score decreases after excessive sharpening; the text refers to Supplementary Fig. 5 for the latter, which was not independently obtained or checked here. The paper also discusses differences and limitations in interpretation of X-ray and cryo-EM ADP/B factors.",
           "pdf_pages": [
             2,
             3,
@@ -1437,16 +1528,16 @@
           ]
         }
       ],
-      "scope": "核对 Q-score 定义、方法、图示、用途及适用边界；用于限定原子可解析性分数的含义。",
+      "scope": "Checked the Q-score definition, methods, figures, use, and applicability limits; used it to delimit what an atomic resolvability score means.",
       "limitations": [
-        "该分数依赖已拟合模型的位置，不判断配体化学身份或立体化学。",
-        "文章结果和讨论来自其测试地图与数据；不据此设跨数据集通用阈值。",
-        "过度 sharpening 降低 Q-score 的说法在正文 PDF p3 有明确陈述；正文指向 Supplementary Fig. 5，但附件未含该补图，本次未独立核验补图。"
+        "The score depends on the fitted model’s atom positions and does not assess ligand chemical identity or stereochemistry.",
+        "The paper’s results and discussion are based on its test maps and data; they do not establish a universal cross-dataset threshold.",
+        "The main text on PDF p. 3 explicitly states that excessive sharpening lowers Q-score; it refers to Supplementary Fig. 5, but that figure was not included in the attachment and was not independently checked."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "2020 年期刊正式出版版（Nature Methods 17:328–334）；附件 PDF p9–p10 是 Nature Research Reporting Summary 第 1–2 页，并非论文正文或 Supplementary Fig. 5。",
+        "version": "The 2020 formally published journal version (Nature Methods 17:328–334); PDF pp. 9–10 of the attachment are pages 1–2 of the Nature Research Reporting Summary, not the article text or Supplementary Fig. 5.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -1459,16 +1550,23 @@
           9,
           10
         ],
-        "coverage": "审读正文摘要、Q-score 定义与方法、主要结果、Fig. 2/3/6、讨论及限制；渲染检查正文 PDF p2、p3、p4、p6 的关键图示和 sharpening 正文描述，并渲染核对 p9–p10 为 Nature Research Reporting Summary 第 1–2 页。",
+        "coverage": "Reviewed the main-text abstract, Q-score definition and methods, main results, Figs. 2/3/6, discussion, and limitations; rendered key figures and the sharpening description on PDF pp. 2, 3, 4, and 6, and confirmed by rendering that pp. 9–10 are pages 1–2 of the Nature Research Reporting Summary.",
         "unresolved": [
-          "PDF p9–p10 为期刊附带的 Nature Research Reporting Summary，不是正文或补充图。",
-          "附件未含 Supplementary Information；Supplementary Fig. 5 未独立取得或视读。正文 PDF p3 确实陈述过度 sharpening 会使 Q-score 下降，但图示本身未核验。",
-          "未从原始地图独立重算 Q-score。"
+          "PDF pp. 9–10 are the journal-attached Nature Research Reporting Summary, not the article text or supplementary figure.",
+          "The attachment does not include Supplementary Information; Supplementary Fig. 5 was not independently obtained or visually inspected. The main text on PDF p. 3 does state that excessive sharpening lowers Q-score, but the figure itself was not checked.",
+          "Q-score was not independently recalculated from the original map."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 10,
         "pdf_sha256": "472dcad60de72670190039120111838e507ffcd6aab506501176110216c93543",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_established",
+        "checked_on": "2026-09-30",
+        "license_id": null,
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     },
     {
@@ -1829,16 +1927,16 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1038/s41592-024-02321-7",
-          "location": "出版元文章记录与附件 AAM 首页",
-          "what_verified": "核对准确题名与 DOI；出版元记录确认 Version of Record 于 2024-06-25 在线发表，Nature Methods 21:1340–1348（2024 年 7 月期）。附件首页标为 peer-reviewed author accepted manuscript；本次实际审读的是 AAM。",
+          "location": "Publisher’s article record and the first page of the attached AAM",
+          "what_verified": "Checked the exact title and DOI; the publisher’s record confirms that the Version of Record was published online on 2024-06-25 in Nature Methods 21:1340–1348 (July 2024 issue). The attachment is marked as a peer-reviewed author-accepted manuscript; the version actually reviewed was the AAM.",
           "pdf_pages": [
             1
           ]
         },
         {
           "url": "https://doi.org/10.1038/s41592-024-02321-7",
-          "location": "正文方法/讨论/Recommendations；Fig. 2–5；Tables 1–3；Extended Data Figs. 2–5",
-          "what_verified": "核对三项近原子分辨率 cryo-EM 挑战靶标、指标相互独立及复合评估建议；Fig. 2 三个靶标使用不同 contour（2.3σ、2.6σ、3.7σ）；PTQ 两种翻转构象密度未能区分；F86 与邻近碱基对密度约为相邻碱基对的一半，Extended Data Fig. 4B 据此解释约 50% occupancy；PEE 脂质尾部密度无序，作者提出 ensemble 可能比单一姿势更有意义。",
+          "location": "Main-text methods/discussion/Recommendations; Figs. 2–5; Tables 1–3; Extended Data Figs. 2–5",
+          "what_verified": "Checked the three near-atomic-resolution cryo-EM challenge targets, independence of metrics, and recommendations for composite assessment; Fig. 2 uses different contours for the three targets (2.3σ, 2.6σ, 3.7σ); density did not distinguish the two PTQ flipped conformations; density for F86 and the neighboring base pair was about half that of adjacent base pairs, which the authors interpreted as approximately 50% occupancy based on Extended Data Fig. 4B; the PEE lipid tail density was disordered, and the authors proposed that an ensemble might be more meaningful than a single pose.",
           "pdf_pages": [
             1,
             2,
@@ -1870,16 +1968,16 @@
           ]
         }
       ],
-      "scope": "核对挑战设计、配体局部密度与拟合、几何/接触指标、替代姿势、占有率示例和作者建议；纠正配体密度参考中的图号。",
+      "scope": "Checked the challenge design, local ligand density and fit, geometry/contact metrics, alternative poses, occupancy example, and author recommendations; corrected the figure number in the ligand-density reference.",
       "limitations": [
-        "挑战仅包含三个高分辨率靶标；其排序、示例和建议不能当作普遍阈值或对所有 cryo-EM 分辨率范围的验证。",
-        "半强度密度到约 50% occupancy 是该 F86 个案的作者解释，不是通用校准公式。",
-        "本次读的是 AAM；虽然核对了出版元 VOR 元数据，未逐行比较 AAM 与 VOR。未对提交坐标、原始 map 或 Supplementary Data 重新计算。"
+        "The challenge includes only three high-resolution targets; its rankings, examples, and recommendations are not universal thresholds or validation across all cryo-EM resolution ranges.",
+        "The interpretation of half-strength density as approximately 50% occupancy is the authors’ interpretation of the F86 case, not a general calibration formula.",
+        "The reviewed version was the AAM; although VOR metadata was checked against the publisher’s record, the AAM and VOR were not compared line by line. Submitted coordinates, raw maps, and Supplementary Data were not recalculated."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "作者接受稿（AAM，PDF 首页明确标示）；出版元 VOR 元数据为 2024-06-25 在线发表、Nature Methods 21:1340–1348。",
+        "version": "Author-accepted manuscript (AAM, explicitly marked on the first PDF page); publisher VOR metadata gives online publication on 2024-06-25 and Nature Methods 21:1340–1348.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -1909,15 +2007,22 @@
           29,
           30
         ],
-        "coverage": "审读摘要、引言、挑战方法、结果、讨论、Recommendations 与限制；查看 Tables 1–3、Fig. 2–5、Extended Data Figs. 2–5；渲染查看 PDF p18–p21、p25、p27–p30 的关键图表。",
+        "coverage": "Reviewed the abstract, introduction, challenge methods, results, discussion, Recommendations, and limitations; examined Tables 1–3, Figs. 2–5, and Extended Data Figs. 2–5; rendered key figures/tables on PDF pp. 18–21, 25, and 27–30.",
         "unresolved": [
-          "未逐行比对 AAM 与 VOR。",
-          "未重新分析补充数据、参与者坐标、实验地图或其处理过程。"
+          "The AAM and VOR were not compared line by line.",
+          "Supplementary data, participant coordinates, experimental maps, and their processing were not reanalyzed."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 38,
         "pdf_sha256": "bd035f10347e7c6b4fdbf1973eb87f4967e9f8e42b62ac239ebe845abb7ecb0d",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "Springer Nature Accepted Manuscript Terms",
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     },
     {
@@ -2009,16 +2114,16 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1351/PAC-REC-10-01-02",
-          "location": "IUPAC 出版页、题名页与 DOI 元数据",
-          "what_verified": "核对题名、IUPAC Recommendations 2011、DOI、Pure Appl. Chem. 83:1637–1641 (2011)；附件为期刊排版版。",
+          "location": "IUPAC publication page, title page, and DOI metadata",
+          "what_verified": "Checked the title, IUPAC Recommendations 2011, DOI, and Pure Appl. Chem. 83:1637–1641 (2011); the attachment is the typeset journal version.",
           "pdf_pages": [
             1
           ]
         },
         {
           "url": "https://doi.org/10.1351/PAC-REC-10-01-02",
-          "location": "定义与氢键存在判据 E1–E6、脚注和方向性讨论",
-          "what_verified": "氢键定义要求有证据支持键形成；供体为 X—H，受体为原子或基团；短距离和近线性是典型特征而非单一普适硬阈值，证据可来自实验、理论或两者。",
+          "location": "Definitions and hydrogen-bond existence criteria E1–E6, footnotes, and discussion of directionality",
+          "what_verified": "The hydrogen-bond definition requires evidence supporting bond formation; the donor is X—H and the acceptor is an atom or group. Short distance and near-linearity are typical features, not single universal hard thresholds; evidence may come from experiment, theory, or both.",
           "pdf_pages": [
             2,
             3,
@@ -2026,28 +2131,35 @@
           ]
         }
       ],
-      "scope": "核对氢键定义、供体/受体定义、方向性和证据标准，用于审慎表述结构模型中的氢键。",
+      "scope": "Checked the hydrogen-bond definition, donor/acceptor definitions, directionality, and evidence criteria, to support cautious wording about hydrogen bonds in structural models.",
       "limitations": [
-        "该建议是氢键的一般化学定义，不要求每条生物大分子模型中的氢键都直接解析氢原子；具体结构判断仍需依赖局部化学和模型几何。"
+        "This recommendation provides a general chemical definition of hydrogen bonding; it does not require direct resolution of a hydrogen atom for every hydrogen bond in a biomolecular model. Assessment of a specific structure still depends on local chemistry and model geometry."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "IUPAC Recommendations 2011 的期刊正式版，Pure Appl. Chem. 83:1637–1641。",
+        "version": "Official journal version of IUPAC Recommendations 2011, Pure Appl. Chem. 83:1637–1641.",
         "reviewed_pdf_pages": [
           1,
           2,
           3,
           4
         ],
-        "coverage": "审读题名页、定义、氢键判据、供体/受体定义、方向性说明与相关脚注；渲染检查 PDF p2 的定义页。",
+        "coverage": "Read the title page, definition, hydrogen-bond criteria, donor/acceptor definitions, discussion of directionality, and relevant footnotes; rendered PDF p. 2, the definition page.",
         "unresolved": [
-          "PDF p5 参考文献页未作实质性阅读。"
+          "PDF p. 5, the references page, was not substantively read."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 5,
         "pdf_sha256": "f1a297a5f02de1aa46158983d003f54a436f9e09f200dff2a729037ca994e7ad",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "Article-specific IUPAC republication permission",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/iupac2011.pdf"
       }
     },
     {
@@ -2107,16 +2219,16 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1107/S2059798317001061",
-          "location": "出版元题名页、摘要与 DOI 元数据",
-          "what_verified": "核对题名、DOI、Acta Crystallographica D 73:223–233 (2017)；附件为期刊排版论文。",
+          "location": "Publisher’s title page, abstract, and DOI metadata",
+          "what_verified": "Checked the title, DOI, and Acta Crystallographica D 73:223–233 (2017); the attachment is the typeset journal article.",
           "pdf_pages": [
             1
           ]
         },
         {
           "url": "https://doi.org/10.1107/S2059798317001061",
-          "location": "方法、Mg 位点案例和讨论；Fig. 2、Tables 1–2",
-          "what_verified": "CMM 结合位点化学、价态、配位数、几何和键价进行金属位点检查；Mg—O 约 2.08 Å 与近八面体几何是典型预期但距离不能单独定元素。论文中的 Mg→Na 案例展示仅靠相近距离会错指；文中报告的 CCP4 library 2.18 Å Mg—O restraint 是当时默认值，不能视为当前库值。",
+          "location": "Methods, Mg-site examples, and discussion; Fig. 2, Tables 1–2",
+          "what_verified": "CMM checks metal sites using binding-site chemistry, valence, coordination number, geometry, and bond valence. Mg—O at about 2.08 Å and near-octahedral geometry are typical expectations, but distance alone cannot identify an element. The paper’s Mg→Na example shows that similar distances alone can lead to misassignment; the reported CCP4 library Mg—O restraint of 2.18 Å was the default at that time and should not be treated as the current library value.",
           "pdf_pages": [
             2,
             3,
@@ -2130,15 +2242,15 @@
           ]
         }
       ],
-      "scope": "核对 CheckMyMetal 的指标、Mg 配位化学、替代元素案例、X-ray 专用指标与文中 restraint 历史值。",
+      "scope": "Checked the CheckMyMetal metrics, Mg coordination chemistry, alternative-element example, X-ray-specific metrics, and historical restraint value reported in the paper.",
       "limitations": [
-        "文中报告的 2.18 Å 默认 restraint 是 2017 年背景，不能外推为当前 refinement dictionary 的数值。",
-        "CMM 2017 的指标和案例不替代具体结构的实验密度、样品组成、精修设置与替代离子检查。"
+        "The 2.18 Å default restraint reported in the paper is historical context from 2017 and should not be extrapolated as the value in current refinement dictionaries.",
+        "CMM 2017 metrics and examples do not replace experimental density, sample composition, refinement settings, or checks for alternative ions in a specific structure."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "Acta Cryst D 73 (2017) 期刊正式排版版，pp. 223–233。",
+        "version": "Official typeset journal version in Acta Cryst. D 73 (2017), pp. 223–233.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -2151,15 +2263,22 @@
           9,
           10
         ],
-        "coverage": "审读摘要、方法、指标定义、金属配位化学、案例、limitations/discussion 与结论；渲染查看 PDF p4–p5 的配位示例和表格。",
+        "coverage": "Read the abstract, methods, metric definitions, metal coordination chemistry, examples, limitations/discussion, and conclusions; rendered PDF pp. 4–5 to view coordination examples and tables.",
         "unresolved": [
-          "PDF p11 参考文献页未作实质性阅读。",
-          "未在当前 refinement 软件/字典中核查 restraint 值，也未对任何具体金属位点重新运行 CMM。"
+          "PDF p. 11, the references page, was not substantively read.",
+          "Neither the restraint value nor CMM was checked in current refinement software/dictionaries, and CMM was not rerun for any specific metal site."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 11,
         "pdf_sha256": "8b863b8fe7649a736e658c6504ea35e2ed4beb94dfc3db5db450702c7bbc515e",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "CC BY 2.0 UK",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/cmm2017.pdf"
       }
     },
     {
@@ -2208,16 +2327,16 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1093/nar/gkw1175",
-          "location": "出版元题名页、卷期页码与 DOI 元数据",
-          "what_verified": "核对题名、DOI、Nucleic Acids Research 45(2):987–1004 (2017)；附件为正式出版排版版。",
+          "location": "Publisher’s title page, volume/pages, and DOI metadata",
+          "what_verified": "Checked the title, DOI, and Nucleic Acids Research 45(2):987–1004 (2017); the attachment is the formally published, typeset version.",
           "pdf_pages": [
             1
           ]
         },
         {
           "url": "https://doi.org/10.1093/nar/gkw1175",
-          "location": "Abstract、PDB survey 的方法/结果、Discussion 与结论；检查表和关键图表",
-          "what_verified": "调查范围是截至 2016 年 5 月、分辨率 ≤3 Å 的核酸 PDB 结构中 Mg²⁺与核碱基亚胺 N1/N3/N7 的直接内层接触；不是所有核酸 Mg 位点，也未评估水介导的外层 Mg—N7 接触。作者讨论了替代离子、样品缓冲液、精修 restraint 和分类不确定性。",
+          "location": "Abstract, methods/results of the PDB survey, Discussion and Conclusions; checked tables and key figures",
+          "what_verified": "The survey covers direct inner-sphere contacts between Mg²⁺ and nucleobase imine N1/N3/N7 in nucleic-acid PDB structures available by May 2016 at ≤3 Å resolution; it does not cover all nucleic-acid Mg sites and does not assess water-mediated outer-sphere Mg—N7 contacts. The authors discuss alternative ions, sample buffers, refinement restraints, and classification uncertainty.",
           "pdf_pages": [
             1,
             2,
@@ -2237,15 +2356,15 @@
           ]
         }
       ],
-      "scope": "核对该核酸 Mg²⁺直接配位调查的问题范围、数据快照、判据、结果、误指风险与结论边界；渲染查看关键结构例图及作者 checklist。",
+      "scope": "Checked the scope, data snapshot, criteria, results, misassignment risks, and limits of the nucleic-acid Mg²⁺ direct-coordination survey; rendered key structural examples and the authors’ checklist.",
       "limitations": [
-        "结果限于论文采用的核酸结构快照、分辨率筛选和 N1/N3/N7 直接内层接触问题，不应推广至蛋白位点或全部 Mg 配位模式。",
-        "论文调查结果是文献/PDB 再评估，不代表本次对每个沉积结构的 map 与原始实验数据独立复核。"
+        "The results are limited to the nucleic-acid structure snapshot, resolution filter, and direct inner-sphere N1/N3/N7-contact question used in the paper; they should not be generalized to protein sites or all Mg coordination modes.",
+        "The survey is a literature/PDB reassessment and does not represent an independent check of maps and original experimental data for every deposited structure in this review."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "Nucleic Acids Research 45(2) (2017) 期刊正式版，pp. 987–1004。",
+        "version": "Official journal version in Nucleic Acids Research 45(2) (2017), pp. 987–1004.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -2263,14 +2382,21 @@
           14,
           15
         ],
-        "coverage": "审读摘要、调查范围与方法、结果、限制和讨论/结论；查看 PDF p4–p5 的关键图表与 p14–p15 检查表。",
+        "coverage": "Read the abstract, survey scope and methods, results, limitations, discussion, and conclusions; viewed key figures/tables on PDF pp. 4–5 and the checklist on pp. 14–15.",
         "unresolved": [
-          "PDF p16–p18 参考文献未作实质性阅读；补充材料和论文提及的个别结构未重新分析。"
+          "PDF pp. 16–18, containing references, were not substantively read; supplementary material and individual structures mentioned in the paper were not reanalyzed."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 18,
         "pdf_sha256": "c496288bd0e1462ecf65e29e12baf0a5de5930de3f364dfa7c1e6873a109f227",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/leonarski2017.pdf"
       }
     },
     {
@@ -2378,8 +2504,8 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1002/pro.3330",
-          "location": "Protein Science 27, pp. 302、305–306、308、310–312；“Cis or twisted non-trans peptides”、Fig. 9、局部质量讨论与方法（PDF pp. 10、13–14、16、18–20）",
-          "what_verified": "核对 DOI、题名、卷页和期刊论文版本；正文报告脯氨酸 cis 肽键比例约 5%、非脯氨酸 cis 约 0.03%，并指出偏离平面超过 30° 的扭曲肽键几乎总应视为建模错误。作者同时说明罕见构象须结合局部证据，且 MolProbity 是基于坐标的验证工具，本身不做 model-to-data 验证。",
+          "location": "Protein Science 27, pp. 302, 305–306, 308, 310–312; “Cis or twisted non-trans peptides,” Fig. 9, local-quality discussion and methods (PDF pp. 10, 13–14, 16, 18–20)",
+          "what_verified": "Checked the DOI, title, volume/pages, and journal-article version; the main text reports cis-peptide-bond frequencies of about 5% for proline and 0.03% for non-proline, and says that twisted peptide bonds deviating more than 30° from planarity should almost always be regarded as modeling errors. The authors also note that rare conformations require local evidence and that MolProbity is a coordinate-based validation tool that does not itself perform model-to-data validation.",
           "pdf_pages": [
             1,
             10,
@@ -2392,15 +2518,15 @@
           ]
         }
       ],
-      "scope": "MolProbity 几何与肽键验证依据、局部异常解释及其不提供实验数据拟合验证的边界。",
+      "scope": "MolProbity geometry and peptide-bond validation basis, interpretation of local outliers, and the boundary that it does not provide experimental-data fit validation.",
       "limitations": [
-        "补充材料中氢原子定位等更详细的方法未审读。",
-        "正文讨论的几何参照与坐标检查不能单独确认密度拟合或构象的生物学真实性。"
+        "More detailed methods in the supplementary material, including hydrogen placement, were not reviewed.",
+        "The geometric references and coordinate checks discussed in the main text cannot by themselves confirm fit to density or the biological reality of a conformation."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "Protein Science 27(1) (2018), 293–315 的期刊排版版；首页显示 DOI 和在线发表信息。",
+        "version": "Typeset journal version of Protein Science 27(1) (2018), 293–315; the first page shows the DOI and online publication information.",
         "reviewed_pdf_pages": [
           1,
           10,
@@ -2411,14 +2537,21 @@
           19,
           20
         ],
-        "coverage": "阅读方法概述、肽键顺反异构/扭曲肽键、局部质量讨论、MolProbity 的验证范围及参考数据方法相关部分。",
+        "coverage": "Read the methods overview, cis/trans and twisted peptide-bond sections, local-quality discussion, scope of MolProbity validation, and sections on reference-data methods.",
         "unresolved": [
-          "未逐页审读 23 页全文；补充材料未审读。"
+          "The 23-page full text was not reviewed page by page; supplementary material was not reviewed."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 23,
         "pdf_sha256": "231945dc51811cd1dba048a6143e6c515eca11691f18dc4bfc14d3bab75835b0",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_established",
+        "checked_on": "2026-09-30",
+        "license_id": null,
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     },
     {
@@ -2522,8 +2655,8 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1016/j.str.2011.08.006",
-          "location": "Structure 19, pp. 1396–1401、1404–1405、1407–1410；几何约束与 Fig. 1–3、Rfree/RSR/RSCC、Fig. 6C 与 Table 4（PDF pp. 2–7、10–11、13–16）",
-          "what_verified": "核对文章题名、作者、DOI 与出版信息；审读低分辨率约束与局部构象例子、Rfree flags 与对称性/孪晶兼容性、全局 Rfree 与局部 RSR/RSCC 的区别，以及逐残基质量报告和 Table 4。",
+          "location": "Structure 19, pp. 1396–1401, 1404–1405, 1407–1410; geometry restraints and Figs. 1–3, Rfree/RSR/RSCC, Fig. 6C, and Table 4 (PDF pp. 2–7, 10–11, 13–16)",
+          "what_verified": "Checked the article title, authors, DOI, and publication details; reviewed low-resolution restraints and local-conformation examples, compatibility of Rfree flags with symmetry/twinning, the distinction between global Rfree and local RSR/RSCC, and residue-by-residue quality reporting and Table 4.",
           "pdf_pages": [
             1,
             2,
@@ -2541,15 +2674,15 @@
           ]
         }
       ],
-      "scope": "模型验证指标、几何约束、交叉验证 flags 与局部报告的用途和边界。",
+      "scope": "Uses and boundaries of model-validation metrics, geometry restraints, cross-validation flags, and local reports.",
       "limitations": [
-        "只审读与引用主张相关的章节和图表，未逐页审读完整 18 页文章。",
-        "本文讨论的是验证工具和实践建议；未核验特定 PDB 模型的 flags 或验证报告。"
+        "Only the sections and figures relevant to the cited claims were reviewed; the full 18-page article was not reviewed page by page.",
+        "The paper discusses validation tools and practical recommendations; flags or validation reports for a specific PDB model were not checked."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "Structure 19 (2011), 1395–1412 的 Elsevier 期刊版。",
+        "version": "Elsevier journal version of Structure 19 (2011), 1395–1412.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -2565,14 +2698,21 @@
           15,
           16
         ],
-        "coverage": "核对题名页，阅读 pp. 1396–1401 关于模型几何和构象、pp. 1404–1405 关于 Rfree/局部拟合指标、pp. 1407–1410 关于局部报告；重点检查相关图示和 Table 4。",
+        "coverage": "Checked the title page; read pp. 1396–1401 on model geometry and conformation, pp. 1404–1405 on Rfree/local-fit metrics, and pp. 1407–1410 on local reporting; focused on the relevant figures and Table 4.",
         "unresolved": [
-          "未审读全文其他章节、PDF pp. 8–9、12、17–18 及补充材料。"
+          "Other sections, PDF pp. 8–9, 12, and 17–18, and supplementary material were not reviewed."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 18,
         "pdf_sha256": "4409b772789e564d6b337d315fcddb4cc476446332e629e377bad2b8ac22074b",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "CC BY 3.0 (Creative Commons Attribution 3.0 Unported)",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/read2011.pdf"
       }
     },
     {
@@ -2640,8 +2780,8 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1107/S2059798318009324",
-          "location": "Acta Cryst. D 74, pp. 814–822、830–834；§§2.1、2.1.1、3.1、3.3–3.5、3.7–3.9、Table 4、Appendix A1（PDF pp. 1–9、17–21）",
-          "what_verified": "核对题名、作者、卷页、DOI 和 IUCr 期刊版；审读作者对数据、模型、拟合三类验证的划分，模型-map 指标对 mask/所选区域的依赖，几何异常与局部 map 证据的关系，以及占位率、ADP、sharpening、multiple models 与 CCmask 的限制。",
+          "location": "Acta Cryst. D 74, pp. 814–822, 830–834; §§2.1, 2.1.1, 3.1, 3.3–3.5, 3.7–3.9, Table 4, Appendix A1(PDF pp. 1–9, 17–21)",
+          "what_verified": "Checked the title, authors, volume/pages, DOI, and IUCr journal version; reviewed the authors’ distinction among data, model, and fit validation; dependence of model–map metrics on the mask/selected region; relationship between geometric outliers and local map evidence; and limitations involving occupancy, ADP, sharpening, multiple models, and CCmask.",
           "pdf_pages": [
             1,
             2,
@@ -2660,15 +2800,15 @@
           ]
         }
       ],
-      "scope": "cryo-EM 模型验证分类、几何与局部拟合指标的敏感性，以及这些指标可支持的结论边界。",
+      "scope": "cryo-EM model-validation categories, sensitivity of geometry and local-fit metrics, and boundaries of the conclusions these metrics support.",
       "limitations": [
-        "仅审读所列章节、图表和附录，未逐页审读完整 27 页文章。",
-        "未对 cryo-EM 数据独立重算任何 CC、几何或 refinement 指标。"
+        "Only the listed sections, figures, and appendix were reviewed; the full 27-page article was not reviewed page by page.",
+        "No CC, geometry, or refinement metrics were independently recalculated from cryo-EM data."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "Acta Crystallographica Section D 74 (2018), 814–840 的 IUCr 期刊版。",
+        "version": "IUCr journal version of Acta Crystallographica Section D 74 (2018), 814–840.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -2685,14 +2825,21 @@
           20,
           21
         ],
-        "coverage": "阅读导言和验证分类、模型-map 相关方法与几何结果、局部质量/占位率与 sharpening 讨论、Table 4 及 Appendix A1。",
+        "coverage": "Read the introduction and validation categories; model–map methods and geometry results; discussion of local quality, occupancy, and sharpening; Table 4; and Appendix A1.",
         "unresolved": [
-          "未审读未列出的章节、图表页与参考文献页。"
+          "Sections, figure pages, and reference pages not listed were not reviewed."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 27,
         "pdf_sha256": "7c8bfec06b313e21e92a1dc962693dc9b8513cd7681b56b4acf3d868cc21685a",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "CC BY 2.0 UK",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/afonine2018.pdf"
       }
     },
     {
@@ -2944,8 +3091,8 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1038/s41592-020-01051-w",
-          "location": "Figure 3d 与图注；printed p. 159; PDF p. 4",
-          "what_verified": "map-to-model FSC=0.5 表示实验图与模型坐标生成图之间的总体拟合/相关指标，和 half-map FSC 属于不同对象。",
+          "location": "Figure 3d and caption; printed p. 159; PDF p. 4",
+          "what_verified": "map-to-model FSC=0.5 is an overall fit/correlation metric between the experimental map and a map generated from model coordinates, and concerns a different pair of objects from half-map FSC.",
           "pdf_pages": [
             4
           ]
@@ -2953,7 +3100,7 @@
         {
           "url": "https://doi.org/10.1038/s41592-020-01051-w",
           "location": "Results, ‘Evaluating metrics: local scoring’; printed pp. 159–160; PDF pp. 4–5",
-          "what_verified": "挑战结果显示局部拟合指标在单残基和滑动窗口等设定下表现不同，支持针对局部主张解释局部分数，不能由全局评分替代；研究包括特定错配/局部错误案例，不是所有构象的全域验证。",
+          "what_verified": "The challenge results show that local-fit metrics behave differently under single-residue and sliding-window settings, supporting interpretation of local scores for local claims rather than replacing them with a global score; the study includes specific mismatch/local-error cases and is not exhaustive validation of all conformations.",
           "pdf_pages": [
             4,
             5
@@ -2961,8 +3108,8 @@
         },
         {
           "url": "https://doi.org/10.1038/s41592-020-01051-w",
-          "location": "Recommendations 1–4；printed pp. 162–163; PDF pp. 7–8",
-          "what_verified": "Recommendations 1–3 讨论 Fit-to-Map 进度评分、单残基评分及对 map background noise 的敏感性；不能把 Methods 的 challenge rule #4 错标成这些 Recommendations。",
+          "location": "Recommendations 1–4; printed pp. 162–163; PDF pp. 7–8",
+          "what_verified": "Recommendations 1–3 discuss Fit-to-Map progress scores, single-residue scores, and sensitivity to map background noise; challenge rule #4 in Methods should not be mislabeled as one of these Recommendations.",
           "pdf_pages": [
             7,
             8
@@ -2970,8 +3117,8 @@
         },
         {
           "url": "https://doi.org/10.1038/s41592-020-01051-w",
-          "location": "Discussion/limitations；printed pp. 160、163; PDF pp. 5、8",
-          "what_verified": "作者明确指出没有评估基于 half-map 的过拟合方法，因此本研究不能作为 half-map 拟合验证已经有效的经验证据。",
+          "location": "Discussion/limitations; printed pp. 160, 163; PDF pp. 5, 8",
+          "what_verified": "The authors explicitly state that they did not evaluate half-map-based overfitting methods; this study therefore cannot serve as empirical evidence that half-map fitting validation is effective.",
           "pdf_pages": [
             5,
             8
@@ -2979,22 +3126,22 @@
         },
         {
           "url": "https://doi.org/10.1038/s41592-020-01051-w",
-          "location": "Methods, ‘Challenge process and organization’, challenge rule #4；在线 Methods PDF p. 10（此页无连续期刊印刷页码）",
-          "what_verified": "挑战指南强烈鼓励参赛者拟合未锐化/未加 mask 的 map 或其中一张 half-map。该文字位于 Methods 的 challenge rules，不是 Recommendations 1–3，也不是研究对 half-map 过拟合检验的效果评估。",
+          "location": "Methods, “Challenge process and organization,” challenge rule #4; online Methods PDF p. 10 (without continuous journal print pagination)",
+          "what_verified": "The challenge guidelines strongly encouraged participants to fit an unsharpened/unmasked map or one of its half-maps. This text appears among the Methods challenge rules; it is neither Recommendations 1–3 nor an evaluation of the effectiveness of half-map overfitting tests in the study.",
           "pdf_pages": [
             10
           ]
         }
       ],
-      "scope": "用于模型与图拟合指标、局部分数表现、Recommendations 的精确定位，以及 challenge rule #4 的建议性质和 overfitting 未评估这一限制。",
+      "scope": "Used for model/map-fit metrics, local-score performance, the precise location of the Recommendations, the advisory status of challenge rule #4, and the limitation that overfitting was not evaluated.",
       "limitations": [
-        "挑战覆盖四个近原子分辨率 cryo-EM map（约 1.8–3.1 Å）和规定的模型/指标任务；不支持无边界外推。",
-        "PDF p. 9 为参考文献；PDF pp. 11 起为补充/附加内容，本次未全部审读。"
+        "The challenge covered four near-atomic-resolution cryo-EM maps (about 1.8–3.1 Å) and specified model/metric tasks; it does not support unbounded extrapolation.",
+        "PDF p. 9 contains references; PDF pp. 11 onward contain supplementary/additional material that was not reviewed in full."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "附件为 Nature Methods 已发表排版 PDF（2021；18:156–164），附有在线 Methods/补充页，非 AAM/preprint。",
+        "version": "The attachment is the published, typeset Nature Methods PDF (2021; 18:156–164), with online Methods/supplement pages; it is not an AAM/preprint.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -3006,14 +3153,21 @@
           8,
           10
         ],
-        "coverage": "阅读题名、正文相关结果/Discussion、Figure 3d、Recommendations 1–4、明确局限段及 Methods 中 challenge rules；核实 rule #4 与 Recommendations 的版面位置差别。",
+        "coverage": "Read the title, relevant main-text results/Discussion, Figure 3d, Recommendations 1–4, the explicit limitations paragraph, and the Methods challenge rules; checked the layout distinction between rule #4 and the Recommendations.",
         "unresolved": [
-          "未逐页审读参考文献及 PDF pp. 11–21 的所有补充材料；本次审计结论聚焦正文和 Methods rule #4。"
+          "The references and all supplementary materials on PDF pp. 11–21 were not reviewed page by page; this audit focuses on the main text and Methods rule #4."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 21,
         "pdf_sha256": "96f88fe1c7174ad747cc6d823a885906b1208b757b95ef5498e8203efa960dd4",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "CC BY 4.0",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/em-challenge2021.pdf"
       }
     },
     {
@@ -3053,7 +3207,7 @@
         {
           "url": "https://doi.org/10.1107/S2059798322005009",
           "location": "§2, Fig. 1; Model validation with a systematic sequence assignment",
-          "what_verified": "输入为对应 cryo-EM map、坐标模型和各链序列；方法用 map-derived residue-type probabilities 将重叠片段指派到参考序列。作者区分未识别参考序列、指派证据不足、与输入一致和高置信错配所提示的 plausible register error。",
+          "what_verified": "Inputs are the corresponding cryo-EM map, coordinate model, and each chain’s sequence; the method assigns overlapping fragments to a reference sequence using map-derived residue-type probabilities. The authors distinguish an unrecognized reference sequence, insufficient assignment evidence, agreement with the input, and a plausible register error indicated by a high-confidence mismatch.",
           "pdf_pages": [
             2,
             3
@@ -3061,8 +3215,8 @@
         },
         {
           "url": "https://doi.org/10.1107/S2059798322005009",
-          "location": "§§3.1–3.4、4.1–4.2；Figs. 2–5",
-          "what_verified": "基准集筛选为796个 cryo-EM 结构（≤4 Å、<500 kDa、EMDB 可得 half-maps）；作者以片段级统计设定阈值，明言99.5%单侧区间阈值属任意选择。局部分辨率降低会影响片段指派，算法可延长测试片段来补偿。",
+          "location": "§§3.1–3.4, 4.1–4.2; Figs. 2–5",
+          "what_verified": "The benchmark was filtered to 796 cryo-EM structures (≤4 Å, <500 kDa, with half-maps available from EMDB); the authors set thresholds using fragment-level statistics and explicitly state that the 99.5% one-sided interval threshold was an arbitrary choice. Lower local resolution affects fragment assignment, and the algorithm can compensate by extending the test fragment.",
           "pdf_pages": [
             3,
             4,
@@ -3072,8 +3226,8 @@
         },
         {
           "url": "https://doi.org/10.1107/S2059798322005009",
-          "location": "§§4.5–5；Figs. 7–9",
-          "what_verified": "文中实例使用 map、链序列和模型检查 register；结论指出可检测长度随分辨率而变，通常应超过约10个氨基酸，并可能漏掉短的、被相邻插缺抵消的移位。",
+          "location": "§§4.5–5; Figs. 7–9",
+          "what_verified": "The examples use maps, chain sequences, and models to check register; the conclusion says detectable length varies with resolution, usually needs to exceed about 10 amino acids, and short shifts offset by adjacent insertions/deletions may be missed.",
           "pdf_pages": [
             7,
             8,
@@ -3082,14 +3236,14 @@
           ]
         }
       ],
-      "scope": "Chojnowski, Acta Crystallographica Section D 78 (2022), 806–816；核验了方法、基准、示例和结论中 checkMySequence 对 cryo-EM 模型 register/序列指派的适用范围。",
+      "scope": "Chojnowski, Acta Crystallographica Section D 78 (2022), 806–816; checked the method, benchmark, examples, and conclusions on the applicability of checkMySequence to register/sequence assignment in cryo-EM models.",
       "limitations": [
-        "p-value 是片段序列指派判别的经验统计量，不是“模型错误概率”；低分辨率、输入序列缺失/错误、参考 PDB 本身有 register 错误或过短移位会影响结果。工具提示是可能问题，需回到目标 map、序列和替代模型核验。"
+        "p-value is an empirical statistic for discriminating fragment sequence assignment, not a “probability that the model is wrong”; low resolution, missing/incorrect input sequence, a register error in the reference PDB itself, or too-short shifts can affect results. A tool flag indicates a possible issue and should be checked against the target map, sequence, and alternative model."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "Zotero 附件为期刊论文版式 PDF；Acta Cryst. D 78, 806–816 (2022)，DOI、题名、作者和刊期与正文首页吻合。",
+        "version": "The Zotero attachment is the typeset journal-article PDF; Acta Cryst. D 78, 806–816 (2022), with the DOI, title, authors, and issue matching the first page.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -3102,14 +3256,21 @@
           9,
           10
         ],
-        "coverage": "阅读摘要/引言、方法、benchmark 设定、结果/图注、讨论与结论，重点核验 §2、§§3.1–3.4、§§4.1–4.7 和 Figs. 1–9；PDF p.11 为参考文献。",
+        "coverage": "Read the abstract/introduction, methods, benchmark setup, results/captions, discussion, and conclusions, focusing on §2, §§3.1–3.4, §§4.1–4.7, and Figs. 1–9; PDF p. 11 contains references.",
         "unresolved": [
-          "未单独审阅附件外材料或运行软件；未将本论文作为对任何当前目标结构的审定。"
+          "Materials outside the attachment were not reviewed and the software was not run; this paper was not treated as a determination of any current target structure."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 11,
         "pdf_sha256": "0373671fc85e9a8fb81b9187201f02a566c7cb015469689887b792acb66a141f",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "CC BY 4.0",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/checkmysequence2022.pdf"
       }
     },
     {
@@ -3165,8 +3326,8 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1107/S2052252524009114",
-          "location": "§§2.1–2.6；PDB 选择、AF2 接触图预测、contact-map alignment 和替代模型精修",
-          "what_verified": "筛查针对截至2022-04-05、3.0–5.0 Å 的 cryo-EM 和 X-ray PDB 结构；AF2 由同序列簇生成距离/接触预测，conkit-validate 将其与沉积模型接触图对齐，至少连续5个残基的替代 register 才标为 possible error，并过滤低 pLDDT、低接触数及与预测模型差异大的候选。",
+          "location": "§§2.1–2.6; PDB selection, AF2 contact-map prediction, contact-map alignment, and alternative-model refinement",
+          "what_verified": "The screen targeted cryo-EM and X-ray PDB structures at 3.0–5.0 Å available by 2022-04-05; AF2 generated distance/contact predictions from sequence clusters, and conkit-validate aligned these with contact maps of deposited models. Only alternative registers spanning at least five consecutive residues were flagged as possible errors; candidates with low pLDDT, few contacts, or large differences from the predicted model were filtered out.",
           "pdf_pages": [
             2,
             3,
@@ -3175,8 +3336,8 @@
         },
         {
           "url": "https://doi.org/10.1107/S2052252524009114",
-          "location": "§§3.1–3.4；Figs. 1–5",
-          "what_verified": "作者结果段报告16,662个条目、2,954个含预测旗标条目及4,606个去冗余 unique predicted errors；高分辨率 counterpart 与替代 register 的 map–model 相关性改善用于交叉支持，但替代区坐标源自 AF2 预测并经同一实验数据 refinement。",
+          "location": "§§3.1–3.4; Figs. 1–5",
+          "what_verified": "The Results report 16,662 entries, 2,954 entries with predicted flags, and 4,606 de-duplicated unique predicted errors; improved map–model correlation for alternative registers in higher-resolution counterparts provides cross-support, but the alternative-region coordinates came from AF2 predictions and were refined against the same experimental data.",
           "pdf_pages": [
             5,
             6,
@@ -3186,8 +3347,8 @@
         },
         {
           "url": "https://doi.org/10.1107/S2052252524009114",
-          "location": "§§3.5–3.6；Figs. 6–11；Discussion",
-          "what_verified": "与 map-dependent checkMySequence 的交集有限且受其至少约10残基检出长度限制；Fig. 11 展示 conkit-validate 在人 calcineurin PDB 5c1v 的 fold-switch 假阳性。讨论列出低同源/单例、小型高α螺旋、二硫键和 fold-switch 等局限。",
+          "location": "§§3.5–3.6; Figs. 6–11; Discussion",
+          "what_verified": "Overlap with the map-dependent checkMySequence is limited and constrained by its minimum detectable length of about 10 residues; Fig. 11 shows a fold-switch false positive from conkit-validate for human calcineurin PDB 5c1v. The discussion lists low-homology/singleton cases, small highly α-helical proteins, disulfide bonds, and fold-switches as limitations.",
           "pdf_pages": [
             8,
             9,
@@ -3197,14 +3358,14 @@
           ]
         }
       ],
-      "scope": "Sánchez Rodríguez et al., IUCrJ 11 (2024), 938–950；地图独立的 AF2 contact-map register 筛查；结果范围仅覆盖该文截至2022-04-05选取的3–5 Å cryo-EM/MX PDB 集，不代表全体 PDB 或当前所有分辨率。",
+      "scope": "Sánchez Rodríguez et al., IUCrJ 11 (2024), 938–950; map-independent AF2 contact-map register screen; the results cover only the 3–5 Å cryo-EM/MX PDB set selected through 2022-04-05 in that paper, not the entire PDB or all current resolutions.",
       "limitations": [
-        "作者将结果称为 predicted/putative errors。筛查依赖 AF2 距离/接触预测且不少同源结构可能参与其训练；替代模型由 AF2 坐标替换片段后经同一实验数据精修，因此统计上的 map-fit 改善是支持证据而非独立模型真值。需要当前目标的序列、局部数据和构象状态复核。"
+        "The authors call the results predicted/putative errors. The screen depends on AF2 distance/contact predictions, and many homologous structures may have been included in its training; the alternative model replaces a segment with AF2 coordinates and is refined against the same experimental data, so statistical improvement in map fit is supporting evidence, not independent model ground truth. The current target must be rechecked using its sequence, local data, and conformational state."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "Zotero 附件为 IUCrJ 期刊论文 PDF；IUCrJ 11, 938–950 (2024)，DOI、题名、作者和卷页与正文首页吻合。",
+        "version": "The Zotero attachment is the IUCrJ journal-article PDF; IUCrJ 11, 938–950 (2024), with DOI, title, authors, and volume/pages matching the first page.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -3219,14 +3380,21 @@
           11,
           12
         ],
-        "coverage": "阅读摘要/引言、完整可见 Methods §§2.1–2.6、Results §§3.1–3.6、主要图表和讨论/局限；PDF p.13 为参考文献。",
+        "coverage": "Read the abstract/introduction, all visible Methods §§2.1–2.6, Results §§3.1–3.6, main figures/tables, and discussion/limitations; PDF p. 13 contains references.",
         "unresolved": [
-          "论文注明 Supplementary Information（包括完整预测列表 Table S1），该独立补充材料未包含在 Zotero PDF 中，未审阅。未对任何单独 PDB 条目重跑筛查。"
+          "The paper cites Supplementary Information (including the complete prediction list in Table S1), but that separate material was not included in the Zotero PDF and was not reviewed. No individual PDB entry was screened again."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 13,
         "pdf_sha256": "95f3f81149d4f7d004db97262d3173db49a96832198501e5625d05af537cb731",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "CC BY 4.0",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/register-errors2024.pdf"
       }
     },
     {
@@ -3315,6 +3483,13 @@
         "pdf_page_count": 4,
         "pdf_sha256": "8f339ab571848256f9513e01241117bc52b121ef66f4022d7f9de090321be425",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_established",
+        "checked_on": "2026-09-30",
+        "license_id": null,
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     },
     {
@@ -3414,6 +3589,13 @@
         "pdf_page_count": 8,
         "pdf_sha256": "26442c7b07e90c5cad7a6689c962a4d13c36ec953dff3f8ae43c4f463c42d883",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "Nucleic Acids Research article-specific open-access terms (2005)",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/tmalign2005.pdf"
       }
     },
     {
@@ -3453,15 +3635,15 @@
         {
           "url": "https://doi.org/10.1016/j.jsb.2012.09.006",
           "location": "§2.1, theoretical background; printed p. 520; PDF p. 2",
-          "what_verified": "模型数 K 在理论中视为已知输入参数，由用户设置同时精修的模型数；论文不称 K 本身能证明离散生物状态。",
+          "what_verified": "The number K of models is treated in the theory as a known input parameter set by the user, specifying how many models to refine simultaneously; the paper does not claim that K itself proves discrete biological states.",
           "pdf_pages": [
             2
           ]
         },
         {
           "url": "https://doi.org/10.1016/j.jsb.2012.09.006",
-          "location": "§2.1 起始模型说明；printed pp. 520–521; PDF pp. 2–3；§5 Conclusions; printed p. 529; PDF p. 11",
-          "what_verified": "算法通过局部优化求解并受起始模型影响，起始模型来源是解释处理过程的重要上下文。论文没有规定替代 K、不同初始化、随机种子或粒子子集必须逐项重跑。",
+          "location": "§2.1 starting-model description; printed pp. 520–521; PDF pp. 2–3; §5 Conclusions; printed p. 529; PDF p. 11",
+          "what_verified": "The algorithm uses local optimization and is affected by the starting model; the source of that model is important context for interpreting the procedure. The paper does not require rerunning alternative K values, different initializations, random seeds, or particle subsets in every case.",
           "pdf_pages": [
             2,
             3,
@@ -3471,22 +3653,22 @@
         {
           "url": "https://doi.org/10.1016/j.jsb.2012.09.006",
           "location": "Gold-standard refinement/results; printed pp. 526–527; PDF pp. 8–9",
-          "what_verified": "论文描述两个 particle half-sets 分开精修并据 half-map FSC 估计分辨率的流程，为独立 half-set 检查提供方法背景。",
+          "what_verified": "The paper describes separately refining the two particle half-sets and estimating resolution from half-map FSC, providing methodological context for independent-half-set checks.",
           "pdf_pages": [
             8,
             9
           ]
         }
       ],
-      "scope": "用于说明 K、起始模型、局部优化及 gold-standard half-set 的方法事实；对替代 K/初始化/子集的敏感性审查明确作为按主张触发的审计推论。",
+      "scope": "Used for method facts about K, starting models, local optimization, and gold-standard half-sets; sensitivity checks across alternative K values/initializations/subsets are explicitly an audit inference triggered by the claim.",
       "limitations": [
-        "文中没有把替代 K、随机种子或粒子子集重跑规定为通用验证要求；是否检查取决于结论是否依赖类别及是否有数据可用。",
-        "未逐页审读与本审计规则无关的公式、实现细节和所有结果页。"
+        "The paper does not prescribe reruns with alternative K values, random seeds, or particle subsets as general validation requirements; whether to check depends on whether the conclusion relies on the classes and whether data are available.",
+        "Formulae, implementation details, and all result pages unrelated to this audit rule were not reviewed page by page."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "附件为 Journal of Structural Biology 已发表 Elsevier 出版版 PDF（2012；180:519–530；CC BY），非 AAM/preprint。",
+        "version": "The attachment is the published Elsevier edition PDF in Journal of Structural Biology (2012; 180:519–530; CC BY), not an AAM/preprint.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -3498,14 +3680,21 @@
           10,
           11
         ],
-        "coverage": "核对题名/DOI、§2.1 对 K 和起始模型的说明、gold-standard half-set 结果与 §5 局部优化/起始模型限制；未声称逐页审读全文。",
+        "coverage": "Checked the title/DOI, §2.1 on K and starting models, the gold-standard half-set results, and §5 on local optimization/starting-model limitations; this is not a claim of page-by-page review of the full text.",
         "unresolved": [
-          "PDF pp. 6–7、12 未作全文审读；本次结论不依赖这些页。"
+          "PDF pp. 6–7 and 12 were not reviewed in full; the present conclusions do not depend on those pages."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 12,
         "pdf_sha256": "794e352ab0735561c8cb48724d761fb3cdc649944686bf95b0283ed0213fdb9c",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "CC BY 3.0 (Creative Commons Attribution 3.0 Unported)",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/relion2012.pdf"
       }
     },
     {
@@ -3616,6 +3805,13 @@
         "pdf_page_count": 24,
         "pdf_sha256": "f0598a8e519b05633f0ec38b7fa372f5b8bb8ea64b5771a9efa4434f9983c816",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_permitted",
+        "checked_on": "2026-09-30",
+        "license_id": null,
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     },
     {
@@ -3716,6 +3912,13 @@
         "pdf_page_count": 10,
         "pdf_sha256": "11972d220ef7b3d87c388c767440facf5b2a8f44896f8dfe75d539772df3e529",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "CC BY 2.0 UK",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/krissinel2011.pdf"
       }
     },
     {
@@ -3838,6 +4041,13 @@
         "pdf_page_count": 6,
         "pdf_sha256": "68b6e8ba5d2bf322418d5e46a2b7ebc24f65b6edd09090f5939e42170a503a20",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_established",
+        "checked_on": "2026-09-30",
+        "license_id": null,
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     },
     {
@@ -4008,16 +4218,16 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1038/s41586-021-03819-2",
-          "location": "Abstract/Introduction；CASP14 blind assessment",
-          "what_verified": "论文评估的是投稿时的 AlphaFold 系统/模型及 CASP14 任务；该版本使用多序列比对和结构模板，不能把结果转成后来版本或单目标正确率。",
+          "location": "Abstract/Introduction; CASP14 blind assessment",
+          "what_verified": "The paper evaluates the AlphaFold system/model and CASP14 task as they existed at submission; that version used multiple-sequence alignments and structural templates, so the results cannot be transferred to later versions or interpreted as accuracy for a single target.",
           "pdf_pages": [
             1
           ]
         },
         {
           "url": "https://doi.org/10.1038/s41586-021-03819-2",
-          "location": "Fig. 2c,d；Results/Methods “Metrics”",
-          "what_verified": "pLDDT 与 PDB 测试链的 lDDT-Cα、pTM 与 TM-score 在样本上相关；图示为基准相关性，并非残基正确概率或实验测量。",
+          "location": "Fig. 2c,d; Results/Methods “Metrics”",
+          "what_verified": "pLDDT correlated with lDDT-Cα and pTM with TM-score for the PDB test chains in the sample; the figure shows benchmark correlations, not per-residue correctness probabilities or experimental measurements.",
           "pdf_pages": [
             3,
             9
@@ -4025,8 +4235,8 @@
         },
         {
           "url": "https://doi.org/10.1038/s41586-021-03819-2",
-          "location": "“MSA depth and cross-chain contacts”；Discussion；Methods “Inference regimen”及“Test set of recent PDB sequences”",
-          "what_verified": "论文报告低 MSA 深度及主要依赖异源链接触的目标会降低适用性；PDB 测试与训练 cutoff、去冗余和筛选有明确范围。",
+          "location": "“MSA depth and cross-chain contacts”; Discussion; Methods “Inference regimen” and “Test set of recent PDB sequences”",
+          "what_verified": "The paper reports that applicability decreases for targets with shallow MSAs and targets relying mainly on inter-chain contacts between different chains; the PDB test has explicit training cutoffs, de-duplication, and selection limits.",
           "pdf_pages": [
             6,
             9,
@@ -4034,14 +4244,14 @@
           ]
         }
       ],
-      "scope": "Jumper et al., Nature 596 (2021), 583–589；核验摘要、CASP14/PDB 评测、Fig. 2 置信度关系、讨论及方法中 inference/metrics/test set。",
+      "scope": "Jumper et al., Nature 596 (2021), 583–589; checked the abstract, CASP14/PDB evaluation, confidence relationships in Fig. 2, discussion, and Methods on inference/metrics/test set.",
       "limitations": [
-        "本地 PDF 没有单独 Supplementary Information；文章主文中的性能和置信度关系是特定版本、基准、训练截止与筛选下的聚合结果。没有为后续模型版本或当前具体目标背书。"
+        "The local PDF does not include separate Supplementary Information; performance and confidence relationships in the main article are aggregate results for a specific version, benchmark, training cutoff, and selection. They do not endorse later model versions or any current specific target."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "Zotero 附件为 Nature 期刊论文版式 PDF，Nature 596, 583–589 (2021)；正文 DOI、题名、作者、刊期吻合。",
+        "version": "The Zotero attachment is the Nature journal-article PDF, Nature 596, 583–589 (2021); the main text’s DOI, title, authors, and issue match.",
         "reviewed_pdf_pages": [
           1,
           3,
@@ -4051,14 +4261,21 @@
           9,
           10
         ],
-        "coverage": "阅读摘要、CASP14/PDB 评测、Fig. 2 及其说明、MSA/cross-chain limitations、Discussion 和 Metrics/Inference/Test-set 方法；未逐字审阅图中未相关架构推导。",
+        "coverage": "Read the abstract, CASP14/PDB evaluation, Fig. 2 and its explanation, MSA/cross-chain limitations, Discussion, and Metrics/Inference/Test-set methods; the unrelated architectural derivation in the figure was not reviewed word for word.",
         "unresolved": [
-          "Supplementary Methods 和补充图未在所附主文 PDF 中，未审阅。未运行 AF2 或评估目标序列。"
+          "Supplementary Methods and figures are not in the attached main-text PDF and were not reviewed. AF2 was not run and no target sequence was evaluated."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 12,
         "pdf_sha256": "6eae057a9faf4f671c3101e0745ed704460c6d3dec77243dfd3a9f2d2ab68970",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "CC BY 4.0",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/af2-2021.pdf"
       }
     },
     {
@@ -4286,8 +4503,8 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1038/s41586-024-07487-w",
-          "location": "Abstract、Fig. 1、“Network architecture and training”",
-          "what_verified": "AF3 使用不同于 AF2 的 diffusion 架构，可对论文研究的多分子类型复合物进行联合预测；Fig. 1 的各图指标分别对应特定任务/评测集。",
+          "location": "Abstract, Fig. 1, “Network architecture and training”",
+          "what_verified": "AF3 uses a diffusion architecture different from AF2 and can jointly predict complexes involving multiple molecule types studied in the paper; the metrics in the different panels of Fig. 1 correspond to specific tasks/evaluation sets.",
           "pdf_pages": [
             1,
             2
@@ -4295,8 +4512,8 @@
         },
         {
           "url": "https://doi.org/10.1038/s41586-024-07487-w",
-          "location": "“Predicted confidences track accuracy”；Fig. 4；“Model limitations”；Fig. 5",
-          "what_verified": "pLDDT/PAE 和 chain-pair ipTM 与论文测试集的误差/界面指标关联；作者报告构象覆盖、无序区结构幻觉、手性和 clash 限制，多 seed 不构成溶液构象 ensemble。",
+          "location": "“Predicted confidences track accuracy”; Fig. 4; “Model limitations”; Fig. 5",
+          "what_verified": "pLDDT/PAE and chain-pair ipTM are associated with error/interface metrics on the paper’s test sets; the authors report limitations involving conformational coverage, hallucinated structure in disordered regions, chirality, and clashes. Multiple seeds do not constitute a solution-state conformational ensemble.",
           "pdf_pages": [
             5,
             6,
@@ -4305,8 +4522,8 @@
         },
         {
           "url": "https://doi.org/10.1038/s41586-024-07487-w",
-          "location": "Methods: “Inference regime”, “Metrics”, “Recent PDB evaluation set”, “PoseBusters”；Extended Data Figs. 7–8 / Table 1",
-          "what_verified": "大多数结果使用2021-09-30结构训练 cutoff；PoseBusters 使用2019-09-30 cutoff 模型。常规推理为5 seeds×每 seed 5 diffusion samples后按任务相关置信度排序；近期 PDB、PoseBusters 与其它任务的集、指标和过滤不同。",
+          "location": "Methods: “Inference regime”, “Metrics”, “Recent PDB evaluation set”, “PoseBusters”; Extended Data Figs. 7–8 / Table 1",
+          "what_verified": "Most results use a structural training cutoff of 2021-09-30; PoseBusters uses a model with a 2019-09-30 cutoff. The usual inference used 5 seeds × 5 diffusion samples per seed, then ranked by task-relevant confidence; recent PDB, PoseBusters, and other task sets differ in data, metrics, and filters.",
           "pdf_pages": [
             9,
             10,
@@ -4316,9 +4533,9 @@
           ]
         }
       ],
-      "scope": "Abramson et al., Nature 630 (2024), 493–500；核验主文架构、各任务结果、置信分数与局限、可见 Extended Data 和 Methods 中 benchmark/取样说明。",
+      "scope": "Abramson et al., Nature 630 (2024), 493–500; checked the main-text architecture, results for each task, confidence scores and limitations, visible Extended Data, and benchmark/sampling descriptions in Methods.",
       "limitations": [
-        "数字仅适用于相应测试集、训练 cutoff、过滤和排名流程；相关性不是亲和力、占有率或当前目标的正确概率。主体 PDF 没包含单独 Supplementary Information 中完整训练/评分细节。"
+        "The numbers apply only to the corresponding test sets, training cutoffs, filters, and ranking workflows; correlation is not affinity, occupancy, or the probability that a current target is correct. The main PDF does not include the complete training/scoring details in separate Supplementary Information."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [
@@ -4329,7 +4546,7 @@
         }
       ],
       "fulltext_review": {
-        "version": "Zotero 附件为 Nature version-of-record 主文 PDF，Nature 630, 493–500 (2024)，并含该文的 Extended Data 图/表；DOI/作者/卷页与首页吻合。",
+        "version": "The Zotero attachment is the Nature version-of-record main-text PDF, Nature 630, 493–500 (2024), and includes the article’s Extended Data figures/tables; the DOI, authors, and volume/pages match the first page.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -4343,14 +4560,21 @@
           19,
           21
         ],
-        "coverage": "阅读摘要、Fig. 1、主体 Results/Discussion、confidence 与 limitations 段、Methods 中训练/推理/指标/PDB set/PoseBusters，以及相关 Extended Data 图表说明。",
+        "coverage": "Read the abstract, Fig. 1, main Results/Discussion, confidence and limitations passages, and Methods on training/inference/metrics/PDB set/PoseBusters, along with relevant Extended Data figure/table captions.",
         "unresolved": [
-          "独立 Supplementary Information/Methods 未包含在附件中，未审阅；没有对任何当前复合物运行 AF3 或计算其分数。"
+          "The separate Supplementary Information/Methods is not included in the attachment and was not reviewed; AF3 was not run on any current complex and no scores were calculated."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 24,
         "pdf_sha256": "aba3109f2892454c9512570001598a069aaf422adb5aa0f3879414cb29a258fb",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "CC BY 4.0",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/af3-2024.pdf"
       }
     },
     {
@@ -4576,16 +4800,16 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1038/s41586-024-08416-7",
-          "location": "完整 addendum 正文",
-          "what_verified": "指出原文发布时提供非商业服务器，Google DeepMind 随后发布底层 AF3 inference code，并给出代码库链接；页面没有准确率结果或科学结论更正。",
+          "location": "Complete addendum text",
+          "what_verified": "It states that a non-commercial server was available when the original paper was published, that Google DeepMind subsequently released the underlying AF3 inference code, and provides a repository link; the page gives no accuracy results or correction to scientific conclusions.",
           "pdf_pages": [
             1
           ]
         }
       ],
-      "scope": "Abramson et al., Nature 636, E4 (2024)；核验其作为 AF3 原论文 addendum 的身份、发布日期、正文及所述代码发布事项。",
+      "scope": "Abramson et al., Nature 636, E4 (2024); checked its identity as an addendum to the original AF3 paper, publication date, full text, and the stated code-release information.",
       "limitations": [
-        "只有一页代码发布说明；本身不验证模型精度、推理可复现性或许可义务。"
+        "This is a one-page code-release notice; it does not itself validate model accuracy, reproducibility of inference, or licensing obligations."
       ],
       "verification_status": "update_text_verified",
       "updates": [
@@ -4596,18 +4820,25 @@
         }
       ],
       "fulltext_review": {
-        "version": "Zotero 附件为 Nature Corrections & Amendments 期刊 PDF，Nature 636, E4 (2024)，在线日期2024-11-27；标明是 DOI 10.1038/s41586-024-07487-w 的 Addendum。",
+        "version": "The Zotero attachment is the Nature Corrections & Amendments journal PDF, Nature 636, E4 (2024), online date 2024-11-27; it is identified as an Addendum to DOI 10.1038/s41586-024-07487-w.",
         "reviewed_pdf_pages": [
           1
         ],
-        "coverage": "阅读该一页全文及原文 DOI/发布说明。",
+        "coverage": "Read the full one-page text and checked the original DOI/code-release notice.",
         "unresolved": [
-          "未在本次范围审阅代码库或许可条款；无补充材料。"
+          "The code repository and license terms were outside this review; there is no supplementary material."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 1,
         "pdf_sha256": "c824e1006f0bee811e9e69ebc5c65b780616ef7688bce6a1206012ddc7127634",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "CC BY 4.0",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/af3-2024-addendum.pdf"
       }
     },
     {
@@ -4779,8 +5010,8 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1038/s41594-022-00849-w",
-          "location": "Abstract/Results: structural coverage；Fig. 1",
-          "what_verified": "文章进行的是 AF2 跨结构生物应用评估；11个模型物种的覆盖与 pLDDT 阈值结果并非某一目标质量保证。",
+          "location": "Abstract/Results: structural coverage; Fig. 1",
+          "what_verified": "The article evaluates AF2 across structural-biology applications; coverage across 11 model organisms and the pLDDT-threshold results are not a quality guarantee for any one target.",
           "pdf_pages": [
             1,
             2,
@@ -4789,8 +5020,8 @@
         },
         {
           "url": "https://doi.org/10.1038/s41594-022-00849-w",
-          "location": "Results: ligand pocket prediction, experimental model building；Figs. 4、6",
-          "what_verified": "口袋结果按局部平均 pLDDT 分层，作者指出高置信子集可能更常有相关 deposited templates；实验 map/model 建案例也需手动检查高置信区域中的错误。",
+          "location": "Results: ligand pocket prediction, experimental model building; Figs. 4, 6",
+          "what_verified": "Pocket results are stratified by local mean pLDDT, and the authors note that the high-confidence subset may more often have related deposited templates; experimental map/model-building examples also require manual checks for errors in high-confidence regions.",
           "pdf_pages": [
             6,
             7,
@@ -4800,8 +5031,8 @@
         },
         {
           "url": "https://doi.org/10.1038/s41594-022-00849-w",
-          "location": "Methods: oligomerization state prediction、complex prediction、experimental data integration",
-          "what_verified": "方法部分说明不同应用的样本和处理；寡聚体评测允许潜在训练集重叠，因为作者认为 AF2 单链训练设置仍可用于该任务评估。",
+          "location": "Methods: oligomerization state prediction, complex prediction, experimental data integration",
+          "what_verified": "The Methods describe samples and processing separately for different applications; the oligomer evaluation allowed potential training-set overlap because the authors considered AF2’s single-chain training setup still applicable to that task evaluation.",
           "pdf_pages": [
             13,
             14,
@@ -4809,14 +5040,14 @@
           ]
         }
       ],
-      "scope": "Akdel et al., Nature Structural & Molecular Biology 29 (2022), 1056–1067；核验摘要、coverage/pocket/complex/model-building 结果、关键图和对应方法。",
+      "scope": "Akdel et al., Nature Structural & Molecular Biology 29 (2022), 1056–1067; checked the abstract, coverage/pocket/complex/model-building results, key figures, and corresponding methods.",
       "limitations": [
-        "多应用评测使用不同样本、输入、阈值和指标；个别方法测试有潜在训练集重叠，且口袋分析作者指出可能有 template bias。结论支持按置信度审慎使用 AF2，不代表当前目标的独立验证。"
+        "The multi-application evaluation uses different samples, inputs, thresholds, and metrics; some method tests may overlap with training data, and the authors note possible template bias in the pocket analysis. The conclusions support cautious use of AF2 according to confidence and do not constitute independent validation of a current target."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "Zotero 附件为期刊主文及 Methods 的 Nature PDF；Nat. Struct. Mol. Biol. 29, 1056–1067 (2022)，首页 DOI/题名/作者吻合。",
+        "version": "The Zotero attachment is the Nature PDF containing the main article and Methods; Nat. Struct. Mol. Biol. 29, 1056–1067 (2022), with the DOI/title/authors matching the first page.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -4830,14 +5061,21 @@
           14,
           15
         ],
-        "coverage": "阅读摘要、主要结果和图注、口袋/寡聚体/模型入图案例、Discussion/Conclusion 及 Methods 中对应评测样本和处理。",
+        "coverage": "Read the abstract, main results and captions, pocket/oligomer/model-building examples, Discussion/Conclusion, and Methods on the corresponding evaluation samples and processing.",
         "unresolved": [
-          "所附 PDF 不含独立 Supplementary Information；未审阅完整补充表/补图和代码。未评估任何当前目标。"
+          "The attached PDF does not include separate Supplementary Information; the complete supplementary tables/figures and code were not reviewed. No current target was evaluated."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 19,
         "pdf_sha256": "715e91148b06b5402888b4d3d69418af44c5323edc5c80eb028f40d167056e53",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "CC BY 4.0",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/akdel2022.pdf"
       }
     },
     {
@@ -4917,8 +5155,8 @@
       "verified_locations": [
         {
           "url": "https://doi.org/10.1038/s41592-023-02087-4",
-          "location": "“Comparing AlphaFold predictions with density maps”；Fig. 1",
-          "what_verified": "以实验 crystallographic maps 对照高 pLDDT 预测，图中包括很好匹配、与 map 不符但沉积模型匹配、map 不清楚及域/主链偏差等不同情形。",
+          "location": "“Comparing AlphaFold predictions with density maps”; Fig. 1",
+          "what_verified": "High-pLDDT predictions were compared with experimental crystallographic maps; the examples include good matches, cases that disagree with the map but match the deposited model, unclear maps, and domain/backbone deviations.",
           "pdf_pages": [
             1,
             2
@@ -4926,30 +5164,30 @@
         },
         {
           "url": "https://doi.org/10.1038/s41592-023-02087-4",
-          "location": "Fig. 4、Table 1；“Using confidence (pLDDT) to estimate errors in AlphaFold predictions”",
-          "what_verified": "所选102个高质量结构/map中，pLDDT>90的 Cα 原子约10%与参照结构偏差>2 Å；该文同时展示置信度相关性但未把高置信度等同于无误。",
+          "location": "Fig. 4, Table 1; “Using confidence (pLDDT) to estimate errors in AlphaFold predictions”",
+          "what_verified": "Among the selected 102 high-quality structures/maps, about 10% of Cα atoms with pLDDT>90 deviated by >2 Å from the reference structure; the paper also shows confidence correlations but does not equate high confidence with correctness.",
           "pdf_pages": [
             5
           ]
         },
         {
           "url": "https://doi.org/10.1038/s41592-023-02087-4",
-          "location": "Methods: experimental maps、analysis、“Control experiments and limitations”",
-          "what_verified": "Methods 说明样本从215个结构中筛选，主要分析102个 free R≤0.30 的高质量条目，局部预测未用 PDB templates；作者报告样本比例、模板及构象/结构限制。",
+          "location": "Methods: experimental maps, analysis, “Control experiments and limitations”",
+          "what_verified": "Methods state that the sample was selected from 215 structures, with the main analysis using 102 high-quality entries with free R≤0.30; local predictions did not use PDB templates. The authors report the sample proportions, templates, and conformational/structural limitations.",
           "pdf_pages": [
             8,
             9
           ]
         }
       ],
-      "scope": "Terwilliger et al., Nature Methods 21 (2024), 110–116；核验 direct map comparisons、置信度误差统计、方法和控制/局限。",
+      "scope": "Terwilliger et al., Nature Methods 21 (2024), 110–116; checked direct map comparisons, confidence/error statistics, methods, controls, and limitations.",
       "limitations": [
-        "这是有选择的晶体学样本，102个主分析结构来自特定 SAD redetermination 集且大多数残基 pLDDT 很高；研究比例不能外推全部 AF 模型。实验结构/密度依赖特定晶体条件，map 不清或替代构象可能使差异未必表示预测绝对错误。"
+        "This is a selected crystallographic sample: the 102 structures in the main analysis came from a specific SAD redetermination set and most residues had high pLDDT; the study proportions cannot be extrapolated to all AF models. Experimental structures/density depend on specific crystal conditions, and unclear maps or alternate conformations mean a discrepancy does not necessarily indicate that the prediction is absolutely wrong."
       ],
       "verification_status": "fulltext_sections_verified",
       "updates": [],
       "fulltext_review": {
-        "version": "Zotero 附件为 Nature Methods 期刊文章 PDF；Nat. Methods 21 (2024), 110–116；首页记录2023-11-30在线发表、2024期刊卷页，DOI/作者吻合。",
+        "version": "The Zotero attachment is the Nature Methods journal-article PDF; Nat. Methods 21 (2024), 110–116; the first page records online publication on 2023-11-30 and 2024 journal volume/pages, with DOI/authors matching.",
         "reviewed_pdf_pages": [
           1,
           2,
@@ -4957,14 +5195,21 @@
           8,
           9
         ],
-        "coverage": "阅读摘要、与密度对照的 Results/Fig. 1、pLDDT误差结果 Fig. 4/Table 1、Methods 和 control/limitations 段。",
+        "coverage": "Read the abstract, Results/Fig. 1 comparing predictions with density, pLDDT error results in Fig. 4/Table 1, Methods, and the control/limitations section.",
         "unresolved": [
-          "Supplementary Information 未在附件中，未审阅；未检查论文所列数据文件/脚本或当前目标数据。"
+          "Supplementary Information was not included in the attachment and was not reviewed; the cited data files/scripts and any current target data were not checked."
         ],
         "checked_on": "2026-09-30",
         "pdf_page_count": 12,
         "pdf_sha256": "86f2b209ffbdc245865eb6cd9b447bd4bd7c8693be2ad5909932d3702fc1e69e",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "permitted",
+        "checked_on": "2026-09-30",
+        "license_id": "CC BY 4.0",
+        "record": "references/redistribution.json",
+        "bundled_path": "references/papers/terwilliger2024.pdf"
       }
     },
     {
@@ -5109,6 +5354,13 @@
         "pdf_page_count": 31,
         "pdf_sha256": "645d36b1fb61ee94976fc8ce30765fadc203ec0b51aa3f04f9fcf187eae83c06",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_established",
+        "checked_on": "2026-09-30",
+        "license_id": null,
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     },
     {
@@ -5202,6 +5454,13 @@
         "pdf_page_count": 5,
         "pdf_sha256": "78f20e8f77d575eafa4dee2bb1c97b8a810cff86bba1d9498b6c4d8bb1a54ac8",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_established",
+        "checked_on": "2026-09-30",
+        "license_id": null,
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     },
     {
@@ -5290,6 +5549,13 @@
         "pdf_page_count": 9,
         "pdf_sha256": "21ceb534f1739d32ef035246fbecebabf23952b160946affea9ae3cf438b827f",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_established",
+        "checked_on": "2026-09-30",
+        "license_id": null,
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     },
     {
@@ -5385,6 +5651,13 @@
         "pdf_page_count": 9,
         "pdf_sha256": "9df2c7958dd028c791e552f68e4f0d5f4d6a5ee89a5638dd5bf926ad16f47ef5",
         "verification_level": "Source reading, not independent recomputation or reprocessing"
+      },
+      "redistribution": {
+        "decision": "not_established",
+        "checked_on": "2026-09-30",
+        "license_id": null,
+        "record": "references/redistribution.json",
+        "bundled_path": null
       }
     }
   ],
@@ -5409,5 +5682,6 @@
       "scope": "Accessible current documentation describes X-ray ligand validation, RSCC construction, fragment/environment scores and ADP/occupancy reporting.",
       "limitations": "This is a date-stamped tool-documentation check, not a pinned software version or a 40th research-paper record. A cryo-EM resolution keyword does not establish the cryo-EM RSCC algorithm or override the X-ray scope stated in the page."
     }
-  ]
+  ],
+  "redistribution_record": "references/redistribution.json"
 }

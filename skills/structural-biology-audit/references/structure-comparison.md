@@ -1,60 +1,60 @@
-# 结构比较审计
+# Structural Comparison Audit
 
-只在出现“相同折叠 / 相同构象 / 结构相似 / 发生构象变化”等表述时按需调用。
-比较分数描述的是指定原子、残基映射和叠合目标下的相似度；它本身不等于功能、进化或机制结论。
+Invoke as needed only when claims refer to the same fold, the same conformation, structural similarity, or a conformational change.
+Comparison scores describe similarity for a specified atom set, residue mapping, and superposition target; by themselves, they do not establish function, evolution, or mechanism.
 
-## 先把比较对象说清楚
+## Define the objects being compared
 
-- 确认比较的对象是同一蛋白、同源蛋白、复合物还是预测模型；记录结构来源和实验/预测状态。
-- 对齐序列或实体编号，检查物种、异构体、突变、缺失片段、标签、融合蛋白和构建体边界。
-- 明确比较全链、结构域、局部位点还是复合物；需要时分别报告全局和局部结果。
-- 说明使用的链、原子集合、残基对应关系、缺失残基处理和叠合程序/版本。
-- 说明用 Cα、主链还是全重原子；侧链/配体是否纳入会改变结果含义。
-- 对重复结构域、寡聚体或对称链，说明如何处理链对应和对称等价解。
-- 若结构有断链、未解析环区或不同编号，先建立明确的一对一残基映射。
-- 逐一核对映射是否跨越插入、缺失或链置换；自动对齐软件的残基配对不是实验身份注释。
-- 查看对齐覆盖率及未对齐区域；短局部片段的高分不能代表全蛋白相似。
-- 若两结构来自不同配体、离子、晶型、温度或组装状态，先将差异列为条件变量，不直接称为蛋白内在变化。
-- 对柔性蛋白，检查不同合理对齐是否改变主结论；不要只报告最小 RMSD 的结果。
-- 对多结构域蛋白，分别检查域内折叠与域间排布，避免全局拟合掩盖局部差异。
-- 对预测模型与实验模型的比较，记录模型置信度及可比较的已解析区域。
+- Confirm whether the objects are the same protein, homologous proteins, complexes, or a predicted model; record the structure source and whether it is experimental or predicted.
+- Align sequences or entity identifiers and check species, isoform, mutations, missing segments, tags, fusion proteins, and construct boundaries.
+- Specify whether the comparison is of the full chain, a domain, a local site, or a complex; report global and local results separately when needed.
+- State the chains, atom sets, residue correspondences, treatment of missing residues, and superposition program/version used.
+- Specify whether the comparison uses Cα, backbone, or all heavy atoms; including side chains or ligands changes what the result means.
+- For repeated domains, oligomers, or symmetry-related chains, explain how chain correspondence and symmetry-equivalent solutions were handled.
+- If structures have chain breaks, unresolved loops, or different numbering, first establish an explicit one-to-one residue mapping.
+- Check whether the mapping spans insertions, deletions, or chain permutations; residue pairs assigned by automatic alignment software are not experimental identity annotations.
+- Inspect alignment coverage and unaligned regions; a high score for a short local segment does not imply whole-protein similarity.
+- If the structures differ in ligand, ion, crystal form, temperature, or assembly state, list these first as condition variables rather than directly calling the difference an intrinsic protein change.
+- For flexible proteins, check whether different reasonable alignments change the main conclusion; do not report only the result with the lowest RMSD.
+- For multidomain proteins, assess intradomain folds and interdomain arrangements separately so that a global fit does not hide local differences.
+- When comparing a predicted model with an experimental model, record model confidence and the experimentally resolved regions that can be compared.
 
-## RMSD / 归一化距离
+## RMSD / normalized distance
 
-- 报 RMSD 时同时写清参与计算的对应原子数、残基覆盖和所用片段；只给一个 Å 数值无法复核。
-- 不把不同长度、不同覆盖率或不同残基映射下的 RMSD 直接排序。
-- 明确 RMSD 是 Cα、主链还是全原子；不要将不同原子集合的值当作同一指标。
-- 解释 RMSD 时区分“对齐后相似”与“全链构象相同”；全局运动可能被局部对齐掩盖。
-- 提供用于拟合的残基集合；先拟合核心结构再检查外围变化时应分别报告两种范围。
-- Carugo–Pongor 的归一化 RMSD 用于修正尺寸效应，不能补救错误对齐、错误残基对应或结构质量差异。
-- 使用归一化 RMSD 时报告参考长度及实际参与公式的残基数，便于复算并避免与原始 RMSD 混淆。
-- 该归一化公式依据其特定统计推导；短对齐不应机械套用，也不产生功能相同的判据。
-- 若一个结构是预测模型、另一个是实验模型，先确认比较的是可信区域，并指出局部数据支持差异。
+- When reporting RMSD, also state the number of corresponding atoms, residue coverage, and segments used; an Å value alone cannot be reproduced.
+- Do not directly rank RMSD values calculated with different lengths, coverage, or residue mappings.
+- Specify whether RMSD is for Cα, backbone, or all atoms; values for different atom sets are not the same metric.
+- In interpreting RMSD, distinguish “similar after alignment” from “same whole-chain conformation”; a local alignment can hide global movement.
+- Provide the residues used for fitting; if the core is fitted first and peripheral changes are then examined, report both ranges separately.
+- Carugo–Pongor normalized RMSD corrects for size effects; it cannot remedy an incorrect alignment, incorrect residue correspondence, or differences in structure quality.
+- When using normalized RMSD, report the reference length and the number of residues actually used in the formula so the result can be recalculated and distinguished from raw RMSD.
+- This normalized formula is based on a specific statistical derivation; do not apply it mechanically to short alignments, and do not treat it as a criterion for functional equivalence.
+- If one structure is a predicted model and the other is experimental, first confirm that the comparison is restricted to credible regions and state where local data support a difference.
 
 ## TM-align / TM-score
 
-- TM-align 以结构相似性优化残基对齐；报告程序、两边链长、对齐长度/覆盖，以及分别按哪一条链归一化。
-- TM-align 研究将 0.5 用作其特定 PDB 折叠分类基准；不要将 0.5 写成适用于所有问题的硬阈值。
-- TM-score 的归一化依赖目标长度；若工具输出两种长度归一化结果，避免只挑更高的一个而不说明。
-- 报告局部结构域或不同边界的结果时，标注这是哪个片段的分数；整体分数可能受域间排布影响。
-- 该方法也能为折叠或错误折叠模型找到结构类似物；存在高结构分数不等于模型正确。
-- 高 TM-score / 低 RMSD 不能单独证明同源关系、相同配体偏好、相同活性或同一生理状态。
-- 对比复合物时，分别查看单体、界面和链间相对位置；单链折叠相似不保证装配相同。
-- 若链身份或寡聚体对称操作不唯一，列出对应方案并检查结果是否依赖某一个链配对。
+- TM-align optimizes residue alignment for structural similarity; report the program, chain lengths, alignment length/coverage, and which chain was used for each normalization.
+- The TM-align study used 0.5 as a benchmark for its specific PDB fold-classification task; do not present 0.5 as a universal hard threshold.
+- TM-score normalization depends on target length; if the tool returns values normalized by both chain lengths, do not report only the higher value without saying so.
+- When reporting results for local domains or different boundaries, identify the segment scored; the global score may be affected by interdomain arrangement.
+- The method can also find structural analogs for folds or misfolded models; a high structural score does not mean a model is correct.
+- A high TM-score or low RMSD alone does not prove homology, the same ligand preference, the same activity, or the same physiological state.
+- For complex comparisons, examine the monomer, interface, and relative chain positions separately; similar single-chain folds do not guarantee the same assembly.
+- If chain identity or oligomeric symmetry operations are ambiguous, list the correspondence options and check whether the result depends on one particular chain pairing.
 
-## 对结论用词的约束
+## Constraints on wording conclusions
 
-- 仅有一个指标时，写“在指定对齐范围内相似”，避免笼统写“结构相同”。
-- 若结论依赖局部位点，提供该位点的局部对齐、配体/辅因子状态和数据支持。
-- 若结论依赖结构变化，确认残基映射一致，并区分刚体域运动、局部重排和模型建构差异。
-- 若对齐方法、覆盖或构建体改变后结论不稳，标记为不确定，不挑选最支持叙述的一种结果。
-- 若分辨率、局部密度或模型质量显著不匹配，限制比较到双方均有数据支持的区域。
-- 检查活动位点周边残基映射是否一致；配体方向或侧链差异要回到局部数据核实。
-- 结构比较用于定位待检验差异；功能或机制解释转到相应审计，不从分数直接外推。
+- With only one metric, write “similar within the specified alignment range” rather than broadly claiming “the same structure.”
+- If a conclusion depends on a local site, provide its local alignment, ligand/cofactor state, and supporting data.
+- If a conclusion depends on a structural change, confirm that residue mapping is consistent and distinguish rigid-body domain motion, local rearrangement, and model-building differences.
+- If the conclusion is unstable to alignment method, coverage, or construct changes, mark it as uncertain; do not select whichever result best supports the narrative.
+- If resolution, local density, or model quality differs substantially, limit the comparison to regions supported by data in both structures.
+- Check that residue mapping is consistent around the active site; verify ligand orientation or side-chain differences against local data.
+- Use structural comparison to locate differences to test; take functional or mechanistic interpretation to the corresponding audit rather than extrapolating from scores.
 
-## 指定参考文献与定位
+## Specified references and locations
 
-- Carugo & Pongor (2001), [DOI: 10.1110/ps.690101](https://doi.org/10.1110/ps.690101)：PDF pp. 1–4（印刷页 1470–1473），尤其 pp. 2、4 的构造数据、式 2–5 与适用范围。归一化针对对齐中等价残基数的尺寸效应；参数由 180 个非同源 PDB 蛋白及其 Cα 随机重排的人工集合推导。作者建议用于超过 40 个残基的对齐；其式在少于 14 个残基时为负，短于建议范围时不要依此排序。它不修复错误映射，也不是功能相同的校准判据。
-- Zhang & Skolnick (2005), [DOI: 10.1093/nar/gki524](https://doi.org/10.1093/nar/gki524)：PDF pp. 2–3（印刷页 2303–2304）的方法和覆盖率比较；PDF p. 4（印刷页 2305）对 TM-score 0.5 的解释；PDF pp. 7–8（印刷页 2308–2309）的预测模型/decoy 对照。作者明确称 0.5 为经验且偏向结构建模的阈值，不能作为跨任务通用硬界线；其 decoy 结果也说明与已知结构相似不能独自验证模型正确性。
+- Carugo & Pongor (2001), [DOI: 10.1110/ps.690101](https://doi.org/10.1110/ps.690101): PDF pp. 1–4 (printed pp. 1470–1473), especially pp. 2 and 4 for the constructed data, equations 2–5, and scope. The normalization addresses size effects in the number of equivalent residues in an alignment; its parameters were derived from 180 nonhomologous PDB proteins and an artificial set made by randomizing their Cα coordinates. The authors recommend it for alignments longer than 40 residues; the equation becomes negative below 14 residues, so do not use it to rank alignments shorter than the recommended range. It does not correct an incorrect mapping and is not a calibration criterion for functional equivalence.
+- Zhang & Skolnick (2005), [DOI: 10.1093/nar/gki524](https://doi.org/10.1093/nar/gki524): PDF pp. 2–3 (printed pp. 2303–2304) for methods and coverage comparisons; PDF p. 4 (printed p. 2305) for interpretation of TM-score 0.5; PDF pp. 7–8 (printed pp. 2308–2309) for predicted-model/decoy comparisons. The authors explicitly describe 0.5 as an empirical threshold oriented toward structural modeling, not a universal hard boundary across tasks; their decoy results also show that similarity to a known structure cannot by itself validate a model.
 
-这两篇是距离/结构对齐方法依据；不作为功能、组装或机制的单独证据。
+These two references support distance and structural-alignment methods; they are not standalone evidence for function, assembly, or mechanism.

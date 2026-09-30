@@ -1,61 +1,61 @@
-# 生物学背景与实验条件审计
+# Biological Context and Experimental Conditions Audit
 
-当结论把晶体接触、沉降/组装、特定构象或结合状态推广到天然蛋白时按需调用。
-此检查的目的，是确认结构所代表的分子、环境和组装状态与文中生物学主张相符。
+Invoke as needed when claims generalize crystal contacts, sedimentation/assembly, a specific conformation, or a binding state to the native protein.
+The purpose of this check is to determine whether the molecule, environment, and assembly state represented by the structure match the biological claim.
 
-## 构建体与样品
+## Construct and sample
 
-- 对照天然序列、实验构建体和坐标序列；注明物种、异构体、链身份及残基编号映射。
-- 核对构建体起止位点、缺失结构域/环区、突变、标签、融合蛋白、稳定化改造与交联。
-- 若研究用截短体、突变体或融合构建体，检查被删除部分是否参与界面、构象约束或功能调控。
-- 核实复合物每个组分是否确实存在于样品；区分共同表达、共纯化、外加配体和结构建模补入。
-- 核对结构中链的实体定义与论文命名是否一致；标签/融合链不能误当作天然伙伴。
-- 若样品按多个组分共同制备，确认纯化记录或实验描述能支持论文所称的组分和化学计量。
-- 将坐标中未建模的残基、链段、配体或伙伴列为未知，不把缺失自动解释成不存在或无序。
-- 缺失电子密度、低局部分辨率和样品中不存在是不同解释，需分别表述。
-- 构建体或样品信息未报告时标记“无法核实”；不能用结构图补齐元数据。
+- Compare the native sequence, experimental construct, and coordinate sequence; state species, isoform, chain identity, and residue-number mapping.
+- Check construct boundaries, deleted domains/loops, mutations, tags, fusion proteins, stabilizing modifications, and crosslinks.
+- If the study used a truncation, mutant, or fusion construct, check whether the deleted portion contributes to the interface, conformational constraints, or functional regulation.
+- Verify that every component in the complex was actually present in the sample; distinguish co-expression, co-purification, added ligand, and components introduced during model building.
+- Check that the entity definitions for chains in the structure match the names used in the paper; do not mistake a tag or fusion chain for a native partner.
+- If the sample was prepared from multiple components together, confirm that purification records or the experimental description support the reported components and stoichiometry.
+- List residues, chain segments, ligands, or partners absent from the coordinates as unknown; do not automatically interpret their absence as physical absence or disorder.
+- Missing electron density, low local resolution, and absence from the sample are different explanations and should be stated separately.
+- If construct or sample information is not reported, mark it “not verifiable”; do not fill in metadata from a structure figure.
 
-## 环境与状态
+## Environment and state
 
-- 记录实验报告的 pH、盐/离子、配体/辅因子、浓度、温度、沉淀剂、冷冻保护剂、去垢剂及交联条件。
-- 区分生化测定条件、纯化/缓冲液条件、结晶条件和采集温度；不能把它们混称为“生理条件”。
-- 若关键条件没有报告，不能把未说明当作常规条件；明确写为未知。
-- 对金属、硫酸根、磷酸盐、甘油等组分，检查它们是生理成分、缓冲/沉淀剂还是未知来源。
-- 对糖基化、脂质、辅因子及共价修饰，核对样品表达系统和实验是否支持坐标中的化学状态。
-- 结构中的配体或离子可能改变界面与构象；先核对化学身份和样品来源，再将其用于功能解释。
-- 若实验为高浓度或加入稳定剂条件，注明其可能限定可外推的组装/构象范围。
-- 结晶降温、晶格堆积和不同晶型都可能影响可观察构象；不要将一个坐标模型当作溶液中的唯一状态。
-- 温度/条件改变可能改变构象群体；没有独立测量时，不把坐标中的占有率直接当作溶液态群体比例。
+- Record reported pH, salt/ions, ligands/cofactors, concentration, temperature, precipitant, cryoprotectant, detergent, and crosslinking conditions.
+- Distinguish biochemical assay conditions, purification/buffer conditions, crystallization conditions, and data-collection temperature; do not conflate them as “physiological conditions.”
+- If a key condition is unreported, do not treat the omission as evidence of a conventional condition; state that it is unknown.
+- For components such as metals, sulfate, phosphate, or glycerol, check whether they are physiological components, buffer/precipitant constituents, or of unknown origin.
+- For glycosylation, lipids, cofactors, and covalent modifications, check whether the sample expression system and experiments support the chemical state shown in the coordinates.
+- A ligand or ion in the structure may alter an interface or conformation; verify its chemical identity and sample provenance before using it for functional interpretation.
+- If the experiment used high concentrations or added stabilizers, state how these may limit the range of assemblies or conformations to which the result can be generalized.
+- Cryogenic cooling, lattice packing, and different crystal forms can affect the observed conformation; do not treat a single coordinate model as the only solution-state conformation.
+- Changes in temperature or conditions may change conformational populations; without independent measurement, do not treat coordinate occupancies as population fractions in solution.
 
-## 生物学组装与晶体接触
+## Biological assembly and crystal contacts
 
-- 分别记录非对称单元、作者指定的生物学组装、晶体对称相关链及分析软件推断的组装。
-- 检查生物学组装的对称操作是否把非对称单元之外的链复制进来，并确认图示与坐标采用同一组装定义。
-- 显示了多聚体不等于样品/溶液中存在该多聚体；先核对链数、对称操作和界面来源。
-- 检查主张的界面是否主要由晶体对称伙伴形成，还是在作者指定的生物学组装中存在。
-- 将 PISA 结果视为基于晶体界面物理化学的组装预测，不能标作溶液实验结果。
-- 不以 PISA 排名或一个界面能量数值独自裁决化学计量；评分会受建模假设与晶体环境影响。
-- Krissinel (2011) 的计算估算显示，解离常数 Kd ≥ 100 μM 的弱相互作用在结晶期间有相当概率消失；作者估计约 20% 的 PDB 蛋白二聚体有超过 50% 的误表风险。这是总体模型估算，不是任一具体结构的后验概率。
-- 检查 PISA 是否把晶体沉淀剂或非天然配体计入界面；按论文信息判断其是否可代表样品内组分。
-- 核对 PISA 分析所用的配体集合、链集合与坐标版本；必要时说明不同设置会导致不同候选组装。
-- 寻找论文实际报告的独立溶液/生化组装证据，并确认其浓度、盐、pH、温度和配体条件与结论相容。
-- 将独立组装测量的浓度、配体和缓冲条件写在同一处比较；条件不一致会限制冲突裁决。
-- 若独立证据与晶体/预测组装冲突，报告冲突及条件差别；不要默默选用更符合作者模型的一方。
-- PISA 2007 报告的 80–90% 是作者在其评估集上的成功率，不能转换成某个结构的置信概率。
-- 弱结合、瞬态或条件依赖的复合物尤其不能只凭晶体证据定论；明确标为候选界面/候选组装。
+- Record separately the asymmetric unit, author-assigned biological assembly, crystallographic symmetry-related chains, and assemblies inferred by analysis software.
+- Check whether symmetry operations for the biological assembly generate chains outside the asymmetric unit, and confirm that figures and coordinates use the same assembly definition.
+- A displayed multimer does not establish that the multimer exists in the sample or in solution; first check chain count, symmetry operations, and the origin of the interface.
+- Check whether the claimed interface is formed mainly by crystallographic symmetry mates or is present in the author-assigned biological assembly.
+- Treat PISA results as assembly predictions based on the physicochemistry of crystal interfaces, not as solution experiments.
+- Do not decide stoichiometry from a PISA ranking or a single interface-energy value; scores are affected by modeling assumptions and the crystal environment.
+- Krissinel (2011) computational estimates suggest that weak interactions with a dissociation constant Kd ≥ 100 μM have a substantial chance of disappearing during crystallization; the author estimated that about 20% of PDB protein dimers have a greater than 50% risk of being misannotated. This is an overall model estimate, not a posterior probability for any particular structure.
+- Check whether PISA includes crystallization precipitants or non-native ligands in the interface; use the paper to judge whether they represent components present in the sample.
+- Check the ligand set, chain set, and coordinate version used for PISA analysis; note when different settings yield different candidate assemblies.
+- Look for independent solution or biochemical assembly evidence actually reported in the paper, and confirm that its concentration, salt, pH, temperature, and ligand conditions are compatible with the claim.
+- Compare the concentration, ligand, and buffer conditions for independent assembly measurements in one place; mismatched conditions limit how conflicts can be resolved.
+- If independent evidence conflicts with the crystal or predicted assembly, report the conflict and condition differences; do not silently choose the side that better fits the authors’ model.
+- The 80–90% reported by PISA (2007) is the authors’ success rate on their evaluation set and cannot be converted into a confidence probability for an individual structure.
+- Do not conclude a weak, transient, or condition-dependent complex from crystallographic evidence alone; label it a candidate interface/assembly.
 
-## 温度与构象群体
+## Temperature and conformational populations
 
-- 若文章对比室温和低温结构，检查是否有同一体系、相应密度和模型建构支持。
-- 检查功能位点、晶格接触附近及可动环区是否出现替代构象或状态依赖的局部密度。
-- 低温晶体可重排侧链/堆积并减少可见替代构象；这是一种需要检查的可能偏差，不代表每个冷冻结构都失真。
-- 室温晶体密度中的多构象为构象异质性提供证据；单个代表模型不自动给出构象群体或动力学速率。
-- 将“看见不同状态”与“确定状态顺序/功能因果”分开，后者需独立证据，详见机制审计。
+- If the paper compares room-temperature and cryogenic structures, check whether they come from the same system and whether the corresponding density and model building support the comparison.
+- Check for alternate conformations or state-dependent local density at functional sites, near crystal contacts, and in mobile loops.
+- Low-temperature crystals may rearrange side chains/packing and reduce visible alternate conformations; this is a possible bias to examine, not evidence that every cryogenic structure is distorted.
+- Multiple conformations in room-temperature crystal density provide evidence of conformational heterogeneity; a single representative model does not by itself give conformational populations or kinetic rates.
+- Separate “different states were observed” from “the state order/function causality was established”; the latter requires independent evidence. See the mechanism audit.
 
-## 指定参考文献与定位
+## Specified references and locations
 
-- Krissinel & Henrick (2007), [DOI: 10.1016/j.jmb.2007.05.022](https://doi.org/10.1016/j.jmb.2007.05.022)：摘要与 PDF pp. 2–11、19–20（印刷页 775–784、792–793）。该文从晶体接触枚举候选组装，以界面物理化学、热力学和图搜索筛选；80–90% 是作者在其基准上的整体恢复率，不能解释为逐结构置信度。结论明确说该研究刻意未纳入温度、盐度、pH 和亚基浓度。
-- Krissinel (2011), [DOI: 10.1107/S0907444911007232](https://doi.org/10.1107/S0907444911007232)：摘要、PDF pp. 2–8（尤其 Fig. 1、3–4 和各案例）及 p. 9 结论。3bxc 是晶体中紧密四聚体、溶液中单体的反例；YopM 的 1G9U/1JL5 案例显示钙离子条件会改变晶体预测，SEC 与交联实验支持溶液组装依赖钙。文中还指出 PISA 解离自由能不是“越高越好”的单一评分，弱结合及条件依赖体系需独立实验确认。
-- Fraser et al. (2011), [DOI: 10.1073/pnas.1111325108](https://doi.org/10.1073/pnas.1111325108)：PDF pp. 1–5 的结果、Fig. 1–5 与 Discussion；比较 30 组室温/低温高分辨率晶体数据，以 Ringer/qFit 检查密度支持的替代构象，展示冷却可改变所见侧链构象分布。该研究支持温度影响晶体内可见群体，不能把模型占有率直接换算成溶液态比例或动力学。
+- Krissinel & Henrick (2007), [DOI: 10.1016/j.jmb.2007.05.022](https://doi.org/10.1016/j.jmb.2007.05.022): abstract and PDF pp. 2–11, 19–20 (printed pp. 775–784, 792–793). The paper enumerates candidate assemblies from crystal contacts and filters them using interface physicochemistry, thermodynamics, and graph search; 80–90% is the overall recovery rate on the authors’ benchmark, not a per-structure confidence. The conclusion explicitly says the study deliberately did not include temperature, salinity, pH, or subunit concentration.
+- Krissinel (2011), [DOI: 10.1107/S0907444911007232](https://doi.org/10.1107/S0907444911007232): abstract, PDF pp. 2–8 (especially Figs. 1, 3–4 and the case studies), and p. 9 conclusion. 3bxc is a counterexample of a tight tetramer in the crystal that is monomeric in solution; the YopM 1G9U/1JL5 case shows that calcium conditions can change the crystal prediction, while SEC and crosslinking experiments support calcium-dependent solution assembly. The paper also states that PISA dissociation free energy is not a single score for which “higher is always better”; weak binding and condition-dependent systems require independent experimental confirmation.
+- Fraser et al. (2011), [DOI: 10.1073/pnas.1111325108](https://doi.org/10.1073/pnas.1111325108): results on PDF pp. 1–5, Figs. 1–5, and Discussion. The study compares 30 room-temperature/cryogenic high-resolution crystallographic data sets and uses Ringer/qFit to examine density-supported alternate conformations, showing that cooling can change the observed distribution of side-chain conformations. It supports temperature effects on populations visible within crystals; model occupancy cannot be directly converted to solution-state fractions or kinetics.
 
-若构建体、样品环境或独立组装证据缺失，最终结论应保留这一限制。
+If construct, sample environment, or independent assembly evidence is missing, retain that limitation in the final conclusion.

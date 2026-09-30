@@ -1,65 +1,67 @@
 ---
 name: structural-biology-audit
-description: 审计结构生物学结论是否得到可追溯证据支持。用于核验单颗粒 cryo-EM、X-ray 晶体学的分辨率、局部密度、配体与原子接触、模型验证、结构比较，以及由实验或预测结构推导的组装和机制结论。相关结论审计自动适用；不承担文章写作。
+description: Audit whether structural-biology claims are supported by traceable evidence. Use for single-particle cryo-EM, macromolecular X-ray crystallography, local density and contacts, model validation, structure comparisons, and assembly or mechanism claims derived from experimental or predicted structures. Does not write articles.
 ---
 
-# 结构生物学证据审计
+# Structural Biology Evidence Audit
 
-判断**这个具体主张，在这些数据和条件下，能否成立**。审计对象既包括待评文章，也包括被引用的方法论文；发表、引用量高、使用知名软件或收录于 PDB/EMDB 均不能豁免证据核验。
+Assess **whether this specific claim is justified by these data under these conditions**. Audit the cited method papers as well as the target study. Publication, citation count, established software, or PDB/EMDB deposition does not establish correctness.
 
-默认审计单颗粒 cryo-EM、宏分子 X-ray 晶体学及跨方法问题。遇到 cryo-ET、螺旋重构、NMR、SAXS 等方法时，先说明本技能未建立其专用标准，不能机械套用单颗粒或晶体学规则。
+The current scope is single-particle cryo-EM, macromolecular X-ray crystallography, and issues shared across methods. Specialized criteria for cryo-ET, helical reconstruction, NMR, and SAXS have not been established here; identify that scope gap rather than applying SPA or crystallographic criteria mechanically.
 
-## 按主张选择资料
+## Select guidance by claim
 
-先读与当前主张直接相关的参考文件，不一次性加载全部内容：
+Read only the guides relevant to the current claim:
 
-| 主张或疑点 | 参考资料 |
+| Claim or concern | Guide |
 |---|---|
-| FSC、全局/局部分辨率、各向异性、sharpening | [cryo-em.md](references/cryo-em.md) |
-| 衍射数据、截断、Rwork/Rfree、坐标精度 | [xray.md](references/xray.md) |
-| 配体身份/姿势、密度、氢键、Mg²⁺及其他单核金属位点 | [ligand-density.md](references/ligand-density.md) |
-| 比对范围、RMSD、结构域和构象差异 | [structure-comparison.md](references/structure-comparison.md) |
-| 局部拟合、几何、序列/register、验证报告 | [model-validation.md](references/model-validation.md) |
-| resolved、binds、hydrogen bond、stabilizes、causes 等词的证据强度 | [terminology.md](references/terminology.md) |
-| 处理流程、参考/模型偏差、分类、对称性、过拟合和留出数据 | [data-processing-and-bias.md](references/data-processing-and-bias.md) |
-| 实际构建体、组装、晶体接触、缓冲条件和温度 | [biological-context.md](references/biological-context.md) |
-| AlphaFold 等预测与实验冲突、pLDDT/PAE/ipTM | [predicted-models.md](references/predicted-models.md) |
-| 静态结构、动力学、因果、诱导契合/构象选择、变构 | [mechanistic-inference.md](references/mechanistic-inference.md) |
+| FSC, global/local resolution, anisotropy, sharpening | [cryo-em.md](references/cryo-em.md) |
+| Diffraction data, cutoff, Rwork/Rfree, coordinate precision | [xray.md](references/xray.md) |
+| Ligand identity/pose, density, hydrogen bonds, Mg²⁺ and other mononuclear metal sites | [ligand-density.md](references/ligand-density.md) |
+| Alignment scope, RMSD, domains, conformational differences | [structure-comparison.md](references/structure-comparison.md) |
+| Local fit, geometry, sequence/register, validation reports | [model-validation.md](references/model-validation.md) |
+| Evidence required by resolved, binds, hydrogen bond, stabilizes, causes | [terminology.md](references/terminology.md) |
+| Processing, reference/model bias, classification, symmetry, overfitting, held-out data | [data-processing-and-bias.md](references/data-processing-and-bias.md) |
+| Actual construct, assembly, crystal contacts, buffer conditions, temperature | [biological-context.md](references/biological-context.md) |
+| Predictions versus experiment, pLDDT/PAE/ipTM | [predicted-models.md](references/predicted-models.md) |
+| Static structures, dynamics, causality, induced fit/conformational selection, allostery | [mechanistic-inference.md](references/mechanistic-inference.md) |
 
-来源角色、核验状态与适用边界见 [sources.md](references/sources.md)；准确元数据、引用量快照和原文定位按 source ID 或 DOI 在 [sources.json](references/sources.json) 中查找。后者是来源目录，**不是自动判定阈值表**。
+Use [sources.md](references/sources.md) for source roles and scope. Look up source IDs or DOIs in [sources.json](references/sources.json) for metadata, citation snapshots, versions, and verified original passages. The catalog is **not a table of automatic pass/fail thresholds**. For access to complete original papers, see [full-text.md](references/full-text.md).
 
-## 证据审计流程
+The English guides are navigation and audit prompts, not replacements for the papers. For a method-dependent verdict, disputed interpretation, exact definition, numerical criterion, or exception, open the relevant original PDF and its applicable update, and inspect the needed text, methods, figures, and supplements. If a guide disagrees with the verified source, qualify or correct the guide-derived interpretation; do not silently privilege the summary. A PDF being available does not mean it has been read or that its results have been independently reproduced.
 
-1. **拆开主张。** 保留原句，拆成可检验的观察、身份/相互作用解释、比较或机制推断。确认方法、结构编号及版本、链/残基/配体、实验状态和对照。能从材料中确定的信息自行读取；仅对会改变判断的未知提问。
-2. **列明可访问材料。** 阅读正文、方法、补充材料和公开 PDB/EMDB 验证报告；按需获取坐标、实验 map/half-maps、mask、structure factors。记录访问范围、论文版本与沉积版本，区分报告核对、原数据复算和重新处理。只读论文可支持“作者报告了 X”，不能声称“独立复算证实了 X”；只有坐标或图片时，不声称检查了密度、FSC 或原始处理。材料缺失本身不证明错误。
-3. **查前提和独立性。** 核对构建体/序列、样品条件和数据处理；检查分类与对称性、参考模型、预测先验、half-set/test-set 独立性及精修约束。模型与约束一致不是独立证据；先验参与建模时不能再拿该先验作独立复核。
-4. **从全局走到局部。** 全局统计确定总体背景；真正涉及的原子、残基、配体或界面需要局部支持。区分 EM 与 X-ray 的地图、FSC、相关系数、B factor/occupancy 和 OMIT 语义。距离、角度和验证分数只能结合化学、数据质量与不确定性解释。
-5. **比较替代解释。** 检查其他构象、配体姿势/身份、离子/水、序列指认、组装和处理假设能否解释观察。仅提出与当前证据相关的替代项，不把所有理论可能性列为强制实验清单。已有工具能提供实质判别时按需计算，记录输入、工具版本和关键参数；不默认安装大软件或重做全部原始粒子处理。
-6. **按原句强度判定。** 先处理来源冲突，再给下述标签。结论只覆盖实际核验的主张和实验条件；不扩写文章。若标准来源不覆盖该问题，先检索核验直接相关原始文献，不能自行补造规则或来源。
+## Audit workflow
 
-## 来源质量与文献冲突
+1. **Decompose the claim.** Preserve its exact wording. Separate observations, identity/interaction assignments, comparisons, and mechanistic inferences. Establish method, accession/version, chain/residue/ligand, experimental state, and controls. Resolve what the materials provide; ask only about unknowns that affect the verdict.
+2. **Establish accessible evidence.** Read the article, methods, available supplements, and public PDB/EMDB validation reports. Retrieve coordinates, maps/half-maps, masks, or structure factors when the claim warrants them. Record coverage and publication/deposition versions. Distinguish checking a report, recomputing from deposited data, and reprocessing raw data. Reading a paper may support “the authors report X”; it does not support “independent recomputation confirms X.” Coordinates or pictures alone do not establish that density, FSC, or processing was checked. Missing materials do not prove an error.
+3. **Check assumptions and independence.** Verify construct/sequence, sample conditions, processing, classification/symmetry, references, prediction priors, half-set/test-set independence, and refinement restraints. Agreement with a restraint is not independent evidence. A prior used in modeling cannot be counted again as independent corroboration.
+4. **Move from global to local evidence.** Global statistics provide context; the claimed atoms, residues, ligand, or interface need local support. Distinguish EM and X-ray maps, FSC, correlation coefficients, B factors/occupancies, and OMIT-map interpretations. Interpret distances, angles, and scores with chemistry, data quality, and uncertainty.
+5. **Compare relevant alternatives.** Consider competing conformations, ligand poses/identities, ions/water, sequence assignments, assemblies, or processing assumptions that plausibly explain these observations. Do not turn all theoretical possibilities into a mandatory experiment list. Calculate when an available tool can resolve a material ambiguity; record inputs, versions, and key parameters. Do not default to installing large packages or reprocessing an entire particle dataset.
+6. **Match the verdict to the wording.** Resolve source conflicts first, then assign a verdict below. Limit it to the claim and conditions actually checked; do not expand the task into article writing. If the source set does not cover the issue, verify directly relevant primary literature before adopting a new rule.
 
-- **选择依据：** 每类以领域广泛使用的基础方法为锚，配正式社区建议和直接研究该盲点的验证/纠错工作。引用量统一注明数据库和日期；高引表示传播程度，不证明正确。新共识或低引专项研究必须如实标角色，不能称为高引经典。
-- **核原文与状态：** 查原始章节、图表、方法前提、样本与分辨率范围，以及期刊/PubMed/Crossmark 能获得的勘误、撤稿和后续复核。只核摘要或元数据的来源只作背景/待核条目；有效规则须有核验过的原文段落。没有查到更新不等于穷尽证明没有更新。
-- **全文与版本：** 获取到 PDF 不等于完成内容核验；按来源记录实际审读的章节、PDF 页序号、期刊印刷页码、图表及未覆盖部分；两类页码分开标注。作者接受稿、预印本和正式出版版需辨认；涉及图号、措辞或方法差异时优先核对正式版。来源快照只支撑其记录的核验范围，不意味着该文所有结论均可靠。
-- **先确认是否真冲突：** 两篇是否评价同一命题、统计量、定义、构建体、条件、分辨率和软件/结构版本？报告口径或适用范围不同，不自动构成互相否定。
-- **同条件比较证据：** 看直接相关的实验数据、独立验证、可复现性和方法局限，再结合正式共识与针对性批评。原始数据也要核质量；较新、较高引或更高名气的文章不自动胜出。不能把依赖同一先验/数据的重复分析当独立证据。
-- **写出有条件的裁决：** 明确“条件 X 下优先采用 A，因为……；B 适用于 Y/不能解决本问题，因为……”，附原文或数据定位。证据不可比或不足时写“来源争议尚未解决/本数据未决”，列出能区分解释的证据，不强行选赢家。
-- **保留来源到规则的链条：** 区分“原文报告了什么”“据此采用的审计判断”“尚待验证的推断”。已知勘误覆盖相应原文；补充说明必须按实际内容解释，不能自动当作科学结论纠正。
+## Source quality and conflicts
 
-## 输出约定
+- **Roles:** Anchor each topic in widely used foundational methods and supplement them with community recommendations and targeted validation/correction studies. Record one citation database and date. High citation counts indicate reach, not correctness; describe newer or narrowly focused studies by their actual role.
+- **Original evidence and updates:** Check source passages, figures, assumptions, sample/resolution range, and available corrections, retractions, or subsequent validation through the journal, PubMed, or Crossmark. Metadata/abstract-only checks support background or pending entries, not operational rules. Finding no update is not an exhaustive proof that none exists.
+- **Versions and coverage:** Record reviewed sections, PDF page indices, journal page numbers, figures, and unreviewed material; distinguish the two page-number systems. Identify accepted manuscripts, preprints, and versions of record. Check the version of record where numbering, wording, or methods may differ. A source snapshot supports only its documented coverage.
+- **Comparability:** Determine whether two sources address the same proposition, statistic, definition, construct, conditions, resolution, and software/structure version. Different scope or reporting conventions do not automatically constitute a contradiction.
+- **Evidence under matched conditions:** Compare directly relevant data, independence, reproducibility, limitations, formal recommendations, and targeted criticism. Assess experimental data quality too. Recency, citations, or reputation do not decide the outcome. Analyses sharing the same data/prior are not independent replicates.
+- **Conditional adjudication:** State “Under X, prefer A because…; B applies under Y or cannot resolve this question because…,” with original evidence locations. If evidence is incomparable or inadequate, retain “source dispute unresolved” or “unresolved for these data,” and identify discriminating evidence.
+- **Traceability:** Separate source findings, the resulting audit inference, and hypotheses still requiring validation. Apply errata to the passages they correct. Interpret an addendum by its actual content, not by its publication category.
 
-每个主张输出以下字段，可用简洁表格或短段落：
+## Output
 
-**原主张｜判定｜证据位置｜适用限制｜缺失或判别证据**。有文献冲突时追加**裁决依据**。证据位置优先包含论文章节/图/补充材料、DOI、PDB/EMDB 与沉积版本、链/残基、地图种类及检查参数；方法来源不能替代该研究的局部实验支持。
+For each claim, report:
 
-| 判定 | 含义 |
+**Original claim | Verdict | Evidence location | Applicability limits | Missing or discriminating evidence**. Add **Adjudication rationale** for source conflicts. Prefer article section/figure/supplement, DOI, PDB/EMDB accession and version, chain/residue, map type, and relevant parameters. A methodological citation does not replace the target study's local experimental evidence.
+
+| Verdict | Meaning |
 |---|---|
-| 支持 | 可访问且已核验的证据支持该主张的强度与范围；仍注明实验条件。 |
-| 需限定 | 证据支持部分观察，但原句的范围、身份确定性或机制强度超出了它。 |
-| 证据不足 | 关键证据缺失、无法核验或尚不能区分解释；不能据此宣布结论错误。 |
-| 与证据矛盾 | 有已核验的正面证据与该具体主张不一致；明确冲突点和证据质量。 |
+| Supported | Accessible, checked evidence supports the claim's strength and scope; state the conditions. |
+| Requires qualification | Evidence supports part of the observation, but the wording exceeds its scope, identity certainty, or mechanistic strength. |
+| Insufficient evidence | Key evidence is missing, unverifiable, or unable to distinguish interpretations; this does not establish that the claim is false. |
+| Contradicted by evidence | Checked affirmative evidence conflicts with this specific claim; identify the conflict and evidence quality. |
 
-不要把“模型中标为 Mg²⁺”“PyMOL 画出距离线”“pLDDT 很高”“全局分辨率很好”直接升级为离子身份、氢键、实验正确性或局部可解析性的证明。单张静态结构可支持快照观察，因果和机制强度要由匹配体系的独立证据决定。
+“Modeled as Mg²⁺,” a PyMOL distance line, high pLDDT, or good global resolution does not by itself establish ion identity, a hydrogen bond, experimental correctness, or local resolvability. A static structure can support a snapshot observation; causality and mechanism require suitable independent evidence from the relevant system.
 
-本技能默认只读审计，不替用户改坐标、重沉积结构、写入 Zotero 或上传未发表材料至外部验证服务器；这些动作需要当前任务的明确授权，不能从审计请求自动推出。
+This skill defaults to read-only auditing. Altering coordinates, redepositing structures, writing to Zotero, or uploading unpublished material to an external validation service requires authorization for that action; an audit request alone does not imply it.

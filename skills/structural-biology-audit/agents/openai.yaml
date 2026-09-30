@@ -1,7 +1,7 @@
 interface:
-  display_name: "结构生物学证据审计"
-  short_description: "核查结构结论、局部证据与处理偏差，并依据原文裁决文献冲突"
-  default_prompt: "使用 $structural-biology-audit 审计这些结构生物学结论，列出支持程度、证据位置、限制与待核材料。"
+  display_name: "Structural Biology Audit"
+  short_description: "Audit structural claims against traceable evidence"
+  default_prompt: "Use $structural-biology-audit to assess these structural claims and report evidence, verdicts, limitations, and unresolved questions."
 
 policy:
   allow_implicit_invocation: true

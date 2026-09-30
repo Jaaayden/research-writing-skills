@@ -1,0 +1,2 @@
+# Preserve the original PDF bytes and keep them out of textual diffs/merges.
+references/papers/*.pdf binary

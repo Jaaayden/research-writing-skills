@@ -1,35 +1,35 @@
-# 结构结论的用词证据门槛
+# Evidence Thresholds for Structural Claims
 
-用于把结构观察、模型指认和生物化学解释分开表述。先写证据实际支持的层级，再决定用词；不把自动标线、单一指标或受 restraint 的坐标写成直接观测。
+Use this guide to distinguish structural observations, model assignments, and biochemical interpretations. First state the level actually supported by the evidence, then choose the wording; do not present an automatically drawn line, a single metric, or restraint-constrained coordinates as a direct observation.
 
-| 观察/证据 | 建议写法 | 暂不支持的强写法 |
+| Observation/evidence | Suggested wording | Stronger wording not yet supported |
 |---|---|---|
-| 局部图有峰，但形状、化学或替代物未排除 | “该位点有密度，模型暂指认为 X”；“密度与 X 相容，但身份仍不确定” | “X 已被明确解析/确定结合” |
-| 配体多个关键基团有连续局部密度，地图与 contour/处理透明，几何化学合理；存在现实歧义时已比较替代姿势/部分占有 | “局部密度支持该配体姿势”；只有证据相互吻合时才写“配体清楚解析” | 仅凭全局分辨率、颜色表面或 RSCC/Q-score 一个数字写“清楚解析” |
-| 只有近接，或供受体身份/关键质子化歧义尚未排除 | “存在与氢键相容的几何”；“可能形成氢键” | 将有歧义的相互作用断言为确定氢键 |
-| 只有两个重原子距离或 PyMOL/可视化软件画出虚线 | “存在近距离接触” | “形成氢键” |
-| 金属峰经多项化学/几何/密度及实验信息支持 | “Mg²⁺由……配位”；报告配位数、几何与关键距离 | 仅按最近原子距离写“Mg²⁺由……配位” |
-| 金属峰仍可能为 Na⁺/水/其他离子 | “该密度峰被模型指认为 Mg²⁺；身份未排除替代解释” | “Mg²⁺存在/结合于此” |
+| There is a local density peak, but its shape, chemistry, or alternatives have not been resolved | “There is density at this site, provisionally modeled as X”; “the density is compatible with X, but its identity remains uncertain” | “X is clearly resolved/confirmed to bind” |
+| Multiple key ligand groups have continuous local density; the map, contour/processing, and plausible chemical geometry are documented; realistic ambiguities such as alternative poses/partial occupancy have been compared | “Local density supports this ligand pose”; say “the ligand is clearly resolved” only when the evidence is concordant | “Clearly resolved,” based only on global resolution, a colored surface, or a single RSCC/Q-score value |
+| There is only close approach, or ambiguity about donor/acceptor identity or key protonation states remains unresolved | “The geometry is compatible with a hydrogen bond”; “a hydrogen bond may form” | Assert an ambiguous interaction as a definite hydrogen bond |
+| There is only a distance between two heavy atoms, or PyMOL/visualization software draws a dashed line | “There is a close contact” | “A hydrogen bond forms” |
+| Multiple lines of chemical, geometric, density, and experimental evidence support the identity of a metal peak and its coordination | “Mg²⁺ is coordinated by …”; report coordination number, geometry, and key distances | State “Mg²⁺ is coordinated by …” based only on the distance to the nearest atom |
+| A metal peak could still be Na⁺, water, or another ion | “This density peak is modeled as Mg²⁺; alternative explanations have not been ruled out” | “Mg²⁺ is present/bound here” |
 
-## “氢键”何时可以作为结论
+## When can “hydrogen bond” be used as a conclusion?
 
-- **原文结论：** IUPAC 将氢键定义为有证据显示键形成的吸引相互作用，并列出多类实验/理论证据；方向性和较短的 H···受体距离是常见特征，而非适用于所有体系的单一硬阈值。【[iupac2011] DOI 10.1351/PAC-REC-10-01-02，“Definition”及氢键存在判据】
-- **原文结论：** IUPAC 定义中的供体是 X—H（X 比 H 更具电负性），受体可以是原子或原子团。【[iupac2011] DOI 10.1351/PAC-REC-10-01-02，“Definition”】**审计判断：** 若 His、Asp/Glu、配体可电离基团或水的质子化状态会改变 donor/acceptor 身份，核对化学状态并说明未排除的歧义。
-- **审计判断：** 检查 donor/acceptor 化学、IUPAC 所述方向性、局部环境、供体侧链 rotamer、密度和竞争构象。MolProbity 会添加/优化 H 原子以进行全原子接触分析；因此若模型中的 H 坐标由软件生成，应将 D—H···A 方向视为模型几何证据，不写成直接观察到质子或氢键。【[iupac2011] DOI 10.1351/PAC-REC-10-01-02，“Definition”及氢键存在判据；[molprobity2018] DOI 10.1002/pro.3330，“Hydrogen addition and NQH flips”】
-- **审计记录：** 报告具体供受体原子、D···A 与可获得的 H···A 距离、D—H···A 角度，并标明 H 是实验定位还是软件添加；没有 H 时不能伪造角度。结合坐标不确定性解释，不能用一条黄线或普适距离/角度截点裁决。并不要求每条结构氢键都直接解析 H；化学与局部几何足以支持推断时可给“支持”，但标明这是模型与化学证据支持的解释。
-- **审计判断：** Asn/Gln/His 末端翻转会改变供体/受体身份与接触网络；比较翻转前后密度、全原子 clashes 和氢键网络。MolProbity 指出这些末端在电子密度中近似对称，并以 clash/缺失氢键模式辅助识别翻转候选；不要只凭密度外形裁决。【[molprobity2018] DOI 10.1002/pro.3330，Introduction、“Better-idealized output coordinates from NQH flips”】
+- **Finding reported by the paper:** IUPAC defines a hydrogen bond as an attractive interaction for which there is evidence of bond formation, and lists multiple kinds of experimental/theoretical evidence. Directionality and a short H···acceptor distance are common features, not a single hard threshold that applies to every system.([iupac2011] DOI 10.1351/PAC-REC-10-01-02, “Definition” and criteria for the presence of a hydrogen bond)
+- **Finding reported by the paper:** In the IUPAC definition, the donor is X—H (X is more electronegative than H), and the acceptor can be an atom or a group of atoms.([iupac2011] DOI 10.1351/PAC-REC-10-01-02, “Definition”) **Audit judgment:** If the protonation state of His, Asp/Glu, an ionizable ligand group, or water could change donor/acceptor identity, check the chemical state and state any unresolved ambiguity.
+- **Audit judgment:** Check donor/acceptor chemistry, the directionality described by IUPAC, the local environment, donor-side-chain rotamers, density, and competing conformations. MolProbity adds/optimizes H atoms for all-atom contact analysis; if H coordinates in the model were generated by software, treat the D—H···A direction as evidence from model geometry and do not describe the proton or hydrogen bond as directly observed.([iupac2011] DOI 10.1351/PAC-REC-10-01-02, “Definition” and criteria for the presence of a hydrogen bond; [molprobity2018] DOI 10.1002/pro.3330, “Hydrogen addition and NQH flips”)
+- **Audit record:** Report the specific donor and acceptor atoms, D···A and, when available, H···A distances, and the D—H···A angle; state whether H was experimentally located or added by software. Do not invent an angle when H is absent. Interpret these values in light of coordinate uncertainty; do not decide from a yellow line or a universal distance/angle cutoff. Direct resolution of H is not required for every structural hydrogen-bond claim: when chemistry and local geometry adequately support the inference, the claim may be rated “Supported,” but state that it is an interpretation supported by model and chemical evidence.
+- **Audit judgment:** Flips of Asn/Gln/His terminal groups change donor/acceptor identity and the contact network. Compare density, all-atom clashes, and hydrogen-bond networks before and after a flip. MolProbity notes that these terminal groups are nearly symmetric in electron density and uses clash and missing-hydrogen-bond patterns to help identify candidate flips; do not decide from density shape alone.([molprobity2018] DOI 10.1002/pro.3330, Introduction, “Better-idealized output coordinates from NQH flips”)
 
-## “已解析”“结合”“配位”的范围
+## Scope of “resolved,” “bound,” and “coordinated”
 
-- **“resolved/已解析”** 指局部地图支持可辨识的形状/细节，不等于分子身份、化学状态或功能机制已被证明。写配体结论时附局部 map、contour、局部分辨率/原子可解析性及图处理信息；多指标和局部证据优先于全图均分。【[ligand-challenge2024] DOI 10.1038/s41592-024-02321-7，Discussion Recommendations 1–3、Fig. 2；[pintilie2020] DOI 10.1038/s41592-020-0731-1，Figs. 2–3、Discussion】
-- **“RSCC 支持”** 必须交代数据类型、map、软件与计算定义。wwPDB X-ray VTF 讨论 ligand RSR/RSCC 作为局部 fit 指标，但指出整分子分数可能掩盖大型配体的局部问题。当前 Phenix `validate_ligands` 文档（2026-09-30 查阅）说明的是 X-ray RSCC 流程，并建议把配体分数与其周围 `sites` 分数比较；页面没有建立 cryo-EM RSCC 的具体计算流程。不要套用一个跨分辨率/数据集的通过阈值，也不要把 X-ray RSCC 定义外推为 cryo-EM 通用指标。【[read2011] DOI 10.1016/j.str.2011.08.006，“Ligands”；[Phenix 官方文档](https://www.phenix-online.org/documentation/reference/validate_ligands.html)，“Metrics”“Possible Problems”，访问于 2026-09-30】
-- **“Mg²⁺由……配位”** 比“该峰被指认为 Mg²⁺”强：前者同时断言身份和配位几何。若 map、配位壳、化学环境或样品条件不足，先报告为模型指认并列出 Na⁺/水/缓冲离子等替代解释。经典 Mg 几何/距离只能作典型预期，且需核对 refinement restraints。【[cmm2017] DOI 10.1107/S2059798317001061，§§3.1.1–3.1.2、Fig. 2、Tables 1–2；[leonarski2017] DOI 10.1093/nar/gkw1175，Abstract、§“PDB survey”】
-- **“结合/稳定/催化”** 属于更强的生物化学解释。结构可以支持位置和几何，不自动证明亲和力、稳定作用或催化机制；如文章要提出此类机制，需把结构证据与独立实验/功能证据分开。
+- **“Resolved”** means that the local map supports recognizable shape/detail; it does not mean that molecular identity, chemical state, or functional mechanism has been established. For ligand claims, include the local map, contour, local resolution/atomic resolvability, and map-processing information; prioritize multiple metrics and local evidence over a whole-map average.([ligand-challenge2024] DOI 10.1038/s41592-024-02321-7, Discussion Recommendations 1–3, Fig. 2; [pintilie2020] DOI 10.1038/s41592-020-0731-1, Figs. 2–3, Discussion)
+- **“RSCC supports”** requires stating the data type, map, software, and calculation definition. The wwPDB X-ray VTF discusses ligand RSR/RSCC as local fit metrics but notes that a whole-molecule score can mask local problems in a large ligand. Current Phenix `validate_ligands` documentation (checked 2026-09-30) describes an X-ray RSCC workflow and recommends comparing the ligand score with the surrounding `sites` score; the page does not establish a specific cryo-EM RSCC workflow. Do not apply a pass threshold across resolutions/datasets or extrapolate the X-ray RSCC definition as a general cryo-EM metric.([read2011] DOI 10.1016/j.str.2011.08.006, “Ligands”; [official Phenix documentation](https://www.phenix-online.org/documentation/reference/validate_ligands.html), “Metrics,” “Possible Problems,” accessed 2026-09-30)
+- **“Mg²⁺ is coordinated by …”** is stronger than “this peak is modeled as Mg²⁺”: the former asserts both identity and coordination geometry. If the map, coordination shell, chemical environment, or sample conditions are insufficient, first report a model assignment and list alternatives such as Na⁺, water, or buffer ions. Canonical Mg geometry/distances are typical expectations only; also check refinement restraints.([cmm2017] DOI 10.1107/S2059798317001061, §§3.1.1–3.1.2, Fig. 2, Tables 1–2; [leonarski2017] DOI 10.1093/nar/gkw1175, Abstract, “PDB survey”)
+- **“Binding/stabilizing/catalyzing”** are stronger biochemical interpretations. A structure can support position and geometry; it does not automatically prove affinity, a stabilizing effect, or a catalytic mechanism. If the article proposes such a mechanism, keep structural evidence separate from independent experimental/functional evidence.
 
-## 来源
+## Sources
 
 - `[iupac2011]` Arunan et al. “Definition of the hydrogen bond (IUPAC Recommendations 2011).” *Pure Appl Chem* 83, 1637–1641. DOI: 10.1351/PAC-REC-10-01-02.
 - `[molprobity2018]` Williams et al. “MolProbity: More and better reference data for improved all-atom structure validation.” *Protein Sci* 27, 293–315 (2018). DOI: 10.1002/pro.3330.
 - `[read2011]` Read et al. “A new generation of crystallographic validation tools for the Protein Data Bank.” *Structure* 19, 1395–1412 (2011). DOI: 10.1016/j.str.2011.08.006.
-- Phenix 官方文档，[“Validating ligands with phenix.validate_ligands”](https://www.phenix-online.org/documentation/reference/validate_ligands.html)，访问于 2026-09-30；该引用仅支持文档所述 X-ray 工具行为。
-- 其他来源见 [ligand-density.md](ligand-density.md)。
+- Phenix documentation, [“Validating ligands with phenix.validate_ligands”](https://www.phenix-online.org/documentation/reference/validate_ligands.html), accessed 2026-09-30; this citation supports only the X-ray tool behavior described in the documentation.
+- See [ligand-density.md](ligand-density.md) for other sources.

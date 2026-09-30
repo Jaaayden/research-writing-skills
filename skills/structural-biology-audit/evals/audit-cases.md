@@ -1,62 +1,91 @@
-# 独立行为评估案例
+# Independent behavioral evaluation cases
 
-以下13组均为合成材料，只检验审计行为，不代表真实结构的正确性。评估时先读取 SKILL.md，再按主张加载参考文件；不得把未提供的数据写成已经复算。
+The following 13 sets are synthetic materials that test audit behavior only; they do not represent the correctness of real structures. During evaluation, read SKILL.md first, then load reference files as needed for each claim. Do not present data that was not provided as if it had been recalculated.
 
-## Cryo-EM 与化学接触
-请使用 structural-biology-audit 审计下列六个独立结构结论。以下为合成案例的完整可用材料，用于技能行为验证，不对应真实沉积结构。仅依据提供的材料判断案例；可以读取技能参考来解释方法，但不能宣称看过未提供的地图或重做计算。每个案例给判定、证据位置、限制、缺失/判别证据。
+## Cryo-EM and chemical contacts
+
+Use structural-biology-audit to audit the following six independent structural conclusions. The materials below are the complete available materials for synthetic cases used to validate skill behavior; they do not correspond to real deposited structures. Judge each case only from the supplied materials. You may consult the skill references to explain methods, but do not claim to have inspected maps that were not provided or repeated calculations. For each case, provide a verdict, evidence location, limitations, and missing or discriminating evidence.
 
 ### E1
-原句：The structure was determined at 2.8 Å resolution.
-材料E1-M1：两半粒子在精修后期共用未低通的高分辨率参考。作者称其为gold-standard。FSC报告采用0.143；二值紧mask后为2.8 Å，unmasked为3.8 Å；未报告phase-randomization或noise-substitution校正。没有提供half-map文件，仅有曲线和上述方法文字。
+
+Original statement: The structure was determined at 2.8 Å resolution.
+
+Material E1-M1: During late-stage refinement, the two particle half-sets shared a high-resolution reference that had not been low-pass filtered. The authors called this gold-standard. The reported FSC used the 0.143 criterion; the resolution was 2.8 Å after a tight binary mask and 3.8 Å unmasked. No phase-randomization or noise-substitution correction was reported. No half-map files were provided; only the curve and the method text above were available.
 
 ### E2
-原句：The ligand is clearly resolved.
-材料E2-F1说明：全局FSC0.143为2.8 Å；位点局部分辨率约5.0 Å。论文描述在全图显示值0.7时只能见一个团块，调整配体显示值至0.3才有连接外形；一个芳环和两个关键取代基未获分开密度支持。坐标中使用理想配体字典，occupancy固定1.0。未报告局部fit或其他姿势比较；没有原始map可计算。
+
+Original statement: The ligand is clearly resolved.
+
+Material E2-F1: The global FSC at 0.143 was 2.8 Å; the local resolution at the site was approximately 5.0 Å. The paper says that only a blob was visible when the whole-map display level was set to 0.7, and that a connected shape appeared only after lowering the ligand display level to 0.3. One aromatic ring and two key substituents lacked separate density support. An ideal ligand dictionary was used for the coordinates, and occupancy was fixed at 1.0. No local fit or comparison with other poses was reported; no raw map was available for calculation.
 
 ### E3
-原句：Asp54 forms a hydrogen bond with the carbonyl oxygen of ligand L.
-材料E3-C1：双方为羧酸根Oδ2和中性酰胺羰基O；测定pH7.4，作者明确将Asp54建模为去质子化羧酸根。两O距离3.0 Å，没有介入水，PyMOL画了一条黄线。未提供质子位置、供受体方向或其他化学证据。
+
+Original statement: Asp54 forms a hydrogen bond with the carbonyl oxygen of ligand L.
+
+Material E3-C1: The two atoms are carboxylate Oδ2 and a neutral amide carbonyl O. The pH was 7.4, and the authors explicitly modeled Asp54 as a deprotonated carboxylate. The O···O distance is 3.0 Å, there is no intervening water, and PyMOL displayed a yellow line. No proton positions, donor–acceptor direction, or other chemical evidence were provided.
 
 ### E4
-原句：Mg2+ is definitively identified at site M.
-材料E4-M1：坐标中标MG；六个O配位邻居平均距离2.38 Å，缓冲含200mM NaCl及2mM MgCl2。精修使用指定MG restraint和固定occupancy1.0。只有一个球形电子密度峰和全局Rfree，无异常散射、替代离子精修或位点B factor比较。尚未排除Na、水或其他解释。
+
+Original statement: Mg2+ is definitively identified at site M.
+
+Material E4-M1: The coordinates label the ion MG; the mean distance to its six coordinating oxygen neighbors is 2.38 Å. The buffer contained 200 mM NaCl and 2 mM MgCl2. Refinement used specified MG restraints and fixed occupancy at 1.0. There was only one spherical electron-density peak and a global Rfree value, with no anomalous scattering, refinement of alternative ions, or comparison of site B factors. Na, water, and other interpretations have not been ruled out.
 
 ### E5
-原句：The reported gold-standard half-map FSC resolution is 3.1 Å at the 0.143 criterion.
-材料E5-M1：处理日志记载粒子从初次三维精修起分为独立半集，低通初始化；噪声替换校正masked曲线过0.143于3.1 Å，unmasked曲线3.2 Å。方法、软mask参数和曲线种类均报告。该句只陈述此报告口径，不声称所有位点3.1 Å、模型完全正确或机制成立。案例未提供实际half-map文件，因此不能独立复算曲线。
+
+Original statement: The reported gold-standard half-map FSC resolution is 3.1 Å at the 0.143 criterion.
+
+Material E5-M1: The processing log states that particles were divided into independent half-sets from the initial 3D refinement, with low-pass-filtered initialization. The noise-substitution-corrected masked curve crossed 0.143 at 3.1 Å; the unmasked curve crossed at 3.2 Å. The methods, soft-mask parameters, and curve types were all reported. The statement reports only this convention; it does not claim that all sites are at 3.1 Å, that the model is entirely correct, or that a mechanism is established. The case does not provide the actual half-map files, so the curve cannot be independently recalculated.
 
 ### E6
-原句：The Lys87–ligand contact is consistent with a hydrogen bond.
-材料E6-G1：X-ray局部1.2 Å数据下，Lys Nζ与中性酰胺羰基O的重原子坐标有连续局部密度支持，rotamer无冲突，未发现更好的替代构象。pH7.0及化学环境支持Lys供体和羰基受体。D···A为3.0 Å；添加理想H后H···A为2.0 Å、D-H···A为170度；H坐标为软件添加，未直接解析。原句只称consistent with，并没有声称实验观察到质子。
 
-## 跨方法、冲突与正面案例
-请用 structural-biology-audit 核验下列七个独立结论。案例数据为合成文字材料，不对应真实结构；方法来源使用技能内真实论文。不要编辑任何文件、入库或生成文章。每条给判定、证据位置、限制及缺失/判别证据；文献分歧给有条件裁决。
+Original statement: The Lys87–ligand contact is consistent with a hydrogen bond.
+
+Material E6-G1: For X-ray data with a reported diffraction limit of 1.2 Å, the heavy-atom coordinates for Lys Nζ and the neutral amide carbonyl O have continuous local density support, the rotamer has no clash, and no better alternative conformation was found. The pH of 7.0 and the chemical environment support Lys as a donor and the carbonyl as an acceptor. D···A is 3.0 Å; after adding an ideal H, H···A is 2.0 Å and D–H···A is 170 degrees. The H coordinate was added by software and was not directly resolved. The original statement says only “consistent with” and does not claim that the proton was experimentally observed.
+
+## Cross-method, conflicting, and positive cases
+
+Use structural-biology-audit to verify the following seven independent conclusions. The case data are synthetic textual materials and do not correspond to real structures; method sources are real papers included in the skill. Do not edit any files, add records, or generate an article. For each item, provide a verdict, evidence location, limitations, and missing or discriminating evidence; resolve literature disagreements conditionally.
 
 ### C1
-原句：The complete structures are identical (RMSD=0.4 Å).
-材料C1-A1：两条蛋白各320残基，RMSD仅对保守核心84个Cα计算；关键活性环20残基未比对，两结构域相对转动18度。未给被排除区域的密度支持或局部分析。
+
+Original statement: The complete structures are identical (RMSD=0.4 Å).
+
+Material C1-A1: Each protein has 320 residues. RMSD was calculated only for the 84 Cα atoms in the conserved core; a 20-residue key active-site loop was not aligned, and the two domains are rotated by 18 degrees relative to each other. No density support or local analysis was provided for the excluded region.
 
 ### C2
-原句：The AlphaFold region is experimentally more mobile because its B factor is 95.
-材料C2-P1：结构来源为AlphaFold2；PDB B-factor列写的是pLDDT。没有X-ray/EM实验、动力学或热力学测定。该区域pLDDT95、链间PAE高。作者以95和另一段65比较运动。
+
+Original statement: The AlphaFold region is experimentally more mobile because its B factor is 95.
+
+Material C2-P1: The structure is from AlphaFold2; the PDB B-factor column contains pLDDT. There is no X-ray/EM experiment, dynamics measurement, or thermodynamic measurement. The region has pLDDT 95 and high inter-chain PAE. The authors compare 95 with 65 for another segment as evidence of motion.
 
 ### C3
-原句：The apo and holo structures prove induced fit rather than conformational selection.
-材料C3-S1：同一构建体两个晶体模型，apo开放、holo闭合；模型有密度支持，但晶型不同。没有结合动力学、apo少数态群体或路径通量测量。讨论引用Hammes, Chang & Oas2009。
+
+Original statement: The apo and holo structures prove induced fit rather than conformational selection.
+
+Material C3-S1: Two crystal models of the same construct show an open apo state and a closed holo state; the models are supported by density, but the crystal forms differ. There are no measurements of binding kinetics, the population of minor apo states, or pathway flux. The discussion cites Hammes, Chang & Oas 2009.
 
 ### C4
-原句：This protein is a physiological dimer because PISA places the dimer first.
-材料C4-B1：PISA输入为完整天然序列晶体坐标，最高排名dimer。独立SEC-MALS在同一缓冲、配体、温度和足以覆盖结构实验相关浓度范围下支持monomer；论文未解释冲突。仅有此溶液测量，不含细胞内计量数据。
+
+Original statement: This protein is a physiological dimer because PISA places the dimer first.
+
+Material C4-B1: PISA was run on crystal coordinates containing the complete native sequence, and the dimer ranked first. Independent SEC-MALS under the same buffer, ligand, and temperature, and over a concentration range sufficient to cover concentrations relevant to the structural experiment, supports a monomer. The paper does not explain the conflict. This is the only solution measurement; there are no intracellular stoichiometry data.
 
 ### C5
-原句：A register error is proven because an AlphaFold-based checker flagged residues120–140.
-材料C5-V1：现坐标在该区域几何无明显异常。工具提出+2的替代register；AF2预测与现模型同一序列。地图不可访问，未做替代register对map fit的比较，未获取高分辨率参照。作者引用register-errors2024，并称文中所有putative errors均已实验证实。
+
+Original statement: A register error is proven because an AlphaFold-based checker flagged residues120–140.
+
+Material C5-V1: The current coordinates have no obvious geometry anomalies in this region. The tool proposes a +2 alternative register; the AF2 prediction and current model use the same sequence. The map is inaccessible, the alternative register was not compared for map fit, and no high-resolution reference was obtained. The authors cite register-errors2024 and state that every putative error in the paper has been experimentally confirmed.
 
 ### C6
-原句A：必须仅按Rosenthal–Henderson2003的固定0.143报告分辨率，van Heel–Schatz2005已被证明错误。
-原句B：AF3的2024 Addendum修改了原文准确率，因此所有原文准确率都失效；Cruickshank1999原公式无需勘误即可复用。
-材料C6-R1：两组FSC方法讨论、AF3原文/addendum、Cruickshank/erratum均为技能内选定真实DOI，可以核验其原文或索引。请分别评价这些来源冲突/更新结论，不靠引用量投票。
+
+Original statement A: Resolution must be reported only at the fixed 0.143 criterion from Rosenthal–Henderson 2003; van Heel–Schatz 2005 has been proven wrong.
+
+Original statement B: The 2024 Addendum to AF3 changes the original paper's accuracy, so all accuracy claims in the original paper are invalid; the original Cruickshank 1999 formula can be reused without an erratum.
+
+Material C6-R1: The two discussions of FSC methods, the AF3 paper and addendum, and Cruickshank/erratum are all real DOIs selected in the skill and can be checked in their original publications or indexes. Evaluate each of these conclusions about conflicting or updated sources separately; do not decide by voting on citation counts.
 
 ### C7
-原句：The aligned catalytic core has a closely matching backbone conformation in these two coordinate models.
-材料C7-A1：同一蛋白同一序列与核心边界，提供一致链/残基映射、各84个已建模Cα；无缺失或插入，按该84原子叠合后RMSD0.4 Å，核心逐残基最大偏离0.8 Å。该句限定为坐标模型的核心主链比较，不涉及未比对区、功能或模型实验正确性。
+
+Original statement: The aligned catalytic core has a closely matching backbone conformation in these two coordinate models.
+
+Material C7-A1: The same protein and sequence and the same core boundaries are used; consistent chain/residue mapping and 84 modeled Cα atoms are provided, with no missing residues or insertions. After superposing those 84 atoms, the RMSD is 0.4 Å, and the largest per-residue deviation in the core is 0.8 Å. The statement is limited to a comparison of the core backbone in the coordinate models and does not concern unaligned regions, function, or experimental correctness of the models.

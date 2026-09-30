@@ -1,0 +1,4 @@
+# Private optional copies are excluded; licensed references/papers PDFs are tracked.
+full-text/
+__pycache__/
+*.pyc

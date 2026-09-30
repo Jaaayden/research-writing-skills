@@ -1,63 +1,63 @@
-# 结构到机制推断审计
+# Structure-to-Mechanism Inference Audit
 
-当文章从结构差异推出时间顺序、因果、催化、别构或配体识别路径时按需调用。
-静态结构首先是特定制样、配体与采集条件下的坐标证据；机制结论需要能区分竞争解释的证据。
+Invoke as needed when a paper infers temporal order, causality, catalysis, allostery, or a ligand-recognition pathway from structural differences.
+A static structure is first evidence from coordinates under specific preparation, ligand, and data-collection conditions; mechanistic conclusions require evidence that can distinguish competing explanations.
 
-## 把观察和推断分层
+## Separate observations from inferences
 
-- 先写可直接观察的差异：原子/残基位置、界面、配体、离子、密度和模型不确定性。
-- 再写作者提出的解释，并标出这是机制假设还是由独立实验检验过的结论。
-- 核对两结构是否对应同一序列/构建体、相同链映射和可比较的实验状态。
-- 核对未结合/结合、突变、晶型、温度、pH、离子、底物/辅因子等条件；避免把条件差异误称为单一因果变量。
-- 若两结构来自不同分子、构建体或解析方法，排除差异可能由分辨率、模型偏差、晶格或缺失密度造成。
-- 仅有几何接近或氢键图示时，写“与相互作用假设相容”；机制结论需查看化学、密度及其他证据。
+- First state the directly observed differences: atom/residue positions, interfaces, ligands, ions, density, and model uncertainty.
+- Then state the authors’ interpretation and identify whether it is a mechanistic hypothesis or a conclusion tested by independent experiments.
+- Check whether both structures represent the same sequence/construct, consistent chain mapping, and comparable experimental states.
+- Check apo/bound state, mutations, crystal form, temperature, pH, ions, substrate/cofactor, and other conditions; do not mislabel a difference in conditions as a single causal variable.
+- If the structures come from different molecules, constructs, or determination methods, rule out differences due to resolution, model bias, lattice, or missing density.
+- If only geometric proximity or a hydrogen-bond diagram is shown, write “consistent with an interaction hypothesis”; for a mechanistic conclusion, examine chemistry, density, and other evidence.
 
-## 不从两个端点判断 conformational selection / induced fit
+## Do not infer conformational selection / induced fit from two endpoints
 
-- 两个静态端点不能决定配体先结合还是蛋白先换构象，也不能给出路径通量或状态群体。
-- “apo 结构不同于 holo 结构”只显示已观察到的结构状态不同，不能单凭此证明配体诱导构象变化。
-- “配体结合前存在少数构象”需要相应的无配体状态群体证据；不能从结合态坐标倒推其比例。
-- Hammes 等将两者作为动力学路径分析，指出机制权重应由反应通量而非单看某个速率常数决定。
-- 在不同配体/蛋白浓度下，两条路径可并行或主导程度改变；不要把机制强制压成二选一标签。
-- 若论文没有相应动力学/群体证据，结论降级为“观察到的状态与某机制相容”，并指出还未判定路径。
-- 不从静态结构的先后排列、图版顺序或命名上的“open/closed”推断真实时间顺序。
+- Two static endpoints cannot determine whether the ligand binds first or the protein changes conformation first, nor can they establish pathway flux or state populations.
+- “The apo structure differs from the holo structure” shows only that the observed structural states differ; it does not by itself prove ligand-induced conformational change.
+- A claim that “a minor conformation exists before ligand binding” requires evidence for populations in the unbound state; its proportion cannot be inferred from the bound-state coordinates.
+- Hammes et al. analyze the two as kinetic pathways and argue that their mechanistic weights should be determined by reaction flux, not by considering one rate constant in isolation.
+- The two pathways may operate in parallel, or their relative dominance may change with ligand or protein concentration; do not force the mechanism into a binary label.
+- If the paper lacks the relevant kinetic/population evidence, downgrade the conclusion to “the observed states are consistent with a mechanism” and state that the pathway has not been determined.
+- Do not infer real temporal order from the ordering of static structures, figure sequence, or labels such as “open/closed.”
 
-## 别构与因果
+## Allostery and causality
 
-- 远端位点与活性位点同时变化，不足以证明信息传递或功能因果；检查是否同时有配体状态和功能读数。
-- 结构域运动可提示候选耦联，但需评估其他解释：整体柔性、不同配体状态、组装状态、构建体或晶体环境。
-- 将“构象变化”与“活性变化”之间的因果拆开；检查论文是否提供扰动/救援或其他能支持因果的实验。
-- MWC 是针对别构转变提出的经典模型，不是任意两种结构都适用的通用解释。
-- 原始 MWC 模型以对称寡聚体、等价 protomer 和 T/R 构象平衡为出发假设，并提出协同转变；先核对体系是否满足这些前提及模型是否经功能/热力学数据检验。Monod 等在原文表 1 的脚注也说明案例汇总不完整，部分系统当时描述不足，正负效应符号含有作者解释。
-- 不能只凭看到两个构象就宣称蛋白在两个离散状态间协同转变；应检查模型假设及其适用的体系。
-- 对动态或多构象系统，单个模型不能代表完整群体；实验捕获到多构象也不自动给出群体平衡或交换速率。
+- Simultaneous changes at a distal site and active site do not establish information transfer or functional causality; check for ligand-state and functional readouts as well.
+- Domain motion may suggest candidate coupling, but assess alternative explanations such as overall flexibility, different ligand states, assembly state, construct, or crystal environment.
+- Separate causality between “conformational change” and “activity change”; check whether the paper provides perturbation/rescue experiments or other evidence that can support causality.
+- MWC is a classical model proposed for allosteric transitions, not a universal explanation for any two structures.
+- The original MWC model starts from assumptions of a symmetric oligomer, equivalent protomers, and a T/R conformational equilibrium, and proposes a concerted transition. First check whether the system meets these premises and whether the model has been tested against functional/thermodynamic data. The footnote to Table 1 in Monod et al. also says the case summary is incomplete, some systems were inadequately described at the time, and the signs for positive/negative effects include the authors’ interpretation.
+- Do not claim that a protein undergoes a concerted transition between two discrete states merely because two conformations were observed; check the model assumptions and their applicability to the system.
+- For dynamic or multi-conformation systems, a single model cannot represent the full ensemble; observing multiple conformations experimentally also does not by itself establish population equilibria or exchange rates.
 
-## 催化与化学步骤
+## Catalysis and chemical steps
 
-- 结构可显示候选底物姿态、催化残基与潜在相互作用；这些观察本身不证明过渡态稳定化或化学步骤。
-- 检查活性位点残基是否由局部密度支持，化学状态/质子化是否存在歧义，配体是否为底物、产物、类似物或抑制剂。
-- 若论断涉及反应方向、速率限制步骤或催化因果，确认论文给出能检验该机制的功能/动力学证据。
-- 将“可能参与”“与催化构型相容”与“证明催化机制”区分开；证据不足时采用前者。
+- A structure can show candidate substrate poses, catalytic residues, and potential interactions; these observations alone do not prove transition-state stabilization or a chemical step.
+- Check whether local density supports active-site residues, whether chemical state/protonation is ambiguous, and whether the ligand is a substrate, product, analog, or inhibitor.
+- If a claim concerns reaction direction, rate-limiting steps, or catalytic causality, confirm that the paper provides functional/kinetic evidence that tests the proposed mechanism.
+- Distinguish “may participate” or “consistent with a catalytic geometry” from “demonstrates the catalytic mechanism”; use the former when evidence is insufficient.
 
-## 状态、温度与群体
+## State, temperature, and populations
 
-- X-ray/EM 给出的模型可能是特定状态或多个状态的受限表示；单坐标不自动等于生理态唯一构象。
-- 室温和低温晶体可展示不同构象群体；温度差异本身不能证明生理功能变化或机制方向。
-- 密度支持的替代构象可支持存在异质性；除非有群体/时间测量，不据模型占有率宣称溶液平衡或动力学。
-- 若预测模型参与机制图，按预测模型审计；预测的状态不能充当已观察到的中间体。
+- Models from X-ray/EM may represent a specific state or a constrained representation of multiple states; a single coordinate set is not automatically the unique physiological conformation.
+- Room-temperature and cryogenic crystals may show different conformational populations; temperature differences alone do not prove physiological functional change or mechanistic direction.
+- Density-supported alternate conformations can support heterogeneity; without population or time-resolved measurements, do not use model occupancies to claim a solution equilibrium or kinetics.
+- If a predicted model is included in a mechanistic figure, apply the predicted-model audit; a predicted state cannot serve as an observed intermediate.
 
-## 证据不一致时的处理
+## Handling inconsistent evidence
 
-- 优先区分数据直接支持的结构事实、模型导出的解释和实验检验过的因果结论。
-- 两个来源冲突时，先比较样品、构建体、条件、数据质量和分析方法，再判断哪一项更适用于当前主张。
-- 若冲突无法由已报告资料解决，保留两种解释并说明缺少的判别证据；不以引用次数替代适用性判断。
+- First distinguish structural facts directly supported by data, interpretations derived from models, and causal conclusions tested experimentally.
+- When sources conflict, first compare sample, construct, conditions, data quality, and analysis method; then judge which is more applicable to the current claim.
+- If reported information cannot resolve the conflict, retain both interpretations and state what discriminating evidence is missing; do not substitute citation count for applicability.
 
-## 指定参考文献与定位
+## Specified references and locations
 
-- Hammes, Chang & Oas (2009), [DOI: 10.1073/pnas.0907195106](https://doi.org/10.1073/pnas.0907195106)：PDF pp. 1–4 的引言、反应网络与 Results（Fig. 1–3），以及 p. 5 的通量计算方法。DHFR 和黄素氧还蛋白–FMN 案例按已给动力学常数计算路径通量；两条路径可并行，通量比例随配体/蛋白浓度变化。该文是通量分析方法与特定动力学案例，不是静态结构路径的证明。
-- Monod, Wyman & Changeux (1965), [DOI: 10.1016/S0022-2836(65)80285-6](https://doi.org/10.1016/S0022-2836(65)80285-6)：PDF pp. 2–8（印刷页 89–95）的模型推导；pp. 9–11（印刷页 96–98）的 Table 1 及脚注；pp. 18–25（印刷页 105–112）和 pp. 26–30（印刷页 113–117）的假设、替代转变路径与讨论。原文提出的是有对称性与等价亚基前提的模型；作者承认表列数据不完整，且指出哪些对称转变机制适用于真实体系当时仍待动力学/热力学实验区分。因此将它用作理论框架，不当作任意蛋白的经验结论。
-- Fraser et al. (2011), [DOI: 10.1073/pnas.1111325108](https://doi.org/10.1073/pnas.1111325108)：PDF pp. 1–5，尤其 Fig. 1、3–5 与 Discussion；支持室温/低温晶体中可见构象分布会不同，不决定溶液群体、功能方向或状态顺序。
-- Henzler-Wildman & Kern (2007), [DOI: 10.1038/nature06522](https://doi.org/10.1038/nature06522)：PDF pp. 1–8，特别 p. 7 对 X-ray 快照不能给出状态概率和互变速率的说明；这是动力学综述背景，具体体系应追溯其所引原始实验。
-- Motlagh et al. (2014), [DOI: 10.1038/nature13001](https://doi.org/10.1038/nature13001)：PDF pp. 1–7，尤其 p. 1 对 MWC/KNF 现象学模型局限的讨论及 pp. 3–7 的 ensemble 框架；这是别构综述，不是任一体系的直接实验验证。
+- Hammes, Chang & Oas (2009), [DOI: 10.1073/pnas.0907195106](https://doi.org/10.1073/pnas.0907195106): PDF pp. 1–4 for the introduction, reaction networks, and Results (Figs. 1–3), plus p. 5 for flux-calculation methods. The DHFR and flavodoxin–FMN cases calculate pathway flux from the given kinetic constants; the pathways can operate in parallel, and flux ratios change with ligand/protein concentration. This paper supports flux analysis methods and specific kinetic cases, not proof of pathways from static structures.
+- Monod, Wyman & Changeux (1965), [DOI: 10.1016/S0022-2836(65)80285-6](https://doi.org/10.1016/S0022-2836(65)80285-6): PDF pp. 2–8 (printed pp. 89–95) for model derivation; pp. 9–11 (printed pp. 96–98) for Table 1 and its footnotes; pp. 18–25 (printed pp. 105–112) and pp. 26–30 (printed pp. 113–117) for assumptions, alternative transition pathways, and discussion. The original paper proposes a model with symmetry and equivalent-subunit assumptions; the authors acknowledge that the listed data are incomplete and that kinetic/thermodynamic experiments were still needed to distinguish which symmetric transition mechanisms apply to real systems. Use it as a theoretical framework, not an empirical conclusion for arbitrary proteins.
+- Fraser et al. (2011), [DOI: 10.1073/pnas.1111325108](https://doi.org/10.1073/pnas.1111325108): PDF pp. 1–5, especially Figs. 1, 3–5 and Discussion; supports differences in conformational distributions visible in room-temperature/cryogenic crystals, but does not determine solution populations, functional direction, or state order.
+- Henzler-Wildman & Kern (2007), [DOI: 10.1038/nature06522](https://doi.org/10.1038/nature06522): PDF pp. 1–8, especially p. 7 on how X-ray snapshots cannot provide state probabilities or interconversion rates; this is a dynamics review, so trace claims about specific systems to the cited primary experiments.
+- Motlagh et al. (2014), [DOI: 10.1038/nature13001](https://doi.org/10.1038/nature13001): PDF pp. 1–7, especially p. 1 on limitations of the phenomenological MWC/KNF models and pp. 3–7 on the ensemble framework; this is an allostery review, not direct experimental validation for any particular system.
 
-没有区分竞争机制的证据时，结构可提出可检验假设，不足以单独确立因果路径。
+Without evidence that distinguishes competing mechanisms, a structure can suggest a testable hypothesis but cannot establish a causal pathway on its own.

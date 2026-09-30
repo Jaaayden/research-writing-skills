@@ -1,39 +1,59 @@
-# 首版验证记录
+# Validation Record
 
-核验日期：2026-09-30。案例见 [audit-cases.md](audit-cases.md)。
+Validation date: 2026-09-30. Cases are in [audit-cases.md](audit-cases.md).
 
-## 方法与边界
+## Methods and scope
 
-两名独立评估者在新上下文中读取最终技能及按需指南，分别审计六组 EM/化学案例和七组跨方法案例；未向其提供预期答案。主任务逐项复核判定、证据位置与适用边界。以下为最终结果摘要，C6 含两个独立裁决。
+Two independent evaluators in new contexts read the final skill and on-demand guides, then separately audited the six EM/chemistry cases and seven cross-method cases; they were not given the expected answers. The main task was to review each verdict, evidence location, and applicable boundary. The following is a summary of the final results; C6 contains two independent adjudications.
 
-这是文本审计行为验收，不是对真实 PDB/EMDB 条目的验证；没有重新处理粒子、反射数据或计算地图指标。来源审读范围与未核补充材料逐条保存在 `references/sources.json`。
+This is an acceptance check of text-audit behavior, not validation of real PDB/EMDB entries; particles and reflection data were not reprocessed, and map metrics were not calculated. The scope of source review and unchecked supplementary materials are recorded item by item in `references/sources.json`.
 
-## 行为结果
+## Behavioral results
 
-| 案例 | 结果 | 验收要点 |
+| Case | Result | Acceptance criteria |
 |---|---|---|
-| E1 | 需限定 | 2.8 Å 仅是 masked 报告值；半集共用高分辨率参考与二值 mask 使验证不足，不能反过来断言真实值就是 3.8 Å。 |
-| E2 | 需限定 | 全局 2.8 Å 不证明局部配体清楚解析；理想字典与固定占有率不能自证密度。 |
-| E3 | 与证据矛盾 | 给定化学状态下双方都是受体；PyMOL 距离线不能产生供体。 |
-| E4 | 证据不足 | 受 Mg restraint 的距离、球形峰和缓冲 Mg 不能排除 Na/水；也不能仅凭距离改判 Na。 |
-| E5 | 支持 | 材料支持限定为 reported FSC 的口径；没有 half-map 仍不能声称独立复算。 |
-| E6 | 支持 | 化学、局部密度与几何支持 consistent with a hydrogen bond；软件添加 H 不要求误写成实验解析。 |
-| C1 | 与证据矛盾，限坐标模型 | 84/320 核心 RMSD 不能代表全结构相同，已报告域转动与整体相同冲突。 |
-| C2 | 与证据矛盾，限证据来源 | AF 文件的 pLDDT 不是实验 B factor；真实运动性仍未确定。 |
-| C3 | 需限定 | 两个静态端点不裁决诱导契合/构象选择，需条件匹配的动力学与通量证据。 |
-| C4 | 证据不足 | 匹配条件下 SEC-MALS 优先回答溶液状态，PISA 是晶体候选；细胞内组装保留未决。 |
-| C5 | 证据不足 | AF-based register 告警是候选；“全部 putative errors 均已实验证实”与来源中的假阳性不符。 |
-| C6-A | 需限定 | FSC 标准按统计定义及条件裁决；不按引用数否定另一准则，不强迫只报单阈值。 |
-| C6-B | 与证据矛盾 | AF3 Addendum 是代码开放说明；Cruickshank 公式必须应用勘误的具体更正。 |
-| C7 | 支持 | 给定映射和范围的 84 个 Cα 核心轨迹可据坐标支持；不外推全链、全主链原子、功能或实验正确性。 |
+| E1 | Requires qualification | 2.8 Å is only the reported masked value; the shared high-resolution reference between half-sets and the binary mask leave validation insufficient. This does not justify asserting that the true value is 3.8 Å. |
+| E2 | Requires qualification | A global resolution of 2.8 Å does not establish that the ligand is clearly resolved locally; an ideal dictionary and fixed occupancy cannot validate the density by themselves. |
+| E3 | Contradicted by evidence | Given the stated chemical states, both atoms are acceptors; a PyMOL distance line cannot create a donor. |
+| E4 | Insufficient evidence | Distances obtained with Mg restraints, a spherical peak, and Mg in the buffer do not rule out Na or water; distance alone also cannot reclassify the site as Na. |
+| E5 | Supported | The materials support the qualified reported-FSC convention; without a half-map, independent recalculation cannot be claimed. |
+| E6 | Supported | The chemistry, local density, and geometry support “consistent with a hydrogen bond”; software-added H does not need to be misrepresented as experimentally resolved. |
+| C1 | Contradicted by evidence (coordinate models only) | An RMSD for the 84/320-residue core cannot establish that the complete structures are identical; the reported domain rotation conflicts with identity of the overall structures. |
+| C2 | Contradicted by evidence (evidence source only) | The pLDDT in an AF file is not an experimental B factor; actual mobility remains undetermined. |
+| C3 | Requires qualification | Two static endpoints do not adjudicate induced fit versus conformational selection; condition-matched kinetic and pathway-flux evidence is needed. |
+| C4 | Insufficient evidence | Under matched conditions, SEC-MALS is the more direct evidence for solution state, while PISA gives a crystal-based candidate; intracellular assembly remains unresolved. |
+| C5 | Insufficient evidence | An AF-based register warning is a candidate; the claim that “every putative error has been experimentally confirmed” conflicts with false positives in the source. |
+| C6-A | Requires qualification | FSC criteria are adjudicated according to their statistical definitions and conditions; citation counts do not invalidate the other criterion, and there is no requirement to report only one threshold. |
+| C6-B | Contradicted by evidence | The AF3 Addendum is a code-release note; the specific correction in the erratum must be applied to the Cruickshank formula. |
+| C7 | Supported | The coordinates support the trajectory of the 84 Cα atoms in the core under the stated mapping and boundaries; this does not extend to the full chain, all backbone atoms, function, or experimental correctness. |
 
-判定不按单一标签机械评分：E1 的“需限定”限定到报告值，同时明确实际分辨率验证不足；C1/C2 的矛盾也仅覆盖已有正面冲突证据，未知生物学问题不被判错。13 组均满足上述验收边界。
+Verdicts are not scored mechanically by a single label: E1's “Requires qualification” limits the claim to the reported value while explicitly noting that validation of the actual resolution is insufficient; the contradictions for C1/C2 likewise cover only conflicts with positive evidence already available, and unknown biological questions are not judged incorrect. All 13 cases meet the acceptance boundaries above.
 
-## 评估反馈与校验
+## Evaluation feedback and checks
 
-- 将“清楚解析”中的替代姿势/部分占有比较限定为存在现实歧义的情况，避免给每个局部形状主张增加统一实验门槛；独立评估者已确认修改。
-- 明确分别标注 PDF 页序号和期刊印刷页码；跨方法评估报告的混用定位已对照来源目录修正。
-- 官方 `skill-creator` 的 `quick_validate.py` 返回 `Skill is valid!`。
-- 来源目录通过 39 个唯一 DOI/ID、37 主文献＋2 更新、原文定位、PDF 页码范围、统一引用量日期、双向更新关联及 Markdown 本地链接检查。
-- Zotero API 读回确认 39 条题名/期刊/年份/分类/主题与角色标签、39 个 PDF 附件，以及两个双向更新关联；初次书目核验还核对作者与 DOI，复用条目原分类保留。
-- 检查技能目录未包含 API 凭证、Zotero 私有路径、完整 PDF 或提取全文；全文阅读不被描述成原数据复算。
+- Comparisons with alternative poses or partial occupancies under “clearly resolved” were limited to cases with a realistic ambiguity, avoiding a uniform experimental threshold for every local-shape claim; the independent evaluators confirmed the revision.
+- PDF page sequence numbers and journal print page numbers are now labeled separately; mixed location references in the cross-method evaluation report were corrected against the source catalog.
+- The official `skill-creator` `quick_validate.py` returned `Skill is valid!`.
+- The source catalog passed checks for 39 unique DOI/IDs, 37 primary publications plus 2 updates, original-text locations, PDF page ranges, a consistent citation-count date, bidirectional update links, and local Markdown links.
+- Zotero API readback confirmed the titles, journals, years, collections, subject and role tags of 39 entries, 39 PDF attachments, and two bidirectional update links. The initial bibliography check also verified authors and DOIs; original collections were retained for reused entries.
+- At the initial delivery, the skill directory contained no API credentials, private Zotero paths, complete PDFs, or extracted full text. Later authorized PDF packaging is documented separately below. Full-text reading is not described as recalculation of original data.
+
+## English revision and direct-PDF access
+
+Revision date: 2026-09-30.
+
+- An independent fidelity review compared all ten English guides and the English source-catalog descriptions with the previous committed version. It found no material scientific drift: conditions, units, numerical values, equation corrections, source locations and reviewed/unreviewed coverage were preserved. English punctuation was then normalized, and the DPI wording was clarified to identify coordinate uncertainty rather than diffraction measurement precision.
+- A fresh-context evaluator, without expected answers, audited E1, E3, E5, E6, C4, C6 and C7. It returned Insufficient evidence, Contradicted by evidence, Supported, Supported, Requires qualification, Contradicted by evidence for both C6 subclaims, and Supported, respectively. These labels preserve the acceptance boundaries above: the masked FSC value remains a report rather than an unbiased independent validation; PISA does not override matched-condition solution evidence; and exclusive FSC or update interpretations conflict with the original sources. Differences from an earlier label are not evidence of a failed boundary when the same uncertainty and scope are preserved.
+- Feedback clarified that missing half-maps limit a particular check rather than introducing a fifth verdict; a narrowly worded report can remain Supported. The independence audit now traces high-resolution information leakage through initialization and refinement rather than treating any shared initializer as an automatic failure. The synthetic X-ray hydrogen-bond case now calls 1.2 Å a reported diffraction limit, keeping its atom-level density evidence separate.
+- The read-only PDF resolver passed offline fixtures for percent-encoded file paths, reviewed-snapshot preference, duplicate DOI/attachment records, differing hashes, missing files and an unavailable Zotero API. A live paginated scan of 660 top-level Zotero items matched all 39 catalog DOIs and found 39 available PDFs with reviewed-snapshot hashes. Availability is not a claim that every page was read or a result was recomputed.
+- The skill passed the official `quick_validate.py`. The repository's existing 16 unit tests passed; this task did not change the installer.
+
+## Authorized public PDF bundle
+
+Review date: 2026-09-30.
+
+- Per-file review of all 39 attached versions established 20 applicable express grants for this unchanged public, noncommercial educational/research distribution: 17 CC BY files (five 2.0 UK, three 3.0, nine 4.0), one CC BY-NC 4.0 file, one historical NAR/OUP noncommercial grant, and one IUPAC article-specific republication grant. Five records are not cleared under the reviewed restrictive terms and 14 have permission not established. All 19 remain in Zotero.
+- An independent review checked the grants against actual PDF notices and authoritative publisher/CC records, including the generic rights-reserved footer alongside Read 2011's specific CC BY grant. It identified four bibliographic/page-count slips in a temporary review report; the maintained catalog and final redistribution record use the correct, previously verified versions and citations. Those slips did not refer to different DOI-matched PDFs.
+- The bundle retains original bytes, copyright/license notices and full author/citation attribution; no PDF is relicensed under the repository MIT license. Noncommercial restrictions are explicit for Leonarski 2017 and TM-align 2005. Separate supplements, software and data are outside the grant unless actually included and covered.
+- PDF annotation checks found no non-link annotations in the 20 included files. Restricted files with downloader network information and unclear third-party permissions were excluded. Private Zotero paths and credentials are not included in the public records.
+- The final file/hash check matches every bundled PDF to its catalog review snapshot and redistribution record; files without a permitted decision are absent from the public bundle. The repository installer excludes private `full-text/` copies while retaining the licensed `references/papers/` files.

@@ -1,0 +1,3707 @@
+{
+  "schema_version": "1.0",
+  "checked_on": "2026-09-30",
+  "record_count": 39,
+  "decision_counts": {
+    "not_permitted": 5,
+    "not_established": 14,
+    "permitted": 20
+  },
+  "bundled_license_counts": {
+    "CC BY 3.0 (Creative Commons Attribution 3.0 Unported)": 3,
+    "CC BY 4.0": 9,
+    "CC BY 2.0 UK": 5,
+    "Article-specific IUPAC republication permission": 1,
+    "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)": 1,
+    "Nucleic Acids Research article-specific open-access terms (2005)": 1
+  },
+  "purpose": "Unchanged source-PDF distribution in a public, noncommercial educational/research reference repository; individual license conditions remain applicable.",
+  "decision_definitions": {
+    "permitted": "An applicable express license or reproduction grant was verified for the specific PDF and this distribution, subject to the recorded conditions.",
+    "not_established": "No sufficiently clear applicable redistribution grant was established; keep the file in Zotero. This is not a claim that no permission could exist.",
+    "not_permitted": "The reviewed publication terms reserve rights and no applicable public redistribution grant was identified; do not redistribute under those reviewed terms. Separate permission could change the outcome."
+  },
+  "review_limits": "Article-specific notices, attached versions and authoritative records were checked. Availability, DOI metadata, TDM access and generic sharing policies are not redistribution grants. PDF annotation scans and notice/credit-line checks found no user annotations or separately restricted material in the bundled files; this is not an exhaustive provenance guarantee for every depicted object. Separate supplements, software, weights and data are not licensed through this bundle unless actually included and covered.",
+  "records": [
+    {
+      "id": "rh2003",
+      "decision": "not_permitted",
+      "license_id": null,
+      "license_url": null,
+      "license_scope": "No public redistribution license found. The local published journal PDF explicitly reserves rights; publisher page offers rights clearance rather than an open license.",
+      "permission_evidence": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0022283603010222",
+          "location": "ScienceDirect article record; publication details and rights/access area",
+          "what_verified": "The record matches DOI 10.1016/j.jmb.2003.07.013 and the 2003 Journal of Molecular Biology article; it offers Get rights and content and does not show an open-access license.",
+          "pdf_pages": []
+        },
+        {
+          "url": "https://doi.org/10.1016/j.jmb.2003.07.013",
+          "location": "Local attached PDF p. 1, copyright line and footer",
+          "what_verified": "The exact local Version of Record says © 2003 Elsevier Ltd. All rights reserved. PDF has no CC license annotation.",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "copyright_notice": "© 2003 Elsevier Ltd. All rights reserved.",
+      "version": "The attachment is the published Journal of Molecular Biology version PDF (2003; 333:721–745), not an AAM/preprint.",
+      "conditions": "Public redistribution is not authorized by the evidence reviewed; obtain an article-specific written grant or applicable license before posting the complete PDF.",
+      "notes": "Local SHA-256 matches the supplied manifest. PDF annotation scan found only ordinary links, with no non-link annotations; first page shows publisher branding and no personal watermark.",
+      "doi": "10.1016/j.jmb.2003.07.013",
+      "title": "Optimal Determination of Particle Orientation, Absolute Hand, and Contrast Loss in Single-particle Electron Cryomicroscopy",
+      "authors": [
+        {
+          "given": "Peter B.",
+          "family": "Rosenthal"
+        },
+        {
+          "given": "Richard",
+          "family": "Henderson"
+        }
+      ],
+      "journal": "Journal of Molecular Biology",
+      "year": 2003,
+      "volume": "333",
+      "issue": "4",
+      "pages": "721-745",
+      "source_url": "https://doi.org/10.1016/j.jmb.2003.07.013",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "c89495af8ee374656c84b2d31331acce133711c20825da5864955eca48664038",
+      "pdf_page_count": 25,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    },
+    {
+      "id": "scheres-chen2012",
+      "decision": "not_established",
+      "license_id": null,
+      "license_url": null,
+      "license_scope": "No public license or written permission was found for the specific attached publisher PDF. The PDF is the published, typeset Nature Methods version; its copyright notice reserves all rights. The publisher article record identifies the online text as a preview of subscription content and routes reuse through Rights and Permissions.",
+      "permission_evidence": [
+        {
+          "url": "https://doi.org/10.1038/nmeth.2115",
+          "location": "Attached PDF, pp. 1–2 (copyright footer); publisher article record, access and Rights and permissions sections",
+          "what_verified": "Local PDF says © 2012 Nature America, Inc. All rights reserved. The official record is the 2012 Nature Methods article and presents subscription preview/access options; it provides a permissions route but no public redistribution grant.",
+          "pdf_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "url": "https://support.nature.com/en/support/solutions/articles/6000080095-author-copyrights-information",
+          "location": "Author Copyrights information, subscription-model paragraph",
+          "what_verified": "Springer Nature says articles published under its subscription model cannot be shared without official permissions. No article-specific permission was found in the reviewed materials.",
+          "pdf_pages": []
+        }
+      ],
+      "copyright_notice": "© 2012 Nature America, Inc. All rights reserved.",
+      "version": "The attachment is the published, typeset Nature Methods PDF (2012; 9:853–854), not an AAM/preprint; although the online archive may list a separate Author Manuscript, this review concerns the attached version.",
+      "conditions": "Treat as not cleared for public redistribution unless article-specific official permission is obtained.",
+      "notes": "The PDF contains hyperlink annotations only; no comment/sticky-note annotations or attached files were detected. No public reuse license was identified. Bibliographic attribution is in sources.json.",
+      "doi": "10.1038/nmeth.2115",
+      "title": "Prevention of overfitting in cryo-EM structure determination",
+      "authors": [
+        {
+          "given": "Sjors H W",
+          "family": "Scheres"
+        },
+        {
+          "given": "Shaoxia",
+          "family": "Chen"
+        }
+      ],
+      "journal": "Nature Methods",
+      "year": 2012,
+      "volume": "9",
+      "issue": "9",
+      "pages": "853-854",
+      "source_url": "https://doi.org/10.1038/nmeth.2115",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "2b1ec5bb92e4c167fc2df73237973eec381bb4eca0f59f092527024ac39df410",
+      "pdf_page_count": 2,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    },
+    {
+      "id": "chen2013",
+      "decision": "permitted",
+      "license_id": "CC BY 3.0 (Creative Commons Attribution 3.0 Unported)",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "license_scope": "The Version of Record is licensed for sharing in any medium or format, including unchanged PDF redistribution, subject to attribution and license conditions.",
+      "permission_evidence": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0304399113001472",
+          "location": "ScienceDirect article record; DOI, journal, volume and pages",
+          "what_verified": "The official record identifies the article in Ultramicroscopy 135 (2013), pages 24–35, DOI 10.1016/j.ultramic.2013.06.004.",
+          "pdf_pages": []
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1016%2Fj.ultramic.2013.06.004",
+          "location": "Crossref DOI record, license entry with content-version=vor",
+          "what_verified": "The registered license for the Version of Record is Creative Commons BY 3.0, linking to the canonical license URL.",
+          "pdf_pages": []
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by/3.0/",
+          "location": "Creative Commons BY 3.0 deed, sharing and attribution terms",
+          "what_verified": "CC BY 3.0 permits copying and redistribution in any medium or format; attribution and a license link are required.",
+          "pdf_pages": []
+        },
+        {
+          "url": "https://doi.org/10.1016/j.ultramic.2013.06.004",
+          "location": "Local attached PDF p. 1, open-access notice and embedded hyperlink annotation",
+          "what_verified": "The PDF says Open access under CC BY; its clickable license annotation resolves to http://creativecommons.org/licenses/by/3.0/, establishing the exact license version despite the generic printed label.",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "copyright_notice": "© 2013 The Authors. Published by Elsevier B.V. Open access under CC BY license.",
+      "version": "The attachment is the published, publisher-typeset Ultramicroscopy PDF (2013; 135:24–35; © Authors/Elsevier, CC BY), not an AAM/preprint.",
+      "conditions": "Keep author/title/citation and existing copyright and license notices; provide a link to CC BY 3.0; do not imply endorsement. The PDF is unchanged, so no modification disclosure is needed. Any separately identified third-party material would need its own rights check.",
+      "notes": "Local SHA-256 matches the supplied manifest. PDF annotation scan found the CC BY 3.0 link plus ordinary article links and no non-link annotations; first page shows no personal watermark. No separate third-party rights carve-out was found in searchable text.",
+      "doi": "10.1016/j.ultramic.2013.06.004",
+      "title": "High-resolution noise substitution to measure overfitting and validate resolution in 3D structure determination by single particle electron cryomicroscopy",
+      "authors": [
+        {
+          "given": "Shaoxia",
+          "family": "Chen"
+        },
+        {
+          "given": "Greg",
+          "family": "McMullan"
+        },
+        {
+          "given": "Abdul R.",
+          "family": "Faruqi"
+        },
+        {
+          "given": "Garib N.",
+          "family": "Murshudov"
+        },
+        {
+          "given": "Judith M.",
+          "family": "Short"
+        },
+        {
+          "given": "Sjors H.W.",
+          "family": "Scheres"
+        },
+        {
+          "given": "Richard",
+          "family": "Henderson"
+        }
+      ],
+      "journal": "Ultramicroscopy",
+      "year": 2013,
+      "volume": "135",
+      "issue": null,
+      "pages": "24-35",
+      "source_url": "https://doi.org/10.1016/j.ultramic.2013.06.004",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "5d81e6bb39b94f81b98f4b3f3b195540652d80a7aa6e800d5cc6c13f0a7ba499",
+      "pdf_page_count": 12,
+      "bundled_path": "references/papers/chen2013.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "kucukelbir2014",
+      "decision": "not_established",
+      "license_id": null,
+      "license_url": null,
+      "license_scope": "No public license or written permission was found for the specific attached publisher PDF. The PDF is the published Nature Methods version with Online Methods; each page carries an all-rights-reserved copyright notice. The publisher article record identifies the main text as subscription content and routes reuse through Rights and Permissions.",
+      "permission_evidence": [
+        {
+          "url": "https://doi.org/10.1038/nmeth.2727",
+          "location": "Attached PDF, pp. 1–5 (copyright footer); publisher article record, access and Rights and permissions sections",
+          "what_verified": "Local PDF says © 2014 Nature America, Inc. All rights reserved. The official Nature Methods record presents subscription access options; it provides a permissions route but no public redistribution grant.",
+          "pdf_pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "url": "https://support.nature.com/en/support/solutions/articles/6000080095-author-copyrights-information",
+          "location": "Author Copyrights information, subscription-model paragraph",
+          "what_verified": "Springer Nature says articles published under its subscription model cannot be shared without official permissions. No article-specific permission was found in the reviewed materials.",
+          "pdf_pages": []
+        }
+      ],
+      "copyright_notice": "© 2014 Nature America, Inc. All rights reserved.",
+      "version": "The attachment is the published Nature Methods PDF (2014; 11:63–65), followed by Online Methods; it is not an AAM/preprint.",
+      "conditions": "Treat as not cleared for public redistribution unless article-specific official permission is obtained.",
+      "notes": "The PDF contains hyperlink annotations only; no comment/sticky-note annotations or attached files were detected. No public reuse license was identified. Bibliographic attribution is in sources.json.",
+      "doi": "10.1038/nmeth.2727",
+      "title": "Quantifying the local resolution of cryo-EM density maps",
+      "authors": [
+        {
+          "given": "Alp",
+          "family": "Kucukelbir"
+        },
+        {
+          "given": "Fred J",
+          "family": "Sigworth"
+        },
+        {
+          "given": "Hemant D",
+          "family": "Tagare"
+        }
+      ],
+      "journal": "Nature Methods",
+      "year": 2014,
+      "volume": "11",
+      "issue": "1",
+      "pages": "63-65",
+      "source_url": "https://doi.org/10.1038/nmeth.2727",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "f95617db966c882429a03e47a1acda4b15e80c6694639b4712c5cdb72b409682",
+      "pdf_page_count": 5,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    },
+    {
+      "id": "tan2017",
+      "decision": "not_established",
+      "license_id": null,
+      "license_url": null,
+      "license_scope": "No public redistribution grant was found for this specific attached PDF. The attachment is the published Nature Methods article followed by Online Methods/reference material. The publisher article record has a Rights and Permissions route; the local attachment itself did not yield a CC or other public reuse notice. This result records missing proof of permission and does not infer a license from availability.",
+      "permission_evidence": [
+        {
+          "url": "https://doi.org/10.1038/nmeth.4347",
+          "location": "Attached PDF, p. 1 title/DOI; publisher article record and Rights and Permissions route",
+          "what_verified": "The local attachment matches the published 2017 Nature Methods article. Review of the attachment and publisher record found no public redistribution license or article-specific permission grant.",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://support.nature.com/en/support/solutions/articles/6000080095-author-copyrights-information",
+          "location": "Author Copyrights information, subscription-model paragraph",
+          "what_verified": "Springer Nature says subscription-model articles require official permission for sharing. This page is a general policy; it is not itself an article-specific permission determination.",
+          "pdf_pages": []
+        }
+      ],
+      "copyright_notice": "No explicit copyright or reuse footer was detected in the attached PDF text. All seven pages contain Watermark annotations; remaining PDF annotations are hyperlinks.",
+      "version": "The attachment is the published Nature Methods PDF (2017; 14:793–796), followed by online Methods/reference material without continuous journal print pagination; it is not an AAM/preprint.",
+      "conditions": "Obtain article-specific publisher permission before public redistribution; the local file's presence in Zotero does not establish that permission.",
+      "notes": "PDF annotations are hyperlink annotations and publisher Watermark annotations only; no comments/sticky notes or embedded-file annotations were detected. No separate third-party credit line granting broader rights was identified. Bibliographic attribution is in sources.json.",
+      "doi": "10.1038/nmeth.4347",
+      "title": "Addressing preferred specimen orientation in single-particle cryo-EM through tilting",
+      "authors": [
+        {
+          "given": "Yong Zi",
+          "family": "Tan"
+        },
+        {
+          "given": "Philip R",
+          "family": "Baldwin"
+        },
+        {
+          "given": "Joseph H",
+          "family": "Davis"
+        },
+        {
+          "given": "James R",
+          "family": "Williamson"
+        },
+        {
+          "given": "Clinton S",
+          "family": "Potter"
+        },
+        {
+          "given": "Bridget",
+          "family": "Carragher"
+        },
+        {
+          "given": "Dmitry",
+          "family": "Lyumkis"
+        }
+      ],
+      "journal": "Nature Methods",
+      "year": 2017,
+      "volume": "14",
+      "issue": "8",
+      "pages": "793-796",
+      "source_url": "https://doi.org/10.1038/nmeth.4347",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "1704fa2781b2885fcd1b7661d2ad2533c83cbfb8760c2e028038d05e0e897348",
+      "pdf_page_count": 7,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    },
+    {
+      "id": "vanheel2005",
+      "decision": "not_permitted",
+      "license_id": null,
+      "license_url": null,
+      "license_scope": "No public redistribution license found. The local published journal PDF explicitly reserves rights; publisher page presents access/rights clearance rather than an open license.",
+      "permission_evidence": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S1047847705001292",
+          "location": "ScienceDirect article record; publication details and access options",
+          "what_verified": "The record matches DOI 10.1016/j.jsb.2005.05.009 and the 2005 Journal of Structural Biology article; it offers rights/access options and does not show an open-access license.",
+          "pdf_pages": []
+        },
+        {
+          "url": "https://doi.org/10.1016/j.jsb.2005.05.009",
+          "location": "Local attached PDF p. 1, copyright line and footer",
+          "what_verified": "The exact local Version of Record says © 2005 Elsevier Inc. All rights reserved. No CC license annotation is present.",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "copyright_notice": "© 2005 Elsevier Inc. All rights reserved.",
+      "version": "The attachment is the published Elsevier edition PDF in Journal of Structural Biology (2005; 151:250–262), not an AAM/preprint.",
+      "conditions": "Public redistribution is not authorized by the evidence reviewed; obtain an article-specific written grant or applicable license before posting the complete PDF.",
+      "notes": "Local SHA-256 matches the supplied manifest. PDF annotation scan found only ordinary links, with no non-link annotations; first page shows publisher branding and no personal watermark.",
+      "doi": "10.1016/j.jsb.2005.05.009",
+      "title": "Fourier shell correlation threshold criteria",
+      "authors": [
+        {
+          "given": "Marin",
+          "family": "van Heel"
+        },
+        {
+          "given": "Michael",
+          "family": "Schatz"
+        }
+      ],
+      "journal": "Journal of Structural Biology",
+      "year": 2005,
+      "volume": "151",
+      "issue": "3",
+      "pages": "250-262",
+      "source_url": "https://doi.org/10.1016/j.jsb.2005.05.009",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "a61f52c9c85379ae3de15a62e48ad5324ffbf454d26a4fb7eb98aa89eddba598",
+      "pdf_page_count": 13,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    },
+    {
+      "id": "kleywegt2024",
+      "decision": "permitted",
+      "license_id": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_scope": "Published version of record (the complete IUCrJ article PDF); no separate third-party restriction was identified in the extracted PDF text/captions.",
+      "permission_evidence": [
+        {
+          "url": "https://journals.iucr.org/m/issues/2024/02/00/rq5010/",
+          "location": "PDF p. 1; publisher article record and article-specific licence notice",
+          "what_verified": "The attached published IUCrJ PDF identifies the matching title/DOI and states 'Published under a CC BY 4.0 licence'; the IUCr article record matches the DOI and citation.",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "copyright_notice": "PDF p. 1 states 'Published under a CC BY 4.0 licence'; no separate rights-reservation notice found.",
+      "version": "The attachment is the published, typeset IUCrJ PDF (2024; 11:140–151, CC BY 4.0), not an AAM/preprint.",
+      "conditions": "Attribute the authors and article title; include journal citation and DOI, identify CC BY 4.0 and link to its terms. Preserve the article's attribution information.",
+      "notes": "PDF cover p. 1 was visually checked; it shows the CC BY 4.0 badge/licence notice and no electronic-reprint watermark. No separate third-party restriction was identified in the extracted PDF text/captions.",
+      "doi": "10.1107/s2052252524001246",
+      "title": "Community recommendations on cryoEM data archiving and validation",
+      "authors": [
+        {
+          "given": "Gerard J.",
+          "family": "Kleywegt"
+        },
+        {
+          "given": "Paul D.",
+          "family": "Adams"
+        },
+        {
+          "given": "Sarah J.",
+          "family": "Butcher"
+        },
+        {
+          "given": "Catherine L.",
+          "family": "Lawson"
+        },
+        {
+          "given": "Alexis",
+          "family": "Rohou"
+        },
+        {
+          "given": "Peter B.",
+          "family": "Rosenthal"
+        },
+        {
+          "given": "Sriram",
+          "family": "Subramaniam"
+        },
+        {
+          "given": "Maya",
+          "family": "Topf"
+        },
+        {
+          "given": "Sanja",
+          "family": "Abbott"
+        },
+        {
+          "given": "Philip R.",
+          "family": "Baldwin"
+        },
+        {
+          "given": "John M.",
+          "family": "Berrisford"
+        },
+        {
+          "given": "Gérard",
+          "family": "Bricogne"
+        },
+        {
+          "given": "Preeti",
+          "family": "Choudhary"
+        },
+        {
+          "given": "Tristan I.",
+          "family": "Croll"
+        },
+        {
+          "given": "Radostin",
+          "family": "Danev"
+        },
+        {
+          "given": "Sai J.",
+          "family": "Ganesan"
+        },
+        {
+          "given": "Timothy",
+          "family": "Grant"
+        },
+        {
+          "given": "Aleksandras",
+          "family": "Gutmanas"
+        },
+        {
+          "given": "Richard",
+          "family": "Henderson"
+        },
+        {
+          "given": "J. Bernard",
+          "family": "Heymann"
+        },
+        {
+          "given": "Juha T.",
+          "family": "Huiskonen"
+        },
+        {
+          "given": "Andrei",
+          "family": "Istrate"
+        },
+        {
+          "given": "Takayuki",
+          "family": "Kato"
+        },
+        {
+          "given": "Gabriel C.",
+          "family": "Lander"
+        },
+        {
+          "given": "Shee-Mei",
+          "family": "Lok"
+        },
+        {
+          "given": "Steven J.",
+          "family": "Ludtke"
+        },
+        {
+          "given": "Garib N.",
+          "family": "Murshudov"
+        },
+        {
+          "given": "Ryan",
+          "family": "Pye"
+        },
+        {
+          "given": "Grigore D.",
+          "family": "Pintilie"
+        },
+        {
+          "given": "Jane S.",
+          "family": "Richardson"
+        },
+        {
+          "given": "Carsten",
+          "family": "Sachse"
+        },
+        {
+          "given": "Osman",
+          "family": "Salih"
+        },
+        {
+          "given": "Sjors H. W.",
+          "family": "Scheres"
+        },
+        {
+          "given": "Gunnar F.",
+          "family": "Schroeder"
+        },
+        {
+          "given": "Carlos Oscar S.",
+          "family": "Sorzano"
+        },
+        {
+          "given": "Scott M.",
+          "family": "Stagg"
+        },
+        {
+          "given": "Zhe",
+          "family": "Wang"
+        },
+        {
+          "given": "Rangana",
+          "family": "Warshamanage"
+        },
+        {
+          "given": "John D.",
+          "family": "Westbrook"
+        },
+        {
+          "given": "Martyn D.",
+          "family": "Winn"
+        },
+        {
+          "given": "Jasmine Y.",
+          "family": "Young"
+        },
+        {
+          "given": "Stephen K.",
+          "family": "Burley"
+        },
+        {
+          "given": "Jeffrey C.",
+          "family": "Hoch"
+        },
+        {
+          "given": "Genji",
+          "family": "Kurisu"
+        },
+        {
+          "given": "Kyle",
+          "family": "Morris"
+        },
+        {
+          "given": "Ardan",
+          "family": "Patwardhan"
+        },
+        {
+          "given": "Sameer",
+          "family": "Velankar"
+        }
+      ],
+      "journal": "IUCrJ",
+      "year": 2024,
+      "volume": "11",
+      "issue": "2",
+      "pages": "140-151",
+      "source_url": "https://doi.org/10.1107/s2052252524001246",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "01d8d78388d0f69d9f119bee638f8e9d1e4fe95fd7ac576476172b18e1ca62be",
+      "pdf_page_count": 12,
+      "bundled_path": "references/papers/kleywegt2024.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "brunger1992",
+      "decision": "not_established",
+      "license_id": null,
+      "license_url": null,
+      "license_scope": "No general license for public redistribution of this journal-version PDF was established. Crossref text-and-data-mining metadata, if applicable, is not a general redistribution grant.",
+      "permission_evidence": [
+        {
+          "url": "https://www.nature.com/articles/355472a0",
+          "location": "Nature article landing page; local PDF pp. 1–4",
+          "what_verified": "Article identity and local printed notice © 1992 Nature Publishing Group; no article-specific public-reuse grant was established from the materials checked.",
+          "pdf_pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "copyright_notice": "© 1992 Nature Publishing Group (local PDF pp. 1–4). Page 1 also contains preceding issue-layout article material with separate rights context.",
+      "version": "Journal version of Nature 355 (1992), 472–475; checked the full-text page headers, title, and main text.",
+      "conditions": [],
+      "notes": "Public availability or a TDM metadata link does not establish permission to repost the unchanged PDF. Keep the file in Zotero pending specific reuse authorization. The page-1 preceding article material should be assessed separately if redistribution is later authorized.",
+      "doi": "10.1038/355472a0",
+      "title": "Free R value: a novel statistical quantity for assessing the accuracy of crystal structures",
+      "authors": [
+        {
+          "given": "Axel T.",
+          "family": "Brünger"
+        }
+      ],
+      "journal": "Nature",
+      "year": 1992,
+      "volume": "355",
+      "issue": "6359",
+      "pages": "472-475",
+      "source_url": "https://doi.org/10.1038/355472a0",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "e3bb5a44d77fb73a314d7366a059927f0da6848232e751294ff80e60fa4de000",
+      "pdf_page_count": 4,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    },
+    {
+      "id": "evans2013",
+      "decision": "permitted",
+      "license_id": "CC BY 2.0 UK",
+      "license_url": "http://creativecommons.org/licenses/by/2.0/uk/legalcode",
+      "license_scope": "Published version of record (the complete Acta Cryst. D article PDF); article-specific IUCr notice permits unrestricted use and distribution with attribution. No separate third-party restriction was identified in the extracted PDF text/captions.",
+      "permission_evidence": [
+        {
+          "url": "https://journals.iucr.org/d/issues/2013/07/00/ba5190/index.html",
+          "location": "Article record at top; article-specific open-access notice at page footer",
+          "what_verified": "Publisher record matches the attached PDF's title/DOI/citation (PDF p. 1). Its footer says the article is distributed under CC BY and permits unrestricted use and distribution with attribution; the linked licence resolves to CC BY 2.0 UK.",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "copyright_notice": "The PDF p. 1 identifies the published article; its publisher HTML footer states open access under CC BY. No separate rights-reservation notice found.",
+      "version": "IUCr journal version of Acta Crystallographica Section D 69 (2013), 1204–1214.",
+      "conditions": "Attribute the authors and article title; include journal citation and DOI, identify CC BY 2.0 UK and link to its terms. Preserve the article's attribution information.",
+      "notes": "PDF cover p. 1 was visually checked; it has no CC badge or electronic-reprint watermark. The DOI-matched IUCr article footer and linked CC BY 2.0 UK licence establish the VOR reuse terms. No separate third-party restriction was identified in the extracted PDF text/captions.",
+      "doi": "10.1107/s0907444913000061",
+      "title": "How good are my data and what is the resolution?",
+      "authors": [
+        {
+          "given": "Philip R.",
+          "family": "Evans"
+        },
+        {
+          "given": "Garib N.",
+          "family": "Murshudov"
+        }
+      ],
+      "journal": "Acta Crystallographica Section D Biological Crystallography",
+      "year": 2013,
+      "volume": "69",
+      "issue": "7",
+      "pages": "1204-1214",
+      "source_url": "https://doi.org/10.1107/s0907444913000061",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "8a3d59a986e7d56776e3974b8c18cfbd6ff65d7a09d4d089f11c1547a1596443",
+      "pdf_page_count": 11,
+      "bundled_path": "references/papers/evans2013.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "karplus2012",
+      "decision": "not_established",
+      "license_id": null,
+      "license_url": null,
+      "license_scope": "No article-specific public redistribution license or permission for the publisher-version PDF was established.",
+      "permission_evidence": [
+        {
+          "url": "https://www.science.org/doi/10.1126/science.1218231",
+          "location": "Science DOI landing page; local PDF pp. 1–4",
+          "what_verified": "Article identity and journal citation; local file is a four-page Science issue-layout version. No specific grant for public redistribution was established from the materials checked.",
+          "pdf_pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "copyright_notice": "No legible article-specific copyright or reuse notice was found in the local PDF text extraction.",
+      "version": "Journal article version of Science 336 (2012), 1030–1033.",
+      "conditions": [],
+      "notes": "Do not infer redistribution rights from access to a copy or an indexing/archival record. Retain in Zotero pending specific authorization.",
+      "doi": "10.1126/science.1218231",
+      "title": "Linking Crystallographic Model and Data Quality",
+      "authors": [
+        {
+          "given": "P. Andrew",
+          "family": "Karplus"
+        },
+        {
+          "given": "Kay",
+          "family": "Diederichs"
+        }
+      ],
+      "journal": "Science",
+      "year": 2012,
+      "volume": "336",
+      "issue": "6084",
+      "pages": "1030-1033",
+      "source_url": "https://doi.org/10.1126/science.1218231",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "59efdd0d30084deefbaad8f7ddc035fae60d52614342ed01548c658408ab1aca",
+      "pdf_page_count": 4,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    },
+    {
+      "id": "cruickshank1999",
+      "decision": "not_permitted",
+      "license_id": null,
+      "license_url": null,
+      "license_scope": "No public redistribution licence or written permission found for this published version. IUCr's article page says full text requires a subscription or single-article purchase; the PDF explicitly reserves rights.",
+      "permission_evidence": [
+        {
+          "url": "https://journals.iucr.org/paper?buy=yes&cnor=gr0856",
+          "location": "Article access/purchase notice and bibliographic record",
+          "what_verified": "The publisher record matches the attached PDF's title, DOI and citation (PDF p. 1) and says the full text requires subscription or single-article purchase.",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://journals.iucr.org/services/permissions.html",
+          "location": "Reuse permissions, especially the paragraph on republication",
+          "what_verified": "IUCr says republication or systematic/multiple reproduction of longer passages requires an IUCr licence. No article-specific grant was found.",
+          "pdf_pages": []
+        }
+      ],
+      "copyright_notice": "PDF p. 1: '# 1999 International Union of Crystallography' and 'Printed in Denmark – all rights reserved'.",
+      "version": "IUCr journal version of Acta Crystallographica Section D 55 (1999), 583–601.",
+      "conditions": "No redistribution conditions are available because no applicable reuse licence or permission was found; leave this PDF in Zotero.",
+      "notes": "PDF cover p. 1 was visually checked; it shows the 1999 IUCr copyright and all-rights-reserved notice, with no open-access badge or electronic-reprint watermark.",
+      "doi": "10.1107/s0907444998012645",
+      "title": "Remarks about protein structure precision",
+      "authors": [
+        {
+          "given": "D. W. J.",
+          "family": "Cruickshank"
+        }
+      ],
+      "journal": "Acta Crystallographica Section D Biological Crystallography",
+      "year": 1999,
+      "volume": "55",
+      "issue": "3",
+      "pages": "583-601",
+      "source_url": "https://doi.org/10.1107/s0907444998012645",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "2cf651ca04992c1be333bb69ce3d65cee1be4141afd4ae4a7372ecdf2ea88188",
+      "pdf_page_count": 19,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    },
+    {
+      "id": "cruickshank1999-erratum",
+      "decision": "not_established",
+      "license_id": null,
+      "license_url": null,
+      "license_scope": "No explicit reuse licence or written permission covering the complete erratum PDF was found. Free online reading does not establish redistribution rights.",
+      "permission_evidence": [
+        {
+          "url": "https://journals.iucr.org/d/issues/1999/05/00/gr9856/",
+          "location": "Article record and page footer",
+          "what_verified": "The publisher page matches the attached erratum PDF's title/DOI/citation (PDF p. 1) and carries an IUCr copyright footer. It contains no article-specific CC licence or redistribution grant; its free availability is access evidence only.",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://journals.iucr.org/services/permissions.html",
+          "location": "Reuse permissions, paragraph on republication",
+          "what_verified": "IUCr's published reuse guidance says republication or systematic/multiple reproduction of longer passages requires an IUCr licence. No grant for this erratum was located.",
+          "pdf_pages": []
+        }
+      ],
+      "copyright_notice": "The PDF p. 1 has no explicit licence notice; the matching IUCr article page footer states Copyright © International Union of Crystallography.",
+      "version": "IUCr one-page corrigendum to Acta Crystallographica Section D 55 (1999), p. 1108.",
+      "conditions": "No redistribution conditions are available because permission for the complete PDF is not established; leave it in Zotero unless an applicable licence or written permission is obtained.",
+      "notes": "PDF p. 1 was visually checked; it is a one-page issue-layout erratum with no open-access badge or electronic-reprint watermark. The exact article page is readable but supplies no article-specific reuse licence.",
+      "doi": "10.1107/s0907444999004308",
+      "title": "Remarks about protein structure precision. Erratum",
+      "authors": [
+        {
+          "given": "D. W. J.",
+          "family": "Cruickshank"
+        }
+      ],
+      "journal": "Acta Crystallographica Section D Biological Crystallography",
+      "year": 1999,
+      "volume": "55",
+      "issue": "5",
+      "pages": "1108-1108",
+      "source_url": "https://doi.org/10.1107/s0907444999004308",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "c6d45701ca2dda508625943de89ed6201768f14d15bfb07f4ce3eba65c85d054",
+      "pdf_page_count": 1,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    },
+    {
+      "id": "polder2017",
+      "decision": "permitted",
+      "license_id": "CC BY 2.0 UK",
+      "license_url": "http://creativecommons.org/licenses/by/2.0/uk/legalcode",
+      "license_scope": "Published version of record (the complete Acta Cryst. D article PDF); article-specific IUCr notice permits unrestricted use and distribution with attribution. No separate third-party restriction was identified in the extracted PDF text/captions.",
+      "permission_evidence": [
+        {
+          "url": "https://journals.iucr.org/d/issues/2017/02/00/ba5254/",
+          "location": "Article record and article-specific licence notice at the end of the full text",
+          "what_verified": "The article record matches the attached PDF title/DOI/citation (PDF p. 1); the article footer explicitly says it is distributed under CC BY and permits unrestricted use and distribution with attribution. Its licence link is CC BY 2.0 UK.",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "copyright_notice": "The IUCr article-specific full-text footer states open access under CC BY; no separate rights-reservation notice found.",
+      "version": "Typeset 2017 journal version (Acta Cryst. D 73:148–157); the first PDF page gives the journal volume/pages and DOI and does not mark it as an AAM/preprint.",
+      "conditions": "Attribute the authors and article title; include journal citation and DOI, identify CC BY 2.0 UK and link to its terms. Preserve the article's attribution information.",
+      "notes": "PDF cover p. 1 was visually checked; it shows the Open Access badge. The IUCr article-specific full-text footer supplies CC BY 2.0 UK. No separate third-party restriction was identified in the extracted PDF text/captions.",
+      "doi": "10.1107/s2059798316018210",
+      "title": "Polder maps: improving OMIT maps by excluding bulk solvent",
+      "authors": [
+        {
+          "given": "Dorothee",
+          "family": "Liebschner"
+        },
+        {
+          "given": "Pavel V.",
+          "family": "Afonine"
+        },
+        {
+          "given": "Nigel W.",
+          "family": "Moriarty"
+        },
+        {
+          "given": "Billy K.",
+          "family": "Poon"
+        },
+        {
+          "given": "Oleg V.",
+          "family": "Sobolev"
+        },
+        {
+          "given": "Thomas C.",
+          "family": "Terwilliger"
+        },
+        {
+          "given": "Paul D.",
+          "family": "Adams"
+        }
+      ],
+      "journal": "Acta Crystallographica Section D Structural Biology",
+      "year": 2017,
+      "volume": "73",
+      "issue": "2",
+      "pages": "148-157",
+      "source_url": "https://doi.org/10.1107/s2059798316018210",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "fb5783104f11b9b2a84da91148174929f2bd66d5e64927ecedfb01d489f7e293",
+      "pdf_page_count": 10,
+      "bundled_path": "references/papers/polder2017.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "pintilie2020",
+      "decision": "not_established",
+      "license_id": null,
+      "license_url": null,
+      "license_scope": "No public redistribution license was found for the publisher article portion of this attachment. The article PDF expressly states an exclusive license to Springer Nature America, Inc.; the publisher article page labels it subscription content and offers only an article permissions route. The appended Nature Research Reporting Summary does not change the article's rights status.",
+      "permission_evidence": [
+        {
+          "url": "https://doi.org/10.1038/s41592-020-0731-1",
+          "location": "Attached PDF, p. 7 copyright line; publisher article record, access and Rights and permissions sections",
+          "what_verified": "Local PDF says © The Author(s), under exclusive licence to Springer Nature America, Inc. 2020. The official article record says it is a preview of subscription content and offers purchase/access options and a permissions route; no public redistribution grant was found.",
+          "pdf_pages": [
+            7
+          ]
+        },
+        {
+          "url": "https://support.nature.com/en/support/solutions/articles/6000080095-author-copyrights-information",
+          "location": "Author Copyrights information, subscription-model paragraph",
+          "what_verified": "Springer Nature says subscription-model articles cannot be shared without official permissions. No article-specific permission was found in the reviewed materials.",
+          "pdf_pages": []
+        },
+        {
+          "url": "https://www.nature.com/documents/nr-reporting-summary-flat.pdf",
+          "location": "Nature Portfolio Reporting Summary template license notice",
+          "what_verified": "The appended pages 9–10 are the author-completed reporting-summary form; the publisher's underlying form template is itself labeled CC BY 4.0. This separate form permission does not license the subscription article on PDF pp. 1–8.",
+          "pdf_pages": [
+            9,
+            10
+          ]
+        }
+      ],
+      "copyright_notice": "© The Author(s), under exclusive licence to Springer Nature America, Inc. 2020.",
+      "version": "The 2020 formally published journal version (Nature Methods 17:328–334); PDF pp. 9–10 of the attachment are pages 1–2 of the Nature Research Reporting Summary, not the article text or Supplementary Fig. 5.",
+      "conditions": "Treat the article portion as not cleared for public redistribution unless article-specific official permission is obtained. The reporting-summary template's separate CC BY grant does not cover the article text/figures.",
+      "notes": "The PDF contains hyperlink annotations only; no comment/sticky-note annotations or embedded files were detected. No separate third-party credit exception was needed to reach this result. Bibliographic attribution is in sources.json.",
+      "doi": "10.1038/s41592-020-0731-1",
+      "title": "Measurement of atom resolvability in cryo-EM maps with Q-scores",
+      "authors": [
+        {
+          "given": "Grigore",
+          "family": "Pintilie"
+        },
+        {
+          "given": "Kaiming",
+          "family": "Zhang"
+        },
+        {
+          "given": "Zhaoming",
+          "family": "Su"
+        },
+        {
+          "given": "Shanshan",
+          "family": "Li"
+        },
+        {
+          "given": "Michael F.",
+          "family": "Schmid"
+        },
+        {
+          "given": "Wah",
+          "family": "Chiu"
+        }
+      ],
+      "journal": "Nature Methods",
+      "year": 2020,
+      "volume": "17",
+      "issue": "3",
+      "pages": "328-334",
+      "source_url": "https://doi.org/10.1038/s41592-020-0731-1",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "472dcad60de72670190039120111838e507ffcd6aab506501176110216c93543",
+      "pdf_page_count": 10,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    },
+    {
+      "id": "ligand-challenge2024",
+      "decision": "not_permitted",
+      "license_id": "Springer Nature Accepted Manuscript Terms",
+      "license_url": "https://www.springernature.com/gp/open-science/policies/accepted-manuscript-terms",
+      "license_scope": "The local file identifies itself as an accepted manuscript. Springer Nature's AM terms permit academic-research copying/download but prohibit verbatim publication or making the manuscript available online and prohibit onward sharing to third parties without permission. A public GitHub copy is outside the permitted scope absent separate authorization.",
+      "permission_evidence": [
+        {
+          "url": "https://www.springernature.com/gp/open-science/policies/accepted-manuscript-terms",
+          "location": "Springer Nature Accepted Manuscript Terms, sections on permitted use and sharing",
+          "what_verified": "Publisher terms restrict the accepted manuscript and bar verbatim online publication/making it available and onward sharing without permission.",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://www.springernature.com/gp/open-science/policies/journal-policies",
+          "location": "Springer Nature journal policies, Accepted Manuscript self-archiving section",
+          "what_verified": "Publisher self-archiving policy limits author self-archiving to specified locations/timing and says the accepted manuscript is not to be redistributed under an open-access license.",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "copyright_notice": "Accepted-manuscript cover page carries Springer Nature accepted-manuscript terms/deposit notice.",
+      "version": "Author-accepted manuscript (AAM, explicitly marked on the first PDF page); publisher VOR metadata gives online publication on 2024-06-25 and Nature Methods 21:1340–1348.",
+      "conditions": [
+        "Do not place the unchanged PDF in a public GitHub repository absent written publisher/rightsholder permission.",
+        "Preserve the existing accepted-manuscript cover notice if any later authorized sharing occurs.",
+        "Separately credited third-party content may require additional permission."
+      ],
+      "notes": "The repository source or free-to-read availability does not override the publisher's AAM terms.",
+      "doi": "10.1038/s41592-024-02321-7",
+      "title": "Outcomes of the EMDataResource cryo-EM Ligand Modeling Challenge",
+      "authors": [
+        {
+          "given": "Catherine L.",
+          "family": "Lawson"
+        },
+        {
+          "given": "Andriy",
+          "family": "Kryshtafovych"
+        },
+        {
+          "given": "Grigore D.",
+          "family": "Pintilie"
+        },
+        {
+          "given": "Stephen K.",
+          "family": "Burley"
+        },
+        {
+          "given": "Jiří",
+          "family": "Černý"
+        },
+        {
+          "given": "Vincent B.",
+          "family": "Chen"
+        },
+        {
+          "given": "Paul",
+          "family": "Emsley"
+        },
+        {
+          "given": "Alberto",
+          "family": "Gobbi"
+        },
+        {
+          "given": "Andrzej",
+          "family": "Joachimiak"
+        },
+        {
+          "given": "Sigrid",
+          "family": "Noreng"
+        },
+        {
+          "given": "Michael G.",
+          "family": "Prisant"
+        },
+        {
+          "given": "Randy J.",
+          "family": "Read"
+        },
+        {
+          "given": "Jane S.",
+          "family": "Richardson"
+        },
+        {
+          "given": "Alexis L.",
+          "family": "Rohou"
+        },
+        {
+          "given": "Bohdan",
+          "family": "Schneider"
+        },
+        {
+          "given": "Benjamin D.",
+          "family": "Sellers"
+        },
+        {
+          "given": "Chenghua",
+          "family": "Shao"
+        },
+        {
+          "given": "Elizabeth",
+          "family": "Sourial"
+        },
+        {
+          "given": "Chris I.",
+          "family": "Williams"
+        },
+        {
+          "given": "Christopher J.",
+          "family": "Williams"
+        },
+        {
+          "given": "Ying",
+          "family": "Yang"
+        },
+        {
+          "given": "Venkat",
+          "family": "Abbaraju"
+        },
+        {
+          "given": "Pavel V.",
+          "family": "Afonine"
+        },
+        {
+          "given": "Matthew L.",
+          "family": "Baker"
+        },
+        {
+          "given": "Paul S.",
+          "family": "Bond"
+        },
+        {
+          "given": "Tom L.",
+          "family": "Blundell"
+        },
+        {
+          "given": "Tom",
+          "family": "Burnley"
+        },
+        {
+          "given": "Arthur",
+          "family": "Campbell"
+        },
+        {
+          "given": "Renzhi",
+          "family": "Cao"
+        },
+        {
+          "given": "Jianlin",
+          "family": "Cheng"
+        },
+        {
+          "given": "Grzegorz",
+          "family": "Chojnowski"
+        },
+        {
+          "given": "K. D.",
+          "family": "Cowtan"
+        },
+        {
+          "given": "Frank",
+          "family": "DiMaio"
+        },
+        {
+          "given": "Reza",
+          "family": "Esmaeeli"
+        },
+        {
+          "given": "Nabin",
+          "family": "Giri"
+        },
+        {
+          "given": "Helmut",
+          "family": "Grubmüller"
+        },
+        {
+          "given": "Soon Wen",
+          "family": "Hoh"
+        },
+        {
+          "given": "Jie",
+          "family": "Hou"
+        },
+        {
+          "given": "Corey F.",
+          "family": "Hryc"
+        },
+        {
+          "given": "Carola",
+          "family": "Hunte"
+        },
+        {
+          "given": "Maxim",
+          "family": "Igaev"
+        },
+        {
+          "given": "Agnel P.",
+          "family": "Joseph"
+        },
+        {
+          "given": "Wei-Chun",
+          "family": "Kao"
+        },
+        {
+          "given": "Daisuke",
+          "family": "Kihara"
+        },
+        {
+          "given": "Dilip",
+          "family": "Kumar"
+        },
+        {
+          "given": "Lijun",
+          "family": "Lang"
+        },
+        {
+          "given": "Sean",
+          "family": "Lin"
+        },
+        {
+          "given": "Sai R.",
+          "family": "Maddhuri Venkata Subramaniya"
+        },
+        {
+          "given": "Sumit",
+          "family": "Mittal"
+        },
+        {
+          "given": "Arup",
+          "family": "Mondal"
+        },
+        {
+          "given": "Nigel W.",
+          "family": "Moriarty"
+        },
+        {
+          "given": "Andrew",
+          "family": "Muenks"
+        },
+        {
+          "given": "Garib N.",
+          "family": "Murshudov"
+        },
+        {
+          "given": "Robert A.",
+          "family": "Nicholls"
+        },
+        {
+          "given": "Mateusz",
+          "family": "Olek"
+        },
+        {
+          "given": "Colin M.",
+          "family": "Palmer"
+        },
+        {
+          "given": "Alberto",
+          "family": "Perez"
+        },
+        {
+          "given": "Emmi",
+          "family": "Pohjolainen"
+        },
+        {
+          "given": "Karunakar R.",
+          "family": "Pothula"
+        },
+        {
+          "given": "Christopher N.",
+          "family": "Rowley"
+        },
+        {
+          "given": "Daipayan",
+          "family": "Sarkar"
+        },
+        {
+          "given": "Luisa U.",
+          "family": "Schäfer"
+        },
+        {
+          "given": "Christopher J.",
+          "family": "Schlicksup"
+        },
+        {
+          "given": "Gunnar F.",
+          "family": "Schröder"
+        },
+        {
+          "given": "Mrinal",
+          "family": "Shekhar"
+        },
+        {
+          "given": "Dong",
+          "family": "Si"
+        },
+        {
+          "given": "Abhishek",
+          "family": "Singharoy"
+        },
+        {
+          "given": "Oleg V.",
+          "family": "Sobolev"
+        },
+        {
+          "given": "Genki",
+          "family": "Terashi"
+        },
+        {
+          "given": "Andrea C.",
+          "family": "Vaiana"
+        },
+        {
+          "given": "Sundeep C.",
+          "family": "Vedithi"
+        },
+        {
+          "given": "Jacob",
+          "family": "Verburgt"
+        },
+        {
+          "given": "Xiao",
+          "family": "Wang"
+        },
+        {
+          "given": "Rangana",
+          "family": "Warshamanage"
+        },
+        {
+          "given": "Martyn D.",
+          "family": "Winn"
+        },
+        {
+          "given": "Simone",
+          "family": "Weyand"
+        },
+        {
+          "given": "Keitaro",
+          "family": "Yamashita"
+        },
+        {
+          "given": "Minglei",
+          "family": "Zhao"
+        },
+        {
+          "given": "Michael F.",
+          "family": "Schmid"
+        },
+        {
+          "given": "Helen M.",
+          "family": "Berman"
+        },
+        {
+          "given": "Wah",
+          "family": "Chiu"
+        }
+      ],
+      "journal": "Nature Methods",
+      "year": 2024,
+      "volume": "21",
+      "issue": "7",
+      "pages": "1340-1348",
+      "source_url": "https://doi.org/10.1038/s41592-024-02321-7",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "bd035f10347e7c6b4fdbf1973eb87f4967e9f8e42b62ac239ebe845abb7ecb0d",
+      "pdf_page_count": 38,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    },
+    {
+      "id": "iupac2011",
+      "decision": "permitted",
+      "license_id": "Article-specific IUPAC republication permission",
+      "license_url": "https://publications.iupac.org/pac/pdf/2011/pdf/8308x1637.pdf",
+      "license_scope": "The article itself grants republication, reproduction, and electronic storage/dissemination without formal IUPAC permission when its acknowledgment requirements are met. This supports unchanged public distribution of the article PDF; it does not establish rights to separately credited third-party material beyond the article's own grant.",
+      "permission_evidence": [
+        {
+          "url": "https://publications.iupac.org/pac/pdf/2011/pdf/8308x1637.pdf",
+          "location": "Article-specific republication statement on printed p. 1641; same statement in local PDF p. 5",
+          "what_verified": "IUPAC expressly permits republication/reproduction and electronic storage/dissemination without formal permission subject to a prominent acknowledgment, full reference, copyright notice, IUPAC name, and publication year.",
+          "pdf_pages": [
+            5
+          ]
+        }
+      ],
+      "copyright_notice": "© 2011, IUPAC. Acknowledgment: reproduced unchanged from the IUPAC Recommendations 2011 article cited here, with IUPAC republication permission.",
+      "version": "Official journal version of IUPAC Recommendations 2011, Pure Appl. Chem. 83:1637–1641.",
+      "conditions": [
+        "Keep the PDF unchanged for this redistribution.",
+        "Include a prominent acknowledgment and full reference.",
+        "Show the copyright notice, IUPAC name, and publication year.",
+        "Translations require prior approval from the relevant IUPAC National Adhering Organization; this does not apply to unchanged English redistribution.",
+        "Check separately credited third-party content if present."
+      ],
+      "notes": "Permission is article-specific and broader than a standard noncommercial-only license for the listed republication uses.",
+      "doi": "10.1351/pac-rec-10-01-02",
+      "title": "Definition of the hydrogen bond (IUPAC Recommendations 2011)",
+      "authors": [
+        {
+          "given": "Elangannan",
+          "family": "Arunan"
+        },
+        {
+          "given": "Gautam R.",
+          "family": "Desiraju"
+        },
+        {
+          "given": "Roger A.",
+          "family": "Klein"
+        },
+        {
+          "given": "Joanna",
+          "family": "Sadlej"
+        },
+        {
+          "given": "Steve",
+          "family": "Scheiner"
+        },
+        {
+          "given": "Ibon",
+          "family": "Alkorta"
+        },
+        {
+          "given": "David C.",
+          "family": "Clary"
+        },
+        {
+          "given": "Robert H.",
+          "family": "Crabtree"
+        },
+        {
+          "given": "Joseph J.",
+          "family": "Dannenberg"
+        },
+        {
+          "given": "Pavel",
+          "family": "Hobza"
+        },
+        {
+          "given": "Henrik G.",
+          "family": "Kjaergaard"
+        },
+        {
+          "given": "Anthony C.",
+          "family": "Legon"
+        },
+        {
+          "given": "Benedetta",
+          "family": "Mennucci"
+        },
+        {
+          "given": "David J.",
+          "family": "Nesbitt"
+        }
+      ],
+      "journal": "Pure and Applied Chemistry",
+      "year": 2011,
+      "volume": "83",
+      "issue": "8",
+      "pages": "1637-1641",
+      "source_url": "https://doi.org/10.1351/pac-rec-10-01-02",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "f1a297a5f02de1aa46158983d003f54a436f9e09f200dff2a729037ca994e7ad",
+      "pdf_page_count": 5,
+      "bundled_path": "references/papers/iupac2011.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "cmm2017",
+      "decision": "permitted",
+      "license_id": "CC BY 2.0 UK",
+      "license_url": "http://creativecommons.org/licenses/by/2.0/uk/legalcode",
+      "license_scope": "Published version of record (the complete Acta Cryst. D article PDF); article-specific IUCr notice permits unrestricted use and distribution with attribution. No separate third-party restriction was identified in the extracted PDF text/captions.",
+      "permission_evidence": [
+        {
+          "url": "https://journals.iucr.org/d/issues/2017/03/00/ba5266/index.html",
+          "location": "Article record and article-specific licence notice at the end of the full text",
+          "what_verified": "The record matches the attached PDF title/DOI/citation (PDF p. 1); the article footer explicitly says it is distributed under CC BY and permits unrestricted use and distribution with attribution. Its licence link is CC BY 2.0 UK.",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "copyright_notice": "The IUCr article-specific full-text footer states open access under CC BY; no separate rights-reservation notice found.",
+      "version": "Official typeset journal version in Acta Cryst. D 73 (2017), pp. 223–233.",
+      "conditions": "Attribute the authors and article title; include journal citation and DOI, identify CC BY 2.0 UK and link to its terms. Preserve the article's attribution information.",
+      "notes": "PDF cover p. 1 was visually checked; it has no CC badge or electronic-reprint watermark. The DOI-matched IUCr article page explicitly supplies the CC BY notice and licence link. No separate third-party restriction was identified in the extracted PDF text/captions.",
+      "doi": "10.1107/s2059798317001061",
+      "title": "CheckMyMetal : a macromolecular metal-binding validation tool",
+      "authors": [
+        {
+          "given": "Heping",
+          "family": "Zheng"
+        },
+        {
+          "given": "David R.",
+          "family": "Cooper"
+        },
+        {
+          "given": "Przemyslaw J.",
+          "family": "Porebski"
+        },
+        {
+          "given": "Ivan G.",
+          "family": "Shabalin"
+        },
+        {
+          "given": "Katarzyna B.",
+          "family": "Handing"
+        },
+        {
+          "given": "Wladek",
+          "family": "Minor"
+        }
+      ],
+      "journal": "Acta Crystallographica Section D Structural Biology",
+      "year": 2017,
+      "volume": "73",
+      "issue": "3",
+      "pages": "223-233",
+      "source_url": "https://doi.org/10.1107/s2059798317001061",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "8b863b8fe7649a736e658c6504ea35e2ed4beb94dfc3db5db450702c7bbc515e",
+      "pdf_page_count": 11,
+      "bundled_path": "references/papers/cmm2017.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "leonarski2017",
+      "decision": "permitted",
+      "license_id": "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
+      "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "license_scope": "Article is distributed under CC BY-NC 4.0. The unchanged full PDF may be shared publicly for noncommercial purposes with appropriate attribution and citation. Commercial reuse is excluded; separately credited third-party content can be excluded from the article license.",
+      "permission_evidence": [
+        {
+          "url": "https://academic.oup.com/nar/article/45/2/987/2638797",
+          "location": "Article copyright/license statement in publisher page footer; local PDF p. 1",
+          "what_verified": "Publisher identifies the article as CC BY-NC 4.0 and describes noncommercial reuse/distribution/reproduction subject to proper citation; commercial reuse requires permission.",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "copyright_notice": "© The Author(s) 2016. Published by Oxford University Press on behalf of Nucleic Acids Research; the PDF links to CC BY-NC 4.0.",
+      "version": "Official journal version in Nucleic Acids Research 45(2) (2017), pp. 987–1004.",
+      "conditions": [
+        "Noncommercial use only.",
+        "Give appropriate author attribution and full citation, link to the CC BY-NC 4.0 license, and indicate changes if any.",
+        "Keep this file unchanged for the planned distribution.",
+        "Do not imply endorsement or impose additional restrictions.",
+        "Check separately credited third-party material for exclusions."
+      ],
+      "notes": "The local PDF caption shortens the license name, but its embedded URL and the publisher article page identify CC BY-NC 4.0. The recurring publisher download footer is part of the supplied file, not a user annotation.",
+      "doi": "10.1093/nar/gkw1175",
+      "title": "Mg2+ions: do they bind to nucleobase nitrogens?",
+      "authors": [
+        {
+          "given": "Filip",
+          "family": "Leonarski"
+        },
+        {
+          "given": "Luigi",
+          "family": "D'Ascenzo"
+        },
+        {
+          "given": "Pascal",
+          "family": "Auffinger"
+        }
+      ],
+      "journal": "Nucleic Acids Research",
+      "year": 2017,
+      "volume": "45",
+      "issue": "2",
+      "pages": "987-1004",
+      "source_url": "https://doi.org/10.1093/nar/gkw1175",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "c496288bd0e1462ecf65e29e12baf0a5de5930de3f364dfa7c1e6873a109f227",
+      "pdf_page_count": 18,
+      "bundled_path": "references/papers/leonarski2017.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "molprobity2018",
+      "decision": "not_established",
+      "license_id": null,
+      "license_url": null,
+      "license_scope": "No article-specific license for public redistribution of this typeset publisher-version PDF was established. The journal's general optional-open-access policy does not show that this particular article selected an OA license.",
+      "permission_evidence": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5734394/",
+          "location": "PMC article record and local publisher-version PDF p. 1",
+          "what_verified": "Article identity, PMCID, and © 2017 The Protein Society notice; the record/copyright notice checked did not establish a specific redistribution license for this file.",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://onlinelibrary.wiley.com/page/journal/1469896x/homepage/forauthors.html",
+          "location": "Wiley journal author information, open-access options",
+          "what_verified": "The journal supports optional open access, which is not evidence that this article selected it.",
+          "pdf_pages": []
+        }
+      ],
+      "copyright_notice": "© 2017 The Protein Society (local PDF p. 1 / official PMC record).",
+      "version": "Typeset journal version of Protein Science 27(1) (2018), 293–315; the first page shows the DOI and online publication information.",
+      "conditions": [],
+      "notes": "A PMC copy or a journal-level optional OA route does not establish reuse rights for this specific PDF. Retain in Zotero pending article-specific permission or license evidence.",
+      "doi": "10.1002/pro.3330",
+      "title": "MolProbity: More and better reference data for improved all‐atom structure validation",
+      "authors": [
+        {
+          "given": "Christopher J.",
+          "family": "Williams"
+        },
+        {
+          "given": "Jeffrey J.",
+          "family": "Headd"
+        },
+        {
+          "given": "Nigel W.",
+          "family": "Moriarty"
+        },
+        {
+          "given": "Michael G.",
+          "family": "Prisant"
+        },
+        {
+          "given": "Lizbeth L.",
+          "family": "Videau"
+        },
+        {
+          "given": "Lindsay N.",
+          "family": "Deis"
+        },
+        {
+          "given": "Vishal",
+          "family": "Verma"
+        },
+        {
+          "given": "Daniel A.",
+          "family": "Keedy"
+        },
+        {
+          "given": "Bradley J.",
+          "family": "Hintze"
+        },
+        {
+          "given": "Vincent B.",
+          "family": "Chen"
+        },
+        {
+          "given": "Swati",
+          "family": "Jain"
+        },
+        {
+          "given": "Steven M.",
+          "family": "Lewis"
+        },
+        {
+          "given": "W. Bryan",
+          "family": "Arendall"
+        },
+        {
+          "given": "Jack",
+          "family": "Snoeyink"
+        },
+        {
+          "given": "Paul D.",
+          "family": "Adams"
+        },
+        {
+          "given": "Simon C.",
+          "family": "Lovell"
+        },
+        {
+          "given": "Jane S.",
+          "family": "Richardson"
+        },
+        {
+          "given": "David C.",
+          "family": "Richardson"
+        }
+      ],
+      "journal": "Protein Science",
+      "year": 2018,
+      "volume": "27",
+      "issue": "1",
+      "pages": "293-315",
+      "source_url": "https://doi.org/10.1002/pro.3330",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "231945dc51811cd1dba048a6143e6c515eca11691f18dc4bfc14d3bab75835b0",
+      "pdf_page_count": 23,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    },
+    {
+      "id": "read2011",
+      "decision": "permitted",
+      "license_id": "CC BY 3.0 (Creative Commons Attribution 3.0 Unported)",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "license_scope": "The Version of Record is licensed for sharing in any medium or format, including unchanged PDF redistribution, subject to attribution and license conditions. The specific CC BY license on the article controls despite the generic rights-reserved footer.",
+      "permission_evidence": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0969212611002851",
+          "location": "ScienceDirect article record; article identity, volume/pages, Open access and Creative Commons labels",
+          "what_verified": "The publisher record identifies Structure 19(10) (2011), pages 1395–1412, DOI 10.1016/j.str.2011.08.006, and labels the article Open access / Under a Creative Commons license.",
+          "pdf_pages": []
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1016%2Fj.str.2011.08.006",
+          "location": "Crossref DOI record, license entry with content-version=vor",
+          "what_verified": "The registered license for the Version of Record is Creative Commons BY 3.0, linking to the canonical license URL.",
+          "pdf_pages": []
+        },
+        {
+          "url": "https://doi.org/10.1016/j.str.2011.08.006",
+          "location": "Local attached PDF p. 1, DOI/citation, Open access under CC BY notice and embedded hyperlink; pp. 1–18 running footer",
+          "what_verified": "The PDF is the publisher VOR and its title-page CC BY link resolves to http://creativecommons.org/licenses/by/3.0/. The same file also carries an Elsevier all-rights-reserved footer; publisher page and VOR license metadata confirm this specific article is CC BY 3.0, so the footer is not the operative reuse term for this OA article.",
+          "pdf_pages": [
+            1,
+            2,
+            18
+          ]
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by/3.0/",
+          "location": "Creative Commons BY 3.0 deed, sharing and attribution terms",
+          "what_verified": "CC BY 3.0 permits copying and redistribution in any medium or format; attribution and a license link are required.",
+          "pdf_pages": []
+        }
+      ],
+      "copyright_notice": "Page 1 states Open access under CC BY license and includes a link to CC BY 3.0. The running footer on pp. 1–18 also says © 2011 Elsevier Ltd. All rights reserved.",
+      "version": "Elsevier journal version of Structure 19 (2011), 1395–1412.",
+      "conditions": "Keep author/title/citation and existing copyright and license notices; provide a link to CC BY 3.0; do not imply endorsement. The PDF is unchanged, so no modification disclosure is needed. Any separately identified third-party material would need its own rights check.",
+      "notes": "Local SHA-256 matches the supplied manifest. PDF annotation scan found the CC BY 3.0 link plus ordinary article links and no non-link annotations; first page shows no personal watermark. The generic CC BY label was resolved from the PDF hyperlink and Crossref VOR license record, not assumed to be CC BY 4.0. No separate third-party rights carve-out was found in searchable text.",
+      "doi": "10.1016/j.str.2011.08.006",
+      "title": "A New Generation of Crystallographic Validation Tools for the Protein Data Bank",
+      "authors": [
+        {
+          "given": "Randy J.",
+          "family": "Read"
+        },
+        {
+          "given": "Paul D.",
+          "family": "Adams"
+        },
+        {
+          "given": "W. Bryan",
+          "family": "Arendall"
+        },
+        {
+          "given": "Axel T.",
+          "family": "Brunger"
+        },
+        {
+          "given": "Paul",
+          "family": "Emsley"
+        },
+        {
+          "given": "Robbie P.",
+          "family": "Joosten"
+        },
+        {
+          "given": "Gerard J.",
+          "family": "Kleywegt"
+        },
+        {
+          "given": "Eugene B.",
+          "family": "Krissinel"
+        },
+        {
+          "given": "Thomas",
+          "family": "Lütteke"
+        },
+        {
+          "given": "Zbyszek",
+          "family": "Otwinowski"
+        },
+        {
+          "given": "Anastassis",
+          "family": "Perrakis"
+        },
+        {
+          "given": "Jane S.",
+          "family": "Richardson"
+        },
+        {
+          "given": "William H.",
+          "family": "Sheffler"
+        },
+        {
+          "given": "Janet L.",
+          "family": "Smith"
+        },
+        {
+          "given": "Ian J.",
+          "family": "Tickle"
+        },
+        {
+          "given": "Gert",
+          "family": "Vriend"
+        },
+        {
+          "given": "Peter H.",
+          "family": "Zwart"
+        }
+      ],
+      "journal": "Structure",
+      "year": 2011,
+      "volume": "19",
+      "issue": "10",
+      "pages": "1395-1412",
+      "source_url": "https://doi.org/10.1016/j.str.2011.08.006",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "4409b772789e564d6b337d315fcddb4cc476446332e629e377bad2b8ac22074b",
+      "pdf_page_count": 18,
+      "bundled_path": "references/papers/read2011.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "afonine2018",
+      "decision": "permitted",
+      "license_id": "CC BY 2.0 UK",
+      "license_url": "http://creativecommons.org/licenses/by/2.0/uk/legalcode",
+      "license_scope": "Published version of record (the complete Acta Cryst. D article PDF); article-specific IUCr notice permits unrestricted use and distribution with attribution. No separate third-party restriction was identified in the extracted PDF text/captions.",
+      "permission_evidence": [
+        {
+          "url": "https://journals.iucr.org/d/issues/2018/09/00/kw5139/",
+          "location": "Article record and article-specific licence notice at the end of the full text",
+          "what_verified": "The record matches the attached PDF title/DOI/citation (PDF p. 1); the article footer explicitly says it is distributed under CC BY and permits unrestricted use and distribution with attribution. Its licence link is CC BY 2.0 UK.",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "copyright_notice": "The IUCr article-specific full-text footer states open access under CC BY; no separate rights-reservation notice found.",
+      "version": "IUCr journal version of Acta Crystallographica Section D 74 (2018), 814–840.",
+      "conditions": "Attribute the authors and article title; include journal citation and DOI, identify CC BY 2.0 UK and link to its terms. Preserve the article's attribution information.",
+      "notes": "PDF cover p. 1 was visually checked; it shows the Open Access badge but no electronic-reprint watermark. The DOI-matched IUCr article footer supplies the CC BY notice and its CC BY 2.0 UK link. No separate third-party restriction was identified in the extracted PDF text/captions.",
+      "doi": "10.1107/s2059798318009324",
+      "title": "New tools for the analysis and validation of cryo-EM maps and atomic models",
+      "authors": [
+        {
+          "given": "Pavel V.",
+          "family": "Afonine"
+        },
+        {
+          "given": "Bruno P.",
+          "family": "Klaholz"
+        },
+        {
+          "given": "Nigel W.",
+          "family": "Moriarty"
+        },
+        {
+          "given": "Billy K.",
+          "family": "Poon"
+        },
+        {
+          "given": "Oleg V.",
+          "family": "Sobolev"
+        },
+        {
+          "given": "Thomas C.",
+          "family": "Terwilliger"
+        },
+        {
+          "given": "Paul D.",
+          "family": "Adams"
+        },
+        {
+          "given": "Alexandre",
+          "family": "Urzhumtsev"
+        }
+      ],
+      "journal": "Acta Crystallographica Section D Structural Biology",
+      "year": 2018,
+      "volume": "74",
+      "issue": "9",
+      "pages": "814-840",
+      "source_url": "https://doi.org/10.1107/s2059798318009324",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "7c8bfec06b313e21e92a1dc962693dc9b8513cd7681b56b4acf3d868cc21685a",
+      "pdf_page_count": 27,
+      "bundled_path": "references/papers/afonine2018.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "em-challenge2021",
+      "decision": "permitted",
+      "license_id": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_scope": "The published Nature Methods article PDF, including its text and article figures, is expressly CC BY 4.0; its standard notice includes third-party material unless a credit line says otherwise. The local 21-page PDF also appends a three-page author-completed Nature Research Reporting Summary (pp. 19–21); the publisher's official reporting-summary template is separately CC BY 4.0. No separate restrictive credit line or notice was found in the local pages.",
+      "permission_evidence": [
+        {
+          "url": "https://doi.org/10.1038/s41592-020-01051-w",
+          "location": "Attached PDF p. 9, Rights and permissions notice; official article page, Rights and permissions section",
+          "what_verified": "Both the PDF notice and official Nature article record state CC BY 4.0, permitting sharing/distribution in any medium subject to attribution, license link, and change indication; both state third-party material may be excluded by a credit line.",
+          "pdf_pages": [
+            9
+          ]
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+          "location": "CC BY 4.0 legal code, sections 2(a)(1) and 3(a)",
+          "what_verified": "The licensor grants reproduction and sharing rights in the licensed material, with attribution, license reference, and change-status conditions.",
+          "pdf_pages": []
+        },
+        {
+          "url": "https://www.nature.com/documents/nr-reporting-summary-flat.pdf",
+          "location": "Official Nature Research Reporting Summary template license notice; local completed form pp. 19–21",
+          "what_verified": "The official template used for the appended reporting-summary pages is itself licensed CC BY 4.0. The local form has no separate restrictive notice.",
+          "pdf_pages": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "copyright_notice": "© The Author(s) 2021; Open Access CC BY 4.0 notice on PDF p. 9.",
+      "version": "The attachment is the published, typeset Nature Methods PDF (2021; 18:156–164), with online Methods/supplement pages; it is not an AAM/preprint.",
+      "conditions": "Retain the supplied creator/copyright/license notices, credit the authors and source, link CC BY 4.0, and indicate that the PDF is shared unchanged. Independently clear any item whose credit line excludes it from CC BY 4.0.",
+      "notes": "Only hyperlink annotations were detected. The PDF's license clause contains the standard third-party-credit exception; a scan of the attached pages found no separate exclusion credit line. The final three pages are an author-filled Reporting Summary. Bibliographic attribution is in sources.json.",
+      "doi": "10.1038/s41592-020-01051-w",
+      "title": "Cryo-EM model validation recommendations based on outcomes of the 2019 EMDataResource challenge",
+      "authors": [
+        {
+          "given": "Catherine L.",
+          "family": "Lawson"
+        },
+        {
+          "given": "Andriy",
+          "family": "Kryshtafovych"
+        },
+        {
+          "given": "Paul D.",
+          "family": "Adams"
+        },
+        {
+          "given": "Pavel V.",
+          "family": "Afonine"
+        },
+        {
+          "given": "Matthew L.",
+          "family": "Baker"
+        },
+        {
+          "given": "Benjamin A.",
+          "family": "Barad"
+        },
+        {
+          "given": "Paul",
+          "family": "Bond"
+        },
+        {
+          "given": "Tom",
+          "family": "Burnley"
+        },
+        {
+          "given": "Renzhi",
+          "family": "Cao"
+        },
+        {
+          "given": "Jianlin",
+          "family": "Cheng"
+        },
+        {
+          "given": "Grzegorz",
+          "family": "Chojnowski"
+        },
+        {
+          "given": "Kevin",
+          "family": "Cowtan"
+        },
+        {
+          "given": "Ken A.",
+          "family": "Dill"
+        },
+        {
+          "given": "Frank",
+          "family": "DiMaio"
+        },
+        {
+          "given": "Daniel P.",
+          "family": "Farrell"
+        },
+        {
+          "given": "James S.",
+          "family": "Fraser"
+        },
+        {
+          "given": "Mark A.",
+          "family": "Herzik"
+        },
+        {
+          "given": "Soon Wen",
+          "family": "Hoh"
+        },
+        {
+          "given": "Jie",
+          "family": "Hou"
+        },
+        {
+          "given": "Li-Wei",
+          "family": "Hung"
+        },
+        {
+          "given": "Maxim",
+          "family": "Igaev"
+        },
+        {
+          "given": "Agnel P.",
+          "family": "Joseph"
+        },
+        {
+          "given": "Daisuke",
+          "family": "Kihara"
+        },
+        {
+          "given": "Dilip",
+          "family": "Kumar"
+        },
+        {
+          "given": "Sumit",
+          "family": "Mittal"
+        },
+        {
+          "given": "Bohdan",
+          "family": "Monastyrskyy"
+        },
+        {
+          "given": "Mateusz",
+          "family": "Olek"
+        },
+        {
+          "given": "Colin M.",
+          "family": "Palmer"
+        },
+        {
+          "given": "Ardan",
+          "family": "Patwardhan"
+        },
+        {
+          "given": "Alberto",
+          "family": "Perez"
+        },
+        {
+          "given": "Jonas",
+          "family": "Pfab"
+        },
+        {
+          "given": "Grigore D.",
+          "family": "Pintilie"
+        },
+        {
+          "given": "Jane S.",
+          "family": "Richardson"
+        },
+        {
+          "given": "Peter B.",
+          "family": "Rosenthal"
+        },
+        {
+          "given": "Daipayan",
+          "family": "Sarkar"
+        },
+        {
+          "given": "Luisa U.",
+          "family": "Schäfer"
+        },
+        {
+          "given": "Michael F.",
+          "family": "Schmid"
+        },
+        {
+          "given": "Gunnar F.",
+          "family": "Schröder"
+        },
+        {
+          "given": "Mrinal",
+          "family": "Shekhar"
+        },
+        {
+          "given": "Dong",
+          "family": "Si"
+        },
+        {
+          "given": "Abishek",
+          "family": "Singharoy"
+        },
+        {
+          "given": "Genki",
+          "family": "Terashi"
+        },
+        {
+          "given": "Thomas C.",
+          "family": "Terwilliger"
+        },
+        {
+          "given": "Andrea",
+          "family": "Vaiana"
+        },
+        {
+          "given": "Liguo",
+          "family": "Wang"
+        },
+        {
+          "given": "Zhe",
+          "family": "Wang"
+        },
+        {
+          "given": "Stephanie A.",
+          "family": "Wankowicz"
+        },
+        {
+          "given": "Christopher J.",
+          "family": "Williams"
+        },
+        {
+          "given": "Martyn",
+          "family": "Winn"
+        },
+        {
+          "given": "Tianqi",
+          "family": "Wu"
+        },
+        {
+          "given": "Xiaodi",
+          "family": "Yu"
+        },
+        {
+          "given": "Kaiming",
+          "family": "Zhang"
+        },
+        {
+          "given": "Helen M.",
+          "family": "Berman"
+        },
+        {
+          "given": "Wah",
+          "family": "Chiu"
+        }
+      ],
+      "journal": "Nature Methods",
+      "year": 2021,
+      "volume": "18",
+      "issue": "2",
+      "pages": "156-164",
+      "source_url": "https://doi.org/10.1038/s41592-020-01051-w",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "96f88fe1c7174ad747cc6d823a885906b1208b757b95ef5498e8203efa960dd4",
+      "pdf_page_count": 21,
+      "bundled_path": "references/papers/em-challenge2021.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "checkmysequence2022",
+      "decision": "permitted",
+      "license_id": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_scope": "Published version of record (the complete Acta Cryst. D article PDF); no separate third-party restriction was identified in the extracted PDF text/captions.",
+      "permission_evidence": [
+        {
+          "url": "https://journals.iucr.org/d/issues/2022/07/00/ih5003/index.html",
+          "location": "PDF p. 1; publisher article record and article-specific licence notice",
+          "what_verified": "The attached PDF identifies the matching title/DOI and states 'Published under a CC BY 4.0 licence'; the DOI-matched IUCr article page identifies the same published version.",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "copyright_notice": "PDF p. 1 states 'Published under a CC BY 4.0 licence'; no separate rights-reservation notice found.",
+      "version": "The Zotero attachment is the typeset journal-article PDF; Acta Cryst. D 78, 806–816 (2022), with the DOI, title, authors, and issue matching the first page.",
+      "conditions": "Attribute the author and article title; include journal citation and DOI, identify CC BY 4.0 and link to its terms. Preserve the article's attribution information.",
+      "notes": "PDF cover p. 1 was visually checked; it shows the CC BY 4.0 badge/licence notice and no electronic-reprint watermark. PDF p. 4 separately says checkMySequence software is BSD-3 licensed; that concerns software, not redistribution of this article PDF. No separate third-party restriction was identified in the extracted PDF text/captions.",
+      "doi": "10.1107/s2059798322005009",
+      "title": "Sequence-assignment validation in cryo-EM models with checkMySequence",
+      "authors": [
+        {
+          "given": "Grzegorz",
+          "family": "Chojnowski"
+        }
+      ],
+      "journal": "Acta Crystallographica Section D Structural Biology",
+      "year": 2022,
+      "volume": "78",
+      "issue": "7",
+      "pages": "806-816",
+      "source_url": "https://doi.org/10.1107/s2059798322005009",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "0373671fc85e9a8fb81b9187201f02a566c7cb015469689887b792acb66a141f",
+      "pdf_page_count": 11,
+      "bundled_path": "references/papers/checkmysequence2022.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "register-errors2024",
+      "decision": "permitted",
+      "license_id": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_scope": "Published version of record (the complete IUCrJ article PDF); no separate third-party restriction was identified in the extracted PDF text/captions.",
+      "permission_evidence": [
+        {
+          "url": "https://journals.iucr.org/m/issues/2024/06/00/lz5074/index.html",
+          "location": "PDF p. 1; publisher article record and article-specific licence notice",
+          "what_verified": "The attached published IUCrJ PDF identifies the matching title/DOI and states 'Published under a CC BY 4.0 licence'; the publisher record matches the DOI and citation.",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "copyright_notice": "PDF p. 1 states 'Published under a CC BY 4.0 licence'; no separate rights-reservation notice found.",
+      "version": "The Zotero attachment is the IUCrJ journal-article PDF; IUCrJ 11, 938–950 (2024), with DOI, title, authors, and volume/pages matching the first page.",
+      "conditions": "Attribute the authors and article title; include journal citation and DOI, identify CC BY 4.0 and link to its terms. Preserve the article's attribution information.",
+      "notes": "PDF cover p. 1 was visually checked; it shows the CC BY 4.0 badge/licence notice and no electronic-reprint watermark. The decision covers the attached article PDF only, not separately published supplementary files. No third-party restriction was identified in the extracted PDF text/captions.",
+      "doi": "10.1107/s2052252524009114",
+      "title": "Using deep-learning predictions reveals a large number of register errors in PDB depositions",
+      "authors": [
+        {
+          "given": "Filomeno",
+          "family": "Sánchez Rodríguez"
+        },
+        {
+          "given": "Adam J.",
+          "family": "Simpkin"
+        },
+        {
+          "given": "Grzegorz",
+          "family": "Chojnowski"
+        },
+        {
+          "given": "Ronan M.",
+          "family": "Keegan"
+        },
+        {
+          "given": "Daniel J.",
+          "family": "Rigden"
+        }
+      ],
+      "journal": "IUCrJ",
+      "year": 2024,
+      "volume": "11",
+      "issue": "6",
+      "pages": "938-950",
+      "source_url": "https://doi.org/10.1107/s2052252524009114",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "95f3f81149d4f7d004db97262d3173db49a96832198501e5625d05af537cb731",
+      "pdf_page_count": 13,
+      "bundled_path": "references/papers/register-errors2024.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "carugo2001",
+      "decision": "not_established",
+      "license_id": null,
+      "license_url": null,
+      "license_scope": "No article-specific license or permission for public redistribution of the publisher PDF was established. The Wiley PDF boilerplate about OA articles using an applicable CC license is generic and does not establish that this 2001 article is OA.",
+      "permission_evidence": [
+        {
+          "url": "https://onlinelibrary.wiley.com/doi/10.1110/ps.690101",
+          "location": "Wiley article landing page; local PDF pp. 1–4",
+          "what_verified": "Article identity and local notice identifying Protein Science 10 (2001), pages 1470–1473, published by CSHL Press for The Protein Society; no article-specific redistribution grant was established from the materials checked.",
+          "pdf_pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "copyright_notice": "© 2001 The Protein Society (local PDF p. 1).",
+      "version": "Published journal article, Protein Science 10(7), 1470–1473 (2001), DOI 10.1110/ps.690101.",
+      "conditions": [],
+      "notes": "The generic footer referring to CC terms for OA articles is not an article-specific license. Retain in Zotero pending specific authorization.",
+      "doi": "10.1110/ps.690101",
+      "title": "A normalized root‐mean‐spuare distance for comparing protein three‐dimensional structures",
+      "authors": [
+        {
+          "given": "Oliviero",
+          "family": "Carugo"
+        },
+        {
+          "given": "Sándor",
+          "family": "Pongor"
+        }
+      ],
+      "journal": "Protein Science",
+      "year": 2001,
+      "volume": "10",
+      "issue": "7",
+      "pages": "1470-1473",
+      "source_url": "https://doi.org/10.1110/ps.690101",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "8f339ab571848256f9513e01241117bc52b121ef66f4022d7f9de090321be425",
+      "pdf_page_count": 4,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    },
+    {
+      "id": "tmalign2005",
+      "decision": "permitted",
+      "license_id": "Nucleic Acids Research article-specific open-access terms (2005)",
+      "license_url": "https://academic.oup.com/nar/article/33/7/2302/2401364",
+      "license_scope": "The article-specific publisher statement permits use, reproduction, dissemination, and display of the OA version for noncommercial purposes with proper attribution and source/citation. Commercial reuse requires permission. This supports an unchanged, publicly accessible noncommercial educational reference copy.",
+      "permission_evidence": [
+        {
+          "url": "https://academic.oup.com/nar/article/33/7/2302/2401364",
+          "location": "Article-specific open-access terms in publisher page; local PDF p. 1",
+          "what_verified": "Copyright © The Author 2005 and explicit permission for noncommercial use/reproduction/dissemination/display with attribution to the author and NAR/OUP and correct citation; commercial reuse requires permission.",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "copyright_notice": "© The Author 2005. Published by Oxford University Press. All rights reserved. The article-specific notice separately grants noncommercial reproduction/dissemination with attribution.",
+      "version": "Published journal article, Nucleic Acids Research 33(7), 2302–2309 (2005), DOI 10.1093/nar/gki524.",
+      "conditions": [
+        "Noncommercial purposes only.",
+        "Properly attribute the author and identify NAR/OUP as source with the correct citation.",
+        "Keep the article unchanged; if less than the whole article or a derivative is used, clearly identify that fact.",
+        "Commercial reuse requires publisher permission.",
+        "Check any separately credited third-party material if encountered."
+      ],
+      "notes": "This is an article-specific 2005 grant, not an assumption based on current OUP policy. The publisher download footer is retained as part of the supplied PDF.",
+      "doi": "10.1093/nar/gki524",
+      "title": "TM-align: a protein structure alignment algorithm based on the TM-score",
+      "authors": [
+        {
+          "given": "Yang",
+          "family": "Zhang"
+        },
+        {
+          "given": "Jeffrey",
+          "family": "Skolnick"
+        }
+      ],
+      "journal": "Nucleic Acids Research",
+      "year": 2005,
+      "volume": "33",
+      "issue": "7",
+      "pages": "2302-2309",
+      "source_url": "https://doi.org/10.1093/nar/gki524",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "26442c7b07e90c5cad7a6689c962a4d13c36ec953dff3f8ae43c4f463c42d883",
+      "pdf_page_count": 8,
+      "bundled_path": "references/papers/tmalign2005.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "relion2012",
+      "decision": "permitted",
+      "license_id": "CC BY 3.0 (Creative Commons Attribution 3.0 Unported)",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "license_scope": "The Version of Record is licensed for sharing in any medium or format, including unchanged PDF redistribution, subject to attribution and license conditions.",
+      "permission_evidence": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S1047847712002481",
+          "location": "ScienceDirect article record; DOI, journal, volume and pages",
+          "what_verified": "The publisher record identifies RELION in Journal of Structural Biology 180 (2012), pages 519–530, DOI 10.1016/j.jsb.2012.09.006.",
+          "pdf_pages": []
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1016%2Fj.jsb.2012.09.006",
+          "location": "Crossref DOI record, license entry with content-version=vor",
+          "what_verified": "The registered license for the Version of Record is Creative Commons BY 3.0, linking to the canonical license URL.",
+          "pdf_pages": []
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by/3.0/",
+          "location": "Creative Commons BY 3.0 deed, sharing and attribution terms",
+          "what_verified": "CC BY 3.0 permits copying and redistribution in any medium or format; attribution and a license link are required.",
+          "pdf_pages": []
+        },
+        {
+          "url": "https://doi.org/10.1016/j.jsb.2012.09.006",
+          "location": "Local attached PDF p. 1, copyright line, open-access notice and embedded hyperlink annotation",
+          "what_verified": "The PDF says Open access under CC BY; its clickable license annotation resolves to http://creativecommons.org/licenses/by/3.0/, establishing the exact license version despite the generic printed label.",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "copyright_notice": "© 2012 Elsevier Inc. Open access under CC BY license.",
+      "version": "The attachment is the published Elsevier edition PDF in Journal of Structural Biology (2012; 180:519–530; CC BY), not an AAM/preprint.",
+      "conditions": "Keep author/title/citation and existing copyright and license notices; provide a link to CC BY 3.0; do not imply endorsement. The PDF is unchanged, so no modification disclosure is needed. Any separately identified third-party material would need its own rights check.",
+      "notes": "Local SHA-256 matches the supplied manifest. PDF annotation scan found the CC BY 3.0 link plus ordinary article links and no non-link annotations; first page shows no personal watermark. No separate third-party rights carve-out was found in searchable text.",
+      "doi": "10.1016/j.jsb.2012.09.006",
+      "title": "RELION: Implementation of a Bayesian approach to cryo-EM structure determination",
+      "authors": [
+        {
+          "given": "Sjors H.W.",
+          "family": "Scheres"
+        }
+      ],
+      "journal": "Journal of Structural Biology",
+      "year": 2012,
+      "volume": "180",
+      "issue": "3",
+      "pages": "519-530",
+      "source_url": "https://doi.org/10.1016/j.jsb.2012.09.006",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "794e352ab0735561c8cb48724d761fb3cdc649944686bf95b0283ed0213fdb9c",
+      "pdf_page_count": 12,
+      "bundled_path": "references/papers/relion2012.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "pisa2007",
+      "decision": "not_permitted",
+      "license_id": null,
+      "license_url": null,
+      "license_scope": "No public redistribution license found. The local published journal PDF explicitly reserves rights; the publisher record provides a rights-clearance route rather than an open license.",
+      "permission_evidence": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0022283607006420",
+          "location": "ScienceDirect article record; publication details and Get rights and content area",
+          "what_verified": "The official record matches DOI 10.1016/j.jmb.2007.05.022 and the 2007 Journal of Molecular Biology article; it does not identify an open-access license.",
+          "pdf_pages": []
+        },
+        {
+          "url": "https://doi.org/10.1016/j.jmb.2007.05.022",
+          "location": "Local attached PDF p. 1, copyright line and footer",
+          "what_verified": "The exact local Version of Record says © 2007 Elsevier Ltd. All rights reserved. No CC license annotation is present.",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "copyright_notice": "© 2007 Elsevier Ltd. All rights reserved.",
+      "version": "Published journal article, Journal of Molecular Biology 372, 774–797 (2007), DOI 10.1016/j.jmb.2007.05.022.",
+      "conditions": "Public redistribution is not authorized by the evidence reviewed; obtain an article-specific written grant or applicable license before posting the complete PDF.",
+      "notes": "Local SHA-256 matches the supplied manifest. PDF annotation scan found only ordinary links, with no non-link annotations; first page shows publisher branding and no personal watermark.",
+      "doi": "10.1016/j.jmb.2007.05.022",
+      "title": "Inference of Macromolecular Assemblies from Crystalline State",
+      "authors": [
+        {
+          "given": "Evgeny",
+          "family": "Krissinel"
+        },
+        {
+          "given": "Kim",
+          "family": "Henrick"
+        }
+      ],
+      "journal": "Journal of Molecular Biology",
+      "year": 2007,
+      "volume": "372",
+      "issue": "3",
+      "pages": "774-797",
+      "source_url": "https://doi.org/10.1016/j.jmb.2007.05.022",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "f0598a8e519b05633f0ec38b7fa372f5b8bb8ea64b5771a9efa4434f9983c816",
+      "pdf_page_count": 24,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    },
+    {
+      "id": "krissinel2011",
+      "decision": "permitted",
+      "license_id": "CC BY 2.0 UK",
+      "license_url": "http://creativecommons.org/licenses/by/2.0/uk/legalcode",
+      "license_scope": "Published version of record (the complete Acta Cryst. D article PDF); article-specific IUCr notice permits unrestricted use and distribution with attribution. No separate third-party restriction was identified in the extracted PDF text/captions.",
+      "permission_evidence": [
+        {
+          "url": "https://journals.iucr.org/d/issues/2011/04/00/ba5153/index.html",
+          "location": "Article record and article-specific licence notice at the end of the full text",
+          "what_verified": "The record matches the attached PDF title/DOI/citation (PDF p. 1); the article footer explicitly says it is distributed under CC BY and permits unrestricted use and distribution with attribution. Its licence link is CC BY 2.0 UK.",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "copyright_notice": "The IUCr article-specific full-text footer states open access under CC BY; no separate rights-reservation notice found.",
+      "version": "IUCr published journal version, Acta Crystallographica Section D 67, 376–385 (2011), DOI 10.1107/S0907444911007232.",
+      "conditions": "Attribute the author and article title; include journal citation and DOI, identify CC BY 2.0 UK and link to its terms. Preserve the article's attribution information.",
+      "notes": "PDF cover p. 1 was visually checked; it has no CC badge or electronic-reprint watermark. The DOI-matched IUCr article footer and linked CC BY 2.0 UK licence establish reuse rights. No separate third-party restriction was identified in the extracted PDF text/captions.",
+      "doi": "10.1107/s0907444911007232",
+      "title": "Macromolecular complexes in crystals and solutions",
+      "authors": [
+        {
+          "given": "Evgeny",
+          "family": "Krissinel"
+        }
+      ],
+      "journal": "Acta Crystallographica Section D Biological Crystallography",
+      "year": 2011,
+      "volume": "67",
+      "issue": "4",
+      "pages": "376-385",
+      "source_url": "https://doi.org/10.1107/s0907444911007232",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "11972d220ef7b3d87c388c767440facf5b2a8f44896f8dfe75d539772df3e529",
+      "pdf_page_count": 10,
+      "bundled_path": "references/papers/krissinel2011.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "fraser2011",
+      "decision": "not_established",
+      "license_id": null,
+      "license_url": null,
+      "license_scope": "The publisher identifies the article as available online through its open-access option, but the checked record does not supply an article-specific license granting redistribution of the entire PDF. Free access and noncommercial educational use alone do not establish the requested public repository copy.",
+      "permission_evidence": [
+        {
+          "url": "https://www.pnas.org/doi/10.1073/pnas.1111325108",
+          "location": "PNAS article page copyright/access statement; local PDF p. 1",
+          "what_verified": "Publisher calls the article open access/free online through the PNAS OA option; local PDF states the same, with no CC license or whole-file repository permission identified.",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC515072/",
+          "location": "PNAS 2004 editorial on copyright and open access",
+          "what_verified": "Historical general PNAS policy discussion describes noncommercial use and author-specific posting/classroom uses; it does not clearly resolve permission for this 2011 reader's public reposting of the complete PDF.",
+          "pdf_pages": []
+        }
+      ],
+      "copyright_notice": "PNAS copyright/access text appears on local PDF p. 1; full-page footers expose a downloader IP address and access date.",
+      "version": "Published PNAS article, 108(39), 16247–16252 (2011), DOI 10.1073/pnas.1111325108.",
+      "conditions": [],
+      "notes": "The PNAS download footer includes personal/network data (an IP address and date); redact or replace the PDF only after resolving rights and reviewing whether a clean publisher copy is available. Do not treat free online access or the later PNAS CC framework as retroactive permission. Keep in Zotero pending article-specific reuse authorization.",
+      "doi": "10.1073/pnas.1111325108",
+      "title": "Accessing protein conformational ensembles using room-temperature X-ray crystallography",
+      "authors": [
+        {
+          "given": "James S.",
+          "family": "Fraser"
+        },
+        {
+          "given": "Henry",
+          "family": "van den Bedem"
+        },
+        {
+          "given": "Avi J.",
+          "family": "Samelson"
+        },
+        {
+          "given": "P. Therese",
+          "family": "Lang"
+        },
+        {
+          "given": "James M.",
+          "family": "Holton"
+        },
+        {
+          "given": "Nathaniel",
+          "family": "Echols"
+        },
+        {
+          "given": "Tom",
+          "family": "Alber"
+        }
+      ],
+      "journal": "Proceedings of the National Academy of Sciences",
+      "year": 2011,
+      "volume": "108",
+      "issue": "39",
+      "pages": "16247-16252",
+      "source_url": "https://doi.org/10.1073/pnas.1111325108",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "68b6e8ba5d2bf322418d5e46a2b7ebc24f65b6edd09090f5939e42170a503a20",
+      "pdf_page_count": 6,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    },
+    {
+      "id": "af2-2021",
+      "decision": "permitted",
+      "license_id": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_scope": "The published Nature article PDF, including text and article figures, expressly carries CC BY 4.0; its notice includes third-party material unless a credit line says otherwise. The local PDF also appends the author-completed Nature Research Reporting Summary (pp. 11–12), whose official template is separately CC BY 4.0. The article's separate statement that code/weights are under an open-source license concerns those software artifacts, not the PDF license.",
+      "permission_evidence": [
+        {
+          "url": "https://doi.org/10.1038/s41586-021-03819-2",
+          "location": "Attached PDF p. 7, Rights and permissions notice; official Nature article page, Rights and permissions section",
+          "what_verified": "The local PDF and publisher article record state CC BY 4.0, permitting sharing/distribution subject to attribution, license link, and change indication; third-party material can be excluded by a credit line.",
+          "pdf_pages": [
+            7
+          ]
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+          "location": "CC BY 4.0 legal code, sections 2(a)(1) and 3(a)",
+          "what_verified": "The licensor grants reproduction and sharing rights in the licensed material, with attribution, license reference, and change-status conditions.",
+          "pdf_pages": []
+        },
+        {
+          "url": "https://www.nature.com/documents/nr-reporting-summary-flat.pdf",
+          "location": "Official Nature Research Reporting Summary template license notice; local completed form pp. 11–12",
+          "what_verified": "The official template used for the appended reporting-summary pages is itself licensed CC BY 4.0. The local form has no separate restrictive notice.",
+          "pdf_pages": [
+            11,
+            12
+          ]
+        }
+      ],
+      "copyright_notice": "© The Author(s) 2021; Open Access CC BY 4.0 notice on PDF p. 7.",
+      "version": "The Zotero attachment is the Nature journal-article PDF, Nature 596, 583–589 (2021); the main text’s DOI, title, authors, and issue match.",
+      "conditions": "Retain the supplied creator/copyright/license notices, credit the authors and source, link CC BY 4.0, and indicate that the PDF is shared unchanged. Independently clear any item whose credit line excludes it from CC BY 4.0.",
+      "notes": "Only hyperlink annotations were detected. The PDF's license clause contains the standard third-party-credit exception; no separate exclusion credit line was found in the attachment. The article's code/weights open-source statement does not grant rights in those artifacts through this PDF license. Bibliographic attribution is in sources.json.",
+      "doi": "10.1038/s41586-021-03819-2",
+      "title": "Highly accurate protein structure prediction with AlphaFold",
+      "authors": [
+        {
+          "given": "John",
+          "family": "Jumper"
+        },
+        {
+          "given": "Richard",
+          "family": "Evans"
+        },
+        {
+          "given": "Alexander",
+          "family": "Pritzel"
+        },
+        {
+          "given": "Tim",
+          "family": "Green"
+        },
+        {
+          "given": "Michael",
+          "family": "Figurnov"
+        },
+        {
+          "given": "Olaf",
+          "family": "Ronneberger"
+        },
+        {
+          "given": "Kathryn",
+          "family": "Tunyasuvunakool"
+        },
+        {
+          "given": "Russ",
+          "family": "Bates"
+        },
+        {
+          "given": "Augustin",
+          "family": "Žídek"
+        },
+        {
+          "given": "Anna",
+          "family": "Potapenko"
+        },
+        {
+          "given": "Alex",
+          "family": "Bridgland"
+        },
+        {
+          "given": "Clemens",
+          "family": "Meyer"
+        },
+        {
+          "given": "Simon A. A.",
+          "family": "Kohl"
+        },
+        {
+          "given": "Andrew J.",
+          "family": "Ballard"
+        },
+        {
+          "given": "Andrew",
+          "family": "Cowie"
+        },
+        {
+          "given": "Bernardino",
+          "family": "Romera-Paredes"
+        },
+        {
+          "given": "Stanislav",
+          "family": "Nikolov"
+        },
+        {
+          "given": "Rishub",
+          "family": "Jain"
+        },
+        {
+          "given": "Jonas",
+          "family": "Adler"
+        },
+        {
+          "given": "Trevor",
+          "family": "Back"
+        },
+        {
+          "given": "Stig",
+          "family": "Petersen"
+        },
+        {
+          "given": "David",
+          "family": "Reiman"
+        },
+        {
+          "given": "Ellen",
+          "family": "Clancy"
+        },
+        {
+          "given": "Michal",
+          "family": "Zielinski"
+        },
+        {
+          "given": "Martin",
+          "family": "Steinegger"
+        },
+        {
+          "given": "Michalina",
+          "family": "Pacholska"
+        },
+        {
+          "given": "Tamas",
+          "family": "Berghammer"
+        },
+        {
+          "given": "Sebastian",
+          "family": "Bodenstein"
+        },
+        {
+          "given": "David",
+          "family": "Silver"
+        },
+        {
+          "given": "Oriol",
+          "family": "Vinyals"
+        },
+        {
+          "given": "Andrew W.",
+          "family": "Senior"
+        },
+        {
+          "given": "Koray",
+          "family": "Kavukcuoglu"
+        },
+        {
+          "given": "Pushmeet",
+          "family": "Kohli"
+        },
+        {
+          "given": "Demis",
+          "family": "Hassabis"
+        }
+      ],
+      "journal": "Nature",
+      "year": 2021,
+      "volume": "596",
+      "issue": "7873",
+      "pages": "583-589",
+      "source_url": "https://doi.org/10.1038/s41586-021-03819-2",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "6eae057a9faf4f671c3101e0745ed704460c6d3dec77243dfd3a9f2d2ab68970",
+      "pdf_page_count": 12,
+      "bundled_path": "references/papers/af2-2021.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "af3-2024",
+      "decision": "permitted",
+      "license_id": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_scope": "The published Nature version-of-record PDF, including its Extended Data figures/tables, expressly carries CC BY 4.0; the license notice includes third-party material unless a credit line says otherwise. The local PDF appends the author-completed Nature Portfolio Reporting Summary (pp. 22–24); the official Nature reporting-summary template is separately CC BY 4.0. No separate restrictive credit line or notice was found in the local article pages.",
+      "permission_evidence": [
+        {
+          "url": "https://doi.org/10.1038/s41586-024-07487-w",
+          "location": "Attached PDF p. 8, Rights and permissions notice; official Nature article page, Rights and permissions section",
+          "what_verified": "The local PDF and official article record state CC BY 4.0, permitting sharing/distribution subject to attribution, license link, and change indication; third-party material may be excluded by a credit line.",
+          "pdf_pages": [
+            8
+          ]
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+          "location": "CC BY 4.0 legal code, sections 2(a)(1) and 3(a)",
+          "what_verified": "The licensor grants reproduction and sharing rights in the licensed material, with attribution, license reference, and change-status conditions.",
+          "pdf_pages": []
+        },
+        {
+          "url": "https://www.nature.com/documents/nr-reporting-summary-flat.pdf",
+          "location": "Official Nature Portfolio Reporting Summary template license notice; local completed form pp. 22–24",
+          "what_verified": "The official template used for the appended reporting-summary pages is itself licensed CC BY 4.0. The local form has no separate restrictive notice.",
+          "pdf_pages": [
+            22,
+            23,
+            24
+          ]
+        }
+      ],
+      "copyright_notice": "© The Author(s) 2024, corrected publication 2024; Open Access CC BY 4.0 notice on PDF p. 8.",
+      "version": "The Zotero attachment is the Nature version-of-record main-text PDF, Nature 630, 493–500 (2024), and includes the article’s Extended Data figures/tables; the DOI, authors, and volume/pages match the first page.",
+      "conditions": "Retain the supplied creator/copyright/license notices, credit the authors and source, link CC BY 4.0, and indicate that the PDF is shared unchanged. Independently clear any item whose credit line excludes it from CC BY 4.0.",
+      "notes": "Only hyperlink annotations were detected. The license clause includes the standard third-party-credit exception; a scan of local page text found no separate exclusion credit line. The PDF includes author-completed reporting-summary pages; the official base template carries CC BY 4.0. Bibliographic attribution is in sources.json.",
+      "doi": "10.1038/s41586-024-07487-w",
+      "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+      "authors": [
+        {
+          "given": "Josh",
+          "family": "Abramson"
+        },
+        {
+          "given": "Jonas",
+          "family": "Adler"
+        },
+        {
+          "given": "Jack",
+          "family": "Dunger"
+        },
+        {
+          "given": "Richard",
+          "family": "Evans"
+        },
+        {
+          "given": "Tim",
+          "family": "Green"
+        },
+        {
+          "given": "Alexander",
+          "family": "Pritzel"
+        },
+        {
+          "given": "Olaf",
+          "family": "Ronneberger"
+        },
+        {
+          "given": "Lindsay",
+          "family": "Willmore"
+        },
+        {
+          "given": "Andrew J.",
+          "family": "Ballard"
+        },
+        {
+          "given": "Joshua",
+          "family": "Bambrick"
+        },
+        {
+          "given": "Sebastian W.",
+          "family": "Bodenstein"
+        },
+        {
+          "given": "David A.",
+          "family": "Evans"
+        },
+        {
+          "given": "Chia-Chun",
+          "family": "Hung"
+        },
+        {
+          "given": "Michael",
+          "family": "O’Neill"
+        },
+        {
+          "given": "David",
+          "family": "Reiman"
+        },
+        {
+          "given": "Kathryn",
+          "family": "Tunyasuvunakool"
+        },
+        {
+          "given": "Zachary",
+          "family": "Wu"
+        },
+        {
+          "given": "Akvilė",
+          "family": "Žemgulytė"
+        },
+        {
+          "given": "Eirini",
+          "family": "Arvaniti"
+        },
+        {
+          "given": "Charles",
+          "family": "Beattie"
+        },
+        {
+          "given": "Ottavia",
+          "family": "Bertolli"
+        },
+        {
+          "given": "Alex",
+          "family": "Bridgland"
+        },
+        {
+          "given": "Alexey",
+          "family": "Cherepanov"
+        },
+        {
+          "given": "Miles",
+          "family": "Congreve"
+        },
+        {
+          "given": "Alexander I.",
+          "family": "Cowen-Rivers"
+        },
+        {
+          "given": "Andrew",
+          "family": "Cowie"
+        },
+        {
+          "given": "Michael",
+          "family": "Figurnov"
+        },
+        {
+          "given": "Fabian B.",
+          "family": "Fuchs"
+        },
+        {
+          "given": "Hannah",
+          "family": "Gladman"
+        },
+        {
+          "given": "Rishub",
+          "family": "Jain"
+        },
+        {
+          "given": "Yousuf A.",
+          "family": "Khan"
+        },
+        {
+          "given": "Caroline M. R.",
+          "family": "Low"
+        },
+        {
+          "given": "Kuba",
+          "family": "Perlin"
+        },
+        {
+          "given": "Anna",
+          "family": "Potapenko"
+        },
+        {
+          "given": "Pascal",
+          "family": "Savy"
+        },
+        {
+          "given": "Sukhdeep",
+          "family": "Singh"
+        },
+        {
+          "given": "Adrian",
+          "family": "Stecula"
+        },
+        {
+          "given": "Ashok",
+          "family": "Thillaisundaram"
+        },
+        {
+          "given": "Catherine",
+          "family": "Tong"
+        },
+        {
+          "given": "Sergei",
+          "family": "Yakneen"
+        },
+        {
+          "given": "Ellen D.",
+          "family": "Zhong"
+        },
+        {
+          "given": "Michal",
+          "family": "Zielinski"
+        },
+        {
+          "given": "Augustin",
+          "family": "Žídek"
+        },
+        {
+          "given": "Victor",
+          "family": "Bapst"
+        },
+        {
+          "given": "Pushmeet",
+          "family": "Kohli"
+        },
+        {
+          "given": "Max",
+          "family": "Jaderberg"
+        },
+        {
+          "given": "Demis",
+          "family": "Hassabis"
+        },
+        {
+          "given": "John M.",
+          "family": "Jumper"
+        }
+      ],
+      "journal": "Nature",
+      "year": 2024,
+      "volume": "630",
+      "issue": "8016",
+      "pages": "493-500",
+      "source_url": "https://doi.org/10.1038/s41586-024-07487-w",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "aba3109f2892454c9512570001598a069aaf422adb5aa0f3879414cb29a258fb",
+      "pdf_page_count": 24,
+      "bundled_path": "references/papers/af3-2024.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "af3-2024-addendum",
+      "decision": "permitted",
+      "license_id": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_scope": "The one-page Nature Addendum PDF expressly carries CC BY 4.0 and permits sharing in any medium subject to the stated attribution conditions. Its standard notice includes third-party material unless a credit line says otherwise.",
+      "permission_evidence": [
+        {
+          "url": "https://doi.org/10.1038/s41586-024-08416-7",
+          "location": "Attached PDF p. 1, Open Access/Rights and permissions notice; official Nature article page, Rights and permissions section",
+          "what_verified": "The local PDF and publisher record state CC BY 4.0 and the share/distribution permission and conditions; third-party material may be excluded by a credit line.",
+          "pdf_pages": [
+            1
+          ]
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+          "location": "CC BY 4.0 legal code, sections 2(a)(1) and 3(a)",
+          "what_verified": "The licensor grants reproduction and sharing rights in the licensed material, with attribution, license reference, and change-status conditions.",
+          "pdf_pages": []
+        }
+      ],
+      "copyright_notice": "© The Author(s) 2024; Open Access CC BY 4.0 notice on PDF p. 1.",
+      "version": "The Zotero attachment is the Nature Corrections & Amendments journal PDF, Nature 636, E4 (2024), online date 2024-11-27; it is identified as an Addendum to DOI 10.1038/s41586-024-07487-w.",
+      "conditions": "Retain the supplied creator/copyright/license notices, credit the authors and source, link CC BY 4.0, and indicate that the PDF is shared unchanged. Independently clear any item whose credit line excludes it from CC BY 4.0.",
+      "notes": "The one-page PDF contains hyperlink annotations only. No separate third-party exclusion credit line was found. Bibliographic attribution is in sources.json.",
+      "doi": "10.1038/s41586-024-08416-7",
+      "title": "Addendum: Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+      "authors": [
+        {
+          "given": "Josh",
+          "family": "Abramson"
+        },
+        {
+          "given": "Jonas",
+          "family": "Adler"
+        },
+        {
+          "given": "Jack",
+          "family": "Dunger"
+        },
+        {
+          "given": "Richard",
+          "family": "Evans"
+        },
+        {
+          "given": "Tim",
+          "family": "Green"
+        },
+        {
+          "given": "Alexander",
+          "family": "Pritzel"
+        },
+        {
+          "given": "Olaf",
+          "family": "Ronneberger"
+        },
+        {
+          "given": "Lindsay",
+          "family": "Willmore"
+        },
+        {
+          "given": "Andrew J.",
+          "family": "Ballard"
+        },
+        {
+          "given": "Joshua",
+          "family": "Bambrick"
+        },
+        {
+          "given": "Sebastian W.",
+          "family": "Bodenstein"
+        },
+        {
+          "given": "David A.",
+          "family": "Evans"
+        },
+        {
+          "given": "Chia-Chun",
+          "family": "Hung"
+        },
+        {
+          "given": "Michael",
+          "family": "O’Neill"
+        },
+        {
+          "given": "David",
+          "family": "Reiman"
+        },
+        {
+          "given": "Kathryn",
+          "family": "Tunyasuvunakool"
+        },
+        {
+          "given": "Zachary",
+          "family": "Wu"
+        },
+        {
+          "given": "Akvilė",
+          "family": "Žemgulytė"
+        },
+        {
+          "given": "Eirini",
+          "family": "Arvaniti"
+        },
+        {
+          "given": "Charles",
+          "family": "Beattie"
+        },
+        {
+          "given": "Ottavia",
+          "family": "Bertolli"
+        },
+        {
+          "given": "Alex",
+          "family": "Bridgland"
+        },
+        {
+          "given": "Alexey",
+          "family": "Cherepanov"
+        },
+        {
+          "given": "Miles",
+          "family": "Congreve"
+        },
+        {
+          "given": "Alexander I.",
+          "family": "Cowen-Rivers"
+        },
+        {
+          "given": "Andrew",
+          "family": "Cowie"
+        },
+        {
+          "given": "Michael",
+          "family": "Figurnov"
+        },
+        {
+          "given": "Fabian B.",
+          "family": "Fuchs"
+        },
+        {
+          "given": "Hannah",
+          "family": "Gladman"
+        },
+        {
+          "given": "Rishub",
+          "family": "Jain"
+        },
+        {
+          "given": "Yousuf A.",
+          "family": "Khan"
+        },
+        {
+          "given": "Caroline M. R.",
+          "family": "Low"
+        },
+        {
+          "given": "Kuba",
+          "family": "Perlin"
+        },
+        {
+          "given": "Anna",
+          "family": "Potapenko"
+        },
+        {
+          "given": "Pascal",
+          "family": "Savy"
+        },
+        {
+          "given": "Sukhdeep",
+          "family": "Singh"
+        },
+        {
+          "given": "Adrian",
+          "family": "Stecula"
+        },
+        {
+          "given": "Ashok",
+          "family": "Thillaisundaram"
+        },
+        {
+          "given": "Catherine",
+          "family": "Tong"
+        },
+        {
+          "given": "Sergei",
+          "family": "Yakneen"
+        },
+        {
+          "given": "Ellen D.",
+          "family": "Zhong"
+        },
+        {
+          "given": "Michal",
+          "family": "Zielinski"
+        },
+        {
+          "given": "Augustin",
+          "family": "Žídek"
+        },
+        {
+          "given": "Victor",
+          "family": "Bapst"
+        },
+        {
+          "given": "Pushmeet",
+          "family": "Kohli"
+        },
+        {
+          "given": "Max",
+          "family": "Jaderberg"
+        },
+        {
+          "given": "Demis",
+          "family": "Hassabis"
+        },
+        {
+          "given": "John M.",
+          "family": "Jumper"
+        }
+      ],
+      "journal": "Nature",
+      "year": 2024,
+      "volume": "636",
+      "issue": "8042",
+      "pages": "E4-E4",
+      "source_url": "https://doi.org/10.1038/s41586-024-08416-7",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "c824e1006f0bee811e9e69ebc5c65b780616ef7688bce6a1206012ddc7127634",
+      "pdf_page_count": 1,
+      "bundled_path": "references/papers/af3-2024-addendum.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "akdel2022",
+      "decision": "permitted",
+      "license_id": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_scope": "The published Nature Structural & Molecular Biology article PDF, including its Methods and article figures, expressly carries CC BY 4.0; its notice includes third-party material unless a credit line says otherwise. The local PDF also appends the author-completed Nature Portfolio Reporting Summary (pp. 17–19); the official Nature reporting-summary template is separately CC BY 4.0. No separate restrictive credit line or notice was found in the local article pages.",
+      "permission_evidence": [
+        {
+          "url": "https://doi.org/10.1038/s41594-022-00849-w",
+          "location": "Attached PDF p. 12, Open Access/Rights and permissions notice; official Nature article page, Rights and permissions section",
+          "what_verified": "The local PDF and official article record state CC BY 4.0, permitting sharing/distribution subject to attribution, license link, and change indication; third-party material may be excluded by a credit line.",
+          "pdf_pages": [
+            12
+          ]
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+          "location": "CC BY 4.0 legal code, sections 2(a)(1) and 3(a)",
+          "what_verified": "The licensor grants reproduction and sharing rights in the licensed material, with attribution, license reference, and change-status conditions.",
+          "pdf_pages": []
+        },
+        {
+          "url": "https://www.nature.com/documents/nr-reporting-summary-flat.pdf",
+          "location": "Official Nature Portfolio Reporting Summary template license notice; local completed form pp. 17–19",
+          "what_verified": "The official template used for the appended reporting-summary pages is itself licensed CC BY 4.0. The local form has no separate restrictive notice.",
+          "pdf_pages": [
+            17,
+            18,
+            19
+          ]
+        }
+      ],
+      "copyright_notice": "© The Author(s) 2022; Open Access CC BY 4.0 notice on PDF p. 12.",
+      "version": "The Zotero attachment is the Nature PDF containing the main article and Methods; Nat. Struct. Mol. Biol. 29, 1056–1067 (2022), with the DOI/title/authors matching the first page.",
+      "conditions": "Retain the supplied creator/copyright/license notices, credit the authors and source, link CC BY 4.0, and indicate that the PDF is shared unchanged. Independently clear any item whose credit line excludes it from CC BY 4.0.",
+      "notes": "Only hyperlink annotations were detected. The license clause contains the standard third-party-credit exception; no separate exclusion credit line was found in the attachment. The appended reporting summary is the author-completed CC BY 4.0 template. Bibliographic attribution is in sources.json.",
+      "doi": "10.1038/s41594-022-00849-w",
+      "title": "A structural biology community assessment of AlphaFold2 applications",
+      "authors": [
+        {
+          "given": "Mehmet",
+          "family": "Akdel"
+        },
+        {
+          "given": "Douglas E. V.",
+          "family": "Pires"
+        },
+        {
+          "given": "Eduard Porta",
+          "family": "Pardo"
+        },
+        {
+          "given": "Jürgen",
+          "family": "Jänes"
+        },
+        {
+          "given": "Arthur O.",
+          "family": "Zalevsky"
+        },
+        {
+          "given": "Bálint",
+          "family": "Mészáros"
+        },
+        {
+          "given": "Patrick",
+          "family": "Bryant"
+        },
+        {
+          "given": "Lydia L.",
+          "family": "Good"
+        },
+        {
+          "given": "Roman A.",
+          "family": "Laskowski"
+        },
+        {
+          "given": "Gabriele",
+          "family": "Pozzati"
+        },
+        {
+          "given": "Aditi",
+          "family": "Shenoy"
+        },
+        {
+          "given": "Wensi",
+          "family": "Zhu"
+        },
+        {
+          "given": "Petras",
+          "family": "Kundrotas"
+        },
+        {
+          "given": "Victoria Ruiz",
+          "family": "Serra"
+        },
+        {
+          "given": "Carlos H. M.",
+          "family": "Rodrigues"
+        },
+        {
+          "given": "Alistair S.",
+          "family": "Dunham"
+        },
+        {
+          "given": "David",
+          "family": "Burke"
+        },
+        {
+          "given": "Neera",
+          "family": "Borkakoti"
+        },
+        {
+          "given": "Sameer",
+          "family": "Velankar"
+        },
+        {
+          "given": "Adam",
+          "family": "Frost"
+        },
+        {
+          "given": "Jérôme",
+          "family": "Basquin"
+        },
+        {
+          "given": "Kresten",
+          "family": "Lindorff-Larsen"
+        },
+        {
+          "given": "Alex",
+          "family": "Bateman"
+        },
+        {
+          "given": "Andrey V.",
+          "family": "Kajava"
+        },
+        {
+          "given": "Alfonso",
+          "family": "Valencia"
+        },
+        {
+          "given": "Sergey",
+          "family": "Ovchinnikov"
+        },
+        {
+          "given": "Janani",
+          "family": "Durairaj"
+        },
+        {
+          "given": "David B.",
+          "family": "Ascher"
+        },
+        {
+          "given": "Janet M.",
+          "family": "Thornton"
+        },
+        {
+          "given": "Norman E.",
+          "family": "Davey"
+        },
+        {
+          "given": "Amelie",
+          "family": "Stein"
+        },
+        {
+          "given": "Arne",
+          "family": "Elofsson"
+        },
+        {
+          "given": "Tristan I.",
+          "family": "Croll"
+        },
+        {
+          "given": "Pedro",
+          "family": "Beltrao"
+        }
+      ],
+      "journal": "Nature Structural & Molecular Biology",
+      "year": 2022,
+      "volume": "29",
+      "issue": "11",
+      "pages": "1056-1067",
+      "source_url": "https://doi.org/10.1038/s41594-022-00849-w",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "715e91148b06b5402888b4d3d69418af44c5323edc5c80eb028f40d167056e53",
+      "pdf_page_count": 19,
+      "bundled_path": "references/papers/akdel2022.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "terwilliger2024",
+      "decision": "permitted",
+      "license_id": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_scope": "The published Nature Methods article PDF, including its Methods and article figures, expressly carries CC BY 4.0; the notice includes third-party material unless a credit line says otherwise. The local PDF also appends the author-completed Nature Research Reporting Summary (pp. 11–12); the official template is separately CC BY 4.0. No separate restrictive credit line or notice was found in the local article pages.",
+      "permission_evidence": [
+        {
+          "url": "https://doi.org/10.1038/s41592-023-02087-4",
+          "location": "Attached PDF p. 7, Open Access/Rights and permissions notice; official Nature article page, Rights and permissions section",
+          "what_verified": "The local PDF and official Nature article record state CC BY 4.0, permitting sharing/distribution subject to attribution, license link, and change indication; third-party material may be excluded by a credit line.",
+          "pdf_pages": [
+            7
+          ]
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+          "location": "CC BY 4.0 legal code, sections 2(a)(1) and 3(a)",
+          "what_verified": "The licensor grants reproduction and sharing rights in the licensed material, with attribution, license reference, and change-status conditions.",
+          "pdf_pages": []
+        },
+        {
+          "url": "https://www.nature.com/documents/nr-reporting-summary-flat.pdf",
+          "location": "Official Nature Research Reporting Summary template license notice; local completed form pp. 11–12",
+          "what_verified": "The official template used for the appended reporting-summary pages is itself licensed CC BY 4.0. The local form has no separate restrictive notice.",
+          "pdf_pages": [
+            11,
+            12
+          ]
+        }
+      ],
+      "copyright_notice": "© The Author(s) 2023; Open Access CC BY 4.0 notice on PDF p. 7.",
+      "version": "The Zotero attachment is the Nature Methods journal-article PDF; Nat. Methods 21 (2024), 110–116; the first page records online publication on 2023-11-30 and 2024 journal volume/pages, with DOI/authors matching.",
+      "conditions": "Retain the supplied creator/copyright/license notices, credit the authors and source, link CC BY 4.0, and indicate that the PDF is shared unchanged. Independently clear any item whose credit line excludes it from CC BY 4.0.",
+      "notes": "Only hyperlink annotations were detected. The license clause includes the standard third-party-credit exception; a scan of local page text found no separate exclusion credit line. The PDF includes author-completed reporting-summary pages; the official base template carries CC BY 4.0. Bibliographic attribution is in sources.json.",
+      "doi": "10.1038/s41592-023-02087-4",
+      "title": "AlphaFold predictions are valuable hypotheses and accelerate but do not replace experimental structure determination",
+      "authors": [
+        {
+          "given": "Thomas C.",
+          "family": "Terwilliger"
+        },
+        {
+          "given": "Dorothee",
+          "family": "Liebschner"
+        },
+        {
+          "given": "Tristan I.",
+          "family": "Croll"
+        },
+        {
+          "given": "Christopher J.",
+          "family": "Williams"
+        },
+        {
+          "given": "Airlie J.",
+          "family": "McCoy"
+        },
+        {
+          "given": "Billy K.",
+          "family": "Poon"
+        },
+        {
+          "given": "Pavel V.",
+          "family": "Afonine"
+        },
+        {
+          "given": "Robert D.",
+          "family": "Oeffner"
+        },
+        {
+          "given": "Jane S.",
+          "family": "Richardson"
+        },
+        {
+          "given": "Randy J.",
+          "family": "Read"
+        },
+        {
+          "given": "Paul D.",
+          "family": "Adams"
+        }
+      ],
+      "journal": "Nature Methods",
+      "year": 2024,
+      "volume": "21",
+      "issue": "1",
+      "pages": "110-116",
+      "source_url": "https://doi.org/10.1038/s41592-023-02087-4",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "86f2b209ffbdc245865eb6cd9b447bd4bd7c8693be2ad5909932d3702fc1e69e",
+      "pdf_page_count": 12,
+      "bundled_path": "references/papers/terwilliger2024.pdf",
+      "modification_status": "Not modified by this repository; original attachment bytes retained."
+    },
+    {
+      "id": "monod1965",
+      "decision": "not_established",
+      "license_id": null,
+      "license_url": null,
+      "license_scope": "No express public redistribution permission was found for the scanned original publication. The publisher identifies copyright but the local scan has no license text or link annotation.",
+      "permission_evidence": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0022283665802856",
+          "location": "ScienceDirect article record; copyright and rights/access area",
+          "what_verified": "The official record matches DOI 10.1016/S0022-2836(65)80285-6, identifies the 1965 Journal of Molecular Biology article, reports copyright © 1965 Published by Elsevier Ltd., and presents Get rights and content/access through an organization.",
+          "pdf_pages": []
+        },
+        {
+          "url": "https://doi.org/10.1016/S0022-2836(65)80285-6",
+          "location": "Local scanned attachment p. 1",
+          "what_verified": "The scan identifies the original article, journal, year and printed pages 88–118, but has no copyright/license statement or external license annotation; PDF annotation scan found none.",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "copyright_notice": "No copyright notice is visible in the local scan. The ScienceDirect record states © 1965 Published by Elsevier Ltd.",
+      "version": "Digitized original journal article, Journal of Molecular Biology 12(1), 88–118 (1965), DOI 10.1016/S0022-2836(65)80285-6.",
+      "conditions": "Permission is not established. Do not place the complete scan in a public repository unless an applicable redistribution license or written permission is obtained.",
+      "notes": "Crossref lookup in the supplied metadata file was rate-limited, so it yielded no license conclusion. Local SHA-256 matches the supplied manifest. First page shows no personal watermark; the PDF contains no annotations.",
+      "doi": "10.1016/s0022-2836(65)80285-6",
+      "title": "On the nature of allosteric transitions: A plausible model",
+      "authors": [
+        {
+          "given": "Jacque",
+          "family": "Monod"
+        },
+        {
+          "given": "Jeffries",
+          "family": "Wyman"
+        },
+        {
+          "given": "Jean-Pierre",
+          "family": "Changeux"
+        }
+      ],
+      "journal": "Journal of Molecular Biology",
+      "year": 1965,
+      "volume": "12",
+      "issue": "1",
+      "pages": "88-118",
+      "source_url": "https://doi.org/10.1016/s0022-2836(65)80285-6",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "645d36b1fb61ee94976fc8ce30765fadc203ec0b51aa3f04f9fcf187eae83c06",
+      "pdf_page_count": 31,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    },
+    {
+      "id": "hammes2009",
+      "decision": "not_established",
+      "license_id": null,
+      "license_url": null,
+      "license_scope": "A freely accessible PMC copy does not itself establish permission to redistribute the full publisher PDF. No article-specific license authorizing a public repository copy was established from the sources checked.",
+      "permission_evidence": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2728963/",
+          "location": "PMC article record; local publisher-version PDF pp. 1–5",
+          "what_verified": "Article identity and free archive availability; archive availability did not establish a reuse license for the full publisher PDF.",
+          "pdf_pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2629225/",
+          "location": "PNAS 2009 author-rights editorial",
+          "what_verified": "Historical PNAS author rights/License to Publish context; it does not provide an article-specific grant for this article's public full-PDF redistribution.",
+          "pdf_pages": []
+        }
+      ],
+      "copyright_notice": "No separate reuse license was identified in the local PDF text; page footers expose a downloader IP address and access date.",
+      "version": "Published PNAS article, 106(33), 13737–13741 (2009), DOI 10.1073/pnas.0907195106.",
+      "conditions": [],
+      "notes": "The local PDF footer includes personal/network data (an IP address and date); review before any eventual sharing. Keep in Zotero pending article-specific reuse authorization.",
+      "doi": "10.1073/pnas.0907195106",
+      "title": "Conformational selection or induced fit: A flux description of reaction mechanism",
+      "authors": [
+        {
+          "given": "Gordon G.",
+          "family": "Hammes"
+        },
+        {
+          "given": "Yu-Chu",
+          "family": "Chang"
+        },
+        {
+          "given": "Terrence G.",
+          "family": "Oas"
+        }
+      ],
+      "journal": "Proceedings of the National Academy of Sciences",
+      "year": 2009,
+      "volume": "106",
+      "issue": "33",
+      "pages": "13737-13741",
+      "source_url": "https://doi.org/10.1073/pnas.0907195106",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "78f20e8f77d575eafa4dee2bb1c97b8a810cff86bba1d9498b6c4d8bb1a54ac8",
+      "pdf_page_count": 5,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    },
+    {
+      "id": "henzler2007",
+      "decision": "not_established",
+      "license_id": null,
+      "license_url": null,
+      "license_scope": "No general license for public redistribution of this publisher-version PDF was established. Rights clearances noted for figures in the article apply to that publication and do not establish permission to reuse those panels in a new repository copy.",
+      "permission_evidence": [
+        {
+          "url": "https://www.nature.com/articles/nature06522",
+          "location": "Nature article landing page; local PDF p. 9 and figures on pp. 3–7",
+          "what_verified": "Article identity and reprints/permissions notice; local PDF contains multiple figure/panel credits saying reproduced with permission from cited prior works, indicating separate third-party rights.",
+          "pdf_pages": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            9
+          ]
+        }
+      ],
+      "copyright_notice": "Publisher-version copyright notice on local PDF; p. 9 directs readers to reprints and permissions.",
+      "version": "Published Nature review, 450(7172), 964–972 (2007), DOI 10.1038/nature06522.",
+      "conditions": [],
+      "notes": "Multiple figure panels on pp. 3–7 are credited as reproduced with permission from earlier works; those permissions should not be presumed to extend to republication of this PDF. Retain in Zotero pending specific authorization.",
+      "doi": "10.1038/nature06522",
+      "title": "Dynamic personalities of proteins",
+      "authors": [
+        {
+          "given": "Katherine",
+          "family": "Henzler-Wildman"
+        },
+        {
+          "given": "Dorothee",
+          "family": "Kern"
+        }
+      ],
+      "journal": "Nature",
+      "year": 2007,
+      "volume": "450",
+      "issue": "7172",
+      "pages": "964-972",
+      "source_url": "https://doi.org/10.1038/nature06522",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "21ceb534f1739d32ef035246fbecebabf23952b160946affea9ae3cf438b827f",
+      "pdf_page_count": 9,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    },
+    {
+      "id": "motlagh2014",
+      "decision": "not_established",
+      "license_id": null,
+      "license_url": null,
+      "license_scope": "No general public redistribution license for the publisher PDF was established. Crossref text-and-data-mining metadata is not a general redistribution grant.",
+      "permission_evidence": [
+        {
+          "url": "https://www.nature.com/articles/nature13001",
+          "location": "Nature article landing page; local PDF p. 1",
+          "what_verified": "Article identity and local all-rights-reserved copyright notice; no article-specific general redistribution grant was established from the materials checked.",
+          "pdf_pages": [
+            1
+          ]
+        }
+      ],
+      "copyright_notice": "Macmillan Publishers Limited. All rights reserved © 2014 (local PDF p. 1).",
+      "version": "Published Nature review, 508(7496), 331–339 (2014), DOI 10.1038/nature13001.",
+      "conditions": [],
+      "notes": "Crossref TDM metadata does not establish a right to repost the article PDF. Retain in Zotero pending specific authorization.",
+      "doi": "10.1038/nature13001",
+      "title": "The ensemble nature of allostery",
+      "authors": [
+        {
+          "given": "Hesam N.",
+          "family": "Motlagh"
+        },
+        {
+          "given": "James O.",
+          "family": "Wrabl"
+        },
+        {
+          "given": "Jing",
+          "family": "Li"
+        },
+        {
+          "given": "Vincent J.",
+          "family": "Hilser"
+        }
+      ],
+      "journal": "Nature",
+      "year": 2014,
+      "volume": "508",
+      "issue": "7496",
+      "pages": "331-339",
+      "source_url": "https://doi.org/10.1038/nature13001",
+      "checked_on": "2026-09-30",
+      "pdf_sha256": "9df2c7958dd028c791e552f68e4f0d5f4d6a5ee89a5638dd5bf926ad16f47ef5",
+      "pdf_page_count": 9,
+      "bundled_path": null,
+      "modification_status": "Not redistributed by this repository."
+    }
+  ]
+}
